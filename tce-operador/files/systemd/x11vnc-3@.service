@@ -1,0 +1,6 @@
+[Unit]
+Description=X11VNC for display :0.3
+
+[Service]
+ExecStart=/usr/bin/x11vnc -display :0.3 -inetd -quiet
+StandardInput=socket

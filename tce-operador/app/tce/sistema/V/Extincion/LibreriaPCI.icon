@@ -1,0 +1,164 @@
+# ###############################################################################################
+#
+# MUY IMPORTANTE:  TIENEN QUE COINCIDIR EL NRO DE ICONOS CON EL DECLARADO INICIALMENTE
+# ===============
+#
+# LAS IMAGENES:
+#	Cada tipo de icono puede tener una imagen asociada a uno o varios
+#	estados_funcionales.
+#
+#		NRO_IMAGENES		3
+#		START_IMAGEN
+#			ESTADO_FUNCIONAL	ABIERTO,EMERGENCIA
+#			FICH_ICONO		bitmaps/SUN/PortonAbierto.icon
+#		END_IMAGEN
+#		START_IMAGEN
+#			ESTADO_FUNCIONAL	CERRADO
+#			FICH_ICONO		bitmaps/SUN/PortonCerrado.icon
+#		END_IMAGEN
+#		START_IMAGEN
+#			ESTADO_FUNCIONAL	*
+#			FICH_ICONO		bitmaps/SUN/PortonOtros.icon
+#		END_IMAGEN
+#
+#	Ha de coincidir el Nro de imagenes con lo declarado.
+#	Cuando el porton este ABIERTO o en EMERGENCIA se mostrara con PortonAbierto.icon
+#	Cuando el porton este CERRADO se mostrara con PortonCerrado.icon
+#	Cuando el porton este en Cualquier otro estado "*" se mostrar con PortonOtros.icon
+#
+#		Es importante que el estado WILDCARD "*" sea el ultimo de la lista porque
+#		durante la ejecucion se asignara la primera imagen encontrada que se ajuste
+#		al estado actual del porton. El WILDCARD se ajusta a todos los estados, y si
+#		estuviera el primero de la lista solo se utilizaria esa imagen para cualquier
+#		estado del porton.
+#
+# LOS COMPORTAMIENTOS:
+#	Cada tipo de icono puede tener una accion por defecto asociada a uno o varios
+#	estados funcionales.
+#
+#		NRO_COMPORTAMIENTOS		3
+#		START_COMPORTAMIENTO
+#			ESTADO_FUNCIONAL	EMERGENCIA
+#			ACCION			DESACTIVAR_ANTIPANICO	$CODAGENTE
+#		END_COMPORTAMIENTO
+#		START_COMPORTAMIENTO
+#			ESTADO_FUNCIONAL	CERRADO
+#			ACCION			ABRIR_PUERTA	$CODAGENTE $INSTANCIA
+#		END_COMPORTAMIENTO
+#		START_COMPORTAMIENTO
+#			ESTADO_FUNCIONAL	*
+#			ACCION			VISUALIZAR	$INSTANCIA
+#		END_COMPORTAMIENTO
+#
+#	Ha de coincidir el Nro de comportamientos con lo declarado.
+#	Cuando el porton este en EMERGENCIA la accion sera DESACTIVAR_ANTIPANICO y
+#	el parametro asociado a la orden sera el codigo del agente activo en la estacion.
+#	Cuando el porton este CERRADO la accion sera ABRIR_PUERTA y los parametros asociado
+#	a la orden sera el codigo del agente activo en la estacion y el nombre de la instancia
+#	a la que va dirigida la orden.
+#	Cuando el porton este en Cualquier otro estado "*" la accion seria activar el UI
+#	correspondiente y el parametro asociado sera el nombre de la instancia a la que va
+#	dirigida la orden.
+#
+#		Es importante que el estado WILDCARD "*" sea el ultimo de la lista porque
+#		durante la ejecucion se asignara la primera orden encontrada que se ajuste
+#		al estado actual del porton. El WILDCARD se ajusta a todos los estados, y si
+#		estuviera el primero de la lista solo se utilizaria esa accion para cualquier
+#		estado del porton.
+#
+#	En la evaluacion de la accion a realizar se analiza en el siguiente orden:
+#		1.- Acciones especificas de la instancia.
+#		2.- Acciones especificas del tipo de icono.
+#		3.- Accion por defecto para todos los tipos de icono (Estado de esta accion es "*").
+#
+#	Es por esto que se permite que las instancias no tengan acciones definidas o que un tipo
+#	de icono no tenga acciones definidas.
+#
+# ###############################################################################################
+
+
+NRO_TIPOS_ICONOS	5
+
+DEFAULT_COLOR_NORMAL			#B6B6AA
+DEFAULT_COLOR_SIN_COMUNICACION		yellow
+DEFAULT_COLOR_ALARMA_SUBSISTEMA		blue
+DEFAULT_COLOR_ALARMA_CONCENTRADOR	cyan
+DEFAULT_COLOR_FUERA_SERVICIO		red
+DEFAULT_COLOR_MANTENIMIENTO		green
+DEFAULT_COLOR_DESCONOCIDO		#FFC000
+DEFAULT_FONT_TEXTO			lucidasans-bold-10
+DEFAULT_OFFSET_TEXTO			+10 -10
+DEFAULT_ESTADO_FUNCIONAL		*
+DEFAULT_ACCION				NINGUNA
+
+START_DEFINICION_ICONO		Tipo Icono INTERRUPTOR_GENERAL
+	TIPO_ICONO	INTERRUPTOR_GENERAL	
+	NRO_IMAGENES		2
+	START_IMAGEN
+		ESTADO_FUNCIONAL	ON
+		FICH_ICONO	iconos/IntGralON.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	*
+		FICH_ICONO	iconos/IntGralOFF.icon
+	END_IMAGEN	
+END_DEFINICION_ICONO
+
+START_DEFINICION_ICONO		Tipo Icono LED_VERDE
+	TIPO_ICONO	LED_VERDE	
+	NRO_IMAGENES		2
+	START_IMAGEN
+		ESTADO_FUNCIONAL	ON
+		FICH_ICONO	iconos/LedVerde.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	*
+		FICH_ICONO	iconos/LedNegro.icon
+	END_IMAGEN	
+END_DEFINICION_ICONO
+
+START_DEFINICION_ICONO		Tipo Icono LED_ROJO
+	TIPO_ICONO	LED_ROJO	
+	NRO_IMAGENES		2
+	START_IMAGEN
+		ESTADO_FUNCIONAL	ON
+		FICH_ICONO	iconos/LedRojo.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	*
+		FICH_ICONO	iconos/LedNegro.icon
+	END_IMAGEN	
+END_DEFINICION_ICONO
+
+START_DEFINICION_ICONO		Tipo Icono LED_AMARILLO
+	TIPO_ICONO	LED_AMARILLO	
+	NRO_IMAGENES		2
+	START_IMAGEN
+		ESTADO_FUNCIONAL	ON
+		FICH_ICONO	iconos/LedAmarillo.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	*
+		FICH_ICONO	iconos/LedNegro.icon
+	END_IMAGEN	
+END_DEFINICION_ICONO
+
+START_DEFINICION_ICONO		Tipo Icono INTERRUPTOR
+	TIPO_ICONO	INTERRUPTOR	
+	NRO_IMAGENES		3
+	START_IMAGEN
+		ESTADO_FUNCIONAL	ON,AUTO
+		FICH_ICONO	iconos/InterrDcha.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	OFF,MANUAL
+		FICH_ICONO	iconos/InterrIqda.icon
+	END_IMAGEN
+	START_IMAGEN
+		ESTADO_FUNCIONAL	*
+		FICH_ICONO	iconos/InterrMedio.icon
+	END_IMAGEN
+END_DEFINICION_ICONO
+
+
+

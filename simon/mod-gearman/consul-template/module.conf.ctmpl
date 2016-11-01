@@ -1,0 +1,18 @@
+debug=0
+logmode=stdout
+server=127.0.0.1:4730{{ $hostname := env "HOSTNAME" }}{{ range service "gearmand" }}{{ if ne .Node $hostname }},{{.Address}}:{{.Port}}{{end}}{{end}}
+eventhandler=no
+services=yes
+hosts=yes
+hostgroups=TFNNOALCANZABLE
+do_hostchecks=yes
+route_eventhandler_like_checks=no
+encryption=off
+key=should_be_changed
+use_uniq_jobs=off
+result_workers=1
+perfdata=yes
+perfdata_mode=1
+orphan_host_checks=yes
+orphan_service_checks=yes
+accept_clear_results=no

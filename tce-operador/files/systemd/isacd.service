@@ -1,0 +1,12 @@
+[Unit]
+Description=I.S.A. Interfaz de Seleccion de Aplicaciones
+Requires=fvwm.service
+After=fvwm.service
+
+[Service]
+Type=simple
+Environment=LD_LIBRARY_PATH=/opt/sico/isacd/lib
+EnvironmentFile=/opt/sico/isacd/environment
+WorkingDirectory=/opt/sico/isacd
+ExecStartPre=/usr/bin/xrdb -merge ./xresources
+ExecStart=/opt/sico/isacd/isatce_main

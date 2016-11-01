@@ -1,0 +1,13 @@
+,,, Identificacion,,,,,,,,AIRE ACOND 01,,,,,,,,,,,, Estado,,,,,COOLING,,,,,,,,,,,,,,,,   Fecha Estado,,,,,,,,19/04/04 11:00
+
+,,, Set Point Regulacion Cooling:,,,,,,,,,,,,,,,,,,,,,22\,5,,,, ºC,,,,,, Set Point Regulacion Heating:,,,,,,,,,,,,,,,,,,,,,0\,0,,,, ºC
+
+,,, Histeresis Cooling:,,,,,,,,,,,,,,,,,,,,,2\,0,,,, ºC,,,,,, Histeresis Heating:,,,,,,,,,,,,,,,,,,,,,1\,0,,,, ºC
+
+,,, Limite Minimo Set Point Cooling:,,,,,,,,,,,,,,,,,,,,,15\,0,,,, ºC,,,,,, Limite Minimo Set Point Heating:,,,,,,,,,,,,,,,,,,,,,0\,0,,,, ºC
+
+,,, Limite Maximo Set Point Cooling:,,,,,,,,,,,,,,,,,,,,,35\,0,,,, ºC,,,,,, Limite Maximo Set Point Heating:,,,,,,,,,,,,,,,,,,,,,0\,0,,,, ºC
+
+,,, Delta Temperatura:,,,,,,,,,,,,,,,,,,,,,1\,5,,,, ºC,,,,,, Numero Compresores:,,,,,,,,,,,,,,,,,,,,,1,
+
+,,, Tiempo de Integracion:,,,,,,,,,,,,,,,,,,,,,0,,,, sg,,,,,, Tiempo de Desintegracion:,,,,,,,,,,,,,,,,,,,,,0,,,, sg

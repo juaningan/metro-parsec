@@ -1,0 +1,48 @@
+# Fichero de definicion de las Listas del Pto Xtral (08-09-97)
+#
+# Las lineas de comentario son las que comienzan con '#'.
+# En este fichero solo puede haber comentarios antes de comenzar
+# los parametros y no entre ellos.
+#
+# Reseteo de la impresora: \x1B\x45; Tipo terminaciуn de lнnea: \x1B&k2G;
+# Selecciуn conjunto caracteres: \x1B(12U; Tipo de letra: \x1B(s0p10h0s0b4099T;
+# Columnas margen izquierdo: \x1B&a0L; Negrita: \x1B(s3B;
+#
+#Lineas         60      Nro de Lineas por pagina (incluidos cabecera y footer)
+#LineaFooter    57      Linea a partir de la cual comenzar a imprimir el footer
+#AnchoLinea     70      Anchura efectiva de la linea (ancho papel - margen izqdo)
+#MargenIzqdo    10      Margen a dejar en blanco
+#PermitirWidows 1       1 => TRUE, 0 => FALSE
+#InterLineas    1       Paso entre Lineas
+#InterRegistros 2       Paso entre Registros
+#Cabecera               Se considera Cabecera todo lo incluido entre los $ $
+#
+# Prueba :
+#\x1B(s0p12h0s0b4099T\x1B&a0L\x1B(s1B  METRO DE MADRID                                           SISTEMA DE CAPTURA DE DATOS
+Lineas          59
+LineaFooter     56
+AnchoLinea      80
+MargenIzqdo     0
+PermitirWidows  0
+InterLineas     1
+InterRegistros  0
+Cabecera
+$
+\x1B(s0p14h0s0b4099T\x1B(s1B\x1B&a7L  ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+\x1B(s0B\x1B&a9L
+$
+Footer
+$
+\x1B(s1B\x1B&a7LДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+\x1B(s0p14h0s0b4099T\x1B&a0L\x1B(s3B  PUESTO CENTRAL - SISTEMA DE CAPTURA DE DATOS                                           METRO DE MADRID
+$
+CAMPO RESETEO_IMPRESORA "\x1B\x45"
+CAMPO TERMINACION_LINEA "\x1B&k2G"
+CAMPO CONJUNTO_CARACTER "\x1B(12U"
+CAMPO TIPO_LETRA_10_CCP "\x1B(s0p10h0s0b4099T"
+CAMPO TIPO_LETRA_12_CCP "\x1B(s0p12h0s0b4099T"
+CAMPO TIPO_LETRA_14_CCP "\x1B(s0p14h0s0b4099T"
+CAMPO ACTIVAR_NEGRITA "\x1B(s3B"
+CAMPO DESACTIVAR_NEGRITA "\x1B(s0B"
+CAMPO ACTIVAR_CURSIVA "\x1B(s1S"
+CAMPO DESACTIVAR_CURSIVA "\x1B(s0S"

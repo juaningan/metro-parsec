@@ -1,0 +1,32 @@
+#
+# Fichero de Tipos de Eventos de CAJADOTACION
+# --------------------------------------
+#
+# El formato de los registros es el siguiente:
+#
+# Registro 1: NUMERO_TIPOS_EVENTOS
+# Registros 2 en adelante:
+#     Evento prioridad descripcion
+#
+NRO_DE_TIPOS_DE_EVENTOS 20
+EVENTO 0 4 Reset (por fallo de alimentacion)
+EVENTO 1 4 Reset (Reloj parado, fallo alimentacion mas 2 meses)
+EVENTO 2 4 Activado periodo
+EVENTO 3 4 Borrado periodo
+EVENTO A 4 Apertura Normal de la puerta
+EVENTO a 4 Apertura por comando RS 232
+EVENTO B 4 Apertura mecanica saltandose la electronica
+EVENTO b 4 Apertura incondicional por comando RS 232
+EVENTO C 4 Cierre de la puerta
+EVENTO E 4 Fallo de apertura (la puerta no se abre)
+EVENTO P 4 Alarma puerta abierta demasiado tiempo
+EVENTO h 4 Se ha cambiado la Fecha/Hora
+EVENTO f 4 Se han cambiado los periodos de actividad
+EVENTO n 4 Cambio Numero de Serie
+EVENTO t 4 Demasiado tiempo sin comunicar con Host (5 mins)
+EVENTO v 4 Activacion del horario de verano +1h
+EVENTO i 4 Activacion del horario de invierno -1h
+EVENTO H 4 Cambio del horario de verano
+EVENTO Z 4 Sin Comunicacion con Concentrador
+EVENTO z 4 Recuperacion Comunicacion Concentrador
+

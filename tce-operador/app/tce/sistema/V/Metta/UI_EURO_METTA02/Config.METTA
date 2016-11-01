@@ -1,0 +1,11 @@
+# FICHERO DE CONFIGURACION DE LA METTA
+
+METTA
+
+
+# Numero maximo de alarmas
+
+A100
+
+
+FIN

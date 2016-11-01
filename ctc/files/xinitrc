@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# ~/.xinitrc
+# xinit -- :0
+
+set -e
+set -x
+
+export LANG=es_ES.UTF-8
+
+xhost +
+xrandr --size 1280x1024
+xrandr --dpi 96
+xsetroot -solid "#2aa198" -display :0.0
+xmodmap -e "remove mod2 = Num_Lock"
+xset fp+ /usr/share/fonts/X11/misc
+xset fp+ /usr/share/fonts/X11/75dpi
+xrdb ~/.xresources
+
+# Arranca gestor de ventanas
+exec fvwm

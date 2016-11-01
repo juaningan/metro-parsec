@@ -1,0 +1,9 @@
+[Unit]
+Description=TCE required mount point
+StopWhenUnneeded=true
+
+[Mount]
+What=16.0.5.10:/export/tce
+Where=/opt/sico/tce/TCE
+Type=nfs
+Options=defaults

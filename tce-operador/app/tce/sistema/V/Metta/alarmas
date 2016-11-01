@@ -1,0 +1,180 @@
+ 101 99 30    Rollo Papel 1 Terminandose
+ 102 99 30    Rollo Papel 2 Terminandose
+ 103 99 30    Rollo Papel 3 Terminandose
+ 104 99 30    Rollo Papel 4 Terminandose
+ 105 99 30    Rollo Papel 5 Terminandose
+ 106 99 30    Rollo Papel 6 Terminandose
+ 201 99 30    Rollo Papel 1 Agotado
+ 202 99 30    Rollo Papel 2 Agotado
+ 203 99 30    Rollo Papel 3 Agotado
+ 204 99 30    Rollo Papel 4 Agotado
+ 205 99 30    Rollo Papel 5 Agotado
+ 206 99 30    Rollo Papel 6 Agotado
+ 207 99 30    Fin Rollo Papel 1 Prematuro
+ 208 99 30    Fin Rollo Papel 2 Prematuro
+ 209 99 30    Fin Rollo Papel 3 Prematuro
+ 20A 99 30    Fin Rollo Papel 4 Prematuro
+ 20B 99 30    Fin Rollo Papel 5 Prematuro
+ 20C 99 30    Fin Rollo Papel 6 Prematuro
+ 301 99 30    Devolvedor 1 Terminandose
+ 302 99 30  Devolvedor 2 Terminandose
+ 303 99 30   Devolvedor 3 Terminandose
+ 401 99 30   Devolvedor 1 Agotado
+ 402 99 30   Devolvedor 2 Agotado
+ 403 99 30   Devolvedor 3 Agotado
+ 404 99 30   Discrepancia Nivel Llenado Hopper 1
+ 405 99 30   Discrepancia Nivel Llenado Hopper 2
+ 406 99 30   Discrepancia Nivel Llenado Hopper 3
+ 501 99 30   Recargador 1 Vacio
+ 502 99 30   Recargador 2 Vacio
+ 503 99 30   Recargador 3 Vacio
+ 504 99 30   Fallo Apertura Caja Recarga 1
+ 505 99 30   Fallo Apertura Caja Recarga 2
+ 506 99 30   Fallo Apertura Caja Recarga 3
+ 601 99 30   Cajas Recaud. Mon. Llenándose
+ 604 99 30   Caja Recaud. Bill. Llenándose
+ 605 99 30   Fallo R/W RAM Estatica Caja Recaudacion 1
+ 606 99 30   Fallo R/W RAM Estatica Caja Recaudacion 2
+ 607 99 30   Fallo R/W RAM Estatica Caja Recaudacion 3
+ 700 99 30   Fallo Billetero (Generico)
+ 701 99 30   Fallo Billetero (Selector)
+ 702 99 30   Fallo Billetero (Selector)
+ 703 99 30   Fallo Billetero (Selector)
+ 704 99 30   Fallo Billetero (Selector)
+ 705 99 30   Fallo Billetero (Selector)
+ 706 99 30   Fallo Billetero (Selector)
+ 707 99 30   Fallo Billetero (Apilador)
+ 708 99 30   Fallo Billetero (+5 V)
+ 709 99 30   Fallo Billetero (+15 V)
+ 70A 99 30   Fallo Billetero (-15 V)
+ 70B 99 30   Fallo Billetero (+24 V)
+ 70C 99 30   Fallo Billetero (Configuracion)
+ 70D 99 30   Fallo Billetero (Configuracion)
+ 70E 99 30   Fallo Billetero (Luz)
+ 70F 99 30   Fallo Billetero (Software)
+ 710 99 30   Fallo Billetero (Software)
+ 731 99 30   Fallo Billetero (LEDs)
+ 732 99 30   Fallo Billetero (LEDs)
+ 733 99 30   Fallo Billetero (LEDs)
+ 734 99 30   Fallo Billetero (LEDs)
+ 735 99 30   Fallo Billetero (LEDs)
+ 736 99 30   Fallo Billetero (LEDs)
+ 737 99 30   Fallo Billetero (LEDs)
+ 738 99 30   Fallo Billetero (LEDs)
+ 739 99 30   Fallo Billetero (LEDs)
+ 73A 99 30   Fallo Billetero (LEDs)
+ 73B 99 30   Fallo Billetero (LEDs)
+ 73C 99 30   Fallo Billetero (LEDs)
+ 73D 99 30   Fallo Billetero (LEDs)
+ 751 99 30   Fallo Billetero (LEDs)
+ 752 99 30   Fallo Billetero (LEDs)
+ 753 99 30   Fallo Billetero (LEDs)
+ 754 99 30   Fallo Billetero (LEDs)
+ 755 99 30   Fallo Billetero (LEDs)
+ 756 99 30   Fallo Billetero (LEDs)
+ 757 99 30   Fallo Billetero (LEDs)
+ 758 99 30   Fallo Billetero (LEDs)
+ 759 99 30   Fallo Billetero (LEDs)
+ 75A 99 30   Fallo Billetero (LEDs)
+ 75B 99 30   Fallo Billetero (LEDs)
+ 75C 99 30   Fallo Billetero (LEDs)
+ 75D 99 30   Fallo Billetero (LEDs)
+ 761 99 30   Fallo Billetero (LEDs)
+ 762 99 30   Fallo Billetero (LEDs)
+ 763 99 30   Fallo Billetero (LEDs)
+ 764 99 30   Fallo Billetero (LEDs)
+ 765 99 30   Fallo Billetero (LEDs)
+ 766 99 30   Fallo Billetero (LEDs)
+ 767 99 30   Fallo Billetero (LEDs)
+ 768 99 30   Fallo Billetero (LEDs)
+ 769 99 30   Fallo Billetero (LEDs)
+ 76A 99 30   Fallo Billetero (LEDs)
+ 76B 99 30   Fallo Billetero (LEDs)
+ 76C 99 30   Fallo Billetero (LEDs)
+ 76D 99 30   Fallo Billetero (LEDs)
+ 771 99 30   Fallo Billetero (LEDs)
+ 772 99 30   Fallo Billetero (LEDs)
+ 773 99 30   Fallo Billetero (LEDs)
+ 774 99 30   Fallo Billetero (LEDs)
+ 775 99 30   Fallo Billetero (LEDs)
+ 776 99 30   Fallo Billetero (LEDs)
+ 777 99 30   Fallo Billetero (LEDs)
+ 778 99 30   Fallo Billetero (LEDs)
+ 779 99 30   Fallo Billetero (LEDs)
+ 77A 99 30   Fallo Billetero (LEDs)
+ 77B 99 30   Fallo Billetero (LEDs)
+ 77C 99 30   Fallo Billetero (LEDs)
+ 77D 99 30   Fallo Billetero (LEDs)
+ 787 99 30   Fallo Billetero (LEDs)
+ 78D 99 30   Fallo Billetero (LEDs)
+ 797 99 30   Fallo Billetero (LEDs)
+ 79D 99 30   Fallo Billetero (LEDs)
+ 7A7 99 30   Fallo Billetero (LEDs)
+ 7AD 99 30   Fallo Billetero (LEDs)
+ 7C0 99 30   Fallo Billetero (Apilador)
+ 7C1 99 30   Fallo Billetero (Apilador)
+ 7C2 99 30   Fallo Billetero (Apilador)
+ 7C3 99 30   Fallo Billetero (Apilador)
+ 7C4 99 30   Fallo Billetero (Apilador)
+ 7D0 99 30   Fallo Billetero (Apilador)
+ 7D1 99 30   Fallo Billetero (Apilador)
+ 7D2 99 30   Fallo Billetero (Apilador)
+ 7D3 99 30   Fallo Billetero (Apilador)
+ 7D4 99 30   Fallo Billetero (Apilador)
+ 7D5 99 30   Fallo Billetero (Apilador)
+ 7D6 99 30   Fallo Billetero (Apilador)
+ 7D7 99 30   Fallo Billetero (Apilador)
+ 7D8 99 30   Fallo Billetero (Apilador)
+ 7E0 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E1 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E2 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E3 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E4 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E5 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E6 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E7 99 30   Fallo Billetero (Apilador Con Papel)
+ 7E8 99 30   Fallo Billetero (Apilador Con Papel)
+ 7F0 99 30   Fallo Billetero (Selector Con Papel)
+ 7F2 99 30   Fallo Billetero (Selector Con Papel)
+ 7F3 99 30   Fallo Billetero (Selector Con Papel)
+ 7F4 99 30   Fallo Billetero (Selector Con Papel)
+ 7F5 99 30   Fallo Billetero (Selector Con Papel)
+ 7F6 99 30   Fallo Billetero (Selector Con Papel)
+ 7F7 99 30   Fallo Billetero (Selector Con Papel)
+ 7F8 99 30   Fallo Billetero (Selector Con Papel)
+ 7F9 99 30   Fallo Billetero (Selector Con Papel)
+ 801 99 30   Fallos Reiterados Expendedor Billetes
+ 901 99 30   Mant. Preven. Billetero Requerido
+ 902 99 30   Mant. Preven. Monedero Requerido
+ 903 99 30   Mant. Preven. Hopper 1 Requerido
+ 904 99 30   Mant. Preven. Hopper 2 Requerido
+ 905 99 30   Mant. Preven. Hopper 3 Requerido
+ 906 99 30   Mant. Preven. Cab. Grab. Requerido
+ 907 99 30   Mant. Preven. Cab. Lect. Requerido
+ 908 99 30   Mant. Preven. Impresora Requerido
+ 909 99 30   Mant. Preven. Cinta Imp. Requerido
+ 90A 99 30   Mant. Preven. Procesador Requerido
+ 90B 99 30   Mant. Preven. Limpieza Requerido
+ 90C 99 30   Mant. Preven. Bat.Alarma Requerido
+ 90D 99 30   Mant. Preven. Bat.Fuente Requerido
+ 90E 99 30   Mant. Preven. Tecl.Usua. Requerido
+ 90F 99 30   Mant. Preven. Tecl.Mant Requerido
+ 910 99 30   Mant. Preven. Monitor Requerido
+ 911 99 30   Mant. Preven. Disco Duro Requerido
+ A01 99 30   Fallo Comunicacion Display Rotante
+ A02 99 30   Fallo Comunicacion Aceptador Billetes
+ B01 99 30   Fallo Lector Magnetico Mantenimiento
+ B02 99 30   Fallo Alarma Sonora
+ B03 99 30   Fallo Alarma Tecnica
+ C01 99 30   Fallo Mensajes Display Rotante
+ C02 99 30   Fallo Teclado Mantenimiento
+ D01 99 30   Fallo Aceptacion Billetes
+ D02 99 30   Fallo Rechazo Billetes
+ D03 99 30   Fallo Devolucion Billetes
+ D04 99 30   Fallo Insercion Caja Billetes
+ E01 99 30   Fallo Destructor Banda Magnetica
+ F01 99 30   A.T.M. Limpieza
+ F02 99 30   A.T.M. Metacrilatos
+ F03 99 30   A.T.M. Alumbrado
+ F04 99 30   A.T.M. Seguridad
+ F05 99 30   A.T.M. Vandalismo

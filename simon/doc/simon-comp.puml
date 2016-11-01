@@ -1,0 +1,54 @@
+@startuml
+title SIMON\n Components Diagram
+skinparam componentStyle uml2
+
+actor Técnico
+
+node "Gestora" {
+  frame nagios {
+    [nagios-core]
+    [mod-gearman]
+    [livestatus]
+  }
+  [gearman-job-server]
+  [cfgs]
+  [unixcat]
+  interface "TCP:6557" as TCP6557
+  interface "TCP:4730" as TCP4730
+  interface "UNIX:/run/nagios/live" as live
+  interface "FILE:/run/nagios/status.dat" as status.dat
+}
+ 
+node "Worker[01-11]" {
+  [mod-gearman-worker]
+  [check scripts]
+}
+
+node "UI" {
+  [simon]
+  [thruk]
+  [pnp4nagios]
+}
+
+cloud "Equipos finales" {
+  [hosts]
+  [services]
+}
+
+[nagios-core] - status.dat
+[nagios-core] -> [cfgs]
+[mod-gearman] -> TCP4730
+[gearman-job-server] - TCP4730
+[livestatus] -> status.dat
+[livestatus] - live
+[unixcat] -> live
+[unixcat] - TCP6557
+[mod-gearman-worker] -> TCP4730
+[check scripts] -> TCP6557
+[check scripts] -> [hosts]
+[check scripts] -> [services]
+[simon] -> TCP6557
+[thruk] -> TCP6557
+[pnp4nagios] -> TCP6557
+Técnico -> [simon]
+@enduml

@@ -1,0 +1,9 @@
+[Unit]
+Description=X11VNC Socket for display :0.1
+
+[Socket]
+ListenStream=5901
+Accept=yes
+
+[Install]
+WantedBy=sockets.target

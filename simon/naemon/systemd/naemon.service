@@ -1,0 +1,15 @@
+[Unit]
+Description=Naemon Core
+BindTo=network.target
+After=consul.service
+Wants=proxy-to-livestatus.socket status-dat-server.socket
+
+[Service]
+User=naemon
+Restart=on-failure
+ExecStartPre=-/usr/bin/socat TCP4:livestatus.service.consul:1234 OPEN:/run/naemon/retention.dat,creat
+ExecStart=/usr/bin/naemon /etc/naemon/naemon.cfg
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

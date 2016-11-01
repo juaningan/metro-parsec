@@ -1,0 +1,11 @@
+[Unit]
+Description=Merlin daemon
+BindTo=network.target
+
+[Service]
+User=naemon
+Restart=on-failure
+ExecStart=/usr/local/bin/merlind -d -c /usr/local/etc/merlin/merlin.conf
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch /home/opermm/capturas/ and activate capturas.service
+
+[Path]
+DirectoryNotEmpty=/home/opermm/capturas/
+MakeDirectory=true
+DirectoryMode=0777
+
+[Install]
+WantedBy=multi-user.target

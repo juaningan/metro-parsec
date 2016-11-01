@@ -1,0 +1,4 @@
+CRP=estaciones-aar
+LOGPRODUCCION=/dev/stdout
+DIR_TMP=/run/sico/isacd
+DISPLAY=:0.0

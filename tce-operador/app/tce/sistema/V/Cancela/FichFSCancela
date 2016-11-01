@@ -1,0 +1,21 @@
+#
+# Fichero que guarda los nombres y códigos de todas las posibles causas de FS de una cancela
+#
+
+TOTAL_NOMBRES			3		
+
+#
+# Codigo de la causa de FS	Nombre de la causa
+#
+
+# El equipo de control de la cancela ha intentado abrirla infructuosamente 
+1	"Fallo de Apertura"
+
+# El equipo de control de la cancela ha intentado cerrarla infructuosamente 	
+2 	"Fallo de Cierre"
+
+# Fallo de alimentacion		
+3 	"Fallo en Tension"
+
+
+

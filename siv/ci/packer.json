@@ -1,0 +1,61 @@
+{
+  "builders": [
+    {
+      "type": "qemu",
+      "iso_url": "http://releases.ubuntu.com/16.04/ubuntu-16.04-server-amd64.iso",
+      "iso_checksum": "b8b172cbdf04f5ff8adc8c2c1b4007ccf66f00fc6a324a6da6eba67de71746f6",
+      "iso_checksum_type": "sha256",
+      "headless": false,
+      "format": "raw",
+      "http_directory": ".",
+      "ssh_username": "root",
+      "ssh_password": "root123",
+      "boot_command": [
+        "<esc><f6><esc>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+        "initrd=/install/initrd.gz ",
+        "auto=true ",
+        "url=http://{{.HTTPIP}}:{{.HTTPPort}}/xenial64.preseed ",
+        "locale=en_US ",
+        "hostname=base-xenial64 ",
+        "domain= ",
+        "console-setup/ask_detect=false ",
+        "keyboard-configuration/layoutcode=es ",
+        "vga=788 noprompt quiet --<enter>"
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "dpkg --add-architecture i386",
+        "apt-get update",
+        "apt-get install -y libc6-i386 libice6:i386 libsm6:i386 libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxt6:i386 xviewg:i386 libuuid1:i386 libxcb1:i386",
+        "apt-get install -y rpcbind inetutils-ping bsdutils",
+        "apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/"
+      ]
+    },
+    {
+      "type": "file",
+      "source": "app",
+      "destination": "/"
+    }
+  ],
+  "post-processors": [
+    {
+      "compression_level": 6,
+      "keep_input_artifact": true,
+      "output": "build/siv-base.raw.gz",
+      "type": "compress"
+    }
+  ]
+}

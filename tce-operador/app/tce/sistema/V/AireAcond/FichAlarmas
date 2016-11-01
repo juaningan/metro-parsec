@@ -1,0 +1,18 @@
+# FICHERO DE CONFIGURACION DE LOS TIPOS DE ALARMAS DEL AIRE ACONDICIONADO
+#
+NRO_DE_TIPOS_DE_ALARMA		11
+#
+# SINTAXIS:  ALARMA  <Codecimal> <Prioridad> <Texto>
+#
+ALARMA 0 4 Alarma Averia en Sonda de Temperatura 1
+ALARMA 1 4 Alarma Averia en Sonda de Temperatura 2
+ALARMA 2 4 Alarma Alta Presion 
+ALARMA 3 4 Alarma Baja Presion
+ALARMA 4 4 Alarma Proteccion Compresores 
+ALARMA 5 4 Alarma Termico Ventilador Condensador 
+ALARMA 6 4 Alarma Antihielo
+ALARMA 7 4 Alarma Condicional Externa
+ALARMA 8 4 Alarma Bloqueo Externo
+ALARMA 9 4 Alarma Alta Temperatura en Retorno
+ALARMA 99 4 Sin Comunicacion con Aire Acondicionado
+

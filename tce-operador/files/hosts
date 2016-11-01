@@ -1,0 +1,535 @@
+127.0.0.1	localhost localhost2 dimetronicD2 dsp_poi8 poi10
+# -----------------------------------------------------
+# CTC METRO DE MADRID
+# -----------------------------------------------------
+# Puestos de operador 
+# -----------------------------------------------------
+16.0.1.141	poi1 poi1_1 poi1.ingenieria ServidorYUM
+16.0.11.141	poi1_2
+16.0.1.142 	poi2 poi2_1 poi2.ingenieria
+16.0.11.142 	poi2_2
+16.0.1.143	poi3 poi3_1 poi3.ingenieria
+16.0.11.143	poi3_2
+16.0.1.144	poi4 poi4_1 poi4.ingenieria
+16.0.11.144	poi4_2
+16.0.1.145	poi5 poi5_1 poi5.ingenieria
+16.0.11.145	poi5_2
+16.0.1.146	poi6 poi6_1 poi6.ingenieria
+16.0.11.146	poi6_2
+16.0.1.147	poi7 poi7_1 poi7.ingenieria 
+16.0.11.147	poi7_2
+16.0.1.148	poi8 poi8_1 poi8.ingenieria
+16.0.11.148	poi8_2
+16.0.1.149	poi9 poi9_1 poi9.ingenieria
+16.0.11.149	poi9_2
+#16.0.1.150	poi10 poi10_1 poi10.ingenieria
+16.0.11.150	poi10_2
+16.0.1.151	poi11 poi11_1 poi11.ingenieria
+16.0.11.151	poi11_2
+16.0.1.152	poi12 poi12_1 poi12.ingenieria
+16.0.11.152	poi12_2
+16.0.1.153	poi13 poi13_1 poi13.ingenieria
+16.0.61.15	poi13_vdi
+16.0.11.153	poi13_2
+16.0.1.154	poi14 poi14_1 poi14.ingenieria
+16.0.11.154	poi14_2
+16.0.1.155	poi15 poi15_1 poi15.ingenieria
+16.0.11.155	poi15_2
+16.0.1.156	poi16 poi16_1 poi16.ingenieria
+16.0.11.156	poi16_2
+16.0.1.157	poi17 poi17_1 poi17.ingenieria
+16.0.11.157	poi17_2
+16.0.1.158	poi18 poi18_1 poi18.ingenieria
+16.0.11.158	poi18_2
+16.0.1.159	poi19 poi19_1 poi19.ingenieria
+16.0.11.159	poi19_2
+16.0.1.160	poi20 poi20_1 poi20.ingenieria
+16.0.11.160	poi20_2
+16.0.1.161	poi21 poi21_1 poi21.ingenieria
+16.0.11.161	poi21_2
+16.0.1.162	poi22 poi22_1 poi22.ingenieria
+16.0.11.162	poi22_2
+16.0.1.163	poi23 poi23_1 poi23.ingenieria
+16.0.11.163	poi23_2
+16.0.1.164	poi24 poi24_1 poi24.ingenieria
+16.0.11.164	poi24_2
+16.0.1.165	poi25 poi25_1 poi25.ingenieria
+16.0.11.165	poi25_2
+16.0.1.166	poi26 poi26_1 poi26.ingenieria
+16.0.11.166	poi26_2
+16.0.1.167	poi27 poi27_1 poi27.ingenieria
+16.0.11.167	poi27_2
+16.0.1.168	poi28 poi28_1 poi28.ingenieria
+16.0.11.168	poi28_2
+16.0.1.169	poi29 poi29_1 poi29.ingenieria
+16.0.11.169	poi29_2
+16.0.1.170	poi30 poi30_1 poi30.ingenieria
+16.0.11.170	poi30_2
+16.0.1.171	poi31 poi31_1 poi31.ingenieria
+16.0.11.171	poi31_2
+16.0.1.172	poi32 poi32_1 poi32.ingenieria
+16.0.11.172	poi32_2
+16.0.1.173	poi33 poi33_1 poi33.ingenieria
+16.0.11.173	poi33_2
+16.0.1.174	poi34 poi34_1 poi34.ingenieria
+16.0.11.174	poi34_2
+16.0.2.141	poim1 poim1_1 poim1.ingenieria
+16.0.12.141	poim1_2
+16.0.1.196	poicav1 poicav1_1 poicav1.ingenieria
+16.0.11.196	poicav1_2
+16.0.2.142	poim2 poim2_1 poim2.ingenieria
+16.0.12.142	poim2_2
+16.2.2.140	poim3 poim3_1 poim3.ingenieria
+16.2.12.140	poim3_2
+
+
+16.2.1.11       poitics1 poitics1_1 poitics1.ingenieria
+16.2.11.11      poitics1_2
+16.2.1.12       poitics2 poitics2_1 poitics2.ingenieria
+16.2.11.12      poitics2_2
+16.2.1.13       poitics3 poitics3_1 poitics3.ingenieria
+16.2.11.13      poitics3_2
+16.2.1.14       poitics4 poitics4_1 poitics4.ingenieria
+16.2.11.14      poitics4_2
+16.2.1.15       poitics5 poitics5_1 poitics5.ingenieria
+16.2.11.15      poitics5_2
+16.2.1.16       poitics6 poitics6_1 poitics6.ingenieria
+16.2.11.16      poitics6_2
+16.2.1.17       poitics7 poitics7_1 poitics7.ingenieria
+16.2.11.17      poitics7_2
+
+# Operadores de Ventas
+16.12.62.147    op30_mm op30_mm_2
+16.12.62.148    op31_mm op31_mm_2
+16.12.62.145    op32_mm op32_mm_2
+16.12.62.146    op33_mm op33_mm_2
+
+# Operadores de Av. America
+16.17.62.145    op34_mm op34_mm_2
+16.17.62.146    op35_mm op35_mm_2
+16.17.62.149    op36_mm op36_mm_2
+16.17.62.150    op37_mm op37_mm_2
+
+# Operadores de Nuevos Ministerios
+16.18.62.145    op50_mm op50_mm_2
+16.18.62.148    op51_mm op51_mm_2
+16.18.62.146    op52_mm op52_mm_2
+16.18.62.149    op53_mm op53_mm_2
+
+# OPERADORES DE MONCLOA
+16.13.62.141    op54_mm op54_mm-2
+16.13.62.142    op55_mm op55_mm-2
+16.13.62.144    op56_mm op56_mm-2
+16.13.62.145    op57_mm op57_mm-2
+
+# OPERADORES DEL PROTOTIPO DEL TICS
+16.4.254.179    op59_mm
+
+# Aula Coordinadores Linea 5 (Aluche)
+35.91.58.225    op60_mm op60_mm-2
+
+# TICS Pacifico
+16.11.62.68     op65_mm op65_mm-2
+16.6.1.18       op66_mm op66_mm-2
+17.138.58.72    op67_mm op67_mm-2 
+17.138.58.73    op68_mm op68_mm-2
+
+# OPERADORES ML1
+12.116.58.8     op75_ml1 op75_ml1-2
+12.116.58.9     op76_ml1 op76_ml1-2
+12.116.58.10    op77_ml1 op77_ml1-2
+12.116.58.14    op78_retros_ml1 op78_retros_ml1-2
+12.116.58.15    op79_retros_ml1 op79_retros_ml1-2
+
+# -----------------------------------------------------
+# Servidores
+# -----------------------------------------------------
+16.0.53.11 	serv1ctc serv1ctc_1 serv1ctc.ingenieria
+16.0.54.11   	serv1ctc_2
+16.0.53.12   	serv2ctc serv2ctc_1 serv2ctc.ingenieria
+16.0.54.12   	serv2ctc_2 
+16.0.53.13   	serv3ctc serv3ctc_1 serv3ctc.ingenieria
+16.0.54.13   	serv3ctc_2
+
+152.100.141.3 	serv1tics serv1tics_1 serv1tics.ingenieria
+152.200.141.3  	serv1tics_2
+
+16.0.53.14 	SIE1 SIE1_1 SIE1.ingenieria
+16.0.54.14   	SIE1_2
+16.0.53.15 	SIE2 SIE2_1 SIE2.ingenieria
+16.0.54.15   	SIE2_2
+
+16.0.59.11	SIV1 SIV1_1
+16.0.60.11	SIV1-2 SIV1_2
+16.0.59.12	SIV2 SIV2_1
+16.0.60.12	SIV2-2 SIV2_2
+16.0.59.13	SIV3 SIV3_1
+16.0.60.13	SIV3-2 SIV3_2
+
+16.0.2.151	SIVBROKER1
+
+152.100.143.1         rserv_siv       # Puerta del sur
+152.200.143.1         rserv_siv-2     # Puerta del sur
+152.100.143.2         rserv2siv       # Puerta del sur
+152.200.143.2         rserv2siv-2     # Puerta del sur
+
+16.0.53.16	s1_sirat s1_sirat_1
+16.0.54.16	s1_sirat_2
+16.0.53.17	s2_sirat s2_sirat_1
+16.0.54.17	s2_sirat_2
+
+# -----------------------------------------------------
+# FEC's
+# -----------------------------------------------------
+16.0.53.76	F0A F0A_1
+16.0.54.76	F0A_2
+150.100.161.2	F0B F0B_1
+150.200.161.2	F0B_2
+16.0.53.77	F1A F1A_1
+16.0.54.77	F1A_2
+150.100.161.4	F1B F1B_1
+150.200.161.4	F1B_2
+16.0.53.78	F2A F2A_1
+16.0.54.78	F2A_2
+16.0.53.79	F2B F2B_1
+16.0.54.79	F2B_2
+
+# -----------------------------------------------------
+# HUB's
+# -----------------------------------------------------
+1.1.1.202       hub1
+1.1.1.203       hub2
+1.1.1.204       hub3
+1.1.1.205       hub4
+
+# -----------------------------------------------------
+# PC's
+# -----------------------------------------------------
+150.100.127.20	vectravl vectravl.ingenieria
+
+
+# -----------------------------------------------------
+# Retroproyectores
+# -----------------------------------------------------
+16.0.1.186   xterm0 elixir0  #       A.Arenal        Trenes
+16.0.1.185   xterm1 elixir1  #       A.Arenal        Trenes
+16.0.1.184   xterm2 elixir2  #       A.Arenal        Trenes
+150.100.127.4   xterm3 elixir3  #       A.Arenal        Seguridad
+150.100.127.5   xterm4 elixir4  #       A.Arenal        Estaciones
+150.100.156.10  xterm5 elixir5  #       A.Arenal        Energma
+
+# -----------------------------------------------------
+# Routers
+# -----------------------------------------------------
+150.100.58.1	RouterL0AA
+150.100.50.1	RouterL0CA
+150.200.58.1	RouterL1AA
+
+
+# -----------------------------------------------------
+# Reloj Patron
+# -----------------------------------------------------
+150.100.104.3	RelojPatron_1
+150.200.104.3	RelojPatron_2
+
+
+# -----------------------------------------------------
+# CARTELES
+# -----------------------------------------------------
+150.100.141.10	pc_cartel
+
+# -----------------------------------------------------
+# TRACCION
+# -----------------------------------------------------
+150.100.156.1	traccion1
+150.100.156.3	traccion2
+
+
+# -----------------------------------------------------
+# TCE Virtuales
+# -----------------------------------------------------
+16.0.2.144	tcevirtaar01
+16.0.2.145	tcevirtaar02
+16.0.2.147	tcevirtaar03
+16.0.2.148	tcevirtaar04
+16.0.2.149	tcevirtaar05
+16.0.2.150	tcevirtaar06
+16.0.2.153	tcevirtaar07
+16.0.2.154	tcevirtaar08
+16.2.2.142	tcevirtpsu01
+16.2.2.143	tcevirtpsu02
+16.2.2.144	tcevirtpsu03
+16.2.2.145	tcevirtpsu04
+16.2.2.146	tcevirtpsu05
+16.2.2.148	tcevirtpsu06
+16.2.2.149	tcevirtpsu07
+16.2.2.150	tcevirtpsu08
+
+# -----------------------------------------------------
+# OP Virtuales
+# -----------------------------------------------------
+16.2.2.147	opvirtsivpsu01
+
+###############################
+#    HOST DE AMPER
+###############################
+
+16.0.71.108	arenalmat pacimegmat tetramat arenalmat2 pacimegmat2 tetramat2 arenalmatd pacimegmatd tetramatd arenalmatd2 pacimegmatd2 tetramatd2
+
+150.100.124.9	arenalope servope
+150.200.124.9	arenalope2 servope2
+150.100.124.10	arenaloped servopeD
+150.100.124.10	arenaloped2 servopeD2
+
+150.100.124.13	tetramatold
+
+152.100.124.3   tetramatr
+152.200.124.3   tetramatr2
+152.100.124.4   tetramatrd
+152.200.124.4   tetramatrd2
+
+150.100.164.16	RadT1
+150.200.164.16	RadT12
+150.100.164.17	RadT1d
+150.200.164.17	RadT1d2
+
+152.100.144.1   msurmat    # MV2msur  
+152.200.144.1   msurmat2 #   MV2msur2 
+152.100.144.2   msurmatD  #  MV2msurD 
+152.200.144.2   msurmatD2 msurmat2D  # MV2msurD2 MV2msur2D
+
+152.100.164.12	pacimegmatR
+152.200.164.12	pacimegmatR2
+152.100.164.13	pacimegmatRd
+152.200.164.12	pacimegmatRd2
+
+152.100.164.16	RadT1R
+152.200.164.16	RadT1R2
+152.100.164.17	RadT1Rd
+152.200.164.17	RadT1Rd2
+
+#####################
+# Consolas de Audio #
+#####################
+
+16.0.71.101	catre01pma
+16.0.71.102	catre02pma
+16.0.71.103	catre03pma
+16.0.71.104	catre04pma
+16.0.71.105	catre05pma
+16.0.71.106	catre06pma
+16.0.71.107	catre07pma
+16.0.71.108	catre08pma
+16.0.71.109	catre09pma
+16.0.71.110	catre10pma
+16.0.71.111	catre11pma
+16.0.71.112	catre12pma
+16.0.71.113	catre13pma
+16.0.71.114	catre14pma
+16.0.71.115	catre15pma
+16.0.71.116	catre16pma
+16.0.71.118	caesm18pma
+16.0.71.119	caesm19pma
+16.0.71.120	caesm20pma
+16.0.71.121	caesm21pma
+16.0.71.122	caesm22pma
+16.0.71.123	caesm23pma
+16.0.71.124	caesm24pma
+16.0.71.125	caesm25pma
+16.0.71.126	caesm26pma
+16.0.71.127	caesm27pma
+16.0.71.128	caesm28pma
+16.0.71.129	caesm29pma
+16.0.71.140	caesm30pma
+16.0.71.141	caesm31pma
+16.0.71.142	caesm32pma
+
+
+############################
+# "Nuevo" Sistema de Audio #
+############################
+
+16.0.71.50 tetra01pma		
+16.2.71.50 tetra01pmp	tetra01pmad
+
+##########
+# POGUIS #
+##########
+
+16.0.71.205     pogui1
+16.0.72.205     pogui1_2
+16.0.71.206     pogui2
+16.0.72.206     pogui2_2
+16.0.71.207     pogui3
+16.0.72.207     pogui3_2
+16.0.71.208     pogui4
+16.0.72.208     pogui4_2
+16.0.71.209     pogui5
+16.0.72.209     pogui5_2
+16.0.71.210     pogui6
+16.0.72.210     pogui6_2
+16.0.71.211     pogui7
+16.0.72.211     pogui7_2
+16.0.71.212     pogui8
+16.0.72.212     pogui8_2
+16.0.71.213     pogui9
+16.0.72.213     pogui9_2
+16.0.71.214     pogui10
+16.0.72.214     pogui10_2
+16.0.71.215     pogui11
+16.0.72.215     pogui11_2
+16.0.71.216     pogui12
+16.0.72.216     pogui12_2
+16.0.71.217     pogui13
+16.0.72.217     pogui13_2
+16.0.71.220     pogui14
+16.0.72.220     pogui14_2
+16.0.71.219     pogui15
+16.0.72.219     pogui15_2
+16.0.71.218     pogui16
+16.0.72.218     pogui16_2
+
+###############################
+#    FIN HOST DE AMPER
+###############################
+
+##############################
+#   HOSTS DE INFOGLOBAL
+##############################
+16.0.56.141     IGCamarasCTC01  # POI 1
+16.0.56.142     IGCamarasCTC02  # POI 2
+16.0.56.143     IGCamarasCTC03  # POI 3
+16.0.56.144     IGCamarasCTC04  # POI 4
+16.0.56.145     IGCamarasCTC05  # POI 5
+16.0.56.146     IGCamarasCTC06  # POI 6
+16.0.56.147     IGCamarasCTC07  # POI 7
+16.0.56.148     IGCamarasCTC08  # POI 8
+16.0.56.149     IGCamarasCTC09  # POI 9
+16.0.56.235     IGCamarasCTC10  # POI 10
+16.0.56.151     IGCamarasCTC11  # POI 11
+16.0.56.152     IGCamarasCTC12  # POI 12
+16.0.56.236     IGCamarasCTC13  # POI 13
+16.0.56.153     IGCamarasCTC16  # POI 16
+16.0.56.150     IGCamarasCTC19  # POI 19
+16.0.56.154     IGCamarasCTC20  # POI 20
+
+###############################
+#    FIN HOST DE INFOGLOBAL
+###############################
+
+################################
+# Servidores de SIV
+
+16.0.59.20      commsL01
+16.0.59.21      commsL02
+16.0.59.22      commsL03
+16.0.59.23      commsL04
+16.0.59.24      commsL05
+16.0.59.25      commsL06
+16.0.59.26      commsL07
+16.0.59.27      commsL08
+16.0.59.28      commsL09
+16.0.59.29      commsL10
+16.0.59.30      commsL11
+16.0.59.31      commsL12
+16.0.59.35	commsL50
+16.2.59.20      rcommsL01
+16.2.59.21      rcommsL02
+16.2.59.22      rcommsL03
+16.2.59.23      rcommsL04
+16.2.59.24      rcommsL05
+16.2.59.25      rcommsL06
+16.2.59.26      rcommsL07
+16.2.59.27      rcommsL08
+16.2.59.28      rcommsL09
+16.2.59.29      rcommsL10
+16.2.59.30      rcommsL11
+16.2.59.31      rcommsL12
+16.2.59.35	rcommsL50
+16.0.62.22      frontML01
+16.0.5.12       sannas
+16.0.59.32      centralsiv1
+16.0.59.33      centralsiv2
+16.2.59.32      rcentralsiv1
+16.2.59.33      rcentralsiv2
+16.0.60.32      centralsiv1-2
+16.0.60.33      centralsiv2-2
+16.2.60.32      rcentralsiv1-2
+16.2.60.33      rcentralsiv2-2
+16.0.62.17      CentralTCE
+16.2.62.50      rCentralTCE
+16.0.63.17	CentralTCE-2
+16.2.63.50	rCentralTCE-2
+16.0.62.11	CentralCOMMIT
+16.2.62.51	rCentralCOMMIT
+16.0.63.11	CentralCOMMIT-2
+16.2.63.51	rCentralCOMMIT-2
+16.0.65.149	CentralPCI
+16.2.65.23	rCentralPCI
+16.0.66.149	CentralPCI-2
+16.2.66.23	rCentralPCI-2
+16.0.77.18      CentralHR
+16.0.78.18      CentralHR-2
+16.2.77.27      rCentralHR
+16.2.78.27      rCentralHR-2
+
+16.0.59.16      main3
+
+16.0.60.20      commsL01-2
+16.0.60.21      commsL02-2
+16.0.60.22      commsL03-2
+16.0.60.23      commsL04-2
+16.0.60.24      commsL05-2
+16.0.60.25      commsL06-2
+16.0.60.26      commsL07-2
+16.0.60.27      commsL08-2
+16.0.60.28      commsL09-2
+16.0.60.29      commsL10-2
+16.0.60.30      commsL11-2
+16.0.60.31      commsL12-2
+16.2.60.20      rcommsL01-2
+16.2.60.21      rcommsL02-2
+16.2.60.22      rcommsL03-2
+16.2.60.23      rcommsL04-2
+16.2.60.24      rcommsL05-2
+16.2.60.25      rcommsL06-2
+16.2.60.26      rcommsL07-2
+16.2.60.27      rcommsL08-2
+16.2.60.28      rcommsL09-2
+16.2.60.29      rcommsL10-2
+16.2.60.30      rcommsL11-2
+16.2.60.31      rcommsL12-2
+16.0.63.22      frontML01-2
+16.0.60.16      main3-2
+
+16.2.96.21	parsec.silex.metromadrid.net
+
+16.0.1.188	crp02 estaciones estaciones-aar
+16.0.1.187	crp01 seguridad seguridad-aar
+16.2.56.85	panelvga05 estaciones-psu
+16.2.56.86	panelvga06 seguridad-psu
+16.13.62.146	crp_pslmoncloa_estaciones estaciones-mon
+16.13.62.143	crp_pslmoncloa_seguridad seguridad-mon
+16.11.62.64	crp_psl_pacifico estaciones-pac
+18.2.40.84	panelvga01 estaciones-nmi seguridad-nmi
+16.12.56.11     crp_pslventas_estaciones estaciones-ven
+16.12.62.11	crp_pslventas_seguridad seguridad-ven
+16.17.56.11	crp_aamerica_estaciones estaciones-aam
+16.4.254.130 	panelvga02 crp_canillejas_panelvga02 formacion
+16.6.62.11	crp_doctor_esquerdo seguridad-cav
+16.3.62.12	crp_aamerica_seguridad commit
+
+16.4.254.194	pcipiloto
+16.4.254.178	piloto
+
+16.0.4.47	s1_tn
+16.0.4.48	s2_tn
+
+16.0.4.44	s1reg
+16.0.4.11	SIE1
+
+16.0.64.42	metrosun11
+16.0.64.43	metrosun12
+16.0.65.78	serv_pci1
+16.0.65.79	serv_pci2
+

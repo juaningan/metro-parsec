@@ -1,0 +1,69 @@
+ 0100 99 30  Fallo Sensores Puertas
+ 0200 99 30  Apertura Puertas
+ 0201 99 30  Alarma Disparada
+ 0202 99 30  Forzamiento Recargador 1
+ 0203 99 30  Forzamiento Recargador 2
+ 0204 99 30  Forzamiento Recargador 3
+ 0205 99 30  Forzamiento Hopper 1
+ 0206 99 30  Forzamiento Hopper 2
+ 0207 99 30  Forzamiento Hopper 3
+ 0208 99 30  Forzamiento Caja 1
+ 0209 99 30  Forzamiento Caja 2
+ 020A 99 30  Forzamiento Caja 3
+ 020B 99 30  Forzamiento Billetero
+ 020C 99 30  Forzamiento Rollo
+ 020D 99 30  Fallo Hoper 1
+ 020E 99 30  Fallo Hoper 2
+ 020F 99 30  Fallo Hoper 3
+ 1000 99 30  Fallo Checksum ROM
+ 1001 99 30  Fallo Checksum RAM Estatica
+ 1002 99 30  Fallo R/W RAM Estatica
+ 1003 99 30  Fallo R/W RAM Dinamica
+ 1005 99 30  Fallo Alimentacion
+ 1101 99 30  Fallo Sensor Fallo Alimentacion
+ 1200 99 30  Rollos Papel Agotados
+ 1201 99 30  Cajas Recaudacion Llenas
+ 2000 99 30  Fallo Comunicacion con PC
+ 2003 99 30  Fallo Comunicacion con Procesador
+ 2100 99 30  Fallo Mensajes Display Usuario
+ 2102 99 30  Fallo Teclado Usuario
+ 2200 99 30  Fuera Servicio Manual
+ 3000 99 30  Ausencia Hopper
+ 3100 99 30  Fallo Sensor Presencia Hoppers
+ 3101 99 30  Fallo Devolucion Monedas
+ 3200 99 30  Fallo Devolucion Operacion
+ 4000 99 30  Ausencia Cajas
+ 4100 99 30  Fallo Sistema Desbloqueo Cajas
+ 4101 99 30  Fallo Sensor Presencia Cajas
+ 5100 99 30  Fallo sistema Desbloqueo Recargadores
+ 5101 99 30  Fallo Apertura Automatica Recargadores
+ 5102 99 30  Fallo Sensor Presencia Recargadores
+ 6000 99 30  Fallo Fotocelula Entrada Monedas
+ 6100 99 30  Fallo Aceptacion Monedas
+ 6101 99 30  Fallo Rechazo Monedas
+ 6102 99 30  Fallo Enrutado Monedas
+ 6103 99 30  Fallo Motor Desatasco
+ 6104 99 30  Atasco en Selector de Monedas
+ 7104 99 30  Fallo Sensor Presencia Caja Billetero
+ 8000 99 30  Fallo Checksum Presencia Caja Billetero
+ 8001 99 30  Fallo R/W RAM Dinamica Procesador
+ 9000 99 30  Fallo Fotocelulas Procesador
+ 9001 99 30  Fallo Servomotor Procesador
+ 9003 99 30  Fallo Medicion Rollos
+ 9004 99 30  Fallo Sistema Corte
+ 9005 99 30  Tapa Procesador Abierta
+ 9100 99 30  Fallo Funcional Fotocelulas Procesador
+ 9101 99 30  Fallo Servomotor Procesador
+ 9102 99 30  Fallo Sistema Carro Móvil
+ 9103 99 30  Fallo Medicion Rollos
+ 9104 99 30  Fallo Funcional Motores Medicion
+ 9105 99 30  Fallo Sistema de Corte
+ 9106 99 30  Fallo Sensor Tapa Cerrada
+ 9107 99 30  Fallo Sensores Fin de Rollo
+ 9109 99 30  Fallo Motor Cinta Impresion
+ 9110 99 30  Fallo Grabacion/Lectura Magnetica
+ 9111 99 30  Fallo Impresion
+ 9200 99 30  Atasco Expendedor Billetes
+ 9300 99 30  Configuracion
+ 9301 99 30  Maquina Apagada
+ 9302 99 30  Peticion Estado Billetero

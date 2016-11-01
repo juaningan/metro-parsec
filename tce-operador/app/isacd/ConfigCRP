@@ -1,0 +1,25 @@
+/* Configuracion del CRP */
+/* Cabecera del fichero */
+6,2,2,3,12
+/* Descripcion de canales */
+0,800,600,CTC,TELEINDICADORES,CAPTURA DE DATOS, RADIOTELEFONIA
+1,800,600,PC Win 1, PC Win 2, PC Win 3, VIDEO TRENES, VIDEO ESTACIONES
+/* Descripcion de puertos */
+PuertoCanales, /dev/ttyS1, 9600, N, 8, 1
+PuertoConmutador, /dev/ttyS2, 9600, N, 8, 1
+PuertoMultiplexor, /dev/ttyS3, 9600, N, 8, 1
+/* Descripcion de equipos */
+PCVE1,SERIALIZA,SI,0,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 1
+PCVE2,SERIALIZA,SI,1,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 2
+PCVE3,SERIALIZA,SI,2,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 3
+PCVE4,SERIALIZA,SI,3,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 4
+PCVE5,SERIALIZA,SI,4,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 5
+PCVE6,SERIALIZA,SI,5,0,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 6
+PCVE7,SERIALIZA,SI,0,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 7
+PCVE8,SERIALIZA,SI,1,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 8
+PCVE9,SERIALIZA,SI,2,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 9
+PCVE10,SERIALIZA,SI,3,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 10
+PCVE11,SERIALIZA,SI,4,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 11
+PCVE12,SERIALIZA,SI,5,1,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones, fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 12
+#PCVE2,SERIALIZA,SI,4,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones,fich_video_estaciones, 1, PuertoCanales, TextoPonerCanal1, 3, 4, 9, 10
+#PCVE3,SERIALIZA,SI,8,estaciones, VIDEO ESTACIONES, fich_tama_video_estaciones,fich_video_estaciones, 1,PuertoCanales, TextoPonerCanal1, 5, 6, 11, 12

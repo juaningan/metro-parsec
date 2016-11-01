@@ -1,0 +1,11 @@
+,,, Identificacion,,,,,,,,AIRE ACOND 01,,,,,,,,,,,, Estado,,,,,COOLING,,,,,,,,,,,,,,,,   Fecha Estado,,,,,,,,20/04/04 17:29
+
+,,, Tiempo By-Pass Alarmas Antihielo:,,,,,,,,,,,,,,,,,,,,,30,,,, sg,,,,,, Validez By-Pass Antihielo:,,,,,,,,,,,,,,,,,,,,,H
+
+,,, Configuracion Reset Alarmas Antihielo:,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,, Set Point Alarma Antihielo:,,,,,,,,,,,,,,,,,,,,,5\,0,,,, ºC
+
+,,, Limite Minimo del Set Antihielo:,,,,,,,,,,,,,,,,,,,,,5\,0,,,, ºC,,,,,, Limite Maximo del Set Antihielo:,,,,,,,,,,,,,,,,,,,,,20\,0,,,, ºC
+
+,,, Delta para el Reset de Antihielo:,,,,,,,,,,,,,,,,,,,,,2\,5,,,, ºC,,,,,, OffSet Antihielo Circuito Condensador:,,,,,,,,,,,,,,,,,,,,,0\,0,,,, ºC
+
+,,, Configuracion Resistencia Antihielo:,,,,,,,,,,,,,,,,,,,,,N,,,,,,,,,, OffSet del Set Resistencia Antihielo:,,,,,,,,,,,,,,,,,,,,,0\,0,,,, ºC

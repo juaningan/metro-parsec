@@ -1,0 +1,20 @@
+# FICHERO DE CONFIGURACION DE LOS TIPOS DE ALARMAS DEL AIRE ACONDICIONADO MODELO COMPAC
+#
+NRO_DE_TIPOS_DE_ALARMA          14
+#
+# SINTAXIS:  ALARMA  <Codecimal> <Prioridad> <Texto>
+#
+ALARMA 10 4 Averia Sonda Temperatura Impulsion 
+ALARMA 11 4 Averia Sonda Temperatura Retorno
+ALARMA 12 4 Alarma Seguridad Ventilador de Impulsion
+ALARMA 13 4 Alarma Filtros Sucios
+ALARMA 14 4 PreAlarma Baja Temperatura de Impulsion
+ALARMA 15 4 Alarma Configuracion Maquina
+ALARMA 16 4 Alarma Acumulativa
+ALARMA 17 4 Alarma Alta Presion C1
+ALARMA 18 4 Alarma Baja Presion C1
+ALARMA 19 4 Alarma Termica Ventilador y Compresor C1
+ALARMA 20 4 PreAlarma1 Alta Presion C1
+ALARMA 21 4 PreAlarma2 Alta Presion C1
+ALARMA 22 4 PreAlarma Baja Presion C1
+ALARMA 99 4 Sin Comunicacion con Aire Acondicionado

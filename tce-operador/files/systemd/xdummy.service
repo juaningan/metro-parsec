@@ -1,0 +1,7 @@
+[Unit]
+Description=Xvnc dummy server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/Xorg :0 -nolisten tcp -noreset -verbose 2 -config /opt/sico/xorg.conf
+ExecStartPost=/usr/bin/sleep 1

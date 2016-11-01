@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#exec /usr/bin/Xorg -listen tcp -depth 24 -bs "$@" vt$XDG_VTNR
+exec /usr/bin/Xorg -listen tcp -depth 24 -bs -config /root/xorg.dummy3.conf

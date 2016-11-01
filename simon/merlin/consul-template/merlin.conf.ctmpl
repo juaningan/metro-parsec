@@ -1,0 +1,25 @@
+ipc_socket = /run/merlin/ipc.sock;
+
+log_level = info;
+use_syslog = 0;
+binlog_dir = /run/merlin/binlogs
+
+module {
+        log_file = stdout;
+}
+
+daemon {
+        pidfile = /run/merlin/merlin.pid;
+        log_file = stdout;
+        port = 15551;
+        database {
+                enabled = no;
+        }
+        object_config {
+                push = mon oconf push
+        }
+}{{ $hostname := env "HOSTNAME" }}{{ range service "livestatus" }}{{ if ne .Node $hostname }}
+peer {{.Node}} {
+        address = {{.Address}}
+        port    = 15551
+}{{end}}{{end}}

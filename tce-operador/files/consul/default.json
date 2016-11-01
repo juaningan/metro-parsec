@@ -1,0 +1,4 @@
+{
+  "data_dir": "/run/consul",
+  "start_join": ["16.3.252.32"]
+}

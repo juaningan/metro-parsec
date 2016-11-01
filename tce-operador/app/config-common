@@ -1,0 +1,16 @@
+Emulate Mwm
+DeskTopSize 1x2 
+
+Style * DecorateTransient, !UsePPosition
+Style * MwmBorder
+Style * ForeColor #FFFFFF, BackColor #677A8D
+Style * HilightFore #FFFFFF, HilightBack #984447
+Style * Font -b&h-lucida-bold-r-*-*-14-*-*-*-*-*-*-*
+
+
+Style Ws !Title, !Borders, !Handles, FixedSize
+Style formGraf Borders, Handles, HandleWidth 3
+Style "Ventana de comando" Borders, Handles, HandleWidth 3
+
+Style XPostit !Title, !Borders, !Handles
+Style PostItNote Title, Borders, Handles

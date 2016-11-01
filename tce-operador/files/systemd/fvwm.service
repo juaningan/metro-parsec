@@ -1,0 +1,10 @@
+[Unit]
+Description=FVWM window manager
+After=xdummy.service
+Requires=xdummy.service
+
+[Service]
+Environment=FVWM_USERDIR=/opt/sico
+ExecStart=/usr/bin/fvwm --display :0 --cmd 'Read config'
+Restart=always
+RestartSec=5

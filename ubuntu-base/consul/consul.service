@@ -1,0 +1,12 @@
+[Unit]
+Description=consul agent
+Requires=setup-network-environment.service
+After=setup-network-environment.service
+
+[Service]
+EnvironmentFile=/etc/network-environment
+Restart=on-failure
+ExecStart=/usr/local/bin/consul agent -config-dir=/etc/consul.d -bind ${DEFAULT_IPV4}
+
+[Install]
+WantedBy=multi-user.target

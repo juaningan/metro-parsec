@@ -1,0 +1,18 @@
+[Unit]
+Description=TCE
+Requires=pexserver@3.service pexserver@4.service fvwm.service rpcbind.service 
+After=pexserver@3.service pexserver@4.service fvwm.service rpcbind.service
+Wants=isacd.service
+
+[Service]
+Type=simple
+Environment=LD_LIBRARY_PATH=/opt/sico/tce/lib
+Environment=PATH=/opt/sico/tce/sun:/usr/local/bin:/usr/bin
+EnvironmentFile=/opt/sico/tce/environment
+WorkingDirectory=/opt/sico/tce/sistema/V
+ExecStartPre=/opt/sico/tce/get_config.sh
+ExecStartPre=/usr/bin/xrdb -merge /opt/sico/tce/xresources
+ExecStart=/opt/sico/tce/sun/control
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+{
+  "service": {
+    "name": "gearmand",
+    "port": 4730,
+    "check": {
+      "id": "gearmand",
+      "name": "gearmand TCP on port 4730",
+      "tcp": "localhost:4730",
+      "interval": "10s",
+      "timeout": "1s"
+    }
+  }
+}

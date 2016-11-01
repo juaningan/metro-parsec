@@ -1,0 +1,2944 @@
+NRO_CONTEXTOS		22
+
+START_CONTEXTO		PLANO Instalacion GPU en Reposo
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_REPOSO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_REPOSO
+	ESTADO_ACTIVO		ESTADO_NORMAL
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpu.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU en Recirculacion bombas 1 y 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_RECIRCULACION_B1_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_RECIRCULACION_B1_B2
+	ESTADO_ACTIVO		RECIRCULACION_B1_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpurecirculacion12.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU en Recirculacion bomba 1
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_RECIRCULACION_B1
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_RECIRCULACION_B1
+	ESTADO_ACTIVO		RECIRCULACION_B1
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpurecirculacion1.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU en Recirculacion bomba 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_RECIRCULACION_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_RECIRCULACION_B2
+	ESTADO_ACTIVO		RECIRCULACION_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpurecirculacion2.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion GPU con Spray abierto bombas 1 y 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRAY_B1_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRAY_B1_B2
+	ESTADO_ACTIVO		SPRAY_B1_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpuspray12.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU con Spray abierto bomba 1
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRAY_B1
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRAY_B1
+	ESTADO_ACTIVO		SPRAY_B1
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpuspray1.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU con Spray abierto bomba 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRAY_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRAY_B2
+	ESTADO_ACTIVO		SPRAY_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpuspray2.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU con Sprinkler abierto bombas 1 y 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRINKLER_B1_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRINKLER_B1_B2
+	ESTADO_ACTIVO		SPRINKLER_B1_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpusprinkler12.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU con Sprinkler abierto bomba 1
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRINKLER_B1
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRINKLER_B1
+	ESTADO_ACTIVO		SPRINKLER_B1
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpusprinkler1.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU con Sprinkler abierto bombas 2
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SPRINKLER_B2
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SPRINKLER_B2
+	ESTADO_ACTIVO		SPRINKLER_B2
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpusprinkler2.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU presurizando red
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_PRESURIZA_RED
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_PRESURIZA_RED
+	ESTADO_ACTIVO		PRESURIZA_RED
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpupresurizared.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Instalacion GPU disparo de cilindros
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_DISPARO_CILINDROS
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_DISPARO_CILINDROS
+	ESTADO_ACTIVO		DISPARO_CILINDROS
+	DRAWING_AREA		PLANO_INSTALACION
+	IMAGEN_XPM		instalaciongpuequipoemergencia.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		35
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		397 232		517 302
+		ACCION_HOT_AREA		WPRINTF		Deposito atmosferico D1
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		383 228		388 308
+		ACCION_HOT_AREA		WPRINTF		Visor de nivel de agua
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		449 312		465 325
+		ACCION_HOT_AREA		WPRINTF		Sensor de deposito vacio L01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		450 216		464 224
+		ACCION_HOT_AREA		WPRINTF		Entrada de aire con filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 256		559 268
+		ACCION_HOT_AREA		WPRINTF		Llave de paso al deposito V03
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		549 214		585 247
+		ACCION_HOT_AREA		WPRINTF		Filtro
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		560 192		572 202
+		ACCION_HOT_AREA		WPRINTF		Llave de paso de la instalacion desde la fuente V02
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 334		504 350
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 282		341 319
+		ACCION_HOT_AREA		WPRINTF		Motor M2 de accionamiento del segundo grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		290 364		341 400
+		ACCION_HOT_AREA		WPRINTF		Motor M1 de accionamiento del primer grupo de bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		265 367		285 395
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 369		366 394
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (primer grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		263 288		286 313
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		345 288		368 314
+		ACCION_HOT_AREA		WPRINTF		Bombas principales de alta presion (segundo grupo)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		131 386		163 410
+		ACCION_HOT_AREA		WPRINTF		Motor M3 para el accionamiento de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		166 388		181 407
+		ACCION_HOT_AREA		WPRINTF		Bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		185 289		199 321
+		ACCION_HOT_AREA		WPRINTF		Acumulador de presion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 244		179 265
+		ACCION_HOT_AREA		WPRINTF		Valvula antirretorno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		181 252		201 275
+		ACCION_HOT_AREA		WPRINTF		Detector de flujo F01
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 262		73 275
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion suministrada por la bomba Jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 195		73 208
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el colector
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 292		75 307
+		ACCION_HOT_AREA		WPRINTF		Presostato P01A de parada de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 323		75 338
+		ACCION_HOT_AREA		WPRINTF		Presostato P01B de arranque de la bomba jockey
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 354		75 368
+		ACCION_HOT_AREA		WPRINTF		Presostato P02A de arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 137		75 151
+		ACCION_HOT_AREA		WPRINTF		Presostato P02B de respaldo para el arranque de las bombas principales
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 168		75 182
+		ACCION_HOT_AREA		WPRINTF		Presostato P03 de arranque del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 223		75 238
+		ACCION_HOT_AREA		WPRINTF		Presostato P04 de parada del motor M2
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		488 310		493 434
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		483 434		496 442
+		ACCION_HOT_AREA		WPRINTF		Rebosadero con salida a desague
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		456 55		477 69
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		274 189		289 208
+		ACCION_HOT_AREA		WPRINTF		Valvula de prueba V08
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		222 206		260 245
+		ACCION_HOT_AREA		WPRINTF		Valvula reguladora principal V07
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		164 335		203 374
+		ACCION_HOT_AREA		WPRINTF		Valvula de seguridad circuito bomba jockey V06
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		275 28		289 48
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		494 333		504 351
+		ACCION_HOT_AREA		WPRINTF		Valvula de vaciado del deposito a desague V05
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU en Reposo
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_REPOSO
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_REPOSO
+	ESTADO_ACTIVO		ESTADO_NORMAL
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpu.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA		
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU en disparo de cilindros
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_DISPARO_CILINDROS
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_DISPARO_CILINDROS
+	ESTADO_ACTIVO		DISPARO_CILINDROS
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpuequipoemergencia.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Spray abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRAY_B1_B2
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRAY_B1_B2
+	ESTADO_ACTIVO		SPRAY_B1_B2
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpuspray.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Spray abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRAY_B1
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRAY_B1
+	ESTADO_ACTIVO		SPRAY_B1
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpuspray.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Spray abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRAY_B2
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRAY_B2
+	ESTADO_ACTIVO		SPRAY_B2
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpuspray.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Sprinkler abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRINKLER_B1_B2
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRINKLER_B1_B2
+	ESTADO_ACTIVO		SPRINKLER_B1_B2
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpusprinkler.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Sprinkler abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRINKLER_B1
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRINKLER_B1
+	ESTADO_ACTIVO		SPRINKLER_B1
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpusprinkler.xpm
+	ACCION_CONTEXTO		NINGUNA
+NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO Emergencia GPU con Sprinkler abierto
+
+	NOMBRE_CONTEXTO		PLANO_EMERGENCIA_SPRINKLER_B2
+	CLAVE_GEOGRAFICA	PLANO_EMERGENCIA_SPRINKLER_B2
+	ESTADO_ACTIVO		SPRINKLER_B2
+	DRAWING_AREA		PLANO_EMERGENCIA
+	IMAGEN_XPM		gpusprinkler.xpm
+	ACCION_CONTEXTO		NINGUNA
+	NRO_HOT_AREAS		14
+
+	START_HOT_AREA		
+		RECTANGULO_HOT		55 136		263 174
+		ACCION_HOT_AREA		WPRINTF		Bomba del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		170 356		195 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		113 356		138 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 356		77 438
+		ACCION_HOT_AREA		WPRINTF		Cilindro de prueba de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		156 358		168 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		97 360		110 374
+		ACCION_HOT_AREA		WPRINTF		Manometro para la medida de la presion en el cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		140 299		155 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P05, vigilancia presion cilindro principal de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		84 299		100 314
+		ACCION_HOT_AREA		WPRINTF		Presostato P06, vigilancia presion cilindro secundario de nitrogeno de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 198		203 228
+		ACCION_HOT_AREA		WPRINTF		Valvula distribuidora de bola de 4 vias de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		175 269		222 321
+		ACCION_HOT_AREA		WPRINTF		Valvula reductora de presion (manurreductor) de la unidad GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		146 331		160 353
+		ACCION_HOT_AREA		WPRINTF		Valvula solenoide SV01, activacion cilindro principal de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		86 317		101 353
+		ACCION_HOT_AREA		WPRINTF		Valvula V09, activacion cilindro secundario de nitrogeno del equipo de emergencia GPU150
+	END_HOT_AREA				
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		344 37		359 57
+		ACCION_HOT_AREA		WPRINTF		Valvula V10 de aislamiento de la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		493 65		514 80
+		ACCION_HOT_AREA		WPRINTF		Valvula NS-20 (situada en nicho de escalera)
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO del panel electrico superior
+
+	NOMBRE_CONTEXTO		PLANO_PANEL_SUPERIOR
+	CLAVE_GEOGRAFICA	PLANO_PANEL_SUPERIOR	
+	DRAWING_AREA		PLANO_PANEL_SUPERIOR
+	IMAGEN_XPM		panelsup.xpm
+	ACCION_CONTEXTO		NINGUNA
+
+END_CONTEXTO
+
+
+START_CONTEXTO		PLANO del panel electrico inferior
+
+	NOMBRE_CONTEXTO		PLANO_PANEL_INFERIOR
+	CLAVE_GEOGRAFICA	PLANO_PANEL_INFERIOR	
+	DRAWING_AREA		PLANO_PANEL_INFERIOR
+	IMAGEN_XPM		panelinf.xpm
+	ACCION_CONTEXTO		NINGUNA
+
+END_CONTEXTO
+
+
+DEFAULT_CONTEXTO		PLANO_INSTALACION_REPOSO

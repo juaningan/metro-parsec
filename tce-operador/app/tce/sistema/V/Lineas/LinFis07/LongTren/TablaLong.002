@@ -1,0 +1,23 @@
+#
+# Fichero de Longitudes de Trenes para el SIV de Metro de Madrid
+# ==============================================================
+#
+ID_LONG			002
+LINEA_FISICA		L07
+#
+#
+FECHA_CREACION		1998/08/17 14:00:00
+CREADOR_ID		001234
+#
+FECHA_EDICION		1998/08/17 14:00:00
+EDITOR_ID		001234
+#
+#
+#
+INICIO_VALIDEZ		2005/01/05	04:00
+FINAL_VALIDEZ		2025/12/31	04:00
+#
+TIPO_JORNADA		DOMINGO/FESTIVO
+DIAS_APLICACION		*
+#
+LONGITUD_TREN		04:01	04:01	LARGO

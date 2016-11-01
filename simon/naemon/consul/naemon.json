@@ -1,0 +1,20 @@
+{
+  "services": {
+    "name": "livestatus",
+    "port": 6557,
+    "checks": [
+      {
+        "notes": "Query GET status to local socket",
+        "script": "/usr/bin/echo -e \"GET status\n\" | unixcat /run/naemon/live",
+        "interval": "4s",
+        "timeout": "1s"
+      },
+      {
+        "notes": "Check livestatus TCP on port 6557",
+        "tcp": "localhost:6557",
+        "interval": "4s",
+        "timeout": "1s"
+      }
+    ]
+  }
+}

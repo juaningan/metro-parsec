@@ -1,0 +1,39 @@
+#
+# Fichero que guarda los nombres y códigos de todas las posibles alarmas de una cancela.Todas las posibles alarmas que el
+# driver puede generar de una cancela (lo hace cuando la cancela responde a una orden de control con un código de ejecución
+# que indica que la cancela no ha podido ejecutar la orden).
+# Además se incluye en este fichero la alarma que genera el driver cuando pierde la comunicacion con la UD MAESTRA. Esta
+# alarma es necessaria para la decodificacion de los eventos
+#
+
+TOTAL_NOMBRES			21		
+
+#
+# Codigo de la alarma	prioridad  periodo  FicheroAudio  Nombre de la alarma
+#
+
+1	4	10	DummyCancela	"Obstaculo Detectado al Abrir"
+2 	4	10	DummyCancela	"Obstaculo Detectado al Cerrar"
+3 	4	10	DummyCancela	"Cancela EN EMERGENCIA"
+4	4	10	DummyCancela	"Cancela SIN COMUNICACION"
+5	4	10	DummyCancela	"Imposible Abrir Cancela"
+6	4	10	DummyCancela	"Imposible Cerrar Cancela"
+7	4	10	DummyCancela	"Imposible Ejecutar Abrir Cancela"
+8	4	10	DummyCancela	"Imposible Ejecutar Cerrar Cancela"
+9	4	10	DummyCancela	"Imposible Ejecutar Encender Foco"
+10	4	10	DummyCancela	"Imposible Ejecutar Apagar Foco"
+11	4	10	DummyCancela	"Imposible Ejecutar entrar en MANTENIMIENTO"
+12	4	10	DummyCancela	"Imposible Ejecutar entrar en MODO NORMAL"	
+13	4	10	DummyCancela	"Imposible Ejecutar Apagar Luminoso"
+14	4	10	DummyCancela	"Imposible Ejecutar Encender Luminoso"
+99	4	10	DummyCancela	"UD.MAESTRA de cancelas desconectada"
+15      4       10      DummyCancela    "Fallo en Tension"
+16      4       10      DummyCancela    "Fallo Comunicaciones"
+17      4       10      DummyCancela    "Puerta Armario Abierta"
+18      4       10      DummyCancela    "Maniobra Inesperada"
+19      4       10      DummyCancela    "Puerta Forzada"
+20      4       10      DummyCancela    "Seta Pulsada"
+
+
+
+

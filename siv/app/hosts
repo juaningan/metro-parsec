@@ -1,0 +1,24 @@
+# Este archivo es autogenerado por PUPPET. Cualquier
+# modificación será revertida en la próxima ejecución.
+
+127.0.0.1	localhost
+35.141.49.64	sivodonell.siv.mdm.net sivodonell
+
+35.141.49.1	router_siv	router_sivodonell
+
+# SONDAS
+35.141.58.225	ig_vestibulo
+35.141.58.226	ig_anden
+
+# COMMS
+16.0.59.25	commsL06	FuenteReloj
+16.2.59.25	rcommsL06	rFuenteReloj
+
+# TCE
+35.141.58.63	odonnell
+
+# MEGAFONIA
+35.141.49.8	matriz_audio
+
+# Servidor Puppet
+16.2.96.21	parsec.silex.metromadrid.net

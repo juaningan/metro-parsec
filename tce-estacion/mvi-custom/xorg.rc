@@ -1,0 +1,5 @@
+#!/sbin/sh
+#
+# this create link to xsvc device
+#
+/usr/bin/ln -s /devices/xsvc\@0,0\:xsvc /dev/xsvc

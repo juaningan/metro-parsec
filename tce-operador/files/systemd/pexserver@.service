@@ -1,0 +1,8 @@
+[Unit]
+Description=PEX server at display %i
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sico/pexserver
+Environment=PEX_FONTPATH=./fonts/PEX
+ExecStart=/opt/sico/pexserver/bin/XFree86 :%i -nolisten tcp -xf86config XF86Config -novt

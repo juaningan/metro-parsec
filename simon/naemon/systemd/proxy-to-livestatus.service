@@ -1,0 +1,6 @@
+[Unit]
+Requires=naemon.service
+After=naemon.service
+
+[Service]
+ExecStart=/usr/lib/systemd/systemd-socket-proxyd /run/naemon/live

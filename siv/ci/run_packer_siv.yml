@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: 
+    repository: juaningan/packer-builder
+    tag: v0.1.2
+
+inputs:
+  - name: packer-siv
+
+run:
+  path: packer-siv/ci/run_packer_siv.sh

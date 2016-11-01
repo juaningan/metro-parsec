@@ -1,0 +1,43 @@
+#
+# Fichero que guarda los nombres y códigos de todos los posibles estados de una cancela
+#
+
+TOTAL_NOMBRES			10		
+
+#
+# Codigo del estado 			Codigo Reportar					Nombre del estado
+# (segun viene de la cancela)		(Codigo que debe enviarse hacia arriba)
+#
+
+# Ha terminado el proceso de apertura
+0	0	"ABIERTA"
+
+# Ha terminado el proceso de cierre
+1	1 	"CERRADA"
+
+# Desde que comienza el proceso de apertura hasta que alcanza el estado de ABIERTA
+2	2 	"ABRIENDOSE"
+
+# Desde que comienza a anunciarse que va a cerrarse hasta que comienza el proceso de cierre
+3	3	"AVISANDO CIERRE"
+
+# Desde que comienza el proceso de cierre hasta que alcanza el estado de CERRADA
+4	6	"CERRANDOSE"
+
+# Desde que se activa el pulsador de emergencia hasta que la cancela se detiene		
+5	5	"EMERGENCIA"
+
+# Desde que la cancela detecta que no es operativa hasta que detecta que funciona correctamente		
+6	4	"FUERA DE SERVICIO"
+
+# Desde que entra en este modo de funcionamiento y hasta que vuelve al modo NORMAL	
+7	7	"MANTENIMIENTO"
+
+# Desde que el automata maestro detecta el fallo de comunicacion con la cancela y hasta que vuelva a recuperarla
+8	99	"SIN COMUNICACION"
+
+# Estad Indefinido de una cancela 
+9	9	"NO RECONOCIDO"
+
+
+

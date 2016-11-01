@@ -1,0 +1,13 @@
+# FICHERO DE CONFIGURACION DE LOS TIPOS DE ALARMAS DE LA CAJA DE DOTACION
+#            HA DE ESTAR ORDENADO POR CODIGO DE MENOR A MAYOR
+#
+NRO_DE_TIPOS_DE_ALARMA		4
+#
+# SINTAXIS:  ALARMA  <Codecimal> <Prioridad> <Periodo> <FichAudio> <Texto>
+#
+# Codigos (en Hexadecimal) propios del Driver
+ALARMA   6 4 30 DummyCajaDot Imposible Abrir Puerta de la Caja
+ALARMA   7 4 30 DummyCajaDot Puerta Abierta Demasiado Tiempo
+ALARMA   8 4 30 DummyCajaDot Sabotaje en Caja de Dotacion
+ALARMA  99 4 30 DummyCajaDot Sin Comunicacion Con Caja de Dotacion
+

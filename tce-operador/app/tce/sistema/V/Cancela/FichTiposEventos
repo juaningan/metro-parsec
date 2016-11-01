@@ -1,0 +1,64 @@
+#
+# Este fichero contiene los nombres de los tipos de eventos sobre los que se puede hacer
+# consultas desde el UI de Cancelas
+#
+# Formato de las líneas
+# 1ª Línea : Contiene el total de líneas que hay a continuación en el fichero
+# Resto de líneas
+# 	- Lineas que contienen los nombres de los eventos consultados tal y como se muestran en el UI :
+#		Nº de códigos necesarios para la consulta de este evento	Nombre del evento
+#	- Lineas que contienen los códigos
+#		sssssssssss-nn
+#		sssssssssss : Nombre que identifica al tipo de evento que participa en la consulta.
+#		nn : Codigo del evento tal y como aparece en el documento de especificacion y en los
+#		ficheros de configuracion correspondiente
+#		El código 99 significa que es válido cualquier código de ese tipo de evento
+# 
+
+TOTAL_EVENTOS		5
+
+
+8	"APERTURAS"
+
+ESTADO-0
+ESTADO-2
+ALARMA-1
+ALARMA-5
+ALARMA-7
+FS-1
+ABRIR-99
+ANTIPON-99
+
+9	"CIERRES"
+
+ESTADO-1
+ESTADO-3
+ESTADO-4
+ALARMA-2
+ALARMA-6
+ALARMA-8
+FS-2
+CERRAR-99
+ANTIPOFF-99
+
+5 	"EMERGENCIA"
+
+ESTADO-5
+ALARMA-3
+ALARMA-18
+ALARMA-19
+ALARMA-20
+
+2 	"PERDIDAS DE COM."
+
+ESTADO-8	
+ALARMA-4
+
+6 	"CAMBIO DE PARAMs"
+
+CAMBIOPAR-99
+CAMBIARPAR-99
+ALARMA-9
+ALARMA-10
+ALARMA-13
+ALARMA-14

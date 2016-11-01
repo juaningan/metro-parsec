@@ -1,0 +1,13 @@
+[Unit]
+Description=consul-template
+Requires=network-online.target
+After=network-online.target consul.service
+
+[Service]
+EnvironmentFile=-/etc/sysconfig/consul-template
+Environment=HOSTNAME=%H
+Restart=on-failure
+ExecStart=/usr/local/bin/consul-template $OPTIONS -config=/etc/consul-template.d
+
+[Install]
+WantedBy=multi-user.target

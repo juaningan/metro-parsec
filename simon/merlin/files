@@ -1,0 +1,28 @@
+/usr/local/bin/merlind
+/usr/local/bin/op5
+/usr/local/var/lib/merlin/binlogs/
+/usr/local/var/log/merlin/
+/usr/local/var/run/merlin/
+/usr/local/var/cache/merlin/
+/usr/local/var/cache/merlin/config/
+/usr/local/etc/init.d/merlind
+/usr/local/etc/logrotate.d/merlin
+/usr/local/lib/merlin/merlin.so.0.0.0 merlin.so.0
+/usr/local/lib/merlin/merlin.so.0.0.0 merlin.so
+/usr/local/lib/merlin/merlin.la
+/usr/local/lib/merlin/import
+/usr/local/lib/merlin/showlog
+/usr/local/lib/merlin/rename
+/usr/local/lib/merlin/oconf
+/usr/local/lib/merlin/install-merlin.sh
+/usr/local/lib/merlin/mon/*
+/usr/local/lib/merlin/mon/bash/*
+/usr/local/lib/merlin/mon/helpfiles/*
+/usr/local/lib/merlin/mon/modules/*
+/usr/local/lib/merlin/mon/modules/pytap/*
+/usr/local/lib/merlin/mon/syscheck/*
+/etc/naemon/merlin.cfg
+/usr/local/share/merlin/sql/*
+/usr/local/share/merlin/sql/mysql/*
+/usr/local/etc/merlin/merlin.conf
+

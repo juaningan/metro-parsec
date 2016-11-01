@@ -1,0 +1,8 @@
+6 3
+403 4  0 AtrancoTorn  "Atranco"
+413 4  0 ErrParmTorn  "Parametros mal"
+419 4  0 SinCommTorn  "Sin comunicacion"
+424 4  0 FueServTorn  "Fuera de servicio"
+500 4  0 AntipanTorn  "Antipanico"
+888 4  0 DesconecPup  "Pupitre desconectado"
+

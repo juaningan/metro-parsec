@@ -1,0 +1,62 @@
+Section "ServerFlags"
+  Option "DontVTSwitch" "true"
+  Option "AllowMouseOpenFail" "true"
+  Option "PciForceNone" "true"
+  Option "AutoEnableDevices" "false"
+  Option "AutoAddDevices" "false"
+EndSection
+
+Section "Files"
+  FontPath "/usr/share/fonts/X11/misc"
+  FontPath "/usr/share/fonts/X11/75dpi"
+  ModulePath "/opt/sico/pexserver/modules"
+EndSection
+
+Section "Module"
+  Load	"pex5"
+EndSection
+
+Section "InputDevice"
+  Identifier "dummy_mouse"
+  Option "CorePointer" "true"
+  Driver "void"
+EndSection
+
+Section "InputDevice"
+  Identifier "dummy_keyboard"
+  Option "CoreKeyboard" "true"
+  Driver "void"
+EndSection
+
+Section "Device"
+  Identifier "dummy_videocard"
+  Driver "dummy"
+  Option "ConstantDPI" "true"
+  VideoRam 16000
+EndSection
+
+Section "Monitor"
+  Identifier "dummy_monitor"
+  HorizSync   5.0 - 1000.0
+  VertRefresh 5.0 - 200.0
+  Modeline "1280x1024" 31.50 1280 1312 1424 1456 1024 1048 1052 1076
+EndSection
+
+Section "Screen"
+  Identifier "dummy_screen"
+  Device "dummy_videocard"
+  Monitor "dummy_monitor"
+  DefaultDepth 24
+  SubSection "Display"
+    Viewport 0 0
+    Depth 24
+    Modes "1280x1024" "1024x768" "800x600" "640x480"
+  EndSubSection
+EndSection
+
+Section "ServerLayout"
+  Identifier   "dummy_layout"
+  Screen       "dummy_screen"
+  InputDevice  "dummy_mouse"
+  InputDevice  "dummy_keyboard"
+EndSection

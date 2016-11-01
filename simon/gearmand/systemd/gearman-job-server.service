@@ -1,0 +1,13 @@
+[Unit]
+Description=gearman job control server
+
+[Service]
+ExecStartPre=/usr/bin/install -d -o gearman /run/gearman
+PermissionsStartOnly=true
+User=gearman
+Restart=on-failure
+PIDFile=/run/gearman/server.pid
+ExecStart=/usr/sbin/gearmand --verbose WARNING --log-file stderr --listen=0.0.0.0 --pid-file=/run/gearman/server.pid
+
+[Install]
+WantedBy=multi-user.target

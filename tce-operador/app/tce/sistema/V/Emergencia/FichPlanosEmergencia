@@ -1,0 +1,709 @@
+NRO_CONTEXTOS		7
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Cerrado
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_CERRADO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_CERRADO
+	ESTADO_ACTIVO		ESTADO_CERRADO	
+	IMAGEN_XPM		estadocerrado.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Cerrando
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_CERRANDO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_CERRANDO
+	ESTADO_ACTIVO		ESTADO_CERRANDOSE	
+	IMAGEN_XPM		estadocerrando.xpm
+	ACCION_CONTEXTO		NINGUNA	
+NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Abierto
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_ABIERTO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_ABIERTO
+	ESTADO_ACTIVO		ESTADO_ABIERTO
+	IMAGEN_XPM		estadoabierto.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia SemiAbierto
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_SEMIABIERTO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_SEMIABIERTO
+	ESTADO_ACTIVO		ESTADO_SEMIABIERTO
+	IMAGEN_XPM		estadoabierto.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Abriendo
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_ABRIENDO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_ABRIENDO
+	ESTADO_ACTIVO		ESTADO_ABRIENDOSE
+	IMAGEN_XPM		estadoabriendo.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Abriendo Palanca
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_ABRIENDO_PALANCA
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_ABRIENDO_PALANCA
+	ESTADO_ACTIVO		ESTADO_ABRIENDO_PALANCA
+	IMAGEN_XPM		estadoabriendopalanca.xpm
+	ACCION_CONTEXTO		NINGUNA	
+	NRO_HOT_AREAS		21
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		64 252		95 305
+		ACCION_HOT_AREA		WPRINTF		Acumulador
+	END_HOT_AREA		
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		52 5		77 56
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		60 391		82 444
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura de emergencia automatico del acumulador desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		463 329		517 353
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre de emergencia desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		257 142		282 216
+		ACCION_HOT_AREA		WPRINTF		Cilindro 2 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		332 161		359 235
+		ACCION_HOT_AREA		WPRINTF		Cilindro 1 de accionamiento de la trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		254 383		554 437
+		ACCION_HOT_AREA		WPRINTF		Deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		272 316		349 332
+		ACCION_HOT_AREA		WPRINTF		Electrovalvula
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		46 302		60 316
+		ACCION_HOT_AREA		WPRINTF		Manometro de glicerina
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		362 357		387 381
+		ACCION_HOT_AREA		WPRINTF		Motor de accionamiento de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		241 393		245 437
+		ACCION_HOT_AREA		WPRINTF		Indicador de nivel del deposito
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		497 366		522 379
+		ACCION_HOT_AREA		WPRINTF		Palanca de accionamiento manual de la bomba
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		112 291		146 306
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del aceite en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		261 269		291 280
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual de maniobra
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		123 234		157 248
+		ACCION_HOT_AREA		WPRINTF		Indicador de la presion actual del nitrogeno en la instalacion
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		103 235		118 247
+		ACCION_HOT_AREA		WPRINTF		Presostato del nitrogeno
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		210 72		394 134
+		ACCION_HOT_AREA		WPRINTF		Trampilla de salida
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		119 11		176 39
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el exterior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		116 408		173 435
+		ACCION_HOT_AREA		WPRINTF		Sistema de apertura y cierre electrico normal desde el interior
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		122 317		137 332
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion del aceite
+	END_HOT_AREA
+	
+	START_HOT_AREA		
+		RECTANGULO_HOT		295 270		308 281
+		ACCION_HOT_AREA		WPRINTF		Transductor de la presion de maniobra
+	END_HOT_AREA
+	
+END_CONTEXTO
+
+START_CONTEXTO		PLANO Instalacion Salida Emergencia Sin Comunicacion
+
+	NOMBRE_CONTEXTO		PLANO_INSTALACION_DESCONECTADO
+	CLAVE_GEOGRAFICA	PLANO_INSTALACION_DESCONECTADO
+	ESTADO_ACTIVO		ESTADO_DESCONECTADO
+	IMAGEN_XPM		estadodescon.xpm
+	ACCION_CONTEXTO		NINGUNA		
+	
+END_CONTEXTO
+
+DEFAULT_CONTEXTO		PLANO_INSTALACION_REPOSO

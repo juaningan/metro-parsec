@@ -1,0 +1,43 @@
+#!/sbin/sh
+#
+
+DRIVER_NAME="digi_realport"
+RPDAEMON="/opt/realport/ncxd"
+RPMKNODS="/opt/realport/utils/ncx_mknod"
+RPMKLINKS="/opt/realport/utils/ncx_make_links"
+
+DFT_IP_PORT=771
+
+tty_dir_name="dty"
+txprint_dir_name="dpr"
+cua_dir_name="cua"
+term_dir_name="term"
+
+major_number=145
+psn=0
+devid="EL"
+ndev=16
+ip_name="16.199.58.225"
+secureopt="never"
+
+$RPMKNODS ${major_number} ${psn} ${devid} ${ndev} ${tty_dir_name} ${txprint_dir_name}
+$RPMKLINKS "/dev/${tty_dir_name}" ${devid} "s" ${ndev} "/dev/${cua_dir_name}"
+$RPMKLINKS "/dev/${tty_dir_name}" ${devid} "m" ${ndev} "/dev/${term_dir_name}"
+$RPDAEMON -d /dev/${DRIVER_NAME}${psn} -i $ip_name -p $DFT_IP_PORT -e $secureopt
+
+ln -sf /dev/dty/${devid}001s /dev/ttys01
+ln -sf /dev/dty/${devid}002s /dev/ttys02
+ln -sf /dev/dty/${devid}003s /dev/ttys03
+ln -sf /dev/dty/${devid}004s /dev/ttys04
+ln -sf /dev/dty/${devid}005s /dev/ttys05
+ln -sf /dev/dty/${devid}006s /dev/ttys06
+ln -sf /dev/dty/${devid}007s /dev/ttys07
+ln -sf /dev/dty/${devid}008s /dev/ttys08
+ln -sf /dev/dty/${devid}009s /dev/ttys09
+ln -sf /dev/dty/${devid}010s /dev/ttys10
+ln -sf /dev/dty/${devid}011s /dev/ttys11
+ln -sf /dev/dty/${devid}012s /dev/ttys12
+ln -sf /dev/dty/${devid}013s /dev/ttys13
+ln -sf /dev/dty/${devid}014s /dev/ttys14
+ln -sf /dev/dty/${devid}015s /dev/ttys15
+ln -sf /dev/dty/${devid}016s /dev/ttys16

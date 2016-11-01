@@ -1,0 +1,84 @@
+#
+# Fichero de Tipos de Eventos de NEWSAI
+# -------------------------------------
+#
+# El formato de los registros es el siguiente:
+#
+# Registro 1: NUMERO_TIPOS_EVENTOS y PRIORIDAD_MINIMA_ALARMAS
+# Registros 2 en adelante:
+#     codigo prioridad periodo fichero_sonido descripcion
+#
+73 3
+001 4 0 FichSonido Convertidor analogico digital
+002 4 0 FichSonido Sobretension alimentacion positiva inversor
+003 4 0 FichSonido Sobretension alimentacion negativa inversor
+004 0 0 FichSonido SAI arrancado
+005 0 0 FichSonido ???
+006 0 0 FichSonido ???
+007 0 0 FichSonido Inversor sincronizado
+008 0 0 FichSonido Inversor arrancado
+009 4 0 FichSonido Sobrecarga SAI,superior % potencia nominal
+010 4 0 FichSonido Sobrecorriente en el inversor
+011 0 0 FichSonido ???
+012 0 0 FichSonido ???
+013 4 0 FichSonido Tension de red con problemas
+014 4 0 FichSonido Tension de entrada alta
+015 4 0 FichSonido Tension alta en el inversor
+016 4 0 FichSonido Tension baja en el inversor
+017 0 0 FichSonido Orden de paso a bypass
+018 0 0 FichSonido ???
+019 0 0 FichSonido Bypass disponible
+020 0 0 FichSonido Cargador activado
+021 4 0 FichSonido Parada de emergencia en el SAI
+022 0 0 FichSonido ???
+023 0 0 FichSonido SAI en bypass
+024 0 0 FichSonido Parada total del SAI
+025 4 0 FichSonido Tension de bateria alta
+026 4 0 FichSonido Bateria con problemas
+027 0 0 FichSonido ???
+028 0 0 FichSonido ???
+029 4 0 FichSonido Menos de 2 minutos de bateria
+030 0 0 FichSonido ???
+031 0 0 FichSonido Bateria no instalada
+032 0 0 FichSonido ???
+033 0 0 FichSonido Rele bateria cerrado
+034 0 0 FichSonido ???
+035 0 0 FichSonido ???
+036 0 0 FichSonido ???
+037 0 0 FichSonido ???
+038 0 0 FichSonido ???
+039 0 0 FichSonido ???
+040 0 0 FichSonido ???
+041 0 0 FichSonido Rele de bypass cerrado
+042 4 0 FichSonido Sobretemperatura disipador potencia SAI
+043 4 0 FichSonido Conexion neutro y fase alimentacion SAI
+044 4 0 FichSonido Memoria ROM con problemas
+045 4 0 FichSonido Memoria RAM con problemas
+046 0 0 FichSonido ???
+047 0 0 FichSonido ???
+048 0 0 FichSonido Rele de salida cerrado
+049 0 0 FichSonido SAI parado con tension de salida cero
+050 0 0 FichSonido ???
+051 0 0 FichSonido ???
+052 0 0 FichSonido ???
+053 0 0 FichSonido ???
+054 0 0 FichSonido ???
+055 0 0 FichSonido SAI detecta se sobrepasa voltage salida
+056 0 0 FichSonido SAI arrancando
+057 0 0 FichSonido SAI en baterias
+058 0 0 FichSonido SAI en baterias bajas
+059 0 0 FichSonido SAI en baterias exhaustas
+060 0 0 FichSonido SAI con VA supera 104 por cien
+061 0 0 FichSonido SAI con VA supera 110 por cien
+062 0 0 FichSonido SAI con salida cortocircuitada
+063 0 0 FichSonido SAI cerca tiempo limite baterias
+064 0 0 FichSonido SAI con voltage salida sobrepasado
+065 0 0 FichSonido SAI con tension entrada muy alta
+066 0 0 FichSonido SAI con error de comunicaciones
+000 0 0 FichSonido SAI Normal
+099 4 0 FichSonido SAI desconectado
+068 0 0 FichSonido Bateria cargando
+069 0 0 FichSonido Bateria cargada
+070 0 0 FichSonido Bateria no instalada
+071 0 0 FichSonido Fallo en Bateria
+100 0 0 FichSonido No existe el fichero de estado

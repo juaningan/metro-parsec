@@ -1,0 +1,6 @@
+[Unit]
+Description=Servicio para enviar por correo la captura de pantalla de un POI
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/CapturasCreado.sh

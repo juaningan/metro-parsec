@@ -1,0 +1,10 @@
+ISa_main*XmDrawingArea.background:      #677A8D
+ISa_main*XmSeparator.background:        #677A8D
+ISa_main*XmForm.background:             #677A8D
+ISa_main*XmRowColumn.background:        #677A8D
+ISa_main*XmLabel.background:            #677A8D
+ISa_main*XmScrolledWindow.background:   #677A8D
+ISa_main*XmScrollBar.background:	#c0c0c0
+ISa_main*XmPushButton.background:	#c0c0c0
+ISa_main*foreground:		#000000
+ISa_main*fontList:	-adobe-helvetica-medium-r-normal--*-90-100-100-p-*-iso8859-1,-adobe-helvetica-bold-r-normal--*-90-100-100-p-*-iso8859-1=BOLD,-adobe-helvetica-medium-o-normal--*-90-100-100-p-*-iso8859-1=ITALIC

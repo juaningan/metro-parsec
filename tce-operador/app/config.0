@@ -1,0 +1,17 @@
+Read config-common
+
+EdgeScroll 0 75
+EdgeResistance 350
+
+Style MapaTCE StartsOnPage 0 1
+Style MapaTCE ResizeHintOverride, FixedPosition, FixedSize, !Handles, !Border
+Style MapaTCE MinWindowSize 100 100
+Style MapaTCE MouseFocusClickRaises
+
+#Style TablaXRT !UseTransientPPosition, FixedPPosition, ResizeHintOverride
+#Style TablaXRT PositionPlacement 55-50w 
+
+Style ISa_main StartsOnPage 0 0
+Style ISa_main FixedPosition, FixedSize, !Title, !Handles, !Border, !Iconifiable
+Style ISa_main MinWindowSize 100 75
+Style ISa_main PositionPlacement 0 25

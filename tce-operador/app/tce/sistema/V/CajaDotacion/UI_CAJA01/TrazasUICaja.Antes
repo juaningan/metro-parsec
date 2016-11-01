@@ -1,0 +1,2764 @@
+31/03 09:57:26 NUEVA EJECUCION DEL UI
+31/03 09:57:26 LeerEventos
+31/03 09:57:26 Nro de Tipos de evento 20
+31/03 09:57:26 	Evento Reset (por fallo de alimentacion)
+31/03 09:57:26 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 09:57:26 	Evento Activado periodo
+31/03 09:57:26 	Evento Borrado periodo
+31/03 09:57:26 	Evento Apertura Normal de la puerta
+31/03 09:57:26 	Evento Apertura por comando RS 232
+31/03 09:57:26 	Evento Apertura mecanica saltandose la electronica
+31/03 09:57:26 	Evento Apertura incondicional por comando RS 232
+31/03 09:57:26 	Evento Cierre de la puerta
+31/03 09:57:26 	Evento Fallo de apertura (la puerta no se abre)
+31/03 09:57:26 	Evento Alarma puerta abierta demasiado tiempo
+31/03 09:57:26 	Evento Se ha cambiado la Fecha/Hora
+31/03 09:57:26 	Evento Se han cambiado los periodos de actividad
+31/03 09:57:26 	Evento Cambio Numero de Serie
+31/03 09:57:26 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 09:57:26 	Evento Activacion del horario de verano +1h
+31/03 09:57:26 	Evento Activacion del horario de invierno -1h
+31/03 09:57:26 	Evento Cambio del horario de verano
+31/03 09:57:26 	Evento Sin Comunicacion con Concentrador
+31/03 09:57:26 	Evento Recuperacion Comunicacion Concentrador
+31/03 09:57:26 Me_CD.NombreDisplay :0.1
+31/03 09:57:26 UI_CajaDotacion
+31/03 09:57:26 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 09:57:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 09:57:27 Recibida Orden SHOW_HIDE 
+31/03 09:57:27 SHOW_HIDE Me oculto
+31/03 10:34:29 NUEVA EJECUCION DEL UI
+31/03 10:34:29 LeerEventos
+31/03 10:34:29 Nro de Tipos de evento 20
+31/03 10:34:29 	Evento Reset (por fallo de alimentacion)
+31/03 10:34:29 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 10:34:29 	Evento Activado periodo
+31/03 10:34:29 	Evento Borrado periodo
+31/03 10:34:29 	Evento Apertura Normal de la puerta
+31/03 10:34:29 	Evento Apertura por comando RS 232
+31/03 10:34:29 	Evento Apertura mecanica saltandose la electronica
+31/03 10:34:29 	Evento Apertura incondicional por comando RS 232
+31/03 10:34:29 	Evento Cierre de la puerta
+31/03 10:34:29 	Evento Fallo de apertura (la puerta no se abre)
+31/03 10:34:29 	Evento Alarma puerta abierta demasiado tiempo
+31/03 10:34:29 	Evento Se ha cambiado la Fecha/Hora
+31/03 10:34:29 	Evento Se han cambiado los periodos de actividad
+31/03 10:34:29 	Evento Cambio Numero de Serie
+31/03 10:34:29 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 10:34:29 	Evento Activacion del horario de verano +1h
+31/03 10:34:29 	Evento Activacion del horario de invierno -1h
+31/03 10:34:29 	Evento Cambio del horario de verano
+31/03 10:34:29 	Evento Sin Comunicacion con Concentrador
+31/03 10:34:29 	Evento Recuperacion Comunicacion Concentrador
+31/03 10:34:29 Me_CD.NombreDisplay :0.1
+31/03 10:34:29 UI_CajaDotacion
+31/03 10:34:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 10:34:30 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 10:34:32 Recibida Orden SHOW_HIDE 
+31/03 10:34:32 SHOW_HIDE Me oculto
+31/03 10:39:34 NUEVA EJECUCION DEL UI
+31/03 10:39:34 LeerEventos
+31/03 10:39:34 Nro de Tipos de evento 20
+31/03 10:39:34 	Evento Reset (por fallo de alimentacion)
+31/03 10:39:34 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 10:39:34 	Evento Activado periodo
+31/03 10:39:34 	Evento Borrado periodo
+31/03 10:39:34 	Evento Apertura Normal de la puerta
+31/03 10:39:34 	Evento Apertura por comando RS 232
+31/03 10:39:34 	Evento Apertura mecanica saltandose la electronica
+31/03 10:39:34 	Evento Apertura incondicional por comando RS 232
+31/03 10:39:34 	Evento Cierre de la puerta
+31/03 10:39:34 	Evento Fallo de apertura (la puerta no se abre)
+31/03 10:39:34 	Evento Alarma puerta abierta demasiado tiempo
+31/03 10:39:34 	Evento Se ha cambiado la Fecha/Hora
+31/03 10:39:34 	Evento Se han cambiado los periodos de actividad
+31/03 10:39:34 	Evento Cambio Numero de Serie
+31/03 10:39:34 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 10:39:34 	Evento Activacion del horario de verano +1h
+31/03 10:39:34 	Evento Activacion del horario de invierno -1h
+31/03 10:39:34 	Evento Cambio del horario de verano
+31/03 10:39:34 	Evento Sin Comunicacion con Concentrador
+31/03 10:39:34 	Evento Recuperacion Comunicacion Concentrador
+31/03 10:39:34 Me_CD.NombreDisplay :0.1
+31/03 10:39:34 UI_CajaDotacion
+31/03 10:39:34 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 10:39:34 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 10:39:36 Recibida Orden SHOW_HIDE 
+31/03 10:39:36 SHOW_HIDE Me oculto
+31/03 10:49:34 NUEVA EJECUCION DEL UI
+31/03 10:49:34 LeerEventos
+31/03 10:49:34 Nro de Tipos de evento 20
+31/03 10:49:34 	Evento Reset (por fallo de alimentacion)
+31/03 10:49:34 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 10:49:34 	Evento Activado periodo
+31/03 10:49:34 	Evento Borrado periodo
+31/03 10:49:34 	Evento Apertura Normal de la puerta
+31/03 10:49:34 	Evento Apertura por comando RS 232
+31/03 10:49:34 	Evento Apertura mecanica saltandose la electronica
+31/03 10:49:34 	Evento Apertura incondicional por comando RS 232
+31/03 10:49:34 	Evento Cierre de la puerta
+31/03 10:49:34 	Evento Fallo de apertura (la puerta no se abre)
+31/03 10:49:34 	Evento Alarma puerta abierta demasiado tiempo
+31/03 10:49:34 	Evento Se ha cambiado la Fecha/Hora
+31/03 10:49:34 	Evento Se han cambiado los periodos de actividad
+31/03 10:49:34 	Evento Cambio Numero de Serie
+31/03 10:49:34 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 10:49:34 	Evento Activacion del horario de verano +1h
+31/03 10:49:34 	Evento Activacion del horario de invierno -1h
+31/03 10:49:34 	Evento Cambio del horario de verano
+31/03 10:49:34 	Evento Sin Comunicacion con Concentrador
+31/03 10:49:34 	Evento Recuperacion Comunicacion Concentrador
+31/03 10:49:34 Me_CD.NombreDisplay :0.1
+31/03 10:49:34 UI_CajaDotacion
+31/03 10:49:35 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 10:49:35 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 10:49:37 Recibida Orden SHOW_HIDE 
+31/03 10:49:37 SHOW_HIDE Me oculto
+31/03 10:52:15 NUEVA EJECUCION DEL UI
+31/03 10:52:15 LeerEventos
+31/03 10:52:15 Nro de Tipos de evento 20
+31/03 10:52:15 	Evento Reset (por fallo de alimentacion)
+31/03 10:52:15 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 10:52:15 	Evento Activado periodo
+31/03 10:52:15 	Evento Borrado periodo
+31/03 10:52:15 	Evento Apertura Normal de la puerta
+31/03 10:52:15 	Evento Apertura por comando RS 232
+31/03 10:52:15 	Evento Apertura mecanica saltandose la electronica
+31/03 10:52:15 	Evento Apertura incondicional por comando RS 232
+31/03 10:52:15 	Evento Cierre de la puerta
+31/03 10:52:15 	Evento Fallo de apertura (la puerta no se abre)
+31/03 10:52:15 	Evento Alarma puerta abierta demasiado tiempo
+31/03 10:52:15 	Evento Se ha cambiado la Fecha/Hora
+31/03 10:52:15 	Evento Se han cambiado los periodos de actividad
+31/03 10:52:15 	Evento Cambio Numero de Serie
+31/03 10:52:15 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 10:52:15 	Evento Activacion del horario de verano +1h
+31/03 10:52:15 	Evento Activacion del horario de invierno -1h
+31/03 10:52:15 	Evento Cambio del horario de verano
+31/03 10:52:15 	Evento Sin Comunicacion con Concentrador
+31/03 10:52:15 	Evento Recuperacion Comunicacion Concentrador
+31/03 10:52:15 Me_CD.NombreDisplay :0.1
+31/03 10:52:15 UI_CajaDotacion
+31/03 10:52:15 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 10:52:16 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 10:52:17 Recibida Orden SHOW_HIDE 
+31/03 10:52:17 SHOW_HIDE Me oculto
+31/03 11:37:04 NUEVA EJECUCION DEL UI
+31/03 11:37:04 LeerEventos
+31/03 11:37:04 Nro de Tipos de evento 20
+31/03 11:37:04 	Evento Reset (por fallo de alimentacion)
+31/03 11:37:04 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 11:37:04 	Evento Activado periodo
+31/03 11:37:04 	Evento Borrado periodo
+31/03 11:37:04 	Evento Apertura Normal de la puerta
+31/03 11:37:04 	Evento Apertura por comando RS 232
+31/03 11:37:04 	Evento Apertura mecanica saltandose la electronica
+31/03 11:37:04 	Evento Apertura incondicional por comando RS 232
+31/03 11:37:04 	Evento Cierre de la puerta
+31/03 11:37:04 	Evento Fallo de apertura (la puerta no se abre)
+31/03 11:37:04 	Evento Alarma puerta abierta demasiado tiempo
+31/03 11:37:04 	Evento Se ha cambiado la Fecha/Hora
+31/03 11:37:04 	Evento Se han cambiado los periodos de actividad
+31/03 11:37:04 	Evento Cambio Numero de Serie
+31/03 11:37:04 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 11:37:04 	Evento Activacion del horario de verano +1h
+31/03 11:37:04 	Evento Activacion del horario de invierno -1h
+31/03 11:37:04 	Evento Cambio del horario de verano
+31/03 11:37:04 	Evento Sin Comunicacion con Concentrador
+31/03 11:37:04 	Evento Recuperacion Comunicacion Concentrador
+31/03 11:37:04 Me_CD.NombreDisplay :0.1
+31/03 11:37:04 UI_CajaDotacion
+31/03 11:37:04 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 11:37:04 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 11:37:06 Recibida Orden SHOW_HIDE 
+31/03 11:37:06 SHOW_HIDE Me oculto
+31/03 12:09:41 UI_CAJA_DOT: recibe senal 15 para terminar
+31/03 12:09:41 SomeSignalsFunc. exit
+31/03 12:09:44 NUEVA EJECUCION DEL UI
+31/03 12:09:44 LeerEventos
+31/03 12:09:44 Nro de Tipos de evento 20
+31/03 12:09:44 	Evento Reset (por fallo de alimentacion)
+31/03 12:09:44 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+31/03 12:09:44 	Evento Activado periodo
+31/03 12:09:44 	Evento Borrado periodo
+31/03 12:09:44 	Evento Apertura Normal de la puerta
+31/03 12:09:44 	Evento Apertura por comando RS 232
+31/03 12:09:44 	Evento Apertura mecanica saltandose la electronica
+31/03 12:09:44 	Evento Apertura incondicional por comando RS 232
+31/03 12:09:44 	Evento Cierre de la puerta
+31/03 12:09:44 	Evento Fallo de apertura (la puerta no se abre)
+31/03 12:09:44 	Evento Alarma puerta abierta demasiado tiempo
+31/03 12:09:44 	Evento Se ha cambiado la Fecha/Hora
+31/03 12:09:44 	Evento Se han cambiado los periodos de actividad
+31/03 12:09:44 	Evento Cambio Numero de Serie
+31/03 12:09:44 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+31/03 12:09:44 	Evento Activacion del horario de verano +1h
+31/03 12:09:44 	Evento Activacion del horario de invierno -1h
+31/03 12:09:44 	Evento Cambio del horario de verano
+31/03 12:09:44 	Evento Sin Comunicacion con Concentrador
+31/03 12:09:44 	Evento Recuperacion Comunicacion Concentrador
+31/03 12:09:44 Me_CD.NombreDisplay :0.1
+31/03 12:09:44 UI_CajaDotacion
+31/03 12:09:44 UI_CajaDotacion Despues de instalar PollSocketRPCs
+31/03 12:09:44 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+31/03 12:09:44 Recibida Orden SHOW_HIDE 
+31/03 12:09:44 SHOW_HIDE Me oculto
+31/03 12:13:06 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+31/03 12:13:06 Parametros de la orden: 12 23 1 DOT12231 DOT12231
+Nueva Localizacion 12 23 1 -DOT12231. Enviamos SET_UI
+31/03 12:13:06 SET_DRV: Versiones antes de SET_UI: -1 1080727986 -1 1080727986
+31/03 12:13:06 Enviado SET_UI a DOT12231. Linea : 12 Estacion : 23 Vestibulo : 1
+31/03 12:13:06 Recibida Orden SHOW_HIDE 
+31/03 12:13:06 RecargarDatos conectando.ascii
+31/03 12:13:06 RecargarDatos ../conectando.ascii abierto
+31/03 12:13:06 SHOW_HIDE: cargamos conectando
+31/03 12:13:06 CambiarForm
+31/03 12:13:06 SHOW_HIDE Me visualizo
+31/03 12:13:20 Recibida Orden SHOW_HIDE 
+31/03 12:13:20 SHOW_HIDE Me oculto
+31/03 12:13:20 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+31/03 12:13:20 Mando UNSET_UI a 12 23 1 DOT12231
+31/03 12:13:20 ActivarDescon
+31/03 12:13:21 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+31/03 12:13:21 Parametros de la orden: 12 23 1 DOT12231 DOT12231
+Nueva Localizacion 12 23 1 -DOT12231. Enviamos SET_UI
+31/03 12:13:21 SET_DRV: Versiones antes de SET_UI: -1 1080728001 -1 1080728001
+31/03 12:13:21 Enviado SET_UI a DOT12231. Linea : 12 Estacion : 23 Vestibulo : 1
+31/03 12:13:22 Recibida Orden SHOW_HIDE 
+31/03 12:13:22 RecargarDatos conectando.ascii
+31/03 12:13:22 RecargarDatos ../conectando.ascii abierto
+31/03 12:13:22 SHOW_HIDE: cargamos conectando
+31/03 12:13:22 CambiarForm
+31/03 12:13:22 SHOW_HIDE Me visualizo
+31/03 12:13:23 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 273 bytes
+31/03 12:13:23 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+31/03 12:13:23 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+31/03 12:13:23 Recibida orden de INICIALIZAR_UI con buffer 1
+31/03 12:13:23 INICIALIZAR_UI: ACTUALIZAR_DATOS
+31/03 12:13:23 LeerFicheroDatos
+31/03 12:13:23 CrearAsciiEstado
+31/03 12:13:23 CrearAsciiPeriodos
+31/03 12:13:23 INICIALIZAR_UI: despues de LeerFicheroDatos
+31/03 12:13:23 INICIALIZAR_UI: se han creado los ascii de datos
+31/03 12:13:23 ActualizarPantallaDatosNew: PantallaActiva -1
+31/03 12:13:23 CargarPantallaEstado: Num Alarmas 0 
+31/03 12:13:23 SpanAlarmas. Me_CD.iNroAlarmasActivas 0 
+31/03 12:13:23 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+31/03 12:13:23 SpanAlarmas. Salimos por default 2
+31/03 12:13:23 CargarPantallaEstado: despues de SpanAlarmas. Lineas 9
+31/03 12:13:23 RecargarDatos estado.ascii
+31/03 12:13:23 RecargarDatos estado.ascii abierto
+31/03 12:13:23 CargarPantallaEstado: ESTADO_NORMAL
+31/03 12:13:23 CambiarForm
+31/03 12:13:23 CargarPantallaEstado:NroAlarmas 0
+31/03 12:13:23 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+31/03 12:13:23 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 197 bytes
+31/03 12:13:23 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+31/03 12:13:23 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=13)
+31/03 12:13:23 Recibida orden de INICIALIZAR_UI con buffer 2
+31/03 12:13:23 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+31/03 12:13:23 DecodFicheroEventos
+31/03 12:13:23 DecodFicheroEventos. TengoAsciiEventos
+31/03 12:13:23 CrearAsciiConsultas
+31/03 12:13:23 INICIALIZAR_UI: se han creado los ascii de concentracion
+31/03 12:13:23 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+31/03 12:13:23 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+31/03 12:13:23 ActualizarPantallaEventosNew: Salimos por default 
+31/03 12:13:23 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+31/03 12:13:26 CB_Pantalla: PantallaActiva antes de cargar nada 2
+31/03 12:13:27 RecargarDatos programacion.ascii
+31/03 12:13:27 RecargarDatos programacion.ascii abierto
+31/03 12:13:28 CambiarForm
+31/03 12:13:28 CB_P: PERIODOS cargar PERIODO_NORMAL 
+31/03 12:13:31 CB_Pantalla: PantallaActiva antes de cargar nada 8
+31/03 12:13:32 RecargarDatos programacion.1.ascii
+31/03 12:13:32 RecargarDatos programacion.1.ascii abierto
+31/03 12:13:32 CrearBotones
+31/03 12:13:32 CambiarForm
+31/03 12:13:32 CB_P: BPDO_ACTIVIDAD cargar PERIODO_BORRAR 
+31/03 12:13:33 CancelacionOrden
+31/03 12:13:33 CancelacionOrden: default
+31/03 12:13:33 CancelacionOrden: llamamos a CambiarPantallaActiva
+31/03 12:13:33 CambiarPantallaActiva: antes de entrar PantallaActiva 9
+31/03 12:13:33 CambiarPantallaActiva: PERIODOO_BOTON cargar PERIODO_NORMAL
+31/03 12:13:34 RecargarDatos programacion.ascii
+31/03 12:13:34 RecargarDatos programacion.ascii abierto
+31/03 12:13:35 CambiarForm
+31/03 12:13:38 Recibida Orden SHOW_HIDE 
+31/03 12:13:38 SHOW_HIDE Me oculto
+31/03 12:13:38 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+31/03 12:13:38 Mando UNSET_UI a 12 23 1 DOT12231
+31/03 12:13:38 ActivarDescon
+01/04 04:01:29 NUEVA EJECUCION DEL UI
+01/04 04:01:29 LeerEventos
+01/04 04:01:29 Nro de Tipos de evento 20
+01/04 04:01:29 	Evento Reset (por fallo de alimentacion)
+01/04 04:01:29 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+01/04 04:01:29 	Evento Activado periodo
+01/04 04:01:29 	Evento Borrado periodo
+01/04 04:01:29 	Evento Apertura Normal de la puerta
+01/04 04:01:29 	Evento Apertura por comando RS 232
+01/04 04:01:29 	Evento Apertura mecanica saltandose la electronica
+01/04 04:01:29 	Evento Apertura incondicional por comando RS 232
+01/04 04:01:29 	Evento Cierre de la puerta
+01/04 04:01:29 	Evento Fallo de apertura (la puerta no se abre)
+01/04 04:01:29 	Evento Alarma puerta abierta demasiado tiempo
+01/04 04:01:29 	Evento Se ha cambiado la Fecha/Hora
+01/04 04:01:29 	Evento Se han cambiado los periodos de actividad
+01/04 04:01:29 	Evento Cambio Numero de Serie
+01/04 04:01:29 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+01/04 04:01:29 	Evento Activacion del horario de verano +1h
+01/04 04:01:29 	Evento Activacion del horario de invierno -1h
+01/04 04:01:29 	Evento Cambio del horario de verano
+01/04 04:01:29 	Evento Sin Comunicacion con Concentrador
+01/04 04:01:29 	Evento Recuperacion Comunicacion Concentrador
+01/04 04:01:29 Me_CD.NombreDisplay :0.1
+01/04 04:01:29 UI_CajaDotacion
+01/04 04:01:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+01/04 04:01:30 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+01/04 04:01:32 Recibida Orden SHOW_HIDE 
+01/04 04:01:32 SHOW_HIDE Me oculto
+02/04 04:01:43 NUEVA EJECUCION DEL UI
+02/04 04:01:43 LeerEventos
+02/04 04:01:43 Nro de Tipos de evento 20
+02/04 04:01:43 	Evento Reset (por fallo de alimentacion)
+02/04 04:01:43 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+02/04 04:01:43 	Evento Activado periodo
+02/04 04:01:43 	Evento Borrado periodo
+02/04 04:01:43 	Evento Apertura Normal de la puerta
+02/04 04:01:43 	Evento Apertura por comando RS 232
+02/04 04:01:43 	Evento Apertura mecanica saltandose la electronica
+02/04 04:01:43 	Evento Apertura incondicional por comando RS 232
+02/04 04:01:43 	Evento Cierre de la puerta
+02/04 04:01:43 	Evento Fallo de apertura (la puerta no se abre)
+02/04 04:01:43 	Evento Alarma puerta abierta demasiado tiempo
+02/04 04:01:43 	Evento Se ha cambiado la Fecha/Hora
+02/04 04:01:43 	Evento Se han cambiado los periodos de actividad
+02/04 04:01:43 	Evento Cambio Numero de Serie
+02/04 04:01:43 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+02/04 04:01:43 	Evento Activacion del horario de verano +1h
+02/04 04:01:43 	Evento Activacion del horario de invierno -1h
+02/04 04:01:43 	Evento Cambio del horario de verano
+02/04 04:01:43 	Evento Sin Comunicacion con Concentrador
+02/04 04:01:43 	Evento Recuperacion Comunicacion Concentrador
+02/04 04:01:43 Me_CD.NombreDisplay :0.1
+02/04 04:01:43 UI_CajaDotacion
+02/04 04:01:43 UI_CajaDotacion Despues de instalar PollSocketRPCs
+02/04 04:01:43 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+02/04 04:01:45 Recibida Orden SHOW_HIDE 
+02/04 04:01:45 SHOW_HIDE Me oculto
+03/04 04:01:47 NUEVA EJECUCION DEL UI
+03/04 04:01:47 LeerEventos
+03/04 04:01:47 Nro de Tipos de evento 20
+03/04 04:01:47 	Evento Reset (por fallo de alimentacion)
+03/04 04:01:47 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+03/04 04:01:47 	Evento Activado periodo
+03/04 04:01:47 	Evento Borrado periodo
+03/04 04:01:47 	Evento Apertura Normal de la puerta
+03/04 04:01:47 	Evento Apertura por comando RS 232
+03/04 04:01:47 	Evento Apertura mecanica saltandose la electronica
+03/04 04:01:47 	Evento Apertura incondicional por comando RS 232
+03/04 04:01:47 	Evento Cierre de la puerta
+03/04 04:01:47 	Evento Fallo de apertura (la puerta no se abre)
+03/04 04:01:47 	Evento Alarma puerta abierta demasiado tiempo
+03/04 04:01:47 	Evento Se ha cambiado la Fecha/Hora
+03/04 04:01:47 	Evento Se han cambiado los periodos de actividad
+03/04 04:01:47 	Evento Cambio Numero de Serie
+03/04 04:01:47 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+03/04 04:01:47 	Evento Activacion del horario de verano +1h
+03/04 04:01:47 	Evento Activacion del horario de invierno -1h
+03/04 04:01:47 	Evento Cambio del horario de verano
+03/04 04:01:47 	Evento Sin Comunicacion con Concentrador
+03/04 04:01:47 	Evento Recuperacion Comunicacion Concentrador
+03/04 04:01:47 Me_CD.NombreDisplay :0.1
+03/04 04:01:47 UI_CajaDotacion
+03/04 04:01:48 UI_CajaDotacion Despues de instalar PollSocketRPCs
+03/04 04:01:48 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+03/04 04:01:50 Recibida Orden SHOW_HIDE 
+03/04 04:01:50 SHOW_HIDE Me oculto
+04/04 04:01:30 NUEVA EJECUCION DEL UI
+04/04 04:01:31 LeerEventos
+04/04 04:01:31 Nro de Tipos de evento 20
+04/04 04:01:31 	Evento Reset (por fallo de alimentacion)
+04/04 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+04/04 04:01:31 	Evento Activado periodo
+04/04 04:01:31 	Evento Borrado periodo
+04/04 04:01:31 	Evento Apertura Normal de la puerta
+04/04 04:01:31 	Evento Apertura por comando RS 232
+04/04 04:01:31 	Evento Apertura mecanica saltandose la electronica
+04/04 04:01:31 	Evento Apertura incondicional por comando RS 232
+04/04 04:01:31 	Evento Cierre de la puerta
+04/04 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+04/04 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+04/04 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+04/04 04:01:31 	Evento Se han cambiado los periodos de actividad
+04/04 04:01:31 	Evento Cambio Numero de Serie
+04/04 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+04/04 04:01:31 	Evento Activacion del horario de verano +1h
+04/04 04:01:31 	Evento Activacion del horario de invierno -1h
+04/04 04:01:31 	Evento Cambio del horario de verano
+04/04 04:01:31 	Evento Sin Comunicacion con Concentrador
+04/04 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+04/04 04:01:31 Me_CD.NombreDisplay :0.1
+04/04 04:01:31 UI_CajaDotacion
+04/04 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+04/04 04:01:32 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+04/04 04:01:33 Recibida Orden SHOW_HIDE 
+04/04 04:01:33 SHOW_HIDE Me oculto
+05/04 04:01:31 NUEVA EJECUCION DEL UI
+05/04 04:01:31 LeerEventos
+05/04 04:01:31 Nro de Tipos de evento 20
+05/04 04:01:31 	Evento Reset (por fallo de alimentacion)
+05/04 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+05/04 04:01:31 	Evento Activado periodo
+05/04 04:01:31 	Evento Borrado periodo
+05/04 04:01:31 	Evento Apertura Normal de la puerta
+05/04 04:01:31 	Evento Apertura por comando RS 232
+05/04 04:01:31 	Evento Apertura mecanica saltandose la electronica
+05/04 04:01:31 	Evento Apertura incondicional por comando RS 232
+05/04 04:01:31 	Evento Cierre de la puerta
+05/04 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+05/04 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+05/04 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+05/04 04:01:31 	Evento Se han cambiado los periodos de actividad
+05/04 04:01:31 	Evento Cambio Numero de Serie
+05/04 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+05/04 04:01:31 	Evento Activacion del horario de verano +1h
+05/04 04:01:31 	Evento Activacion del horario de invierno -1h
+05/04 04:01:31 	Evento Cambio del horario de verano
+05/04 04:01:31 	Evento Sin Comunicacion con Concentrador
+05/04 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+05/04 04:01:31 Me_CD.NombreDisplay :0.1
+05/04 04:01:31 UI_CajaDotacion
+05/04 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+05/04 04:01:32 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+05/04 04:01:34 Recibida Orden SHOW_HIDE 
+05/04 04:01:34 SHOW_HIDE Me oculto
+06/04 04:01:24 NUEVA EJECUCION DEL UI
+06/04 04:01:24 LeerEventos
+06/04 04:01:24 Nro de Tipos de evento 20
+06/04 04:01:24 	Evento Reset (por fallo de alimentacion)
+06/04 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+06/04 04:01:24 	Evento Activado periodo
+06/04 04:01:24 	Evento Borrado periodo
+06/04 04:01:24 	Evento Apertura Normal de la puerta
+06/04 04:01:24 	Evento Apertura por comando RS 232
+06/04 04:01:24 	Evento Apertura mecanica saltandose la electronica
+06/04 04:01:24 	Evento Apertura incondicional por comando RS 232
+06/04 04:01:24 	Evento Cierre de la puerta
+06/04 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+06/04 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+06/04 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+06/04 04:01:24 	Evento Se han cambiado los periodos de actividad
+06/04 04:01:24 	Evento Cambio Numero de Serie
+06/04 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+06/04 04:01:24 	Evento Activacion del horario de verano +1h
+06/04 04:01:24 	Evento Activacion del horario de invierno -1h
+06/04 04:01:24 	Evento Cambio del horario de verano
+06/04 04:01:24 	Evento Sin Comunicacion con Concentrador
+06/04 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+06/04 04:01:24 Me_CD.NombreDisplay :0.1
+06/04 04:01:24 UI_CajaDotacion
+06/04 04:01:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+06/04 04:01:24 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+06/04 04:01:26 Recibida Orden SHOW_HIDE 
+06/04 04:01:26 SHOW_HIDE Me oculto
+07/04 04:01:25 NUEVA EJECUCION DEL UI
+07/04 04:01:25 LeerEventos
+07/04 04:01:25 Nro de Tipos de evento 20
+07/04 04:01:25 	Evento Reset (por fallo de alimentacion)
+07/04 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+07/04 04:01:25 	Evento Activado periodo
+07/04 04:01:25 	Evento Borrado periodo
+07/04 04:01:25 	Evento Apertura Normal de la puerta
+07/04 04:01:25 	Evento Apertura por comando RS 232
+07/04 04:01:25 	Evento Apertura mecanica saltandose la electronica
+07/04 04:01:25 	Evento Apertura incondicional por comando RS 232
+07/04 04:01:25 	Evento Cierre de la puerta
+07/04 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+07/04 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+07/04 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+07/04 04:01:25 	Evento Se han cambiado los periodos de actividad
+07/04 04:01:25 	Evento Cambio Numero de Serie
+07/04 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+07/04 04:01:25 	Evento Activacion del horario de verano +1h
+07/04 04:01:25 	Evento Activacion del horario de invierno -1h
+07/04 04:01:25 	Evento Cambio del horario de verano
+07/04 04:01:25 	Evento Sin Comunicacion con Concentrador
+07/04 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+07/04 04:01:25 Me_CD.NombreDisplay :0.1
+07/04 04:01:25 UI_CajaDotacion
+07/04 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+07/04 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+07/04 04:01:27 Recibida Orden SHOW_HIDE 
+07/04 04:01:27 SHOW_HIDE Me oculto
+08/04 04:01:28 NUEVA EJECUCION DEL UI
+08/04 04:01:28 LeerEventos
+08/04 04:01:28 Nro de Tipos de evento 20
+08/04 04:01:28 	Evento Reset (por fallo de alimentacion)
+08/04 04:01:28 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+08/04 04:01:28 	Evento Activado periodo
+08/04 04:01:28 	Evento Borrado periodo
+08/04 04:01:28 	Evento Apertura Normal de la puerta
+08/04 04:01:28 	Evento Apertura por comando RS 232
+08/04 04:01:28 	Evento Apertura mecanica saltandose la electronica
+08/04 04:01:28 	Evento Apertura incondicional por comando RS 232
+08/04 04:01:28 	Evento Cierre de la puerta
+08/04 04:01:28 	Evento Fallo de apertura (la puerta no se abre)
+08/04 04:01:28 	Evento Alarma puerta abierta demasiado tiempo
+08/04 04:01:28 	Evento Se ha cambiado la Fecha/Hora
+08/04 04:01:28 	Evento Se han cambiado los periodos de actividad
+08/04 04:01:28 	Evento Cambio Numero de Serie
+08/04 04:01:28 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+08/04 04:01:28 	Evento Activacion del horario de verano +1h
+08/04 04:01:28 	Evento Activacion del horario de invierno -1h
+08/04 04:01:28 	Evento Cambio del horario de verano
+08/04 04:01:28 	Evento Sin Comunicacion con Concentrador
+08/04 04:01:28 	Evento Recuperacion Comunicacion Concentrador
+08/04 04:01:28 Me_CD.NombreDisplay :0.1
+08/04 04:01:28 UI_CajaDotacion
+08/04 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+08/04 04:01:29 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+08/04 04:01:30 Recibida Orden SHOW_HIDE 
+08/04 04:01:30 SHOW_HIDE Me oculto
+09/04 04:01:28 NUEVA EJECUCION DEL UI
+09/04 04:01:28 LeerEventos
+09/04 04:01:28 Nro de Tipos de evento 20
+09/04 04:01:28 	Evento Reset (por fallo de alimentacion)
+09/04 04:01:28 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+09/04 04:01:28 	Evento Activado periodo
+09/04 04:01:28 	Evento Borrado periodo
+09/04 04:01:28 	Evento Apertura Normal de la puerta
+09/04 04:01:28 	Evento Apertura por comando RS 232
+09/04 04:01:28 	Evento Apertura mecanica saltandose la electronica
+09/04 04:01:28 	Evento Apertura incondicional por comando RS 232
+09/04 04:01:28 	Evento Cierre de la puerta
+09/04 04:01:28 	Evento Fallo de apertura (la puerta no se abre)
+09/04 04:01:28 	Evento Alarma puerta abierta demasiado tiempo
+09/04 04:01:28 	Evento Se ha cambiado la Fecha/Hora
+09/04 04:01:28 	Evento Se han cambiado los periodos de actividad
+09/04 04:01:28 	Evento Cambio Numero de Serie
+09/04 04:01:28 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+09/04 04:01:28 	Evento Activacion del horario de verano +1h
+09/04 04:01:28 	Evento Activacion del horario de invierno -1h
+09/04 04:01:28 	Evento Cambio del horario de verano
+09/04 04:01:28 	Evento Sin Comunicacion con Concentrador
+09/04 04:01:28 	Evento Recuperacion Comunicacion Concentrador
+09/04 04:01:28 Me_CD.NombreDisplay :0.1
+09/04 04:01:28 UI_CajaDotacion
+09/04 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+09/04 04:01:28 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+09/04 04:01:30 Recibida Orden SHOW_HIDE 
+09/04 04:01:30 SHOW_HIDE Me oculto
+10/04 04:01:27 NUEVA EJECUCION DEL UI
+10/04 04:01:27 LeerEventos
+10/04 04:01:27 Nro de Tipos de evento 20
+10/04 04:01:27 	Evento Reset (por fallo de alimentacion)
+10/04 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+10/04 04:01:27 	Evento Activado periodo
+10/04 04:01:27 	Evento Borrado periodo
+10/04 04:01:27 	Evento Apertura Normal de la puerta
+10/04 04:01:27 	Evento Apertura por comando RS 232
+10/04 04:01:27 	Evento Apertura mecanica saltandose la electronica
+10/04 04:01:27 	Evento Apertura incondicional por comando RS 232
+10/04 04:01:27 	Evento Cierre de la puerta
+10/04 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+10/04 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+10/04 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+10/04 04:01:27 	Evento Se han cambiado los periodos de actividad
+10/04 04:01:27 	Evento Cambio Numero de Serie
+10/04 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+10/04 04:01:27 	Evento Activacion del horario de verano +1h
+10/04 04:01:27 	Evento Activacion del horario de invierno -1h
+10/04 04:01:27 	Evento Cambio del horario de verano
+10/04 04:01:27 	Evento Sin Comunicacion con Concentrador
+10/04 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+10/04 04:01:27 Me_CD.NombreDisplay :0.1
+10/04 04:01:27 UI_CajaDotacion
+10/04 04:01:27 UI_CajaDotacion Despues de instalar PollSocketRPCs
+10/04 04:01:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+10/04 04:01:29 Recibida Orden SHOW_HIDE 
+10/04 04:01:29 SHOW_HIDE Me oculto
+11/04 04:01:26 NUEVA EJECUCION DEL UI
+11/04 04:01:26 LeerEventos
+11/04 04:01:26 Nro de Tipos de evento 20
+11/04 04:01:26 	Evento Reset (por fallo de alimentacion)
+11/04 04:01:26 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+11/04 04:01:26 	Evento Activado periodo
+11/04 04:01:26 	Evento Borrado periodo
+11/04 04:01:26 	Evento Apertura Normal de la puerta
+11/04 04:01:26 	Evento Apertura por comando RS 232
+11/04 04:01:26 	Evento Apertura mecanica saltandose la electronica
+11/04 04:01:26 	Evento Apertura incondicional por comando RS 232
+11/04 04:01:26 	Evento Cierre de la puerta
+11/04 04:01:26 	Evento Fallo de apertura (la puerta no se abre)
+11/04 04:01:26 	Evento Alarma puerta abierta demasiado tiempo
+11/04 04:01:26 	Evento Se ha cambiado la Fecha/Hora
+11/04 04:01:26 	Evento Se han cambiado los periodos de actividad
+11/04 04:01:26 	Evento Cambio Numero de Serie
+11/04 04:01:26 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+11/04 04:01:26 	Evento Activacion del horario de verano +1h
+11/04 04:01:26 	Evento Activacion del horario de invierno -1h
+11/04 04:01:26 	Evento Cambio del horario de verano
+11/04 04:01:26 	Evento Sin Comunicacion con Concentrador
+11/04 04:01:26 	Evento Recuperacion Comunicacion Concentrador
+11/04 04:01:26 Me_CD.NombreDisplay :0.1
+11/04 04:01:26 UI_CajaDotacion
+11/04 04:01:26 UI_CajaDotacion Despues de instalar PollSocketRPCs
+11/04 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+11/04 04:01:28 Recibida Orden SHOW_HIDE 
+11/04 04:01:28 SHOW_HIDE Me oculto
+12/04 04:01:22 NUEVA EJECUCION DEL UI
+12/04 04:01:22 LeerEventos
+12/04 04:01:22 Nro de Tipos de evento 20
+12/04 04:01:22 	Evento Reset (por fallo de alimentacion)
+12/04 04:01:22 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/04 04:01:22 	Evento Activado periodo
+12/04 04:01:22 	Evento Borrado periodo
+12/04 04:01:22 	Evento Apertura Normal de la puerta
+12/04 04:01:22 	Evento Apertura por comando RS 232
+12/04 04:01:22 	Evento Apertura mecanica saltandose la electronica
+12/04 04:01:22 	Evento Apertura incondicional por comando RS 232
+12/04 04:01:22 	Evento Cierre de la puerta
+12/04 04:01:22 	Evento Fallo de apertura (la puerta no se abre)
+12/04 04:01:22 	Evento Alarma puerta abierta demasiado tiempo
+12/04 04:01:22 	Evento Se ha cambiado la Fecha/Hora
+12/04 04:01:22 	Evento Se han cambiado los periodos de actividad
+12/04 04:01:22 	Evento Cambio Numero de Serie
+12/04 04:01:22 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/04 04:01:22 	Evento Activacion del horario de verano +1h
+12/04 04:01:22 	Evento Activacion del horario de invierno -1h
+12/04 04:01:22 	Evento Cambio del horario de verano
+12/04 04:01:22 	Evento Sin Comunicacion con Concentrador
+12/04 04:01:22 	Evento Recuperacion Comunicacion Concentrador
+12/04 04:01:22 Me_CD.NombreDisplay :0.1
+12/04 04:01:22 UI_CajaDotacion
+12/04 04:01:22 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/04 04:01:22 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/04 04:01:24 Recibida Orden SHOW_HIDE 
+12/04 04:01:24 SHOW_HIDE Me oculto
+13/04 04:01:31 NUEVA EJECUCION DEL UI
+13/04 04:01:31 LeerEventos
+13/04 04:01:31 Nro de Tipos de evento 20
+13/04 04:01:31 	Evento Reset (por fallo de alimentacion)
+13/04 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+13/04 04:01:31 	Evento Activado periodo
+13/04 04:01:31 	Evento Borrado periodo
+13/04 04:01:31 	Evento Apertura Normal de la puerta
+13/04 04:01:31 	Evento Apertura por comando RS 232
+13/04 04:01:31 	Evento Apertura mecanica saltandose la electronica
+13/04 04:01:31 	Evento Apertura incondicional por comando RS 232
+13/04 04:01:31 	Evento Cierre de la puerta
+13/04 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+13/04 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+13/04 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+13/04 04:01:31 	Evento Se han cambiado los periodos de actividad
+13/04 04:01:31 	Evento Cambio Numero de Serie
+13/04 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+13/04 04:01:31 	Evento Activacion del horario de verano +1h
+13/04 04:01:31 	Evento Activacion del horario de invierno -1h
+13/04 04:01:31 	Evento Cambio del horario de verano
+13/04 04:01:31 	Evento Sin Comunicacion con Concentrador
+13/04 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+13/04 04:01:31 Me_CD.NombreDisplay :0.1
+13/04 04:01:31 UI_CajaDotacion
+13/04 04:01:32 UI_CajaDotacion Despues de instalar PollSocketRPCs
+13/04 04:01:32 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+13/04 04:01:34 Recibida Orden SHOW_HIDE 
+13/04 04:01:34 SHOW_HIDE Me oculto
+14/04 04:01:29 NUEVA EJECUCION DEL UI
+14/04 04:01:29 LeerEventos
+14/04 04:01:29 Nro de Tipos de evento 20
+14/04 04:01:29 	Evento Reset (por fallo de alimentacion)
+14/04 04:01:29 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 04:01:29 	Evento Activado periodo
+14/04 04:01:29 	Evento Borrado periodo
+14/04 04:01:29 	Evento Apertura Normal de la puerta
+14/04 04:01:29 	Evento Apertura por comando RS 232
+14/04 04:01:29 	Evento Apertura mecanica saltandose la electronica
+14/04 04:01:29 	Evento Apertura incondicional por comando RS 232
+14/04 04:01:29 	Evento Cierre de la puerta
+14/04 04:01:29 	Evento Fallo de apertura (la puerta no se abre)
+14/04 04:01:29 	Evento Alarma puerta abierta demasiado tiempo
+14/04 04:01:29 	Evento Se ha cambiado la Fecha/Hora
+14/04 04:01:29 	Evento Se han cambiado los periodos de actividad
+14/04 04:01:29 	Evento Cambio Numero de Serie
+14/04 04:01:29 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 04:01:29 	Evento Activacion del horario de verano +1h
+14/04 04:01:29 	Evento Activacion del horario de invierno -1h
+14/04 04:01:29 	Evento Cambio del horario de verano
+14/04 04:01:29 	Evento Sin Comunicacion con Concentrador
+14/04 04:01:29 	Evento Recuperacion Comunicacion Concentrador
+14/04 04:01:29 Me_CD.NombreDisplay :0.1
+14/04 04:01:29 UI_CajaDotacion
+14/04 04:01:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 04:01:30 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 04:01:31 Recibida Orden SHOW_HIDE 
+14/04 04:01:31 SHOW_HIDE Me oculto
+14/04 10:05:30 NUEVA EJECUCION DEL UI
+14/04 10:05:30 LeerEventos
+14/04 10:05:30 Nro de Tipos de evento 20
+14/04 10:05:30 	Evento Reset (por fallo de alimentacion)
+14/04 10:05:30 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 10:05:30 	Evento Activado periodo
+14/04 10:05:30 	Evento Borrado periodo
+14/04 10:05:30 	Evento Apertura Normal de la puerta
+14/04 10:05:30 	Evento Apertura por comando RS 232
+14/04 10:05:30 	Evento Apertura mecanica saltandose la electronica
+14/04 10:05:30 	Evento Apertura incondicional por comando RS 232
+14/04 10:05:30 	Evento Cierre de la puerta
+14/04 10:05:30 	Evento Fallo de apertura (la puerta no se abre)
+14/04 10:05:30 	Evento Alarma puerta abierta demasiado tiempo
+14/04 10:05:30 	Evento Se ha cambiado la Fecha/Hora
+14/04 10:05:30 	Evento Se han cambiado los periodos de actividad
+14/04 10:05:30 	Evento Cambio Numero de Serie
+14/04 10:05:30 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 10:05:30 	Evento Activacion del horario de verano +1h
+14/04 10:05:30 	Evento Activacion del horario de invierno -1h
+14/04 10:05:30 	Evento Cambio del horario de verano
+14/04 10:05:30 	Evento Sin Comunicacion con Concentrador
+14/04 10:05:30 	Evento Recuperacion Comunicacion Concentrador
+14/04 10:05:30 Me_CD.NombreDisplay :0.1
+14/04 10:05:30 UI_CajaDotacion
+14/04 10:05:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 10:05:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 10:05:33 Recibida Orden SHOW_HIDE 
+14/04 10:05:33 SHOW_HIDE Me oculto
+14/04 11:26:20 NUEVA EJECUCION DEL UI
+14/04 11:26:20 LeerEventos
+14/04 11:26:20 Nro de Tipos de evento 20
+14/04 11:26:20 	Evento Reset (por fallo de alimentacion)
+14/04 11:26:20 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 11:26:20 	Evento Activado periodo
+14/04 11:26:20 	Evento Borrado periodo
+14/04 11:26:20 	Evento Apertura Normal de la puerta
+14/04 11:26:20 	Evento Apertura por comando RS 232
+14/04 11:26:20 	Evento Apertura mecanica saltandose la electronica
+14/04 11:26:20 	Evento Apertura incondicional por comando RS 232
+14/04 11:26:20 	Evento Cierre de la puerta
+14/04 11:26:20 	Evento Fallo de apertura (la puerta no se abre)
+14/04 11:26:20 	Evento Alarma puerta abierta demasiado tiempo
+14/04 11:26:20 	Evento Se ha cambiado la Fecha/Hora
+14/04 11:26:20 	Evento Se han cambiado los periodos de actividad
+14/04 11:26:20 	Evento Cambio Numero de Serie
+14/04 11:26:20 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 11:26:20 	Evento Activacion del horario de verano +1h
+14/04 11:26:20 	Evento Activacion del horario de invierno -1h
+14/04 11:26:20 	Evento Cambio del horario de verano
+14/04 11:26:20 	Evento Sin Comunicacion con Concentrador
+14/04 11:26:20 	Evento Recuperacion Comunicacion Concentrador
+14/04 11:26:20 Me_CD.NombreDisplay :0.1
+14/04 11:26:20 UI_CajaDotacion
+14/04 11:26:21 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 11:26:21 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 11:31:09 NUEVA EJECUCION DEL UI
+14/04 11:31:09 LeerEventos
+14/04 11:31:09 Nro de Tipos de evento 20
+14/04 11:31:09 	Evento Reset (por fallo de alimentacion)
+14/04 11:31:09 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 11:31:09 	Evento Activado periodo
+14/04 11:31:09 	Evento Borrado periodo
+14/04 11:31:09 	Evento Apertura Normal de la puerta
+14/04 11:31:09 	Evento Apertura por comando RS 232
+14/04 11:31:09 	Evento Apertura mecanica saltandose la electronica
+14/04 11:31:09 	Evento Apertura incondicional por comando RS 232
+14/04 11:31:09 	Evento Cierre de la puerta
+14/04 11:31:09 	Evento Fallo de apertura (la puerta no se abre)
+14/04 11:31:09 	Evento Alarma puerta abierta demasiado tiempo
+14/04 11:31:09 	Evento Se ha cambiado la Fecha/Hora
+14/04 11:31:09 	Evento Se han cambiado los periodos de actividad
+14/04 11:31:09 	Evento Cambio Numero de Serie
+14/04 11:31:09 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 11:31:09 	Evento Activacion del horario de verano +1h
+14/04 11:31:09 	Evento Activacion del horario de invierno -1h
+14/04 11:31:09 	Evento Cambio del horario de verano
+14/04 11:31:09 	Evento Sin Comunicacion con Concentrador
+14/04 11:31:09 	Evento Recuperacion Comunicacion Concentrador
+14/04 11:31:09 Me_CD.NombreDisplay :0.1
+14/04 11:31:09 UI_CajaDotacion
+14/04 11:31:10 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 11:31:10 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 11:31:12 Recibida Orden SHOW_HIDE 
+14/04 11:31:12 SHOW_HIDE Me oculto
+14/04 12:12:48 NUEVA EJECUCION DEL UI
+14/04 12:12:48 LeerEventos
+14/04 12:12:48 Nro de Tipos de evento 20
+14/04 12:12:48 	Evento Reset (por fallo de alimentacion)
+14/04 12:12:48 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 12:12:48 	Evento Activado periodo
+14/04 12:12:48 	Evento Borrado periodo
+14/04 12:12:48 	Evento Apertura Normal de la puerta
+14/04 12:12:48 	Evento Apertura por comando RS 232
+14/04 12:12:48 	Evento Apertura mecanica saltandose la electronica
+14/04 12:12:48 	Evento Apertura incondicional por comando RS 232
+14/04 12:12:48 	Evento Cierre de la puerta
+14/04 12:12:48 	Evento Fallo de apertura (la puerta no se abre)
+14/04 12:12:48 	Evento Alarma puerta abierta demasiado tiempo
+14/04 12:12:48 	Evento Se ha cambiado la Fecha/Hora
+14/04 12:12:48 	Evento Se han cambiado los periodos de actividad
+14/04 12:12:48 	Evento Cambio Numero de Serie
+14/04 12:12:48 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 12:12:48 	Evento Activacion del horario de verano +1h
+14/04 12:12:48 	Evento Activacion del horario de invierno -1h
+14/04 12:12:48 	Evento Cambio del horario de verano
+14/04 12:12:48 	Evento Sin Comunicacion con Concentrador
+14/04 12:12:48 	Evento Recuperacion Comunicacion Concentrador
+14/04 12:12:48 Me_CD.NombreDisplay :0.1
+14/04 12:12:48 UI_CajaDotacion
+14/04 12:12:48 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 12:12:49 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 12:12:50 Recibida Orden SHOW_HIDE 
+14/04 12:12:50 SHOW_HIDE Me oculto
+14/04 14:52:24 NUEVA EJECUCION DEL UI
+14/04 14:52:24 LeerEventos
+14/04 14:52:24 Nro de Tipos de evento 20
+14/04 14:52:24 	Evento Reset (por fallo de alimentacion)
+14/04 14:52:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 14:52:24 	Evento Activado periodo
+14/04 14:52:24 	Evento Borrado periodo
+14/04 14:52:24 	Evento Apertura Normal de la puerta
+14/04 14:52:24 	Evento Apertura por comando RS 232
+14/04 14:52:24 	Evento Apertura mecanica saltandose la electronica
+14/04 14:52:24 	Evento Apertura incondicional por comando RS 232
+14/04 14:52:24 	Evento Cierre de la puerta
+14/04 14:52:24 	Evento Fallo de apertura (la puerta no se abre)
+14/04 14:52:24 	Evento Alarma puerta abierta demasiado tiempo
+14/04 14:52:24 	Evento Se ha cambiado la Fecha/Hora
+14/04 14:52:24 	Evento Se han cambiado los periodos de actividad
+14/04 14:52:24 	Evento Cambio Numero de Serie
+14/04 14:52:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 14:52:24 	Evento Activacion del horario de verano +1h
+14/04 14:52:24 	Evento Activacion del horario de invierno -1h
+14/04 14:52:24 	Evento Cambio del horario de verano
+14/04 14:52:24 	Evento Sin Comunicacion con Concentrador
+14/04 14:52:24 	Evento Recuperacion Comunicacion Concentrador
+14/04 14:52:24 Me_CD.NombreDisplay :0.1
+14/04 14:52:24 UI_CajaDotacion
+14/04 14:52:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 14:52:25 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 14:52:26 Recibida Orden SHOW_HIDE 
+14/04 14:52:26 SHOW_HIDE Me oculto
+14/04 17:16:35 NUEVA EJECUCION DEL UI
+14/04 17:16:35 LeerEventos
+14/04 17:16:35 Nro de Tipos de evento 20
+14/04 17:16:35 	Evento Reset (por fallo de alimentacion)
+14/04 17:16:35 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 17:16:35 	Evento Activado periodo
+14/04 17:16:35 	Evento Borrado periodo
+14/04 17:16:35 	Evento Apertura Normal de la puerta
+14/04 17:16:35 	Evento Apertura por comando RS 232
+14/04 17:16:35 	Evento Apertura mecanica saltandose la electronica
+14/04 17:16:35 	Evento Apertura incondicional por comando RS 232
+14/04 17:16:35 	Evento Cierre de la puerta
+14/04 17:16:35 	Evento Fallo de apertura (la puerta no se abre)
+14/04 17:16:35 	Evento Alarma puerta abierta demasiado tiempo
+14/04 17:16:35 	Evento Se ha cambiado la Fecha/Hora
+14/04 17:16:35 	Evento Se han cambiado los periodos de actividad
+14/04 17:16:35 	Evento Cambio Numero de Serie
+14/04 17:16:35 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 17:16:35 	Evento Activacion del horario de verano +1h
+14/04 17:16:35 	Evento Activacion del horario de invierno -1h
+14/04 17:16:35 	Evento Cambio del horario de verano
+14/04 17:16:35 	Evento Sin Comunicacion con Concentrador
+14/04 17:16:35 	Evento Recuperacion Comunicacion Concentrador
+14/04 17:16:35 Me_CD.NombreDisplay :0.1
+14/04 17:16:35 UI_CajaDotacion
+14/04 17:16:36 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 17:16:36 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 17:16:38 Recibida Orden SHOW_HIDE 
+14/04 17:16:38 SHOW_HIDE Me oculto
+14/04 18:28:32 NUEVA EJECUCION DEL UI
+14/04 18:28:32 LeerEventos
+14/04 18:28:32 Nro de Tipos de evento 20
+14/04 18:28:32 	Evento Reset (por fallo de alimentacion)
+14/04 18:28:32 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/04 18:28:32 	Evento Activado periodo
+14/04 18:28:32 	Evento Borrado periodo
+14/04 18:28:32 	Evento Apertura Normal de la puerta
+14/04 18:28:32 	Evento Apertura por comando RS 232
+14/04 18:28:32 	Evento Apertura mecanica saltandose la electronica
+14/04 18:28:32 	Evento Apertura incondicional por comando RS 232
+14/04 18:28:32 	Evento Cierre de la puerta
+14/04 18:28:32 	Evento Fallo de apertura (la puerta no se abre)
+14/04 18:28:32 	Evento Alarma puerta abierta demasiado tiempo
+14/04 18:28:32 	Evento Se ha cambiado la Fecha/Hora
+14/04 18:28:32 	Evento Se han cambiado los periodos de actividad
+14/04 18:28:32 	Evento Cambio Numero de Serie
+14/04 18:28:32 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/04 18:28:32 	Evento Activacion del horario de verano +1h
+14/04 18:28:32 	Evento Activacion del horario de invierno -1h
+14/04 18:28:32 	Evento Cambio del horario de verano
+14/04 18:28:32 	Evento Sin Comunicacion con Concentrador
+14/04 18:28:32 	Evento Recuperacion Comunicacion Concentrador
+14/04 18:28:32 Me_CD.NombreDisplay :0.1
+14/04 18:28:32 UI_CajaDotacion
+14/04 18:28:32 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/04 18:28:33 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/04 18:28:34 Recibida Orden SHOW_HIDE 
+14/04 18:28:34 SHOW_HIDE Me oculto
+15/04 04:01:24 NUEVA EJECUCION DEL UI
+15/04 04:01:24 LeerEventos
+15/04 04:01:24 Nro de Tipos de evento 20
+15/04 04:01:24 	Evento Reset (por fallo de alimentacion)
+15/04 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+15/04 04:01:24 	Evento Activado periodo
+15/04 04:01:24 	Evento Borrado periodo
+15/04 04:01:24 	Evento Apertura Normal de la puerta
+15/04 04:01:24 	Evento Apertura por comando RS 232
+15/04 04:01:24 	Evento Apertura mecanica saltandose la electronica
+15/04 04:01:24 	Evento Apertura incondicional por comando RS 232
+15/04 04:01:24 	Evento Cierre de la puerta
+15/04 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+15/04 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+15/04 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+15/04 04:01:24 	Evento Se han cambiado los periodos de actividad
+15/04 04:01:24 	Evento Cambio Numero de Serie
+15/04 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+15/04 04:01:24 	Evento Activacion del horario de verano +1h
+15/04 04:01:24 	Evento Activacion del horario de invierno -1h
+15/04 04:01:24 	Evento Cambio del horario de verano
+15/04 04:01:24 	Evento Sin Comunicacion con Concentrador
+15/04 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+15/04 04:01:24 Me_CD.NombreDisplay :0.1
+15/04 04:01:25 UI_CajaDotacion
+15/04 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+15/04 04:01:25 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+15/04 04:01:27 Recibida Orden SHOW_HIDE 
+15/04 04:01:27 SHOW_HIDE Me oculto
+15/04 12:49:17 DESHABILITAR_MANTENIMIENTO de 0 81 0 control
+15/04 12:49:29 HABILITAR_MANTENIMIENTO de 0 81 0 control
+15/04 12:49:29 HabilitarMantenimiento. Pantalla 0
+16/04 04:01:37 NUEVA EJECUCION DEL UI
+16/04 04:01:37 LeerEventos
+16/04 04:01:37 Nro de Tipos de evento 20
+16/04 04:01:37 	Evento Reset (por fallo de alimentacion)
+16/04 04:01:37 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+16/04 04:01:37 	Evento Activado periodo
+16/04 04:01:37 	Evento Borrado periodo
+16/04 04:01:37 	Evento Apertura Normal de la puerta
+16/04 04:01:37 	Evento Apertura por comando RS 232
+16/04 04:01:37 	Evento Apertura mecanica saltandose la electronica
+16/04 04:01:37 	Evento Apertura incondicional por comando RS 232
+16/04 04:01:37 	Evento Cierre de la puerta
+16/04 04:01:37 	Evento Fallo de apertura (la puerta no se abre)
+16/04 04:01:37 	Evento Alarma puerta abierta demasiado tiempo
+16/04 04:01:37 	Evento Se ha cambiado la Fecha/Hora
+16/04 04:01:37 	Evento Se han cambiado los periodos de actividad
+16/04 04:01:37 	Evento Cambio Numero de Serie
+16/04 04:01:37 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+16/04 04:01:37 	Evento Activacion del horario de verano +1h
+16/04 04:01:37 	Evento Activacion del horario de invierno -1h
+16/04 04:01:37 	Evento Cambio del horario de verano
+16/04 04:01:37 	Evento Sin Comunicacion con Concentrador
+16/04 04:01:37 	Evento Recuperacion Comunicacion Concentrador
+16/04 04:01:37 Me_CD.NombreDisplay :0.1
+16/04 04:01:37 UI_CajaDotacion
+16/04 04:01:38 UI_CajaDotacion Despues de instalar PollSocketRPCs
+16/04 04:01:38 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+16/04 04:01:40 Recibida Orden SHOW_HIDE 
+16/04 04:01:40 SHOW_HIDE Me oculto
+17/04 04:01:27 NUEVA EJECUCION DEL UI
+17/04 04:01:27 LeerEventos
+17/04 04:01:27 Nro de Tipos de evento 20
+17/04 04:01:27 	Evento Reset (por fallo de alimentacion)
+17/04 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+17/04 04:01:27 	Evento Activado periodo
+17/04 04:01:27 	Evento Borrado periodo
+17/04 04:01:27 	Evento Apertura Normal de la puerta
+17/04 04:01:27 	Evento Apertura por comando RS 232
+17/04 04:01:27 	Evento Apertura mecanica saltandose la electronica
+17/04 04:01:27 	Evento Apertura incondicional por comando RS 232
+17/04 04:01:27 	Evento Cierre de la puerta
+17/04 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+17/04 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+17/04 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+17/04 04:01:27 	Evento Se han cambiado los periodos de actividad
+17/04 04:01:27 	Evento Cambio Numero de Serie
+17/04 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+17/04 04:01:27 	Evento Activacion del horario de verano +1h
+17/04 04:01:27 	Evento Activacion del horario de invierno -1h
+17/04 04:01:27 	Evento Cambio del horario de verano
+17/04 04:01:27 	Evento Sin Comunicacion con Concentrador
+17/04 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+17/04 04:01:27 Me_CD.NombreDisplay :0.1
+17/04 04:01:27 UI_CajaDotacion
+17/04 04:01:27 UI_CajaDotacion Despues de instalar PollSocketRPCs
+17/04 04:01:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+17/04 04:01:29 Recibida Orden SHOW_HIDE 
+17/04 04:01:29 SHOW_HIDE Me oculto
+18/04 04:01:30 NUEVA EJECUCION DEL UI
+18/04 04:01:30 LeerEventos
+18/04 04:01:30 Nro de Tipos de evento 20
+18/04 04:01:30 	Evento Reset (por fallo de alimentacion)
+18/04 04:01:30 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+18/04 04:01:30 	Evento Activado periodo
+18/04 04:01:30 	Evento Borrado periodo
+18/04 04:01:30 	Evento Apertura Normal de la puerta
+18/04 04:01:30 	Evento Apertura por comando RS 232
+18/04 04:01:30 	Evento Apertura mecanica saltandose la electronica
+18/04 04:01:30 	Evento Apertura incondicional por comando RS 232
+18/04 04:01:30 	Evento Cierre de la puerta
+18/04 04:01:30 	Evento Fallo de apertura (la puerta no se abre)
+18/04 04:01:30 	Evento Alarma puerta abierta demasiado tiempo
+18/04 04:01:30 	Evento Se ha cambiado la Fecha/Hora
+18/04 04:01:30 	Evento Se han cambiado los periodos de actividad
+18/04 04:01:30 	Evento Cambio Numero de Serie
+18/04 04:01:30 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+18/04 04:01:30 	Evento Activacion del horario de verano +1h
+18/04 04:01:30 	Evento Activacion del horario de invierno -1h
+18/04 04:01:30 	Evento Cambio del horario de verano
+18/04 04:01:30 	Evento Sin Comunicacion con Concentrador
+18/04 04:01:30 	Evento Recuperacion Comunicacion Concentrador
+18/04 04:01:30 Me_CD.NombreDisplay :0.1
+18/04 04:01:30 UI_CajaDotacion
+18/04 04:01:30 UI_CajaDotacion Despues de instalar PollSocketRPCs
+18/04 04:01:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+18/04 04:01:32 Recibida Orden SHOW_HIDE 
+18/04 04:01:32 SHOW_HIDE Me oculto
+19/04 04:01:19 NUEVA EJECUCION DEL UI
+19/04 04:01:19 LeerEventos
+19/04 04:01:19 Nro de Tipos de evento 20
+19/04 04:01:19 	Evento Reset (por fallo de alimentacion)
+19/04 04:01:19 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+19/04 04:01:19 	Evento Activado periodo
+19/04 04:01:19 	Evento Borrado periodo
+19/04 04:01:19 	Evento Apertura Normal de la puerta
+19/04 04:01:19 	Evento Apertura por comando RS 232
+19/04 04:01:19 	Evento Apertura mecanica saltandose la electronica
+19/04 04:01:19 	Evento Apertura incondicional por comando RS 232
+19/04 04:01:19 	Evento Cierre de la puerta
+19/04 04:01:19 	Evento Fallo de apertura (la puerta no se abre)
+19/04 04:01:19 	Evento Alarma puerta abierta demasiado tiempo
+19/04 04:01:19 	Evento Se ha cambiado la Fecha/Hora
+19/04 04:01:19 	Evento Se han cambiado los periodos de actividad
+19/04 04:01:19 	Evento Cambio Numero de Serie
+19/04 04:01:19 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+19/04 04:01:19 	Evento Activacion del horario de verano +1h
+19/04 04:01:19 	Evento Activacion del horario de invierno -1h
+19/04 04:01:19 	Evento Cambio del horario de verano
+19/04 04:01:19 	Evento Sin Comunicacion con Concentrador
+19/04 04:01:19 	Evento Recuperacion Comunicacion Concentrador
+19/04 04:01:19 Me_CD.NombreDisplay :0.1
+19/04 04:01:20 UI_CajaDotacion
+19/04 04:01:21 UI_CajaDotacion Despues de instalar PollSocketRPCs
+19/04 04:01:21 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+19/04 04:01:22 Recibida Orden SHOW_HIDE 
+19/04 04:01:22 SHOW_HIDE Me oculto
+20/04 04:01:22 NUEVA EJECUCION DEL UI
+20/04 04:01:22 LeerEventos
+20/04 04:01:22 Nro de Tipos de evento 20
+20/04 04:01:22 	Evento Reset (por fallo de alimentacion)
+20/04 04:01:22 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+20/04 04:01:22 	Evento Activado periodo
+20/04 04:01:22 	Evento Borrado periodo
+20/04 04:01:22 	Evento Apertura Normal de la puerta
+20/04 04:01:22 	Evento Apertura por comando RS 232
+20/04 04:01:22 	Evento Apertura mecanica saltandose la electronica
+20/04 04:01:22 	Evento Apertura incondicional por comando RS 232
+20/04 04:01:22 	Evento Cierre de la puerta
+20/04 04:01:22 	Evento Fallo de apertura (la puerta no se abre)
+20/04 04:01:22 	Evento Alarma puerta abierta demasiado tiempo
+20/04 04:01:22 	Evento Se ha cambiado la Fecha/Hora
+20/04 04:01:22 	Evento Se han cambiado los periodos de actividad
+20/04 04:01:22 	Evento Cambio Numero de Serie
+20/04 04:01:22 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+20/04 04:01:22 	Evento Activacion del horario de verano +1h
+20/04 04:01:22 	Evento Activacion del horario de invierno -1h
+20/04 04:01:22 	Evento Cambio del horario de verano
+20/04 04:01:22 	Evento Sin Comunicacion con Concentrador
+20/04 04:01:22 	Evento Recuperacion Comunicacion Concentrador
+20/04 04:01:22 Me_CD.NombreDisplay :0.1
+20/04 04:01:22 UI_CajaDotacion
+20/04 04:01:22 UI_CajaDotacion Despues de instalar PollSocketRPCs
+20/04 04:01:23 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+20/04 04:01:25 Recibida Orden SHOW_HIDE 
+20/04 04:01:25 SHOW_HIDE Me oculto
+21/04 04:01:33 NUEVA EJECUCION DEL UI
+21/04 04:01:33 LeerEventos
+21/04 04:01:33 Nro de Tipos de evento 20
+21/04 04:01:33 	Evento Reset (por fallo de alimentacion)
+21/04 04:01:33 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+21/04 04:01:33 	Evento Activado periodo
+21/04 04:01:33 	Evento Borrado periodo
+21/04 04:01:33 	Evento Apertura Normal de la puerta
+21/04 04:01:33 	Evento Apertura por comando RS 232
+21/04 04:01:33 	Evento Apertura mecanica saltandose la electronica
+21/04 04:01:33 	Evento Apertura incondicional por comando RS 232
+21/04 04:01:33 	Evento Cierre de la puerta
+21/04 04:01:33 	Evento Fallo de apertura (la puerta no se abre)
+21/04 04:01:33 	Evento Alarma puerta abierta demasiado tiempo
+21/04 04:01:33 	Evento Se ha cambiado la Fecha/Hora
+21/04 04:01:33 	Evento Se han cambiado los periodos de actividad
+21/04 04:01:33 	Evento Cambio Numero de Serie
+21/04 04:01:33 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+21/04 04:01:33 	Evento Activacion del horario de verano +1h
+21/04 04:01:33 	Evento Activacion del horario de invierno -1h
+21/04 04:01:33 	Evento Cambio del horario de verano
+21/04 04:01:33 	Evento Sin Comunicacion con Concentrador
+21/04 04:01:33 	Evento Recuperacion Comunicacion Concentrador
+21/04 04:01:33 Me_CD.NombreDisplay :0.1
+21/04 04:01:33 UI_CajaDotacion
+21/04 04:01:33 UI_CajaDotacion Despues de instalar PollSocketRPCs
+21/04 04:01:34 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+21/04 04:01:36 Recibida Orden SHOW_HIDE 
+21/04 04:01:36 SHOW_HIDE Me oculto
+21/04 18:43:13 NUEVA EJECUCION DEL UI
+21/04 18:43:13 LeerEventos
+21/04 18:43:13 Nro de Tipos de evento 20
+21/04 18:43:13 	Evento Reset (por fallo de alimentacion)
+21/04 18:43:13 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+21/04 18:43:13 	Evento Activado periodo
+21/04 18:43:13 	Evento Borrado periodo
+21/04 18:43:13 	Evento Apertura Normal de la puerta
+21/04 18:43:13 	Evento Apertura por comando RS 232
+21/04 18:43:13 	Evento Apertura mecanica saltandose la electronica
+21/04 18:43:13 	Evento Apertura incondicional por comando RS 232
+21/04 18:43:13 	Evento Cierre de la puerta
+21/04 18:43:13 	Evento Fallo de apertura (la puerta no se abre)
+21/04 18:43:13 	Evento Alarma puerta abierta demasiado tiempo
+21/04 18:43:13 	Evento Se ha cambiado la Fecha/Hora
+21/04 18:43:13 	Evento Se han cambiado los periodos de actividad
+21/04 18:43:13 	Evento Cambio Numero de Serie
+21/04 18:43:13 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+21/04 18:43:13 	Evento Activacion del horario de verano +1h
+21/04 18:43:13 	Evento Activacion del horario de invierno -1h
+21/04 18:43:13 	Evento Cambio del horario de verano
+21/04 18:43:13 	Evento Sin Comunicacion con Concentrador
+21/04 18:43:13 	Evento Recuperacion Comunicacion Concentrador
+21/04 18:43:13 Me_CD.NombreDisplay :0.1
+21/04 18:43:13 UI_CajaDotacion
+21/04 18:43:14 UI_CajaDotacion Despues de instalar PollSocketRPCs
+21/04 18:43:14 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+21/04 18:43:16 Recibida Orden SHOW_HIDE 
+21/04 18:43:16 SHOW_HIDE Me oculto
+22/04 04:01:25 NUEVA EJECUCION DEL UI
+22/04 04:01:25 LeerEventos
+22/04 04:01:25 Nro de Tipos de evento 20
+22/04 04:01:25 	Evento Reset (por fallo de alimentacion)
+22/04 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+22/04 04:01:25 	Evento Activado periodo
+22/04 04:01:25 	Evento Borrado periodo
+22/04 04:01:25 	Evento Apertura Normal de la puerta
+22/04 04:01:25 	Evento Apertura por comando RS 232
+22/04 04:01:25 	Evento Apertura mecanica saltandose la electronica
+22/04 04:01:25 	Evento Apertura incondicional por comando RS 232
+22/04 04:01:25 	Evento Cierre de la puerta
+22/04 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+22/04 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+22/04 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+22/04 04:01:25 	Evento Se han cambiado los periodos de actividad
+22/04 04:01:25 	Evento Cambio Numero de Serie
+22/04 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+22/04 04:01:25 	Evento Activacion del horario de verano +1h
+22/04 04:01:25 	Evento Activacion del horario de invierno -1h
+22/04 04:01:25 	Evento Cambio del horario de verano
+22/04 04:01:25 	Evento Sin Comunicacion con Concentrador
+22/04 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+22/04 04:01:25 Me_CD.NombreDisplay :0.1
+22/04 04:01:25 UI_CajaDotacion
+22/04 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+22/04 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+22/04 04:01:28 Recibida Orden SHOW_HIDE 
+22/04 04:01:28 SHOW_HIDE Me oculto
+23/04 04:01:24 NUEVA EJECUCION DEL UI
+23/04 04:01:24 LeerEventos
+23/04 04:01:24 Nro de Tipos de evento 20
+23/04 04:01:24 	Evento Reset (por fallo de alimentacion)
+23/04 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+23/04 04:01:24 	Evento Activado periodo
+23/04 04:01:24 	Evento Borrado periodo
+23/04 04:01:24 	Evento Apertura Normal de la puerta
+23/04 04:01:24 	Evento Apertura por comando RS 232
+23/04 04:01:24 	Evento Apertura mecanica saltandose la electronica
+23/04 04:01:24 	Evento Apertura incondicional por comando RS 232
+23/04 04:01:24 	Evento Cierre de la puerta
+23/04 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+23/04 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+23/04 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+23/04 04:01:24 	Evento Se han cambiado los periodos de actividad
+23/04 04:01:24 	Evento Cambio Numero de Serie
+23/04 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+23/04 04:01:24 	Evento Activacion del horario de verano +1h
+23/04 04:01:24 	Evento Activacion del horario de invierno -1h
+23/04 04:01:24 	Evento Cambio del horario de verano
+23/04 04:01:24 	Evento Sin Comunicacion con Concentrador
+23/04 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+23/04 04:01:24 Me_CD.NombreDisplay :0.1
+23/04 04:01:24 UI_CajaDotacion
+23/04 04:01:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+23/04 04:01:25 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+23/04 04:01:26 Recibida Orden SHOW_HIDE 
+23/04 04:01:26 SHOW_HIDE Me oculto
+24/04 04:01:26 NUEVA EJECUCION DEL UI
+24/04 04:01:26 LeerEventos
+24/04 04:01:26 Nro de Tipos de evento 20
+24/04 04:01:26 	Evento Reset (por fallo de alimentacion)
+24/04 04:01:26 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+24/04 04:01:26 	Evento Activado periodo
+24/04 04:01:26 	Evento Borrado periodo
+24/04 04:01:26 	Evento Apertura Normal de la puerta
+24/04 04:01:26 	Evento Apertura por comando RS 232
+24/04 04:01:26 	Evento Apertura mecanica saltandose la electronica
+24/04 04:01:26 	Evento Apertura incondicional por comando RS 232
+24/04 04:01:26 	Evento Cierre de la puerta
+24/04 04:01:26 	Evento Fallo de apertura (la puerta no se abre)
+24/04 04:01:26 	Evento Alarma puerta abierta demasiado tiempo
+24/04 04:01:26 	Evento Se ha cambiado la Fecha/Hora
+24/04 04:01:26 	Evento Se han cambiado los periodos de actividad
+24/04 04:01:26 	Evento Cambio Numero de Serie
+24/04 04:01:26 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+24/04 04:01:26 	Evento Activacion del horario de verano +1h
+24/04 04:01:26 	Evento Activacion del horario de invierno -1h
+24/04 04:01:26 	Evento Cambio del horario de verano
+24/04 04:01:26 	Evento Sin Comunicacion con Concentrador
+24/04 04:01:26 	Evento Recuperacion Comunicacion Concentrador
+24/04 04:01:26 Me_CD.NombreDisplay :0.1
+24/04 04:01:26 UI_CajaDotacion
+24/04 04:01:26 UI_CajaDotacion Despues de instalar PollSocketRPCs
+24/04 04:01:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+24/04 04:01:29 Recibida Orden SHOW_HIDE 
+24/04 04:01:29 SHOW_HIDE Me oculto
+25/04 04:01:27 NUEVA EJECUCION DEL UI
+25/04 04:01:27 LeerEventos
+25/04 04:01:27 Nro de Tipos de evento 20
+25/04 04:01:27 	Evento Reset (por fallo de alimentacion)
+25/04 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+25/04 04:01:27 	Evento Activado periodo
+25/04 04:01:27 	Evento Borrado periodo
+25/04 04:01:27 	Evento Apertura Normal de la puerta
+25/04 04:01:27 	Evento Apertura por comando RS 232
+25/04 04:01:27 	Evento Apertura mecanica saltandose la electronica
+25/04 04:01:27 	Evento Apertura incondicional por comando RS 232
+25/04 04:01:27 	Evento Cierre de la puerta
+25/04 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+25/04 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+25/04 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+25/04 04:01:27 	Evento Se han cambiado los periodos de actividad
+25/04 04:01:27 	Evento Cambio Numero de Serie
+25/04 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+25/04 04:01:27 	Evento Activacion del horario de verano +1h
+25/04 04:01:27 	Evento Activacion del horario de invierno -1h
+25/04 04:01:27 	Evento Cambio del horario de verano
+25/04 04:01:27 	Evento Sin Comunicacion con Concentrador
+25/04 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+25/04 04:01:27 Me_CD.NombreDisplay :0.1
+25/04 04:01:27 UI_CajaDotacion
+25/04 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+25/04 04:01:28 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+25/04 04:01:30 Recibida Orden SHOW_HIDE 
+25/04 04:01:30 SHOW_HIDE Me oculto
+26/04 04:01:29 NUEVA EJECUCION DEL UI
+26/04 04:01:29 LeerEventos
+26/04 04:01:29 Nro de Tipos de evento 20
+26/04 04:01:29 	Evento Reset (por fallo de alimentacion)
+26/04 04:01:29 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+26/04 04:01:29 	Evento Activado periodo
+26/04 04:01:29 	Evento Borrado periodo
+26/04 04:01:29 	Evento Apertura Normal de la puerta
+26/04 04:01:29 	Evento Apertura por comando RS 232
+26/04 04:01:29 	Evento Apertura mecanica saltandose la electronica
+26/04 04:01:29 	Evento Apertura incondicional por comando RS 232
+26/04 04:01:29 	Evento Cierre de la puerta
+26/04 04:01:29 	Evento Fallo de apertura (la puerta no se abre)
+26/04 04:01:29 	Evento Alarma puerta abierta demasiado tiempo
+26/04 04:01:29 	Evento Se ha cambiado la Fecha/Hora
+26/04 04:01:29 	Evento Se han cambiado los periodos de actividad
+26/04 04:01:29 	Evento Cambio Numero de Serie
+26/04 04:01:29 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+26/04 04:01:29 	Evento Activacion del horario de verano +1h
+26/04 04:01:29 	Evento Activacion del horario de invierno -1h
+26/04 04:01:29 	Evento Cambio del horario de verano
+26/04 04:01:29 	Evento Sin Comunicacion con Concentrador
+26/04 04:01:29 	Evento Recuperacion Comunicacion Concentrador
+26/04 04:01:29 Me_CD.NombreDisplay :0.1
+26/04 04:01:29 UI_CajaDotacion
+26/04 04:01:30 UI_CajaDotacion Despues de instalar PollSocketRPCs
+26/04 04:01:30 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+26/04 04:01:32 Recibida Orden SHOW_HIDE 
+26/04 04:01:32 SHOW_HIDE Me oculto
+27/04 04:01:27 NUEVA EJECUCION DEL UI
+27/04 04:01:27 LeerEventos
+27/04 04:01:27 Nro de Tipos de evento 20
+27/04 04:01:27 	Evento Reset (por fallo de alimentacion)
+27/04 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+27/04 04:01:27 	Evento Activado periodo
+27/04 04:01:27 	Evento Borrado periodo
+27/04 04:01:27 	Evento Apertura Normal de la puerta
+27/04 04:01:27 	Evento Apertura por comando RS 232
+27/04 04:01:27 	Evento Apertura mecanica saltandose la electronica
+27/04 04:01:27 	Evento Apertura incondicional por comando RS 232
+27/04 04:01:27 	Evento Cierre de la puerta
+27/04 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+27/04 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+27/04 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+27/04 04:01:27 	Evento Se han cambiado los periodos de actividad
+27/04 04:01:27 	Evento Cambio Numero de Serie
+27/04 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+27/04 04:01:27 	Evento Activacion del horario de verano +1h
+27/04 04:01:27 	Evento Activacion del horario de invierno -1h
+27/04 04:01:27 	Evento Cambio del horario de verano
+27/04 04:01:27 	Evento Sin Comunicacion con Concentrador
+27/04 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+27/04 04:01:27 Me_CD.NombreDisplay :0.1
+27/04 04:01:27 UI_CajaDotacion
+27/04 04:01:27 UI_CajaDotacion Despues de instalar PollSocketRPCs
+27/04 04:01:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+27/04 04:01:29 Recibida Orden SHOW_HIDE 
+27/04 04:01:29 SHOW_HIDE Me oculto
+28/04 04:01:27 NUEVA EJECUCION DEL UI
+28/04 04:01:27 LeerEventos
+28/04 04:01:27 Nro de Tipos de evento 20
+28/04 04:01:27 	Evento Reset (por fallo de alimentacion)
+28/04 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+28/04 04:01:27 	Evento Activado periodo
+28/04 04:01:27 	Evento Borrado periodo
+28/04 04:01:27 	Evento Apertura Normal de la puerta
+28/04 04:01:27 	Evento Apertura por comando RS 232
+28/04 04:01:27 	Evento Apertura mecanica saltandose la electronica
+28/04 04:01:27 	Evento Apertura incondicional por comando RS 232
+28/04 04:01:27 	Evento Cierre de la puerta
+28/04 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+28/04 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+28/04 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+28/04 04:01:27 	Evento Se han cambiado los periodos de actividad
+28/04 04:01:27 	Evento Cambio Numero de Serie
+28/04 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+28/04 04:01:27 	Evento Activacion del horario de verano +1h
+28/04 04:01:27 	Evento Activacion del horario de invierno -1h
+28/04 04:01:27 	Evento Cambio del horario de verano
+28/04 04:01:27 	Evento Sin Comunicacion con Concentrador
+28/04 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+28/04 04:01:27 Me_CD.NombreDisplay :0.1
+28/04 04:01:28 UI_CajaDotacion
+28/04 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+28/04 04:01:29 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+28/04 04:01:30 Recibida Orden SHOW_HIDE 
+28/04 04:01:30 SHOW_HIDE Me oculto
+28/04 13:53:06 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+28/04 13:53:06 Parametros de la orden: 10 19 1 DOT10191 DOT10191
+Nueva Localizacion 10 19 1 -DOT10191. Enviamos SET_UI
+28/04 13:53:06 SET_DRV: Versiones antes de SET_UI: -1 1083153186 -1 1083153186
+28/04 13:53:06 Enviado SET_UI a DOT10191. Linea : 10 Estacion : 19 Vestibulo : 1
+28/04 13:53:06 Recibida Orden SHOW_HIDE 
+28/04 13:53:06 RecargarDatos conectando.ascii
+28/04 13:53:06 RecargarDatos ../conectando.ascii abierto
+28/04 13:53:06 SHOW_HIDE: cargamos conectando
+28/04 13:53:06 CambiarForm
+28/04 13:53:06 SHOW_HIDE Me visualizo
+28/04 13:53:08 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 348 bytes
+28/04 13:53:08 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+28/04 13:53:08 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=11)
+28/04 13:53:08 Recibida orden de INICIALIZAR_UI con buffer 1
+28/04 13:53:08 INICIALIZAR_UI: ACTUALIZAR_DATOS
+28/04 13:53:08 LeerFicheroDatos
+28/04 13:53:08 LeerFicheroDatos: Ha habido Cambio en el num de alarmas 2
+28/04 13:53:08 CrearAsciiEstado
+28/04 13:53:08 CrearAsciiPeriodos
+28/04 13:53:08 INICIALIZAR_UI: despues de LeerFicheroDatos
+28/04 13:53:08 INICIALIZAR_UI: se han creado los ascii de datos
+28/04 13:53:08 ActualizarPantallaDatosNew: PantallaActiva -1
+28/04 13:53:08 CargarPantallaEstado: Num Alarmas 2 
+28/04 13:53:08 SpanAlarmas. Me_CD.iNroAlarmasActivas 2 
+28/04 13:53:08 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+28/04 13:53:08 SpanAlarmas. Salimos por default 2
+28/04 13:53:08 CargarPantallaEstado: despues de SpanAlarmas. Lineas 11
+28/04 13:53:08 RecargarDatos estado.ascii
+28/04 13:53:08 RecargarDatos estado.ascii abierto
+28/04 13:53:08 CargarPantallaEstado: ESTADO_NORMAL
+28/04 13:53:08 CambiarForm
+28/04 13:53:08 CargarPantallaEstado:NroAlarmas 2
+28/04 13:53:08 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+28/04 13:53:08 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 188 bytes
+28/04 13:53:08 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+28/04 13:53:08 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+28/04 13:53:08 Recibida orden de INICIALIZAR_UI con buffer 2
+28/04 13:53:08 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+28/04 13:53:08 DecodFicheroEventos
+28/04 13:53:08 DecodFicheroEventos. TengoAsciiEventos
+28/04 13:53:08 CrearAsciiConsultas
+28/04 13:53:08 INICIALIZAR_UI: se han creado los ascii de concentracion
+28/04 13:53:08 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+28/04 13:53:08 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+28/04 13:53:08 ActualizarPantallaEventosNew: Salimos por default 
+28/04 13:53:08 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+28/04 13:53:17 Recibida Orden SHOW_HIDE 
+28/04 13:53:17 SHOW_HIDE Me oculto
+28/04 13:53:17 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+28/04 13:53:17 Mando UNSET_UI a 10 19 1 DOT10191
+28/04 13:53:17 ActivarDescon
+28/04 13:53:24 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+28/04 13:53:24 Parametros de la orden: 10 20 1 DOT10201 DOT10201
+Nueva Localizacion 10 20 1 -DOT10201. Enviamos SET_UI
+28/04 13:53:24 SET_DRV: Versiones antes de SET_UI: -1 1083153204 -1 1083153204
+28/04 13:53:24 Enviado SET_UI a DOT10201. Linea : 10 Estacion : 20 Vestibulo : 1
+28/04 13:53:25 Recibida Orden SHOW_HIDE 
+28/04 13:53:25 RecargarDatos conectando.ascii
+28/04 13:53:25 RecargarDatos ../conectando.ascii abierto
+28/04 13:53:25 SHOW_HIDE: cargamos conectando
+28/04 13:53:25 CambiarForm
+28/04 13:53:25 SHOW_HIDE Me visualizo
+28/04 13:53:27 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 318 bytes
+28/04 13:53:27 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+28/04 13:53:27 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=13)
+28/04 13:53:27 Recibida orden de INICIALIZAR_UI con buffer 1
+28/04 13:53:27 INICIALIZAR_UI: ACTUALIZAR_DATOS
+28/04 13:53:27 LeerFicheroDatos
+28/04 13:53:27 LeerFicheroDatos: Ha habido Cambio en el num de alarmas 1
+28/04 13:53:27 CrearAsciiEstado
+28/04 13:53:27 CrearAsciiPeriodos
+28/04 13:53:27 INICIALIZAR_UI: despues de LeerFicheroDatos
+28/04 13:53:27 INICIALIZAR_UI: se han creado los ascii de datos
+28/04 13:53:27 ActualizarPantallaDatosNew: PantallaActiva -1
+28/04 13:53:27 CargarPantallaEstado: Num Alarmas 1 
+28/04 13:53:27 SpanAlarmas. Me_CD.iNroAlarmasActivas 1 
+28/04 13:53:27 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+28/04 13:53:27 SpanAlarmas. Salimos por default 2
+28/04 13:53:27 CargarPantallaEstado: despues de SpanAlarmas. Lineas 10
+28/04 13:53:27 RecargarDatos estado.ascii
+28/04 13:53:27 RecargarDatos estado.ascii abierto
+28/04 13:53:27 CargarPantallaEstado: ESTADO_NORMAL
+28/04 13:53:27 CambiarForm
+28/04 13:53:27 CargarPantallaEstado:NroAlarmas 1
+28/04 13:53:27 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+28/04 13:53:29 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 206 bytes
+28/04 13:53:29 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+28/04 13:53:29 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=14)
+28/04 13:53:29 Recibida orden de INICIALIZAR_UI con buffer 2
+28/04 13:53:29 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+28/04 13:53:29 DecodFicheroEventos
+28/04 13:53:29 DecodFicheroEventos. TengoAsciiEventos
+28/04 13:53:29 CrearAsciiConsultas
+28/04 13:53:29 INICIALIZAR_UI: se han creado los ascii de concentracion
+28/04 13:53:29 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+28/04 13:53:29 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+28/04 13:53:29 ActualizarPantallaEventosNew: Salimos por default 
+28/04 13:53:29 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+28/04 13:53:56 Recibida Orden SHOW_HIDE 
+28/04 13:53:56 SHOW_HIDE Me oculto
+28/04 13:53:56 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+28/04 13:53:56 Mando UNSET_UI a 10 20 1 DOT10201
+28/04 13:53:56 ActivarDescon
+29/04 04:01:31 NUEVA EJECUCION DEL UI
+29/04 04:01:31 LeerEventos
+29/04 04:01:31 Nro de Tipos de evento 20
+29/04 04:01:31 	Evento Reset (por fallo de alimentacion)
+29/04 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+29/04 04:01:31 	Evento Activado periodo
+29/04 04:01:31 	Evento Borrado periodo
+29/04 04:01:31 	Evento Apertura Normal de la puerta
+29/04 04:01:31 	Evento Apertura por comando RS 232
+29/04 04:01:31 	Evento Apertura mecanica saltandose la electronica
+29/04 04:01:31 	Evento Apertura incondicional por comando RS 232
+29/04 04:01:31 	Evento Cierre de la puerta
+29/04 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+29/04 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+29/04 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+29/04 04:01:31 	Evento Se han cambiado los periodos de actividad
+29/04 04:01:31 	Evento Cambio Numero de Serie
+29/04 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+29/04 04:01:31 	Evento Activacion del horario de verano +1h
+29/04 04:01:31 	Evento Activacion del horario de invierno -1h
+29/04 04:01:31 	Evento Cambio del horario de verano
+29/04 04:01:31 	Evento Sin Comunicacion con Concentrador
+29/04 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+29/04 04:01:31 Me_CD.NombreDisplay :0.1
+29/04 04:01:31 UI_CajaDotacion
+29/04 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+29/04 04:01:32 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+29/04 04:01:33 Recibida Orden SHOW_HIDE 
+29/04 04:01:33 SHOW_HIDE Me oculto
+30/04 04:01:31 NUEVA EJECUCION DEL UI
+30/04 04:01:31 LeerEventos
+30/04 04:01:31 Nro de Tipos de evento 20
+30/04 04:01:31 	Evento Reset (por fallo de alimentacion)
+30/04 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+30/04 04:01:31 	Evento Activado periodo
+30/04 04:01:31 	Evento Borrado periodo
+30/04 04:01:31 	Evento Apertura Normal de la puerta
+30/04 04:01:31 	Evento Apertura por comando RS 232
+30/04 04:01:31 	Evento Apertura mecanica saltandose la electronica
+30/04 04:01:31 	Evento Apertura incondicional por comando RS 232
+30/04 04:01:31 	Evento Cierre de la puerta
+30/04 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+30/04 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+30/04 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+30/04 04:01:31 	Evento Se han cambiado los periodos de actividad
+30/04 04:01:31 	Evento Cambio Numero de Serie
+30/04 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+30/04 04:01:31 	Evento Activacion del horario de verano +1h
+30/04 04:01:31 	Evento Activacion del horario de invierno -1h
+30/04 04:01:31 	Evento Cambio del horario de verano
+30/04 04:01:31 	Evento Sin Comunicacion con Concentrador
+30/04 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+30/04 04:01:31 Me_CD.NombreDisplay :0.1
+30/04 04:01:31 UI_CajaDotacion
+30/04 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+30/04 04:01:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+30/04 04:01:33 Recibida Orden SHOW_HIDE 
+30/04 04:01:33 SHOW_HIDE Me oculto
+30/04 10:54:10 NUEVA EJECUCION DEL UI
+30/04 10:54:10 LeerEventos
+30/04 10:54:10 Nro de Tipos de evento 20
+30/04 10:54:10 	Evento Reset (por fallo de alimentacion)
+30/04 10:54:10 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+30/04 10:54:10 	Evento Activado periodo
+30/04 10:54:10 	Evento Borrado periodo
+30/04 10:54:10 	Evento Apertura Normal de la puerta
+30/04 10:54:10 	Evento Apertura por comando RS 232
+30/04 10:54:10 	Evento Apertura mecanica saltandose la electronica
+30/04 10:54:10 	Evento Apertura incondicional por comando RS 232
+30/04 10:54:10 	Evento Cierre de la puerta
+30/04 10:54:10 	Evento Fallo de apertura (la puerta no se abre)
+30/04 10:54:10 	Evento Alarma puerta abierta demasiado tiempo
+30/04 10:54:10 	Evento Se ha cambiado la Fecha/Hora
+30/04 10:54:10 	Evento Se han cambiado los periodos de actividad
+30/04 10:54:10 	Evento Cambio Numero de Serie
+30/04 10:54:10 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+30/04 10:54:10 	Evento Activacion del horario de verano +1h
+30/04 10:54:10 	Evento Activacion del horario de invierno -1h
+30/04 10:54:10 	Evento Cambio del horario de verano
+30/04 10:54:10 	Evento Sin Comunicacion con Concentrador
+30/04 10:54:10 	Evento Recuperacion Comunicacion Concentrador
+30/04 10:54:10 Me_CD.NombreDisplay :0.1
+30/04 10:54:11 UI_CajaDotacion
+30/04 10:54:11 UI_CajaDotacion Despues de instalar PollSocketRPCs
+30/04 10:54:11 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+30/04 10:54:13 Recibida Orden SHOW_HIDE 
+30/04 10:54:13 SHOW_HIDE Me oculto
+30/04 12:53:19 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+30/04 12:53:19 Parametros de la orden: 12 24 1 DOT12241 DOT12241
+Nueva Localizacion 12 24 1 -DOT12241. Enviamos SET_UI
+30/04 12:53:19 SET_DRV: Versiones antes de SET_UI: -1 1083322399 -1 1083322399
+30/04 12:53:19 Enviado SET_UI a DOT12241. Linea : 12 Estacion : 24 Vestibulo : 1
+30/04 12:53:19 Recibida Orden SHOW_HIDE 
+30/04 12:53:19 RecargarDatos conectando.ascii
+30/04 12:53:19 RecargarDatos ../conectando.ascii abierto
+30/04 12:53:19 SHOW_HIDE: cargamos conectando
+30/04 12:53:19 CambiarForm
+30/04 12:53:19 SHOW_HIDE Me visualizo
+30/04 12:53:20 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 273 bytes
+30/04 12:53:20 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 12:53:20 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=11)
+30/04 12:53:20 Recibida orden de INICIALIZAR_UI con buffer 1
+30/04 12:53:20 INICIALIZAR_UI: ACTUALIZAR_DATOS
+30/04 12:53:20 LeerFicheroDatos
+30/04 12:53:20 CrearAsciiEstado
+30/04 12:53:20 CrearAsciiPeriodos
+30/04 12:53:20 INICIALIZAR_UI: despues de LeerFicheroDatos
+30/04 12:53:20 INICIALIZAR_UI: se han creado los ascii de datos
+30/04 12:53:20 ActualizarPantallaDatosNew: PantallaActiva -1
+30/04 12:53:20 CargarPantallaEstado: Num Alarmas 0 
+30/04 12:53:21 SpanAlarmas. Me_CD.iNroAlarmasActivas 0 
+30/04 12:53:21 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+30/04 12:53:21 SpanAlarmas. Salimos por default 2
+30/04 12:53:21 CargarPantallaEstado: despues de SpanAlarmas. Lineas 9
+30/04 12:53:21 RecargarDatos estado.ascii
+30/04 12:53:21 RecargarDatos estado.ascii abierto
+30/04 12:53:21 CargarPantallaEstado: ESTADO_NORMAL
+30/04 12:53:21 CambiarForm
+30/04 12:53:21 CargarPantallaEstado:NroAlarmas 0
+30/04 12:53:21 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+30/04 12:53:21 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 216 bytes
+30/04 12:53:21 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 12:53:21 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+30/04 12:53:21 Recibida orden de INICIALIZAR_UI con buffer 2
+30/04 12:53:21 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+30/04 12:53:21 DecodFicheroEventos
+30/04 12:53:21 DecodFicheroEventos. TengoAsciiEventos
+30/04 12:53:21 CrearAsciiConsultas
+30/04 12:53:21 INICIALIZAR_UI: se han creado los ascii de concentracion
+30/04 12:53:21 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+30/04 12:53:21 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+30/04 12:53:21 ActualizarPantallaEventosNew: Salimos por default 
+30/04 12:53:21 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+30/04 12:53:23 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 272 bytes
+30/04 12:53:23 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 12:53:23 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+30/04 12:53:23 Recibida orden de INICIALIZAR_UI con buffer 1 0 0
+30/04 12:53:23 INICIALIZAR_UI: ACTUALIZAR_DATOS
+30/04 12:53:23 LeerFicheroDatos
+30/04 12:53:23 CrearAsciiEstado
+30/04 12:53:23 CrearAsciiPeriodos
+30/04 12:53:23 INICIALIZAR_UI: despues de LeerFicheroDatos
+30/04 12:53:23 INICIALIZAR_UI: se han creado los ascii de datos
+30/04 12:53:23 ActualizarPantallaDatosNew: PantallaActiva 2
+30/04 12:53:23 RecargarDatos estado.ascii
+30/04 12:53:23 RecargarDatos estado.ascii abierto
+30/04 12:53:24 ActualizarPantallaDatosNew: ESTADO_NORMAL RecargarDatos 
+30/04 12:53:24 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 214 bytes
+30/04 12:53:24 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 12:53:24 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+30/04 12:53:24 Recibida orden de INICIALIZAR_UI con buffer 2 0 0
+30/04 12:53:24 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+30/04 12:53:24 DecodFicheroEventos
+30/04 12:53:24 DecodFicheroEventos. TengoAsciiEventos
+30/04 12:53:24 CrearAsciiConsultas
+30/04 12:53:24 INICIALIZAR_UI: se han creado los ascii de concentracion
+30/04 12:53:24 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+30/04 12:53:24 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+30/04 12:53:24 ActualizarPantallaEventosNew: Salimos por default 
+30/04 12:53:24 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+30/04 12:53:33 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 273 bytes
+30/04 12:53:33 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 12:53:33 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+30/04 12:53:33 Recibida orden de INICIALIZAR_UI con buffer 1 0 0
+30/04 12:53:33 INICIALIZAR_UI: ACTUALIZAR_DATOS
+30/04 12:53:33 LeerFicheroDatos
+30/04 12:53:34 CrearAsciiEstado
+30/04 12:53:34 CrearAsciiPeriodos
+30/04 12:53:34 INICIALIZAR_UI: despues de LeerFicheroDatos
+30/04 12:53:34 INICIALIZAR_UI: se han creado los ascii de datos
+30/04 12:53:34 ActualizarPantallaDatosNew: PantallaActiva 2
+30/04 12:53:34 RecargarDatos estado.ascii
+30/04 12:53:34 RecargarDatos estado.ascii abierto
+30/04 12:53:34 ActualizarPantallaDatosNew: ESTADO_NORMAL RecargarDatos 
+30/04 12:53:49 Recibida Orden SHOW_HIDE 
+30/04 12:53:49 SHOW_HIDE Me oculto
+30/04 12:53:49 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+30/04 12:53:49 Mando UNSET_UI a 12 24 1 DOT12241
+30/04 12:53:49 ActivarDescon
+30/04 17:26:17 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+30/04 17:26:17 Parametros de la orden: 12 17 1 DOT12171 DOT12171
+Nueva Localizacion 12 17 1 -DOT12171. Enviamos SET_UI
+30/04 17:26:17 SET_DRV: Versiones antes de SET_UI: -1 1083338777 -1 1083338777
+30/04 17:26:17 Enviado SET_UI a DOT12171. Linea : 12 Estacion : 17 Vestibulo : 1
+30/04 17:26:17 Recibida Orden SHOW_HIDE 
+30/04 17:26:17 RecargarDatos conectando.ascii
+30/04 17:26:17 RecargarDatos ../conectando.ascii abierto
+30/04 17:26:17 SHOW_HIDE: cargamos conectando
+30/04 17:26:17 CambiarForm
+30/04 17:26:17 SHOW_HIDE Me visualizo
+30/04 17:26:20 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 321 bytes
+30/04 17:26:20 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 17:26:20 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=13)
+30/04 17:26:20 Recibida orden de INICIALIZAR_UI con buffer 1
+30/04 17:26:20 INICIALIZAR_UI: ACTUALIZAR_DATOS
+30/04 17:26:20 LeerFicheroDatos
+30/04 17:26:20 LeerFicheroDatos: Ha habido Cambio en el num de alarmas 1
+30/04 17:26:20 CrearAsciiEstado
+30/04 17:26:20 CrearAsciiPeriodos
+30/04 17:26:20 INICIALIZAR_UI: despues de LeerFicheroDatos
+30/04 17:26:20 INICIALIZAR_UI: se han creado los ascii de datos
+30/04 17:26:20 ActualizarPantallaDatosNew: PantallaActiva -1
+30/04 17:26:20 CargarPantallaEstado: Num Alarmas 1 
+30/04 17:26:20 SpanAlarmas. Me_CD.iNroAlarmasActivas 1 
+30/04 17:26:20 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+30/04 17:26:20 SpanAlarmas. Salimos por default 2
+30/04 17:26:20 CargarPantallaEstado: despues de SpanAlarmas. Lineas 10
+30/04 17:26:20 RecargarDatos estado.ascii
+30/04 17:26:20 RecargarDatos estado.ascii abierto
+30/04 17:26:20 CargarPantallaEstado: ESTADO_NORMAL
+30/04 17:26:20 CambiarForm
+30/04 17:26:20 CargarPantallaEstado:NroAlarmas 1
+30/04 17:26:20 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+30/04 17:26:20 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 183 bytes
+30/04 17:26:20 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+30/04 17:26:20 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=14)
+30/04 17:26:20 Recibida orden de INICIALIZAR_UI con buffer 2
+30/04 17:26:20 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+30/04 17:26:20 DecodFicheroEventos
+30/04 17:26:20 DecodFicheroEventos. TengoAsciiEventos
+30/04 17:26:20 CrearAsciiConsultas
+30/04 17:26:20 INICIALIZAR_UI: se han creado los ascii de concentracion
+30/04 17:26:20 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+30/04 17:26:20 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+30/04 17:26:20 ActualizarPantallaEventosNew: Salimos por default 
+30/04 17:26:20 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+30/04 17:26:22 Recibida Orden SHOW_HIDE 
+30/04 17:26:22 SHOW_HIDE Me oculto
+30/04 17:26:22 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+30/04 17:26:22 Mando UNSET_UI a 12 17 1 DOT12171
+30/04 17:26:22 ActivarDescon
+01/05 04:01:24 NUEVA EJECUCION DEL UI
+01/05 04:01:24 LeerEventos
+01/05 04:01:24 Nro de Tipos de evento 20
+01/05 04:01:24 	Evento Reset (por fallo de alimentacion)
+01/05 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+01/05 04:01:24 	Evento Activado periodo
+01/05 04:01:24 	Evento Borrado periodo
+01/05 04:01:24 	Evento Apertura Normal de la puerta
+01/05 04:01:24 	Evento Apertura por comando RS 232
+01/05 04:01:24 	Evento Apertura mecanica saltandose la electronica
+01/05 04:01:24 	Evento Apertura incondicional por comando RS 232
+01/05 04:01:24 	Evento Cierre de la puerta
+01/05 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+01/05 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+01/05 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+01/05 04:01:24 	Evento Se han cambiado los periodos de actividad
+01/05 04:01:24 	Evento Cambio Numero de Serie
+01/05 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+01/05 04:01:24 	Evento Activacion del horario de verano +1h
+01/05 04:01:24 	Evento Activacion del horario de invierno -1h
+01/05 04:01:24 	Evento Cambio del horario de verano
+01/05 04:01:24 	Evento Sin Comunicacion con Concentrador
+01/05 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+01/05 04:01:24 Me_CD.NombreDisplay :0.1
+01/05 04:01:24 UI_CajaDotacion
+01/05 04:01:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+01/05 04:01:25 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+01/05 04:01:26 Recibida Orden SHOW_HIDE 
+01/05 04:01:26 SHOW_HIDE Me oculto
+02/05 04:01:25 NUEVA EJECUCION DEL UI
+02/05 04:01:25 LeerEventos
+02/05 04:01:25 Nro de Tipos de evento 20
+02/05 04:01:25 	Evento Reset (por fallo de alimentacion)
+02/05 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+02/05 04:01:25 	Evento Activado periodo
+02/05 04:01:25 	Evento Borrado periodo
+02/05 04:01:25 	Evento Apertura Normal de la puerta
+02/05 04:01:25 	Evento Apertura por comando RS 232
+02/05 04:01:25 	Evento Apertura mecanica saltandose la electronica
+02/05 04:01:25 	Evento Apertura incondicional por comando RS 232
+02/05 04:01:25 	Evento Cierre de la puerta
+02/05 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+02/05 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+02/05 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+02/05 04:01:25 	Evento Se han cambiado los periodos de actividad
+02/05 04:01:25 	Evento Cambio Numero de Serie
+02/05 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+02/05 04:01:25 	Evento Activacion del horario de verano +1h
+02/05 04:01:25 	Evento Activacion del horario de invierno -1h
+02/05 04:01:25 	Evento Cambio del horario de verano
+02/05 04:01:25 	Evento Sin Comunicacion con Concentrador
+02/05 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+02/05 04:01:25 Me_CD.NombreDisplay :0.1
+02/05 04:01:25 UI_CajaDotacion
+02/05 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+02/05 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+02/05 04:01:27 Recibida Orden SHOW_HIDE 
+02/05 04:01:27 SHOW_HIDE Me oculto
+03/05 04:01:27 NUEVA EJECUCION DEL UI
+03/05 04:01:27 LeerEventos
+03/05 04:01:27 Nro de Tipos de evento 20
+03/05 04:01:27 	Evento Reset (por fallo de alimentacion)
+03/05 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+03/05 04:01:27 	Evento Activado periodo
+03/05 04:01:27 	Evento Borrado periodo
+03/05 04:01:27 	Evento Apertura Normal de la puerta
+03/05 04:01:27 	Evento Apertura por comando RS 232
+03/05 04:01:27 	Evento Apertura mecanica saltandose la electronica
+03/05 04:01:27 	Evento Apertura incondicional por comando RS 232
+03/05 04:01:27 	Evento Cierre de la puerta
+03/05 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+03/05 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+03/05 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+03/05 04:01:27 	Evento Se han cambiado los periodos de actividad
+03/05 04:01:27 	Evento Cambio Numero de Serie
+03/05 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+03/05 04:01:27 	Evento Activacion del horario de verano +1h
+03/05 04:01:27 	Evento Activacion del horario de invierno -1h
+03/05 04:01:27 	Evento Cambio del horario de verano
+03/05 04:01:27 	Evento Sin Comunicacion con Concentrador
+03/05 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+03/05 04:01:27 Me_CD.NombreDisplay :0.1
+03/05 04:01:28 UI_CajaDotacion
+03/05 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+03/05 04:01:28 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+03/05 04:01:30 Recibida Orden SHOW_HIDE 
+03/05 04:01:30 SHOW_HIDE Me oculto
+04/05 04:01:36 NUEVA EJECUCION DEL UI
+04/05 04:01:36 LeerEventos
+04/05 04:01:36 Nro de Tipos de evento 20
+04/05 04:01:36 	Evento Reset (por fallo de alimentacion)
+04/05 04:01:36 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+04/05 04:01:36 	Evento Activado periodo
+04/05 04:01:36 	Evento Borrado periodo
+04/05 04:01:36 	Evento Apertura Normal de la puerta
+04/05 04:01:36 	Evento Apertura por comando RS 232
+04/05 04:01:36 	Evento Apertura mecanica saltandose la electronica
+04/05 04:01:36 	Evento Apertura incondicional por comando RS 232
+04/05 04:01:36 	Evento Cierre de la puerta
+04/05 04:01:36 	Evento Fallo de apertura (la puerta no se abre)
+04/05 04:01:36 	Evento Alarma puerta abierta demasiado tiempo
+04/05 04:01:36 	Evento Se ha cambiado la Fecha/Hora
+04/05 04:01:36 	Evento Se han cambiado los periodos de actividad
+04/05 04:01:36 	Evento Cambio Numero de Serie
+04/05 04:01:36 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+04/05 04:01:36 	Evento Activacion del horario de verano +1h
+04/05 04:01:36 	Evento Activacion del horario de invierno -1h
+04/05 04:01:36 	Evento Cambio del horario de verano
+04/05 04:01:36 	Evento Sin Comunicacion con Concentrador
+04/05 04:01:36 	Evento Recuperacion Comunicacion Concentrador
+04/05 04:01:36 Me_CD.NombreDisplay :0.1
+04/05 04:01:36 UI_CajaDotacion
+04/05 04:01:36 UI_CajaDotacion Despues de instalar PollSocketRPCs
+04/05 04:01:37 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+04/05 04:01:38 Recibida Orden SHOW_HIDE 
+04/05 04:01:38 SHOW_HIDE Me oculto
+04/05 08:13:12 NUEVA EJECUCION DEL UI
+04/05 08:13:12 LeerEventos
+04/05 08:13:12 Nro de Tipos de evento 20
+04/05 08:13:12 	Evento Reset (por fallo de alimentacion)
+04/05 08:13:12 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+04/05 08:13:12 	Evento Activado periodo
+04/05 08:13:12 	Evento Borrado periodo
+04/05 08:13:12 	Evento Apertura Normal de la puerta
+04/05 08:13:12 	Evento Apertura por comando RS 232
+04/05 08:13:12 	Evento Apertura mecanica saltandose la electronica
+04/05 08:13:12 	Evento Apertura incondicional por comando RS 232
+04/05 08:13:12 	Evento Cierre de la puerta
+04/05 08:13:12 	Evento Fallo de apertura (la puerta no se abre)
+04/05 08:13:12 	Evento Alarma puerta abierta demasiado tiempo
+04/05 08:13:12 	Evento Se ha cambiado la Fecha/Hora
+04/05 08:13:12 	Evento Se han cambiado los periodos de actividad
+04/05 08:13:12 	Evento Cambio Numero de Serie
+04/05 08:13:12 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+04/05 08:13:12 	Evento Activacion del horario de verano +1h
+04/05 08:13:12 	Evento Activacion del horario de invierno -1h
+04/05 08:13:12 	Evento Cambio del horario de verano
+04/05 08:13:12 	Evento Sin Comunicacion con Concentrador
+04/05 08:13:12 	Evento Recuperacion Comunicacion Concentrador
+04/05 08:13:12 Me_CD.NombreDisplay :0.1
+04/05 08:13:12 UI_CajaDotacion
+04/05 08:13:14 UI_CajaDotacion Despues de instalar PollSocketRPCs
+04/05 08:13:14 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+04/05 08:13:15 Recibida Orden SHOW_HIDE 
+04/05 08:13:15 SHOW_HIDE Me oculto
+04/05 08:47:44 NUEVA EJECUCION DEL UI
+04/05 08:47:44 LeerEventos
+04/05 08:47:44 Nro de Tipos de evento 20
+04/05 08:47:44 	Evento Reset (por fallo de alimentacion)
+04/05 08:47:44 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+04/05 08:47:44 	Evento Activado periodo
+04/05 08:47:44 	Evento Borrado periodo
+04/05 08:47:44 	Evento Apertura Normal de la puerta
+04/05 08:47:44 	Evento Apertura por comando RS 232
+04/05 08:47:44 	Evento Apertura mecanica saltandose la electronica
+04/05 08:47:44 	Evento Apertura incondicional por comando RS 232
+04/05 08:47:44 	Evento Cierre de la puerta
+04/05 08:47:44 	Evento Fallo de apertura (la puerta no se abre)
+04/05 08:47:44 	Evento Alarma puerta abierta demasiado tiempo
+04/05 08:47:44 	Evento Se ha cambiado la Fecha/Hora
+04/05 08:47:44 	Evento Se han cambiado los periodos de actividad
+04/05 08:47:44 	Evento Cambio Numero de Serie
+04/05 08:47:44 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+04/05 08:47:44 	Evento Activacion del horario de verano +1h
+04/05 08:47:44 	Evento Activacion del horario de invierno -1h
+04/05 08:47:44 	Evento Cambio del horario de verano
+04/05 08:47:44 	Evento Sin Comunicacion con Concentrador
+04/05 08:47:44 	Evento Recuperacion Comunicacion Concentrador
+04/05 08:47:44 Me_CD.NombreDisplay :0.1
+04/05 08:47:44 UI_CajaDotacion
+04/05 08:47:44 UI_CajaDotacion Despues de instalar PollSocketRPCs
+04/05 08:47:45 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+04/05 08:47:46 Recibida Orden SHOW_HIDE 
+04/05 08:47:46 SHOW_HIDE Me oculto
+04/05 14:21:49 NUEVA EJECUCION DEL UI
+04/05 14:21:49 LeerEventos
+04/05 14:21:49 Nro de Tipos de evento 20
+04/05 14:21:49 	Evento Reset (por fallo de alimentacion)
+04/05 14:21:49 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+04/05 14:21:49 	Evento Activado periodo
+04/05 14:21:49 	Evento Borrado periodo
+04/05 14:21:49 	Evento Apertura Normal de la puerta
+04/05 14:21:49 	Evento Apertura por comando RS 232
+04/05 14:21:49 	Evento Apertura mecanica saltandose la electronica
+04/05 14:21:49 	Evento Apertura incondicional por comando RS 232
+04/05 14:21:49 	Evento Cierre de la puerta
+04/05 14:21:49 	Evento Fallo de apertura (la puerta no se abre)
+04/05 14:21:49 	Evento Alarma puerta abierta demasiado tiempo
+04/05 14:21:49 	Evento Se ha cambiado la Fecha/Hora
+04/05 14:21:49 	Evento Se han cambiado los periodos de actividad
+04/05 14:21:49 	Evento Cambio Numero de Serie
+04/05 14:21:49 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+04/05 14:21:49 	Evento Activacion del horario de verano +1h
+04/05 14:21:49 	Evento Activacion del horario de invierno -1h
+04/05 14:21:49 	Evento Cambio del horario de verano
+04/05 14:21:49 	Evento Sin Comunicacion con Concentrador
+04/05 14:21:49 	Evento Recuperacion Comunicacion Concentrador
+04/05 14:21:49 Me_CD.NombreDisplay :0.1
+04/05 14:21:49 UI_CajaDotacion
+04/05 14:21:49 UI_CajaDotacion Despues de instalar PollSocketRPCs
+04/05 14:21:50 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+04/05 14:21:51 Recibida Orden SHOW_HIDE 
+04/05 14:21:51 SHOW_HIDE Me oculto
+05/05 04:01:30 NUEVA EJECUCION DEL UI
+05/05 04:01:30 LeerEventos
+05/05 04:01:30 Nro de Tipos de evento 20
+05/05 04:01:30 	Evento Reset (por fallo de alimentacion)
+05/05 04:01:30 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+05/05 04:01:30 	Evento Activado periodo
+05/05 04:01:30 	Evento Borrado periodo
+05/05 04:01:30 	Evento Apertura Normal de la puerta
+05/05 04:01:30 	Evento Apertura por comando RS 232
+05/05 04:01:30 	Evento Apertura mecanica saltandose la electronica
+05/05 04:01:30 	Evento Apertura incondicional por comando RS 232
+05/05 04:01:30 	Evento Cierre de la puerta
+05/05 04:01:30 	Evento Fallo de apertura (la puerta no se abre)
+05/05 04:01:30 	Evento Alarma puerta abierta demasiado tiempo
+05/05 04:01:30 	Evento Se ha cambiado la Fecha/Hora
+05/05 04:01:30 	Evento Se han cambiado los periodos de actividad
+05/05 04:01:30 	Evento Cambio Numero de Serie
+05/05 04:01:30 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+05/05 04:01:30 	Evento Activacion del horario de verano +1h
+05/05 04:01:30 	Evento Activacion del horario de invierno -1h
+05/05 04:01:30 	Evento Cambio del horario de verano
+05/05 04:01:30 	Evento Sin Comunicacion con Concentrador
+05/05 04:01:30 	Evento Recuperacion Comunicacion Concentrador
+05/05 04:01:30 Me_CD.NombreDisplay :0.1
+05/05 04:01:30 UI_CajaDotacion
+05/05 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+05/05 04:01:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+05/05 04:01:33 Recibida Orden SHOW_HIDE 
+05/05 04:01:33 SHOW_HIDE Me oculto
+06/05 04:01:37 NUEVA EJECUCION DEL UI
+06/05 04:01:37 LeerEventos
+06/05 04:01:37 Nro de Tipos de evento 20
+06/05 04:01:37 	Evento Reset (por fallo de alimentacion)
+06/05 04:01:37 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+06/05 04:01:37 	Evento Activado periodo
+06/05 04:01:37 	Evento Borrado periodo
+06/05 04:01:37 	Evento Apertura Normal de la puerta
+06/05 04:01:37 	Evento Apertura por comando RS 232
+06/05 04:01:37 	Evento Apertura mecanica saltandose la electronica
+06/05 04:01:37 	Evento Apertura incondicional por comando RS 232
+06/05 04:01:37 	Evento Cierre de la puerta
+06/05 04:01:37 	Evento Fallo de apertura (la puerta no se abre)
+06/05 04:01:37 	Evento Alarma puerta abierta demasiado tiempo
+06/05 04:01:37 	Evento Se ha cambiado la Fecha/Hora
+06/05 04:01:37 	Evento Se han cambiado los periodos de actividad
+06/05 04:01:37 	Evento Cambio Numero de Serie
+06/05 04:01:37 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+06/05 04:01:37 	Evento Activacion del horario de verano +1h
+06/05 04:01:37 	Evento Activacion del horario de invierno -1h
+06/05 04:01:37 	Evento Cambio del horario de verano
+06/05 04:01:37 	Evento Sin Comunicacion con Concentrador
+06/05 04:01:37 	Evento Recuperacion Comunicacion Concentrador
+06/05 04:01:37 Me_CD.NombreDisplay :0.1
+06/05 04:01:37 UI_CajaDotacion
+06/05 04:01:37 UI_CajaDotacion Despues de instalar PollSocketRPCs
+06/05 04:01:38 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+06/05 04:01:39 Recibida Orden SHOW_HIDE 
+06/05 04:01:39 SHOW_HIDE Me oculto
+07/05 04:01:29 NUEVA EJECUCION DEL UI
+07/05 04:01:29 LeerEventos
+07/05 04:01:29 Nro de Tipos de evento 20
+07/05 04:01:29 	Evento Reset (por fallo de alimentacion)
+07/05 04:01:29 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+07/05 04:01:29 	Evento Activado periodo
+07/05 04:01:29 	Evento Borrado periodo
+07/05 04:01:29 	Evento Apertura Normal de la puerta
+07/05 04:01:29 	Evento Apertura por comando RS 232
+07/05 04:01:29 	Evento Apertura mecanica saltandose la electronica
+07/05 04:01:29 	Evento Apertura incondicional por comando RS 232
+07/05 04:01:29 	Evento Cierre de la puerta
+07/05 04:01:29 	Evento Fallo de apertura (la puerta no se abre)
+07/05 04:01:29 	Evento Alarma puerta abierta demasiado tiempo
+07/05 04:01:29 	Evento Se ha cambiado la Fecha/Hora
+07/05 04:01:29 	Evento Se han cambiado los periodos de actividad
+07/05 04:01:29 	Evento Cambio Numero de Serie
+07/05 04:01:29 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+07/05 04:01:29 	Evento Activacion del horario de verano +1h
+07/05 04:01:29 	Evento Activacion del horario de invierno -1h
+07/05 04:01:29 	Evento Cambio del horario de verano
+07/05 04:01:29 	Evento Sin Comunicacion con Concentrador
+07/05 04:01:29 	Evento Recuperacion Comunicacion Concentrador
+07/05 04:01:29 Me_CD.NombreDisplay :0.1
+07/05 04:01:29 UI_CajaDotacion
+07/05 04:01:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+07/05 04:01:30 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+07/05 04:01:32 Recibida Orden SHOW_HIDE 
+07/05 04:01:32 SHOW_HIDE Me oculto
+08/05 04:01:28 NUEVA EJECUCION DEL UI
+08/05 04:01:28 LeerEventos
+08/05 04:01:28 Nro de Tipos de evento 20
+08/05 04:01:28 	Evento Reset (por fallo de alimentacion)
+08/05 04:01:28 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+08/05 04:01:28 	Evento Activado periodo
+08/05 04:01:28 	Evento Borrado periodo
+08/05 04:01:28 	Evento Apertura Normal de la puerta
+08/05 04:01:28 	Evento Apertura por comando RS 232
+08/05 04:01:28 	Evento Apertura mecanica saltandose la electronica
+08/05 04:01:28 	Evento Apertura incondicional por comando RS 232
+08/05 04:01:28 	Evento Cierre de la puerta
+08/05 04:01:28 	Evento Fallo de apertura (la puerta no se abre)
+08/05 04:01:28 	Evento Alarma puerta abierta demasiado tiempo
+08/05 04:01:28 	Evento Se ha cambiado la Fecha/Hora
+08/05 04:01:28 	Evento Se han cambiado los periodos de actividad
+08/05 04:01:28 	Evento Cambio Numero de Serie
+08/05 04:01:28 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+08/05 04:01:28 	Evento Activacion del horario de verano +1h
+08/05 04:01:28 	Evento Activacion del horario de invierno -1h
+08/05 04:01:28 	Evento Cambio del horario de verano
+08/05 04:01:28 	Evento Sin Comunicacion con Concentrador
+08/05 04:01:28 	Evento Recuperacion Comunicacion Concentrador
+08/05 04:01:28 Me_CD.NombreDisplay :0.1
+08/05 04:01:28 UI_CajaDotacion
+08/05 04:01:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+08/05 04:01:29 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+08/05 04:01:31 Recibida Orden SHOW_HIDE 
+08/05 04:01:31 SHOW_HIDE Me oculto
+09/05 04:01:27 NUEVA EJECUCION DEL UI
+09/05 04:01:27 LeerEventos
+09/05 04:01:27 Nro de Tipos de evento 20
+09/05 04:01:27 	Evento Reset (por fallo de alimentacion)
+09/05 04:01:27 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+09/05 04:01:27 	Evento Activado periodo
+09/05 04:01:27 	Evento Borrado periodo
+09/05 04:01:27 	Evento Apertura Normal de la puerta
+09/05 04:01:27 	Evento Apertura por comando RS 232
+09/05 04:01:27 	Evento Apertura mecanica saltandose la electronica
+09/05 04:01:27 	Evento Apertura incondicional por comando RS 232
+09/05 04:01:27 	Evento Cierre de la puerta
+09/05 04:01:27 	Evento Fallo de apertura (la puerta no se abre)
+09/05 04:01:27 	Evento Alarma puerta abierta demasiado tiempo
+09/05 04:01:27 	Evento Se ha cambiado la Fecha/Hora
+09/05 04:01:27 	Evento Se han cambiado los periodos de actividad
+09/05 04:01:27 	Evento Cambio Numero de Serie
+09/05 04:01:27 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+09/05 04:01:27 	Evento Activacion del horario de verano +1h
+09/05 04:01:27 	Evento Activacion del horario de invierno -1h
+09/05 04:01:27 	Evento Cambio del horario de verano
+09/05 04:01:27 	Evento Sin Comunicacion con Concentrador
+09/05 04:01:27 	Evento Recuperacion Comunicacion Concentrador
+09/05 04:01:27 Me_CD.NombreDisplay :0.1
+09/05 04:01:27 UI_CajaDotacion
+09/05 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+09/05 04:01:28 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+09/05 04:01:30 Recibida Orden SHOW_HIDE 
+09/05 04:01:30 SHOW_HIDE Me oculto
+10/05 04:01:28 NUEVA EJECUCION DEL UI
+10/05 04:01:28 LeerEventos
+10/05 04:01:28 Nro de Tipos de evento 20
+10/05 04:01:28 	Evento Reset (por fallo de alimentacion)
+10/05 04:01:28 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+10/05 04:01:28 	Evento Activado periodo
+10/05 04:01:28 	Evento Borrado periodo
+10/05 04:01:28 	Evento Apertura Normal de la puerta
+10/05 04:01:28 	Evento Apertura por comando RS 232
+10/05 04:01:28 	Evento Apertura mecanica saltandose la electronica
+10/05 04:01:28 	Evento Apertura incondicional por comando RS 232
+10/05 04:01:28 	Evento Cierre de la puerta
+10/05 04:01:28 	Evento Fallo de apertura (la puerta no se abre)
+10/05 04:01:28 	Evento Alarma puerta abierta demasiado tiempo
+10/05 04:01:28 	Evento Se ha cambiado la Fecha/Hora
+10/05 04:01:28 	Evento Se han cambiado los periodos de actividad
+10/05 04:01:28 	Evento Cambio Numero de Serie
+10/05 04:01:28 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+10/05 04:01:28 	Evento Activacion del horario de verano +1h
+10/05 04:01:28 	Evento Activacion del horario de invierno -1h
+10/05 04:01:28 	Evento Cambio del horario de verano
+10/05 04:01:28 	Evento Sin Comunicacion con Concentrador
+10/05 04:01:28 	Evento Recuperacion Comunicacion Concentrador
+10/05 04:01:28 Me_CD.NombreDisplay :0.1
+10/05 04:01:28 UI_CajaDotacion
+10/05 04:01:29 UI_CajaDotacion Despues de instalar PollSocketRPCs
+10/05 04:01:29 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+10/05 04:01:31 Recibida Orden SHOW_HIDE 
+10/05 04:01:31 SHOW_HIDE Me oculto
+11/05 04:01:25 NUEVA EJECUCION DEL UI
+11/05 04:01:25 LeerEventos
+11/05 04:01:25 Nro de Tipos de evento 20
+11/05 04:01:25 	Evento Reset (por fallo de alimentacion)
+11/05 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+11/05 04:01:25 	Evento Activado periodo
+11/05 04:01:25 	Evento Borrado periodo
+11/05 04:01:25 	Evento Apertura Normal de la puerta
+11/05 04:01:25 	Evento Apertura por comando RS 232
+11/05 04:01:25 	Evento Apertura mecanica saltandose la electronica
+11/05 04:01:25 	Evento Apertura incondicional por comando RS 232
+11/05 04:01:25 	Evento Cierre de la puerta
+11/05 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+11/05 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+11/05 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+11/05 04:01:25 	Evento Se han cambiado los periodos de actividad
+11/05 04:01:25 	Evento Cambio Numero de Serie
+11/05 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+11/05 04:01:25 	Evento Activacion del horario de verano +1h
+11/05 04:01:25 	Evento Activacion del horario de invierno -1h
+11/05 04:01:25 	Evento Cambio del horario de verano
+11/05 04:01:25 	Evento Sin Comunicacion con Concentrador
+11/05 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+11/05 04:01:25 Me_CD.NombreDisplay :0.1
+11/05 04:01:25 UI_CajaDotacion
+11/05 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+11/05 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+11/05 04:01:28 Recibida Orden SHOW_HIDE 
+11/05 04:01:28 SHOW_HIDE Me oculto
+11/05 17:15:47 NUEVA EJECUCION DEL UI
+11/05 17:15:47 LeerEventos
+11/05 17:15:47 Nro de Tipos de evento 20
+11/05 17:15:47 	Evento Reset (por fallo de alimentacion)
+11/05 17:15:47 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+11/05 17:15:47 	Evento Activado periodo
+11/05 17:15:47 	Evento Borrado periodo
+11/05 17:15:47 	Evento Apertura Normal de la puerta
+11/05 17:15:47 	Evento Apertura por comando RS 232
+11/05 17:15:47 	Evento Apertura mecanica saltandose la electronica
+11/05 17:15:47 	Evento Apertura incondicional por comando RS 232
+11/05 17:15:47 	Evento Cierre de la puerta
+11/05 17:15:47 	Evento Fallo de apertura (la puerta no se abre)
+11/05 17:15:47 	Evento Alarma puerta abierta demasiado tiempo
+11/05 17:15:47 	Evento Se ha cambiado la Fecha/Hora
+11/05 17:15:47 	Evento Se han cambiado los periodos de actividad
+11/05 17:15:47 	Evento Cambio Numero de Serie
+11/05 17:15:47 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+11/05 17:15:47 	Evento Activacion del horario de verano +1h
+11/05 17:15:47 	Evento Activacion del horario de invierno -1h
+11/05 17:15:47 	Evento Cambio del horario de verano
+11/05 17:15:47 	Evento Sin Comunicacion con Concentrador
+11/05 17:15:47 	Evento Recuperacion Comunicacion Concentrador
+11/05 17:15:47 Me_CD.NombreDisplay :0.1
+11/05 17:15:47 UI_CajaDotacion
+11/05 17:15:48 UI_CajaDotacion Despues de instalar PollSocketRPCs
+11/05 17:15:48 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+11/05 17:15:50 Recibida Orden SHOW_HIDE 
+11/05 17:15:50 SHOW_HIDE Me oculto
+12/05 04:01:31 NUEVA EJECUCION DEL UI
+12/05 04:01:31 LeerEventos
+12/05 04:01:31 Nro de Tipos de evento 20
+12/05 04:01:31 	Evento Reset (por fallo de alimentacion)
+12/05 04:01:31 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 04:01:31 	Evento Activado periodo
+12/05 04:01:31 	Evento Borrado periodo
+12/05 04:01:31 	Evento Apertura Normal de la puerta
+12/05 04:01:31 	Evento Apertura por comando RS 232
+12/05 04:01:31 	Evento Apertura mecanica saltandose la electronica
+12/05 04:01:31 	Evento Apertura incondicional por comando RS 232
+12/05 04:01:31 	Evento Cierre de la puerta
+12/05 04:01:31 	Evento Fallo de apertura (la puerta no se abre)
+12/05 04:01:31 	Evento Alarma puerta abierta demasiado tiempo
+12/05 04:01:31 	Evento Se ha cambiado la Fecha/Hora
+12/05 04:01:31 	Evento Se han cambiado los periodos de actividad
+12/05 04:01:31 	Evento Cambio Numero de Serie
+12/05 04:01:31 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 04:01:31 	Evento Activacion del horario de verano +1h
+12/05 04:01:31 	Evento Activacion del horario de invierno -1h
+12/05 04:01:31 	Evento Cambio del horario de verano
+12/05 04:01:31 	Evento Sin Comunicacion con Concentrador
+12/05 04:01:31 	Evento Recuperacion Comunicacion Concentrador
+12/05 04:01:31 Me_CD.NombreDisplay :0.1
+12/05 04:01:31 UI_CajaDotacion
+12/05 04:01:31 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 04:01:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 04:01:33 Recibida Orden SHOW_HIDE 
+12/05 04:01:33 SHOW_HIDE Me oculto
+12/05 10:02:05 NUEVA EJECUCION DEL UI
+12/05 10:02:05 LeerEventos
+12/05 10:02:05 Nro de Tipos de evento 20
+12/05 10:02:05 	Evento Reset (por fallo de alimentacion)
+12/05 10:02:05 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 10:02:05 	Evento Activado periodo
+12/05 10:02:05 	Evento Borrado periodo
+12/05 10:02:05 	Evento Apertura Normal de la puerta
+12/05 10:02:05 	Evento Apertura por comando RS 232
+12/05 10:02:05 	Evento Apertura mecanica saltandose la electronica
+12/05 10:02:05 	Evento Apertura incondicional por comando RS 232
+12/05 10:02:05 	Evento Cierre de la puerta
+12/05 10:02:05 	Evento Fallo de apertura (la puerta no se abre)
+12/05 10:02:05 	Evento Alarma puerta abierta demasiado tiempo
+12/05 10:02:05 	Evento Se ha cambiado la Fecha/Hora
+12/05 10:02:05 	Evento Se han cambiado los periodos de actividad
+12/05 10:02:05 	Evento Cambio Numero de Serie
+12/05 10:02:05 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 10:02:05 	Evento Activacion del horario de verano +1h
+12/05 10:02:05 	Evento Activacion del horario de invierno -1h
+12/05 10:02:05 	Evento Cambio del horario de verano
+12/05 10:02:05 	Evento Sin Comunicacion con Concentrador
+12/05 10:02:05 	Evento Recuperacion Comunicacion Concentrador
+12/05 10:02:05 Me_CD.NombreDisplay :0.1
+12/05 10:02:05 UI_CajaDotacion
+12/05 10:02:06 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 10:02:06 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 10:02:08 Recibida Orden SHOW_HIDE 
+12/05 10:02:08 SHOW_HIDE Me oculto
+12/05 11:41:01 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+12/05 11:41:01 Parametros de la orden: 12 24 1 DOT12241 DOT12241
+Nueva Localizacion 12 24 1 -DOT12241. Enviamos SET_UI
+12/05 11:41:01 SET_DRV: Versiones antes de SET_UI: -1 1084354861 -1 1084354861
+12/05 11:41:01 Enviado SET_UI a DOT12241. Linea : 12 Estacion : 24 Vestibulo : 1
+12/05 11:41:01 Recibida Orden SHOW_HIDE 
+12/05 11:41:01 RecargarDatos conectando.ascii
+12/05 11:41:01 RecargarDatos ../conectando.ascii abierto
+12/05 11:41:02 SHOW_HIDE: cargamos conectando
+12/05 11:41:02 CambiarForm
+12/05 11:41:02 SHOW_HIDE Me visualizo
+12/05 11:41:02 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 272 bytes
+12/05 11:41:02 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+12/05 11:41:02 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=11)
+12/05 11:41:02 Recibida orden de INICIALIZAR_UI con buffer 1
+12/05 11:41:02 INICIALIZAR_UI: ACTUALIZAR_DATOS
+12/05 11:41:02 LeerFicheroDatos
+12/05 11:41:02 CrearAsciiEstado
+12/05 11:41:02 CrearAsciiPeriodos
+12/05 11:41:02 INICIALIZAR_UI: despues de LeerFicheroDatos
+12/05 11:41:02 INICIALIZAR_UI: se han creado los ascii de datos
+12/05 11:41:02 ActualizarPantallaDatosNew: PantallaActiva -1
+12/05 11:41:02 CargarPantallaEstado: Num Alarmas 0 
+12/05 11:41:03 SpanAlarmas. Me_CD.iNroAlarmasActivas 0 
+12/05 11:41:03 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+12/05 11:41:03 SpanAlarmas. Salimos por default 2
+12/05 11:41:03 CargarPantallaEstado: despues de SpanAlarmas. Lineas 9
+12/05 11:41:03 RecargarDatos estado.ascii
+12/05 11:41:03 RecargarDatos estado.ascii abierto
+12/05 11:41:03 CargarPantallaEstado: ESTADO_NORMAL
+12/05 11:41:03 CambiarForm
+12/05 11:41:03 CargarPantallaEstado:NroAlarmas 0
+12/05 11:41:03 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+12/05 11:41:03 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 221 bytes
+12/05 11:41:03 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+12/05 11:41:03 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+12/05 11:41:03 Recibida orden de INICIALIZAR_UI con buffer 2
+12/05 11:41:03 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+12/05 11:41:03 DecodFicheroEventos
+12/05 11:41:03 DecodFicheroEventos. TengoAsciiEventos
+12/05 11:41:03 CrearAsciiConsultas
+12/05 11:41:03 INICIALIZAR_UI: se han creado los ascii de concentracion
+12/05 11:41:03 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+12/05 11:41:03 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+12/05 11:41:03 ActualizarPantallaEventosNew: Salimos por default 
+12/05 11:41:03 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+12/05 11:41:05 Recibida Orden SHOW_HIDE 
+12/05 11:41:05 SHOW_HIDE Me oculto
+12/05 11:41:06 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+12/05 11:41:06 Mando UNSET_UI a 12 24 1 DOT12241
+12/05 11:41:06 ActivarDescon
+12/05 18:44:58 NUEVA EJECUCION DEL UI
+12/05 18:44:58 LeerEventos
+12/05 18:44:58 Nro de Tipos de evento 20
+12/05 18:44:58 	Evento Reset (por fallo de alimentacion)
+12/05 18:44:58 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 18:44:58 	Evento Activado periodo
+12/05 18:44:58 	Evento Borrado periodo
+12/05 18:44:58 	Evento Apertura Normal de la puerta
+12/05 18:44:58 	Evento Apertura por comando RS 232
+12/05 18:44:58 	Evento Apertura mecanica saltandose la electronica
+12/05 18:44:58 	Evento Apertura incondicional por comando RS 232
+12/05 18:44:58 	Evento Cierre de la puerta
+12/05 18:44:58 	Evento Fallo de apertura (la puerta no se abre)
+12/05 18:44:58 	Evento Alarma puerta abierta demasiado tiempo
+12/05 18:44:58 	Evento Se ha cambiado la Fecha/Hora
+12/05 18:44:58 	Evento Se han cambiado los periodos de actividad
+12/05 18:44:58 	Evento Cambio Numero de Serie
+12/05 18:44:58 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 18:44:58 	Evento Activacion del horario de verano +1h
+12/05 18:44:58 	Evento Activacion del horario de invierno -1h
+12/05 18:44:58 	Evento Cambio del horario de verano
+12/05 18:44:58 	Evento Sin Comunicacion con Concentrador
+12/05 18:44:58 	Evento Recuperacion Comunicacion Concentrador
+12/05 18:44:58 Me_CD.NombreDisplay :0.1
+12/05 18:44:58 UI_CajaDotacion
+12/05 18:44:59 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 18:44:59 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 18:45:01 Recibida Orden SHOW_HIDE 
+12/05 18:45:01 SHOW_HIDE Me oculto
+12/05 18:52:12 NUEVA EJECUCION DEL UI
+12/05 18:52:12 LeerEventos
+12/05 18:52:12 Nro de Tipos de evento 20
+12/05 18:52:12 	Evento Reset (por fallo de alimentacion)
+12/05 18:52:12 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 18:52:12 	Evento Activado periodo
+12/05 18:52:12 	Evento Borrado periodo
+12/05 18:52:12 	Evento Apertura Normal de la puerta
+12/05 18:52:12 	Evento Apertura por comando RS 232
+12/05 18:52:12 	Evento Apertura mecanica saltandose la electronica
+12/05 18:52:12 	Evento Apertura incondicional por comando RS 232
+12/05 18:52:12 	Evento Cierre de la puerta
+12/05 18:52:12 	Evento Fallo de apertura (la puerta no se abre)
+12/05 18:52:12 	Evento Alarma puerta abierta demasiado tiempo
+12/05 18:52:12 	Evento Se ha cambiado la Fecha/Hora
+12/05 18:52:12 	Evento Se han cambiado los periodos de actividad
+12/05 18:52:12 	Evento Cambio Numero de Serie
+12/05 18:52:12 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 18:52:12 	Evento Activacion del horario de verano +1h
+12/05 18:52:12 	Evento Activacion del horario de invierno -1h
+12/05 18:52:12 	Evento Cambio del horario de verano
+12/05 18:52:12 	Evento Sin Comunicacion con Concentrador
+12/05 18:52:12 	Evento Recuperacion Comunicacion Concentrador
+12/05 18:52:12 Me_CD.NombreDisplay :0.1
+12/05 18:52:12 UI_CajaDotacion
+12/05 18:52:13 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 18:52:13 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 18:52:15 Recibida Orden SHOW_HIDE 
+12/05 18:52:15 SHOW_HIDE Me oculto
+12/05 18:57:52 NUEVA EJECUCION DEL UI
+12/05 18:57:52 LeerEventos
+12/05 18:57:52 Nro de Tipos de evento 20
+12/05 18:57:52 	Evento Reset (por fallo de alimentacion)
+12/05 18:57:52 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 18:57:52 	Evento Activado periodo
+12/05 18:57:52 	Evento Borrado periodo
+12/05 18:57:52 	Evento Apertura Normal de la puerta
+12/05 18:57:52 	Evento Apertura por comando RS 232
+12/05 18:57:52 	Evento Apertura mecanica saltandose la electronica
+12/05 18:57:52 	Evento Apertura incondicional por comando RS 232
+12/05 18:57:52 	Evento Cierre de la puerta
+12/05 18:57:52 	Evento Fallo de apertura (la puerta no se abre)
+12/05 18:57:52 	Evento Alarma puerta abierta demasiado tiempo
+12/05 18:57:52 	Evento Se ha cambiado la Fecha/Hora
+12/05 18:57:52 	Evento Se han cambiado los periodos de actividad
+12/05 18:57:52 	Evento Cambio Numero de Serie
+12/05 18:57:52 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 18:57:52 	Evento Activacion del horario de verano +1h
+12/05 18:57:52 	Evento Activacion del horario de invierno -1h
+12/05 18:57:52 	Evento Cambio del horario de verano
+12/05 18:57:52 	Evento Sin Comunicacion con Concentrador
+12/05 18:57:52 	Evento Recuperacion Comunicacion Concentrador
+12/05 18:57:52 Me_CD.NombreDisplay :0.1
+12/05 18:57:52 UI_CajaDotacion
+12/05 18:57:53 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 18:57:53 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 18:57:57 Recibida Orden SHOW_HIDE 
+12/05 18:57:57 SHOW_HIDE Me oculto
+12/05 19:06:25 NUEVA EJECUCION DEL UI
+12/05 19:06:25 LeerEventos
+12/05 19:06:25 Nro de Tipos de evento 20
+12/05 19:06:25 	Evento Reset (por fallo de alimentacion)
+12/05 19:06:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+12/05 19:06:25 	Evento Activado periodo
+12/05 19:06:25 	Evento Borrado periodo
+12/05 19:06:25 	Evento Apertura Normal de la puerta
+12/05 19:06:25 	Evento Apertura por comando RS 232
+12/05 19:06:25 	Evento Apertura mecanica saltandose la electronica
+12/05 19:06:25 	Evento Apertura incondicional por comando RS 232
+12/05 19:06:25 	Evento Cierre de la puerta
+12/05 19:06:25 	Evento Fallo de apertura (la puerta no se abre)
+12/05 19:06:25 	Evento Alarma puerta abierta demasiado tiempo
+12/05 19:06:25 	Evento Se ha cambiado la Fecha/Hora
+12/05 19:06:25 	Evento Se han cambiado los periodos de actividad
+12/05 19:06:25 	Evento Cambio Numero de Serie
+12/05 19:06:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+12/05 19:06:25 	Evento Activacion del horario de verano +1h
+12/05 19:06:25 	Evento Activacion del horario de invierno -1h
+12/05 19:06:25 	Evento Cambio del horario de verano
+12/05 19:06:25 	Evento Sin Comunicacion con Concentrador
+12/05 19:06:25 	Evento Recuperacion Comunicacion Concentrador
+12/05 19:06:25 Me_CD.NombreDisplay :0.1
+12/05 19:06:25 UI_CajaDotacion
+12/05 19:06:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+12/05 19:06:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+12/05 19:06:27 Recibida Orden SHOW_HIDE 
+12/05 19:06:27 SHOW_HIDE Me oculto
+13/05 04:02:38 NUEVA EJECUCION DEL UI
+13/05 04:02:38 LeerEventos
+13/05 04:02:38 Nro de Tipos de evento 20
+13/05 04:02:38 	Evento Reset (por fallo de alimentacion)
+13/05 04:02:38 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+13/05 04:02:38 	Evento Activado periodo
+13/05 04:02:38 	Evento Borrado periodo
+13/05 04:02:38 	Evento Apertura Normal de la puerta
+13/05 04:02:38 	Evento Apertura por comando RS 232
+13/05 04:02:38 	Evento Apertura mecanica saltandose la electronica
+13/05 04:02:38 	Evento Apertura incondicional por comando RS 232
+13/05 04:02:38 	Evento Cierre de la puerta
+13/05 04:02:38 	Evento Fallo de apertura (la puerta no se abre)
+13/05 04:02:38 	Evento Alarma puerta abierta demasiado tiempo
+13/05 04:02:38 	Evento Se ha cambiado la Fecha/Hora
+13/05 04:02:38 	Evento Se han cambiado los periodos de actividad
+13/05 04:02:38 	Evento Cambio Numero de Serie
+13/05 04:02:38 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+13/05 04:02:38 	Evento Activacion del horario de verano +1h
+13/05 04:02:38 	Evento Activacion del horario de invierno -1h
+13/05 04:02:38 	Evento Cambio del horario de verano
+13/05 04:02:38 	Evento Sin Comunicacion con Concentrador
+13/05 04:02:38 	Evento Recuperacion Comunicacion Concentrador
+13/05 04:02:38 Me_CD.NombreDisplay :0.1
+13/05 04:02:38 UI_CajaDotacion
+13/05 04:02:38 UI_CajaDotacion Despues de instalar PollSocketRPCs
+13/05 04:02:39 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+13/05 04:02:41 Recibida Orden SHOW_HIDE 
+13/05 04:02:41 SHOW_HIDE Me oculto
+13/05 13:44:20 NUEVA EJECUCION DEL UI
+13/05 13:44:20 LeerEventos
+13/05 13:44:20 Nro de Tipos de evento 20
+13/05 13:44:20 	Evento Reset (por fallo de alimentacion)
+13/05 13:44:20 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+13/05 13:44:20 	Evento Activado periodo
+13/05 13:44:20 	Evento Borrado periodo
+13/05 13:44:20 	Evento Apertura Normal de la puerta
+13/05 13:44:20 	Evento Apertura por comando RS 232
+13/05 13:44:20 	Evento Apertura mecanica saltandose la electronica
+13/05 13:44:20 	Evento Apertura incondicional por comando RS 232
+13/05 13:44:20 	Evento Cierre de la puerta
+13/05 13:44:20 	Evento Fallo de apertura (la puerta no se abre)
+13/05 13:44:20 	Evento Alarma puerta abierta demasiado tiempo
+13/05 13:44:20 	Evento Se ha cambiado la Fecha/Hora
+13/05 13:44:20 	Evento Se han cambiado los periodos de actividad
+13/05 13:44:20 	Evento Cambio Numero de Serie
+13/05 13:44:20 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+13/05 13:44:20 	Evento Activacion del horario de verano +1h
+13/05 13:44:20 	Evento Activacion del horario de invierno -1h
+13/05 13:44:20 	Evento Cambio del horario de verano
+13/05 13:44:20 	Evento Sin Comunicacion con Concentrador
+13/05 13:44:20 	Evento Recuperacion Comunicacion Concentrador
+13/05 13:44:20 Me_CD.NombreDisplay :0.1
+13/05 13:44:20 UI_CajaDotacion
+13/05 13:44:20 UI_CajaDotacion Despues de instalar PollSocketRPCs
+13/05 13:44:21 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+13/05 13:44:22 Recibida Orden SHOW_HIDE 
+13/05 13:44:22 SHOW_HIDE Me oculto
+13/05 17:29:30 NUEVA EJECUCION DEL UI
+13/05 17:29:30 LeerEventos
+13/05 17:29:30 Nro de Tipos de evento 20
+13/05 17:29:30 	Evento Reset (por fallo de alimentacion)
+13/05 17:29:30 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+13/05 17:29:30 	Evento Activado periodo
+13/05 17:29:30 	Evento Borrado periodo
+13/05 17:29:30 	Evento Apertura Normal de la puerta
+13/05 17:29:30 	Evento Apertura por comando RS 232
+13/05 17:29:30 	Evento Apertura mecanica saltandose la electronica
+13/05 17:29:30 	Evento Apertura incondicional por comando RS 232
+13/05 17:29:30 	Evento Cierre de la puerta
+13/05 17:29:30 	Evento Fallo de apertura (la puerta no se abre)
+13/05 17:29:30 	Evento Alarma puerta abierta demasiado tiempo
+13/05 17:29:30 	Evento Se ha cambiado la Fecha/Hora
+13/05 17:29:30 	Evento Se han cambiado los periodos de actividad
+13/05 17:29:30 	Evento Cambio Numero de Serie
+13/05 17:29:30 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+13/05 17:29:30 	Evento Activacion del horario de verano +1h
+13/05 17:29:30 	Evento Activacion del horario de invierno -1h
+13/05 17:29:30 	Evento Cambio del horario de verano
+13/05 17:29:30 	Evento Sin Comunicacion con Concentrador
+13/05 17:29:30 	Evento Recuperacion Comunicacion Concentrador
+13/05 17:29:30 Me_CD.NombreDisplay :0.1
+13/05 17:29:30 UI_CajaDotacion
+13/05 17:29:30 UI_CajaDotacion Despues de instalar PollSocketRPCs
+13/05 17:29:31 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+13/05 17:29:33 Recibida Orden SHOW_HIDE 
+13/05 17:29:33 SHOW_HIDE Me oculto
+14/05 04:02:39 NUEVA EJECUCION DEL UI
+14/05 04:02:39 LeerEventos
+14/05 04:02:39 Nro de Tipos de evento 20
+14/05 04:02:39 	Evento Reset (por fallo de alimentacion)
+14/05 04:02:39 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/05 04:02:39 	Evento Activado periodo
+14/05 04:02:39 	Evento Borrado periodo
+14/05 04:02:39 	Evento Apertura Normal de la puerta
+14/05 04:02:39 	Evento Apertura por comando RS 232
+14/05 04:02:39 	Evento Apertura mecanica saltandose la electronica
+14/05 04:02:39 	Evento Apertura incondicional por comando RS 232
+14/05 04:02:39 	Evento Cierre de la puerta
+14/05 04:02:39 	Evento Fallo de apertura (la puerta no se abre)
+14/05 04:02:39 	Evento Alarma puerta abierta demasiado tiempo
+14/05 04:02:39 	Evento Se ha cambiado la Fecha/Hora
+14/05 04:02:39 	Evento Se han cambiado los periodos de actividad
+14/05 04:02:39 	Evento Cambio Numero de Serie
+14/05 04:02:39 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/05 04:02:39 	Evento Activacion del horario de verano +1h
+14/05 04:02:39 	Evento Activacion del horario de invierno -1h
+14/05 04:02:39 	Evento Cambio del horario de verano
+14/05 04:02:39 	Evento Sin Comunicacion con Concentrador
+14/05 04:02:39 	Evento Recuperacion Comunicacion Concentrador
+14/05 04:02:39 Me_CD.NombreDisplay :0.1
+14/05 04:02:39 UI_CajaDotacion
+14/05 04:02:39 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/05 04:02:40 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/05 04:02:42 Recibida Orden SHOW_HIDE 
+14/05 04:02:42 SHOW_HIDE Me oculto
+14/05 09:56:13 NUEVA EJECUCION DEL UI
+14/05 09:56:13 LeerEventos
+14/05 09:56:13 Nro de Tipos de evento 20
+14/05 09:56:13 	Evento Reset (por fallo de alimentacion)
+14/05 09:56:13 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/05 09:56:13 	Evento Activado periodo
+14/05 09:56:13 	Evento Borrado periodo
+14/05 09:56:13 	Evento Apertura Normal de la puerta
+14/05 09:56:13 	Evento Apertura por comando RS 232
+14/05 09:56:13 	Evento Apertura mecanica saltandose la electronica
+14/05 09:56:13 	Evento Apertura incondicional por comando RS 232
+14/05 09:56:13 	Evento Cierre de la puerta
+14/05 09:56:13 	Evento Fallo de apertura (la puerta no se abre)
+14/05 09:56:13 	Evento Alarma puerta abierta demasiado tiempo
+14/05 09:56:13 	Evento Se ha cambiado la Fecha/Hora
+14/05 09:56:13 	Evento Se han cambiado los periodos de actividad
+14/05 09:56:13 	Evento Cambio Numero de Serie
+14/05 09:56:13 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/05 09:56:13 	Evento Activacion del horario de verano +1h
+14/05 09:56:13 	Evento Activacion del horario de invierno -1h
+14/05 09:56:13 	Evento Cambio del horario de verano
+14/05 09:56:13 	Evento Sin Comunicacion con Concentrador
+14/05 09:56:13 	Evento Recuperacion Comunicacion Concentrador
+14/05 09:56:13 Me_CD.NombreDisplay :0.1
+14/05 09:56:13 UI_CajaDotacion
+14/05 09:56:13 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/05 09:56:13 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/05 09:56:15 Recibida Orden SHOW_HIDE 
+14/05 09:56:15 SHOW_HIDE Me oculto
+14/05 11:11:09 NUEVA EJECUCION DEL UI
+14/05 11:11:09 LeerEventos
+14/05 11:11:09 Nro de Tipos de evento 20
+14/05 11:11:09 	Evento Reset (por fallo de alimentacion)
+14/05 11:11:09 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+14/05 11:11:09 	Evento Activado periodo
+14/05 11:11:09 	Evento Borrado periodo
+14/05 11:11:09 	Evento Apertura Normal de la puerta
+14/05 11:11:09 	Evento Apertura por comando RS 232
+14/05 11:11:09 	Evento Apertura mecanica saltandose la electronica
+14/05 11:11:09 	Evento Apertura incondicional por comando RS 232
+14/05 11:11:09 	Evento Cierre de la puerta
+14/05 11:11:09 	Evento Fallo de apertura (la puerta no se abre)
+14/05 11:11:09 	Evento Alarma puerta abierta demasiado tiempo
+14/05 11:11:09 	Evento Se ha cambiado la Fecha/Hora
+14/05 11:11:09 	Evento Se han cambiado los periodos de actividad
+14/05 11:11:09 	Evento Cambio Numero de Serie
+14/05 11:11:09 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+14/05 11:11:09 	Evento Activacion del horario de verano +1h
+14/05 11:11:09 	Evento Activacion del horario de invierno -1h
+14/05 11:11:09 	Evento Cambio del horario de verano
+14/05 11:11:09 	Evento Sin Comunicacion con Concentrador
+14/05 11:11:09 	Evento Recuperacion Comunicacion Concentrador
+14/05 11:11:09 Me_CD.NombreDisplay :0.1
+14/05 11:11:09 UI_CajaDotacion
+14/05 11:11:09 UI_CajaDotacion Despues de instalar PollSocketRPCs
+14/05 11:11:10 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+14/05 11:11:11 Recibida Orden SHOW_HIDE 
+14/05 11:11:11 SHOW_HIDE Me oculto
+14/05 12:17:57 Hemos recibido un SET_DRV de 00 81 0 - ui_plano01
+14/05 12:17:57 Parametros de la orden: 12 19 1 DOT12191 DOT12191
+Nueva Localizacion 12 19 1 -DOT12191. Enviamos SET_UI
+14/05 12:17:57 SET_DRV: Versiones antes de SET_UI: -1 1084529877 -1 1084529877
+14/05 12:17:57 Enviado SET_UI a DOT12191. Linea : 12 Estacion : 19 Vestibulo : 1
+14/05 12:17:58 Recibida Orden SHOW_HIDE 
+14/05 12:17:58 RecargarDatos conectando.ascii
+14/05 12:17:58 RecargarDatos ../conectando.ascii abierto
+14/05 12:17:58 SHOW_HIDE: cargamos conectando
+14/05 12:17:58 CambiarForm
+14/05 12:17:58 SHOW_HIDE Me visualizo
+14/05 12:17:59 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 273 bytes
+14/05 12:17:59 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+14/05 12:17:59 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=11)
+14/05 12:17:59 Recibida orden de INICIALIZAR_UI con buffer 1
+14/05 12:17:59 INICIALIZAR_UI: ACTUALIZAR_DATOS
+14/05 12:17:59 LeerFicheroDatos
+14/05 12:17:59 CrearAsciiEstado
+14/05 12:17:59 CrearAsciiPeriodos
+14/05 12:17:59 INICIALIZAR_UI: despues de LeerFicheroDatos
+14/05 12:17:59 INICIALIZAR_UI: se han creado los ascii de datos
+14/05 12:17:59 ActualizarPantallaDatosNew: PantallaActiva -1
+14/05 12:17:59 CargarPantallaEstado: Num Alarmas 0 
+14/05 12:17:59 SpanAlarmas. Me_CD.iNroAlarmasActivas 0 
+14/05 12:17:59 SpanAlarmas. ESTADO_NORMAL ESTADO_ACEPTAR 
+14/05 12:17:59 SpanAlarmas. Salimos por default 2
+14/05 12:17:59 CargarPantallaEstado: despues de SpanAlarmas. Lineas 9
+14/05 12:17:59 RecargarDatos estado.ascii
+14/05 12:17:59 RecargarDatos estado.ascii abierto
+14/05 12:17:59 CargarPantallaEstado: ESTADO_NORMAL
+14/05 12:17:59 CambiarForm
+14/05 12:17:59 CargarPantallaEstado:NroAlarmas 0
+14/05 12:17:59 ActualizarPantallaDatosNew: CONECTANDO -> ESTADO_NORMAL 
+14/05 12:17:59 ProcesarOrdenCtrlFichero:  recibido el fichero xTempEventos.gz de longitud 185 bytes
+14/05 12:17:59 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+14/05 12:17:59 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+14/05 12:17:59 Recibida orden de INICIALIZAR_UI con buffer 2
+14/05 12:17:59 INICIALIZAR_UI: ACTUALIZAR_EVENTOS
+14/05 12:17:59 DecodFicheroEventos
+14/05 12:17:59 DecodFicheroEventos. TengoAsciiEventos
+14/05 12:17:59 CrearAsciiConsultas
+14/05 12:17:59 INICIALIZAR_UI: se han creado los ascii de concentracion
+14/05 12:17:59 ActualizarPantallaEventosNew: antes de entrar PantallaActiva 2
+14/05 12:17:59 ActualizarPantallaEventosNew: Me_CD.Comunicacion 3
+14/05 12:17:59 ActualizarPantallaEventosNew: Salimos por default 
+14/05 12:17:59 ActualizarPantallaEventosNew: despues de entrar PantallaActiva 2
+14/05 12:18:11 Recibida Orden SHOW_HIDE 
+14/05 12:18:11 SHOW_HIDE Me oculto
+14/05 12:18:11 Se recibe UNSET_DRV de msg.origen.nombre ui_plano01
+14/05 12:18:11 Mando UNSET_UI a 12 19 1 DOT12191
+14/05 12:18:11 ActivarDescon
+14/05 12:18:12 ProcesarOrdenCtrlFichero:  recibido el fichero xDatosUI.gz de longitud 273 bytes
+14/05 12:18:12 ProcesarOrdenCtrlFichero:  Errno 0 antes abrir
+14/05 12:18:12 ProcesarOrdenCtrlFichero: Errno 0 despues (fd=12)
+15/05 04:01:24 NUEVA EJECUCION DEL UI
+15/05 04:01:24 LeerEventos
+15/05 04:01:24 Nro de Tipos de evento 20
+15/05 04:01:24 	Evento Reset (por fallo de alimentacion)
+15/05 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+15/05 04:01:24 	Evento Activado periodo
+15/05 04:01:24 	Evento Borrado periodo
+15/05 04:01:24 	Evento Apertura Normal de la puerta
+15/05 04:01:24 	Evento Apertura por comando RS 232
+15/05 04:01:24 	Evento Apertura mecanica saltandose la electronica
+15/05 04:01:24 	Evento Apertura incondicional por comando RS 232
+15/05 04:01:24 	Evento Cierre de la puerta
+15/05 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+15/05 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+15/05 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+15/05 04:01:24 	Evento Se han cambiado los periodos de actividad
+15/05 04:01:24 	Evento Cambio Numero de Serie
+15/05 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+15/05 04:01:24 	Evento Activacion del horario de verano +1h
+15/05 04:01:24 	Evento Activacion del horario de invierno -1h
+15/05 04:01:24 	Evento Cambio del horario de verano
+15/05 04:01:24 	Evento Sin Comunicacion con Concentrador
+15/05 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+15/05 04:01:24 Me_CD.NombreDisplay :0.1
+15/05 04:01:24 UI_CajaDotacion
+15/05 04:01:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+15/05 04:01:25 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+15/05 04:01:27 Recibida Orden SHOW_HIDE 
+15/05 04:01:27 SHOW_HIDE Me oculto
+16/05 04:01:25 NUEVA EJECUCION DEL UI
+16/05 04:01:25 LeerEventos
+16/05 04:01:25 Nro de Tipos de evento 20
+16/05 04:01:25 	Evento Reset (por fallo de alimentacion)
+16/05 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+16/05 04:01:25 	Evento Activado periodo
+16/05 04:01:25 	Evento Borrado periodo
+16/05 04:01:25 	Evento Apertura Normal de la puerta
+16/05 04:01:25 	Evento Apertura por comando RS 232
+16/05 04:01:25 	Evento Apertura mecanica saltandose la electronica
+16/05 04:01:25 	Evento Apertura incondicional por comando RS 232
+16/05 04:01:25 	Evento Cierre de la puerta
+16/05 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+16/05 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+16/05 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+16/05 04:01:25 	Evento Se han cambiado los periodos de actividad
+16/05 04:01:25 	Evento Cambio Numero de Serie
+16/05 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+16/05 04:01:25 	Evento Activacion del horario de verano +1h
+16/05 04:01:25 	Evento Activacion del horario de invierno -1h
+16/05 04:01:25 	Evento Cambio del horario de verano
+16/05 04:01:25 	Evento Sin Comunicacion con Concentrador
+16/05 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+16/05 04:01:25 Me_CD.NombreDisplay :0.1
+16/05 04:01:25 UI_CajaDotacion
+16/05 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+16/05 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+16/05 04:01:27 Recibida Orden SHOW_HIDE 
+16/05 04:01:27 SHOW_HIDE Me oculto
+17/05 04:01:24 NUEVA EJECUCION DEL UI
+17/05 04:01:24 LeerEventos
+17/05 04:01:24 Nro de Tipos de evento 20
+17/05 04:01:24 	Evento Reset (por fallo de alimentacion)
+17/05 04:01:24 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+17/05 04:01:24 	Evento Activado periodo
+17/05 04:01:24 	Evento Borrado periodo
+17/05 04:01:24 	Evento Apertura Normal de la puerta
+17/05 04:01:24 	Evento Apertura por comando RS 232
+17/05 04:01:24 	Evento Apertura mecanica saltandose la electronica
+17/05 04:01:24 	Evento Apertura incondicional por comando RS 232
+17/05 04:01:24 	Evento Cierre de la puerta
+17/05 04:01:24 	Evento Fallo de apertura (la puerta no se abre)
+17/05 04:01:24 	Evento Alarma puerta abierta demasiado tiempo
+17/05 04:01:24 	Evento Se ha cambiado la Fecha/Hora
+17/05 04:01:24 	Evento Se han cambiado los periodos de actividad
+17/05 04:01:24 	Evento Cambio Numero de Serie
+17/05 04:01:24 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+17/05 04:01:24 	Evento Activacion del horario de verano +1h
+17/05 04:01:24 	Evento Activacion del horario de invierno -1h
+17/05 04:01:24 	Evento Cambio del horario de verano
+17/05 04:01:24 	Evento Sin Comunicacion con Concentrador
+17/05 04:01:24 	Evento Recuperacion Comunicacion Concentrador
+17/05 04:01:24 Me_CD.NombreDisplay :0.1
+17/05 04:01:24 UI_CajaDotacion
+17/05 04:01:24 UI_CajaDotacion Despues de instalar PollSocketRPCs
+17/05 04:01:24 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+17/05 04:01:26 Recibida Orden SHOW_HIDE 
+17/05 04:01:26 SHOW_HIDE Me oculto
+18/05 04:01:25 NUEVA EJECUCION DEL UI
+18/05 04:01:25 LeerEventos
+18/05 04:01:25 Nro de Tipos de evento 20
+18/05 04:01:25 	Evento Reset (por fallo de alimentacion)
+18/05 04:01:25 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+18/05 04:01:25 	Evento Activado periodo
+18/05 04:01:25 	Evento Borrado periodo
+18/05 04:01:25 	Evento Apertura Normal de la puerta
+18/05 04:01:25 	Evento Apertura por comando RS 232
+18/05 04:01:25 	Evento Apertura mecanica saltandose la electronica
+18/05 04:01:25 	Evento Apertura incondicional por comando RS 232
+18/05 04:01:25 	Evento Cierre de la puerta
+18/05 04:01:25 	Evento Fallo de apertura (la puerta no se abre)
+18/05 04:01:25 	Evento Alarma puerta abierta demasiado tiempo
+18/05 04:01:25 	Evento Se ha cambiado la Fecha/Hora
+18/05 04:01:25 	Evento Se han cambiado los periodos de actividad
+18/05 04:01:25 	Evento Cambio Numero de Serie
+18/05 04:01:25 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+18/05 04:01:25 	Evento Activacion del horario de verano +1h
+18/05 04:01:25 	Evento Activacion del horario de invierno -1h
+18/05 04:01:25 	Evento Cambio del horario de verano
+18/05 04:01:25 	Evento Sin Comunicacion con Concentrador
+18/05 04:01:25 	Evento Recuperacion Comunicacion Concentrador
+18/05 04:01:25 Me_CD.NombreDisplay :0.1
+18/05 04:01:25 UI_CajaDotacion
+18/05 04:01:25 UI_CajaDotacion Despues de instalar PollSocketRPCs
+18/05 04:01:26 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+18/05 04:01:28 Recibida Orden SHOW_HIDE 
+18/05 04:01:28 SHOW_HIDE Me oculto
+18/05 07:56:10 NUEVA EJECUCION DEL UI
+18/05 07:56:10 LeerEventos
+18/05 07:56:10 Nro de Tipos de evento 20
+18/05 07:56:10 	Evento Reset (por fallo de alimentacion)
+18/05 07:56:10 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+18/05 07:56:10 	Evento Activado periodo
+18/05 07:56:10 	Evento Borrado periodo
+18/05 07:56:10 	Evento Apertura Normal de la puerta
+18/05 07:56:10 	Evento Apertura por comando RS 232
+18/05 07:56:10 	Evento Apertura mecanica saltandose la electronica
+18/05 07:56:10 	Evento Apertura incondicional por comando RS 232
+18/05 07:56:10 	Evento Cierre de la puerta
+18/05 07:56:10 	Evento Fallo de apertura (la puerta no se abre)
+18/05 07:56:10 	Evento Alarma puerta abierta demasiado tiempo
+18/05 07:56:10 	Evento Se ha cambiado la Fecha/Hora
+18/05 07:56:10 	Evento Se han cambiado los periodos de actividad
+18/05 07:56:10 	Evento Cambio Numero de Serie
+18/05 07:56:10 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+18/05 07:56:10 	Evento Activacion del horario de verano +1h
+18/05 07:56:10 	Evento Activacion del horario de invierno -1h
+18/05 07:56:10 	Evento Cambio del horario de verano
+18/05 07:56:10 	Evento Sin Comunicacion con Concentrador
+18/05 07:56:10 	Evento Recuperacion Comunicacion Concentrador
+18/05 07:56:10 Me_CD.NombreDisplay :0.1
+18/05 07:56:10 UI_CajaDotacion
+18/05 07:56:10 UI_CajaDotacion Despues de instalar PollSocketRPCs
+18/05 07:56:11 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+18/05 07:56:12 Recibida Orden SHOW_HIDE 
+18/05 07:56:12 SHOW_HIDE Me oculto
+19/05 04:01:28 NUEVA EJECUCION DEL UI
+19/05 04:01:28 LeerEventos
+19/05 04:01:28 Nro de Tipos de evento 20
+19/05 04:01:28 	Evento Reset (por fallo de alimentacion)
+19/05 04:01:28 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+19/05 04:01:28 	Evento Activado periodo
+19/05 04:01:28 	Evento Borrado periodo
+19/05 04:01:28 	Evento Apertura Normal de la puerta
+19/05 04:01:28 	Evento Apertura por comando RS 232
+19/05 04:01:28 	Evento Apertura mecanica saltandose la electronica
+19/05 04:01:28 	Evento Apertura incondicional por comando RS 232
+19/05 04:01:28 	Evento Cierre de la puerta
+19/05 04:01:28 	Evento Fallo de apertura (la puerta no se abre)
+19/05 04:01:28 	Evento Alarma puerta abierta demasiado tiempo
+19/05 04:01:28 	Evento Se ha cambiado la Fecha/Hora
+19/05 04:01:28 	Evento Se han cambiado los periodos de actividad
+19/05 04:01:28 	Evento Cambio Numero de Serie
+19/05 04:01:28 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+19/05 04:01:28 	Evento Activacion del horario de verano +1h
+19/05 04:01:28 	Evento Activacion del horario de invierno -1h
+19/05 04:01:28 	Evento Cambio del horario de verano
+19/05 04:01:28 	Evento Sin Comunicacion con Concentrador
+19/05 04:01:28 	Evento Recuperacion Comunicacion Concentrador
+19/05 04:01:28 Me_CD.NombreDisplay :0.1
+19/05 04:01:28 UI_CajaDotacion
+19/05 04:01:28 UI_CajaDotacion Despues de instalar PollSocketRPCs
+19/05 04:01:28 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+19/05 04:01:30 Recibida Orden SHOW_HIDE 
+19/05 04:01:30 SHOW_HIDE Me oculto
+20/05 04:01:26 NUEVA EJECUCION DEL UI
+20/05 04:01:26 LeerEventos
+20/05 04:01:26 Nro de Tipos de evento 20
+20/05 04:01:26 	Evento Reset (por fallo de alimentacion)
+20/05 04:01:26 	Evento Reset (Reloj parado, fallo alimentacion mas 2 meses)
+20/05 04:01:26 	Evento Activado periodo
+20/05 04:01:26 	Evento Borrado periodo
+20/05 04:01:26 	Evento Apertura Normal de la puerta
+20/05 04:01:26 	Evento Apertura por comando RS 232
+20/05 04:01:26 	Evento Apertura mecanica saltandose la electronica
+20/05 04:01:26 	Evento Apertura incondicional por comando RS 232
+20/05 04:01:26 	Evento Cierre de la puerta
+20/05 04:01:26 	Evento Fallo de apertura (la puerta no se abre)
+20/05 04:01:26 	Evento Alarma puerta abierta demasiado tiempo
+20/05 04:01:26 	Evento Se ha cambiado la Fecha/Hora
+20/05 04:01:26 	Evento Se han cambiado los periodos de actividad
+20/05 04:01:26 	Evento Cambio Numero de Serie
+20/05 04:01:26 	Evento Demasiado tiempo sin comunicar con Host (5 mins)
+20/05 04:01:26 	Evento Activacion del horario de verano +1h
+20/05 04:01:26 	Evento Activacion del horario de invierno -1h
+20/05 04:01:26 	Evento Cambio del horario de verano
+20/05 04:01:26 	Evento Sin Comunicacion con Concentrador
+20/05 04:01:26 	Evento Recuperacion Comunicacion Concentrador
+20/05 04:01:26 Me_CD.NombreDisplay :0.1
+20/05 04:01:26 UI_CajaDotacion
+20/05 04:01:26 UI_CajaDotacion Despues de instalar PollSocketRPCs
+20/05 04:01:27 FirstPollSocketRPCs: se instalan SignalHandlers para SIGTERM y SIGALRM.
+20/05 04:01:28 Recibida Orden SHOW_HIDE 
+20/05 04:01:28 SHOW_HIDE Me oculto
+20/05 19:11:48 UI_CAJA_DOT: recibe senal 15 para terminar
+20/05 19:11:48 SomeSignalsFunc. exit
