@@ -1,5 +1,5 @@
 #!/usr/bin/bash -e -x
-curl http://ftp1.digi.com/support/driver/40001174_T.bin -o 40001174_T.bin
+wget -q "http://ftp1.digi.com/support/driver/40001174_T.bin" -O 40001174_T.bin
 pkgtrans 40001174_T.bin tmp/ all
 rm -rf 40001174_T.bin
 uncompress tmp/realport/reloc/opt/realport/i386/ncxd.Z

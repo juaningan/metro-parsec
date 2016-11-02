@@ -330,9 +330,9 @@ $DF -h $DESTDIR
 #
 # unmount, then compress the block device and copy it back
 #
-tar czf /var/tmp/root.tar.gz -C $DESTDIR .
+tar czf /tmp/mvi.tar.gz -C $DESTDIR .
 sync
-ls -lsh /var/tmp/root.tar.gz
+ls -lsh /tmp/mvi.tar.gz
 
 #
 # and clean up
