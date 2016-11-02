@@ -20,7 +20,7 @@
       "iso_checksum": "081e8fa775a48c6fec1f0a062d14ae36",
       "iso_checksum_type": "md5",
       "iso_url": "http://pkgs.tribblix.org/iso/tribblix-0m18.iso",
-      "output_directory": "packer-tce-installer-virtualbox",
+      "output_directory": "packer-{{ user `template` }}-virtualbox",
       "shutdown_command": "init 5",
       "shutdown_timeout": "10m",
       "ssh_password": "tribblix",
@@ -55,12 +55,12 @@
     {
       "scripts": [
         "scripts/mvi.sh",
-        "scripts/tce-installer.sh"
+        "scripts/{{ user `template` }}.sh"
       ],
       "type": "shell"
     },
     {
-      "destination": "builds/tce-installer.iso",
+      "destination": "builds/{{ user `template` }}.iso",
       "direction": "download",
       "source": "/tmp/mvi.iso",
       "type": "file"
@@ -70,14 +70,14 @@
     [
       {
         "type": "artifice",
-        "files": ["builds/tce-installer.iso"]
+        "files": ["builds/{{ user `template` }}.iso"]
       }
     ]
   ],
   "variables": {
     "cpus": "1",
     "disk_size": "10360",
-    "headless": "",
+    "headless": "true",
     "memory": "2048",
     "template": "tce-installer"
   }

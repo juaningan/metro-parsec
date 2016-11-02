@@ -20,7 +20,7 @@
       "iso_checksum": "081e8fa775a48c6fec1f0a062d14ae36",
       "iso_checksum_type": "md5",
       "iso_url": "http://pkgs.tribblix.org/iso/tribblix-0m18.iso",
-      "output_directory": "packer-tce-rootfs-virtualbox",
+      "output_directory": "packer-{{ user `template` }}-virtualbox",
       "shutdown_command": "init 5",
       "shutdown_timeout": "10m",
       "ssh_password": "tribblix",
@@ -55,12 +55,12 @@
     {
       "scripts": [
         "scripts/mvi.sh",
-        "scripts/tce-rootfs.sh"
+        "scripts/{{ user `template` }}.sh"
       ],
       "type": "shell"
     },
     {
-      "destination": "builds/tce-rootfs.tar.gz",
+      "destination": "builds/{{ user `template` }}.tar.gz",
       "direction": "download",
       "source": "/tmp/mvi.tar.gz",
       "type": "file"
@@ -70,7 +70,7 @@
     [
       {
         "type": "artifice",
-        "files": ["builds/tce-rootfs.tar.gz"]
+        "files": ["builds/{{ user `template` }}.tar.gz"]
       }
     ]
   ],
