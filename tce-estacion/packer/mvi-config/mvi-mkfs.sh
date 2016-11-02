@@ -6,7 +6,7 @@
 #
 # where the iso should end up
 #
-ISO_NAME=/var/tmp/mvi.iso
+ISO_NAME=/tmp/mvi.iso
 
 #
 # Tribblix version for illumos pkgs
@@ -332,7 +332,7 @@ mkfile ${MRSIZE} /tmp/${MRSIZE}
 #
 # gzip doesn't like the sticky bit
 #
-chmod o-t /tmp/${MRSIZE}
+chmod -t /tmp/${MRSIZE}
 LOFIDEV=`lofiadm -a /tmp/${MRSIZE}`
 LOFINUM=`echo $LOFIDEV|awk -F/ '{print $NF}'`
 echo "y" | env NOINUSE_CHECK=1 newfs -o space -m 0 -i $NBPI /dev/rlofi/$LOFINUM
@@ -358,7 +358,6 @@ if [ -x /usr/gnu/bin/df ]; then
     DF=/usr/gnu/bin/df
 fi
 $DF -h $BFS
-$DF -i $BFS
 
 #
 # unmount, then compress the block device and copy it back

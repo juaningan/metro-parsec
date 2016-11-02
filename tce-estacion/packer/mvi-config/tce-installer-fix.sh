@@ -8,6 +8,6 @@ TSIZE=$(($TSIZE+7))
 MRSIZE=${TSIZE}M
 
 #Copy livecd installation scripts for test
-cp -v /root/format-a-disk.sh root/
+cp /root/format-a-disk.sh root/
 
 sync

@@ -5,8 +5,8 @@ virtualfloppy.vfd
 packer_cache
 packer.log
 .DS_Store
-/packer-*/
+packer-*/
 *.variables.json
-/builds/
+builds/
 .kitchen
 .kitchen.*.yml
