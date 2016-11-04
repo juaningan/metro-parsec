@@ -261,10 +261,10 @@ done
 cd ${DESTDIR}
 cat > ${DESTDIR}/etc/mvi.rc <<EOF
 #!/sbin/sh
-if [ ! -f /startup ]; then
-  /etc/fs/ufs/mount -o remount,rw /devices/ramdisk:a /
-  echo "y" > /startup
-fi
+#if [ ! -f /startup ]; then
+#  /etc/fs/ufs/mount -o remount,rw /devices/ramdisk:a /
+#  echo "y" > /startup
+#fi
 EOF
 for xopt in $*
 do
@@ -293,20 +293,6 @@ smf::sysinit:/etc/mvi.rc
 _EOF
 
 #
-# add a grub menu
-#
-cat >> ${DESTDIR}/boot/grub/menu.lst << _EOF
-title minimal viable illumos
-kernel\$ /platform/i86pc/kernel/\$ISADIR/unix
-module\$ /platform/i86pc/boot_archive
-title minimal viable illumos (ttya)
-kernel\$ /platform/i86pc/kernel/\$ISADIR/unix -B console=ttya,input-device=ttya,output-device=ttya
-module\$ /platform/i86pc/boot_archive
-title Boot from hard disk
-rootnoverify (hd0)
-chainloader +1
-_EOF
-#
 # https://blogs.oracle.com/darren/entry/sending_a_break_to_opensolaris
 #
 cat >> ${DESTDIR}/etc/system << _EOF
@@ -319,13 +305,6 @@ mkdir -p dev/fd devices/pseudo opt var var/run mnt
 rm -f dev/dsk/* dev/rdsk/* dev/usb/h*
 rm -f dev/removable-media/dsk/* dev/removable-media/rdsk/*
 rm -fr dev/zcons/*
-
-cd /
-DF=/usr/bin/df
-if [ -x /usr/gnu/bin/df ]; then
-    DF=/usr/gnu/bin/df
-fi
-$DF -h $DESTDIR
 
 #
 # unmount, then compress the block device and copy it back

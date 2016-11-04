@@ -13,10 +13,25 @@ echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/c0d0s0
 # Extract root archive into disk
 /usr/bin/mkdir /a
 /usr/sbin/mount /dev/dsk/c0d0s0 /a
-/usr/bin/wget "http://16.0.96.20/repo/tce-mvi.tar.gz" -O /a/tce-mvi.tar.gz
-cd /a ; tar xzf tce-mvi.tar.gz
+/usr/bin/wget "http://16.0.96.20/repo/tce-rootfs.tar.gz" -O /a/tce-rootfs.tar.gz
+cd /a ; tar xzf tce-rootfs.tar.gz; rm -rf tce-rootfs.tar.gz
 cd /
 /sbin/sync
+
+# add a grub menu
+cat >> /a/boot/grub/menu.lst << _EOF
+title TCE Estacion
+findroot (tribblix_18,0,a)
+kernel\$ /platform/i86pc/kernel/unix
+module\$ /platform/i86pc/boot_archive
+_EOF
+
+# Install grub
+/sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/c0d0s0
+
+# Configuring devices
+/a/usr/sbin/devfsadm -r /a
+touch /a/reconfigure
 
 # Setting up boot
 /usr/bin/mkdir -p /a/boot/grub/bootsign
@@ -41,5 +56,3 @@ sleep 2
 
 /sbin/umount /a
 
-# Install grub
-/sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/c0d0s0
