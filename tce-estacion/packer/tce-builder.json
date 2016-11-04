@@ -53,16 +53,29 @@
       "destination": "/tmp"
     },
     {
+      "environment_vars": [
+        "all_proxy={{ user `proxy` }}",
+        "http_proxy={{ user `proxy` }}",
+        "https_proxy={{ user `proxy` }}",
+        "no_proxy={{ user `no_proxy` }}"
+      ],
       "scripts": [
         "scripts/mvi.sh",
-        "scripts/{{ user `template` }}.sh"
+        "scripts/tce-installer.sh",
+        "scripts/tce-rootfs.sh"
       ],
       "type": "shell"
     },
     {
-      "destination": "builds/{{ user `template` }}.iso",
+      "destination": "builds/tce-installer.iso",
       "direction": "download",
       "source": "/tmp/mvi.iso",
+      "type": "file"
+    },
+    {
+      "destination": "builds/tce-rootfs.tar.gz",
+      "direction": "download",
+      "source": "/tmp/mvi.tar.gz",
       "type": "file"
     }
   ],
@@ -70,15 +83,20 @@
     [
       {
         "type": "artifice",
-        "files": ["builds/{{ user `template` }}.iso"]
+        "files": [
+          "builds/tce-installer.iso",
+          "builds/tce-rootfs.tar.gz"
+        ]
       }
     ]
   ],
   "variables": {
     "cpus": "1",
     "disk_size": "10360",
-    "headless": "true",
+    "headless": "false",
     "memory": "2048",
-    "template": "tce-installer"
+    "template": "tce-builder",
+    "proxy": "{{ env `all_proxy` }}",
+    "no_proxy": "{{ env `no_proxy` }}"
   }
 }
