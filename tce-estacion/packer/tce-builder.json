@@ -3,7 +3,8 @@
     {
       "boot_command": [
         "<down><down><enter>",
-        "<wait10><wait5>",
+        "<wait10><wait10><wait10>",
+        "<wait10><wait10><wait10>",
         "root<enter>",
         "tribblix<enter>",
         "ifconfig e1000g0 plumb<enter>",
