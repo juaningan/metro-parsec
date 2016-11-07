@@ -8,11 +8,9 @@ TSIZE=`echo $MRSIZE | sed s:M::`
 TSIZE=$(($TSIZE+90))
 MRSIZE=${TSIZE}M
 
-wget -q "https://github.com/juaningan/tce-estacion-config/archive/master.tar.gz" -O parsec-tce-master.tar.gz
-/tmp/usr/gnu/bin/tar xvzf parsec-tce-master.tar.gz
-cp -r tce-estacion-config-master/common/* ./
-cp -r tce-estacion-config-master/nodes/pueblonuevo/* ./
-rm -rf parsec-tce-*
-rm -rf parsec-tce-*.tar.gz
+echo $DESTDIR
+echo $PWD
+
+wget -q "https://github.com/juaningan/tce-estacion-config/archive/master.tar.gz" -O - | /tmp/usr/gnu/bin/tar -C ${DESTDIR} -xzf - tce-estacion-config-master/common --strip-components=2
 
 sync
