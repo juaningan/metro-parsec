@@ -94,7 +94,7 @@
   "variables": {
     "cpus": "1",
     "disk_size": "10360",
-    "headless": "false",
+    "headless": "true",
     "memory": "2048",
     "template": "tce-builder",
     "proxy": "{{ env `all_proxy` }}",
