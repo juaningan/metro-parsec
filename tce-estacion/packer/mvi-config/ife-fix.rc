@@ -5,9 +5,11 @@
 # dhcpagent binds to localhost:4999 which requires lo0
 # the auto-revarp appears to be necessary
 #
-IFNAME="iprb0"
+IFNAME="ife0"
 
+/usr/sbin/devfsadm
 env SMF_FMRI=svc/net/ip:d /lib/inet/ipmgmtd
+
 /sbin/ifconfig lo0 plumb 127.0.0.1 up
 /sbin/ifconfig lo0 inet6 plumb ::1 up
 /sbin/ifconfig $IFNAME plumb

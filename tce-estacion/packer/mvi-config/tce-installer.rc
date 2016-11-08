@@ -4,6 +4,7 @@
 
 set -e
 set -x
+false
 
 # Partition disk, create filesystem
 /usr/sbin/devfsadm

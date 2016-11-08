@@ -62,8 +62,7 @@
       ],
       "scripts": [
         "scripts/mvi.sh",
-        "scripts/tce-installer.sh",
-        "scripts/tce-rootfs.sh"
+        "scripts/tce-installer.sh"
       ],
       "type": "shell"
     },
@@ -85,8 +84,7 @@
       {
         "type": "artifice",
         "files": [
-          "builds/tce-installer.iso",
-          "builds/tce-rootfs.tar.gz"
+          "builds/tce-installer.iso"
         ]
       }
     ]
