@@ -6,12 +6,13 @@
 # the auto-revarp appears to be necessary
 #
 IFNAME="ife0"
+HOSTNAME=$(prtconf -v /devices | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
+IP=$(prtconf -v /devices | sed -n '/ip/{;n;p;}' |cut -f 2 -d \')
 
 /usr/sbin/devfsadm
 env SMF_FMRI=svc/net/ip:d /lib/inet/ipmgmtd
 
 /sbin/ifconfig lo0 plumb 127.0.0.1 up
 /sbin/ifconfig lo0 inet6 plumb ::1 up
-/sbin/ifconfig $IFNAME plumb
-/sbin/ifconfig $IFNAME auto-dhcp primary
+/sbin/ifconfig $IFNAME $IP plumb up
 /sbin/ifconfig $IFNAME
