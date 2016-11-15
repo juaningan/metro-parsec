@@ -62,8 +62,7 @@
       ],
       "scripts": [
         "scripts/mvi.sh",
-        "scripts/tce-installer.sh",
-        "scripts/tce-rootfs.sh"
+        "scripts/tce-to-disk.sh"
       ],
       "type": "shell"
     },
@@ -72,12 +71,6 @@
       "direction": "download",
       "source": "/tmp/mvi.iso",
       "type": "file"
-    },
-    {
-      "destination": "builds/tce-rootfs.tar.gz",
-      "direction": "download",
-      "source": "/tmp/mvi.tar.gz",
-      "type": "file"
     }
   ],
   "post-processors": [
@@ -85,8 +78,7 @@
       {
         "type": "artifice",
         "files": [
-          "builds/tce-installer.iso",
-          "builds/tce-rootfs.tar.gz"
+          "builds/tce-installer.iso"
         ]
       }
     ]

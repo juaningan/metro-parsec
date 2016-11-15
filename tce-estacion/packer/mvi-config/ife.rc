@@ -5,15 +5,16 @@
 # dhcpagent binds to localhost:4999 which requires lo0
 # the auto-revarp appears to be necessary
 #
-IFNAME="ife0"
-HOSTNAME=$(prtconf -v /devices | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
-IP=$(prtconf -v /devices | sed -n '/ip/{;n;p;}' |cut -f 2 -d \')
-GW="${IP%.*}.1"
+export IFNAME="ife0"
+export HOSTNAME=$(prtconf -v /devices | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
+export IP=$(prtconf -v /devices | sed -n '/ip/{;n;p;}' |cut -f 2 -d \')
+export GW="${IP%.*}.1"
 
 /usr/sbin/devfsadm
 env SMF_FMRI=svc/net/ip:d /lib/inet/ipmgmtd
 /usr/bin/hostname $HOSTNAME
 /sbin/ifconfig lo0 plumb 127.0.0.1 up
+/sbin/ifconfig $IFNAME plumb
 /sbin/ifconfig $IFNAME $IP plumb up
 /sbin/ifconfig $IFNAME
 /sbin/route add default $GW

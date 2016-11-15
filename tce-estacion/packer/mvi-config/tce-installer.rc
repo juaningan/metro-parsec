@@ -4,7 +4,9 @@
 
 set -e
 set -x
-false
+
+export HOSTNAME=$(prtconf -v /devices | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
+export IP=$(prtconf -v /devices | sed -n '/ip/{;n;p;}' |cut -f 2 -d \')
 
 # Partition disk, create filesystem
 /usr/sbin/devfsadm
@@ -15,7 +17,9 @@ echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/c0d0s0
 /usr/bin/mkdir /a
 /usr/sbin/mount /dev/dsk/c0d0s0 /a
 /usr/bin/wget "http://16.0.96.20/repo/tce-rootfs.tar.gz" -O /a/tce-rootfs.tar.gz
+/usr/bin/wget "http://16.0.96.20/repo/tce-estacion/${HOSTNAME}/${HOSTNAME}.tar.gz" -O /a/tce-config.tar.gz
 cd /a ; tar xzf tce-rootfs.tar.gz; rm -rf tce-rootfs.tar.gz
+cd /a ; tar xzf tce-config.tar.gz; rm -rf tce-config.tar.gz
 cd /
 /sbin/sync
 
@@ -23,7 +27,7 @@ cd /
 cat >> /a/boot/grub/menu.lst << _EOF
 title TCE Estacion
 findroot (tribblix_18,0,a)
-kernel\$ /platform/i86pc/kernel/unix
+kernel\$ /platform/i86pc/kernel/unix -B hostname='${HOSTNAME}',ip='${IP}'
 module\$ /platform/i86pc/boot_archive
 _EOF
 

@@ -261,10 +261,8 @@ done
 cd ${DESTDIR}
 cat > ${DESTDIR}/etc/mvi.rc <<EOF
 #!/sbin/sh
-#if [ ! -f /startup ]; then
-#  /etc/fs/ufs/mount -o remount,rw /devices/ramdisk:a /
-#  echo "y" > /startup
-#fi
+/usr/sbin/devfsadm
+/etc/fs/ufs/mount -o remount,rw /dev/dsk/c0d0s0 /
 EOF
 for xopt in $*
 do
