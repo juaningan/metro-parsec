@@ -1,0 +1,23 @@
+@startuml
+start
+:createDir;
+if (haveDisk?) then (true)
+  while (checkDisk?) is (fail)
+    :format;
+  endwhile (ok)
+else (false)
+endif
+
+if (haveNet?) then (true)
+  :update;
+else (false)
+endif
+
+if (haveCfg?) then (true)
+  :extract;
+else (false)
+  stop
+endif
+
+stop
+@enduml
