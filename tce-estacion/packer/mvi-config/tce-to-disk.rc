@@ -1,12 +1,7 @@
-#!/sbin/sh
+#!/bin/sh
 #
 #
-
-hostname=$(prtconf -v /devices 2>/dev/null | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
-version=$(prtconf -v /devices 2>/dev/null | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
-ip=$(prtconf -v /devices 2>/dev/null | sed -n '/ip/{;n;p;}' |cut -f 2 -d \')
-
-/usr/sbin/devfsadm
+export
 
 check_disk () {
   echo "Checking TCE disk status..."
@@ -21,7 +16,7 @@ check_disk () {
 
 check_version () {
   echo "Checking TCE image version..."
-  grep ${version} /a/metadata >/dev/null
+  grep ${VERSION} /a/metadata >/dev/null
 }
 
 format () {
@@ -39,16 +34,16 @@ update () {
   cp -r /platform /a/
   cp -r /boot /a/
   /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O /a/platform/i86pc/boot_archive
-  echo ${version} > /a/metadata
-  mkdir -p /a/${hostname}
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O - | /usr/gnu/bin/tar -C /a/${hostname} -xzf -
+  echo ${VERSION} > /a/metadata
+  mkdir -p /a/${HOSTNAME}
+  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${HOSTNAME}/${HOSTNAME}.tar.gz" -O - | /usr/gnu/bin/tar -C /a/${HOSTNAME} -xzf -
 }
 
 grub () {
   echo "Installing GRUB..."
   cat > /a/boot/grub/menu.lst << EOF
 title TCE Estacion
-kernel\$ /platform/i86pc/kernel/unix -B hostname='${hostname}',ip='${ip}'
+kernel\$ /platform/i86pc/kernel/unix -B hostname='${HOSTNAME}',ipaddress='${IPADDRESS}'
 module\$ /platform/i86pc/boot_archive
 EOF
   /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/c0d0s0 >/dev/null 2>&1

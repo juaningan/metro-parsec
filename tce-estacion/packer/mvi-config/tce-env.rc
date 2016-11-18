@@ -1,0 +1,13 @@
+#!/bin/sh
+
+main () {
+  declare -xr HOSTNAME=$(prtconf -v /devices 2>/dev/null | sed -n '/hostname/{;n;p;}' |cut -f 2 -d \')
+  declare -xr IPADDRESS=$(prtconf -v /devices 2>/dev/null | sed -n '/ipaddress/{;n;p;}' |cut -f 2 -d \')
+  declare -xr GATEWAY="${IP%.*}.1"
+  declare -xr DISK=$(echo '' | format | awk '/0\./ {print $2}')
+  declare -xr INTERFACE=$(awk '/e1000g|ife|iprb/ {print $NF}')
+  declare -xr VERSION=latest
+}
+
+/usr/sbin/devfsadm
+main
