@@ -1,27 +1,77 @@
 #!/bin/sh
 
-hostname=$(hostname)
-disk=$(echo '' | format | awk '/0\./ {print $2}')
-version=latest
+version=$(date +%Y%m%d%H%M%S)
 destdir=/.tce-disk
+
+detect_hostname () {
+  hostname=$(prtconf -v /devices 2>/dev/null | sed -n '/hostname/{;n;p;}' | cut -f 2 -d \')
+  if [[ $hostname ]]; then
+    echo "INFO: Hostname: ${hostname}"
+    /usr/bin/hostname ${hostname}
+  else
+    echo "ERROR: No se pudo detectar el hostname en los argumentos de GRUB"
+    exit 1
+  fi
+}
+
+detect_disk () {
+  disk=$(echo '' | /usr/sbin/format 2>/dev/null | awk '/0\./ {print $2}')
+  if [[ $disk ]]; then
+    echo "INFO: Dispositivo de disco: ${disk}"
+    return 0
+  else
+    echo "WARN: Dispositivo de disco no detectado"
+    return 1
+  fi
+}
+
+detect_network () {
+  interface=$(awk '/e1000g|ife|iprb/ {print $NF}' /etc/path_to_inst | sed 's/"//g')
+  interface0=${interface}0
+  if [[ $interface ]]; then
+    echo "INFO: Dispositivo de red: ${interface0}"
+  else
+    echo "ERROR: Dispositivo de red no detectado o no soportado"
+    exit 1
+  fi
+}
+
+detect_ipaddress () {
+  ipaddress_grub=$(prtconf -v /devices 2>/dev/null | sed -n '/ipaddress/{;n;p;}' | cut -f 2 -d \')
+  if [[ $ipaddress_grub ]]; then
+    dhcp=''
+    ipaddress=${ipaddress_grub}
+    gateway="${ipaddress_grub%.*}.1"
+    echo "INFO: Direccion IP estatica: ${ipaddress}"
+    return 0
+  else
+    dhcp=true
+    echo "WARN: Sin direccion estatica. Se intenta por DHCP"
+    return 1
+  fi
+}
+
+config_network () {
+  env SMF_FMRI=svc/net/ip:d /lib/inet/ipmgmtd
+
+  /sbin/ifconfig lo0 plumb 127.0.0.1 up
+  /sbin/ifconfig ${interface0} plumb
+
+  if [[ $dhcp ]]; then
+    /sbin/ifconfig ${interface0} auto-dhcp primary
+  else
+    /sbin/ifconfig ${interface0} ${ipaddress} plumb up
+    /sbin/route add default ${gateway}
+  fi
+}
 
 create_dir () {
   mkdir ${destdir}
   mount -F tmpfs swap ${destdir}
 }
 
-have_disk () {
-  if [[ $disk == '' ]]; then
-    echo "No se ha encontrado disco"
-    return 1
-  else
-    echo "Disco ${disk} encontrado"
-    return 0
-  fi
-}
-
 check_disk () {
-  echo "Comprobando el estado del disco"
+  echo "INFO: Comprobando el estado del disco"
   /sbin/umount ${destdir}
   /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir} 2>/dev/null
   if [[ $? -eq 0 ]]; then
@@ -31,70 +81,94 @@ check_disk () {
   fi
 }
 
-format () {
-  echo "Formateando disco ${disk}"
+prepare_disk () {
+  echo "INFO: Preparando disco: Formateando"
   /sbin/umount ${destdir} 2>/dev/null
   /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
   echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
   /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir}
   cp -r /platform ${destdir}/
   cp -r /boot ${destdir}/
+  echo "INFO: Preparando disco: Creando fichero de persistencia"
+  /usr/sbin/mkfile 4g ${destdir}/persistence.ufs
+  /usr/sbin/lofiadm -a ${destdir}/persistence.ufs
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1 >/dev/null 2>&1
+  /usr/sbin/lofiadm -d ${destdir}/persistence.ufs
+  echo "INFO: Preparando disco: Creando fichero de swap"
+  /usr/sbin/mkfile 1g ${destdir}/swap1
+  /usr/sbin/mkfile 1g ${destdir}/swap2
 }
 
-grub () {
-  echo "Instalando GRUB"
+install_grub () {
+  echo "INFO: Preparando disco: Instalando GRUB"
   cat > ${destdir}/boot/grub/menu.lst << EOF
 title TCE Estacion
-kernel\$ /platform/i86pc/kernel/unix -B hostname='${hostname}',ipaddress='${IPADDRESS}'
+kernel\$ /platform/i86pc/kernel/unix -B hostname='${hostname}',ipaddress='${ipaddress}'
 module\$ /platform/i86pc/boot_archive
 EOF
-  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}0 >/dev/null 2>&1
+  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0 >/dev/null 2>&1
 }
 
 check_online () {
-  echo "Comprobando conectividad"
+  echo "INFO: Comprobando conectividad"
   ping 16.0.96.20 5
 }
 
-update () {
-  if [[ $disk != '' ]]; then
-    echo "Actualizando version imagen en disco"
+update_app () {
+  if [[ $disk ]]; then
+    echo "INFO: Actualizando version de la imagen en disco"
     /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O ${destdir}/platform/i86pc/boot_archive
     echo ${version} > ${destdir}/metadata
   fi
-  echo "Descargando configuracion"
+  echo "INFO: Descargando aplicacion"
+  echo "INFO: Descargando configuracion"
   /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${destdir}/tce-config.tar.gz
 }
 
-check_cfg () {
-  echo "Comprobando configuracion"
-  test -e ${destdir}/tce-config.tar.gz
+check_app () {
+  echo "INFO: Comprobando aplicacion"
+  echo "INFO: Comprobando configuracion"
+  if [[ ! -e ${destdir}/tce-config.tar.gz ]]; then
+    echo "ERROR: No hay configuracion en el disco y tampoco se puede obtener por red"
+    exit 1
+  fi  
 }
 
-extract () {
-  echo "Extrayendo configuracion"
+deploy_app () {
+  mkdir -p /home/metro/sistema/V
+  if [[ $disk ]]; then
+    /usr/sbin/lofiadm -a ${destdir}/persistence.ufs > /dev/null
+    /usr/sbin/mount /dev/lofi/1 /home/metro/sistema/V
+    /usr/sbin/swap -a ${destdir}/swap1
+    /usr/sbin/swap -a ${destdir}/swap2
+  else
+    /usr/sbin/mount -F tmpfs swap /home/metro/sistema/V
+  fi
+  echo "INFO: Extrayendo aplicacion"
+  echo "INFO: Extrayendo configuracion"
   /usr/gnu/bin/tar -C / -xzf ${destdir}/tce-config.tar.gz
 }
 
 main () {
+
+  /usr/sbin/devfsadm
+
+  detect_hostname
+  detect_network
+  detect_ipaddress
+  config_network
   create_dir
-  if have_disk; then
+  if detect_disk; then
     if ! check_disk; then
-      format
-      grub
+      prepare_disk
+      install_grub
     fi  
   fi
-
   if check_online; then
-    update
+    update_app
   fi
-
-  if check_cfg; then
-    extract
-  else
-    echo "ERROR: No hay configuracion en el disco y no se puede obtener por red"
-    exit 1
-  fi
+  check_app
+  deploy_app
 }
 
 main
