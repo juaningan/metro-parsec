@@ -1,74 +1,100 @@
 #!/bin/sh
-#
-#
-export
+
+hostname=$(hostname)
+disk=$(echo '' | format | awk '/0\./ {print $2}')
+version=latest
+destdir=/.tce-disk
+
+create_dir () {
+  mkdir ${destdir}
+  mount -F tmpfs swap ${destdir}
+}
+
+have_disk () {
+  if [[ $disk == '' ]]; then
+    echo "No se ha encontrado disco"
+    return 1
+  else
+    echo "Disco ${disk} encontrado"
+    return 0
+  fi
+}
 
 check_disk () {
-  echo "Checking TCE disk status..."
-  /usr/bin/mkdir -p /a
-  /usr/sbin/mount /dev/dsk/c0d0s0 /a 2>/dev/null
+  echo "Comprobando el estado del disco"
+  /sbin/umount ${destdir}
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir} 2>/dev/null
   if [[ $? -eq 0 ]]; then
-    test -e /a/metadata
+    test -e ${destdir}/metadata
   else
     return 1
   fi
 }
 
-check_version () {
-  echo "Checking TCE image version..."
-  grep ${VERSION} /a/metadata >/dev/null
-}
-
 format () {
-  echo "Formatting TCE disk..."
-  /sbin/umount /a 2>/dev/null
-  /root/format\-a\-disk.sh -B c0d0 >/dev/null 2>&1
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/c0d0s0 >/dev/null 2>&1
-  /usr/sbin/mount /dev/dsk/c0d0s0 /a
-}
-
-update () {
-  echo "Updating TCE image..."
-  rm -rf /a/platform
-  rm -rf /a/boot
-  cp -r /platform /a/
-  cp -r /boot /a/
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O /a/platform/i86pc/boot_archive
-  echo ${VERSION} > /a/metadata
-  mkdir -p /a/${HOSTNAME}
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${HOSTNAME}/${HOSTNAME}.tar.gz" -O - | /usr/gnu/bin/tar -C /a/${HOSTNAME} -xzf -
+  echo "Formateando disco ${disk}"
+  /sbin/umount ${destdir} 2>/dev/null
+  /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir}
+  cp -r /platform ${destdir}/
+  cp -r /boot ${destdir}/
 }
 
 grub () {
-  echo "Installing GRUB..."
-  cat > /a/boot/grub/menu.lst << EOF
+  echo "Instalando GRUB"
+  cat > ${destdir}/boot/grub/menu.lst << EOF
 title TCE Estacion
-kernel\$ /platform/i86pc/kernel/unix -B hostname='${HOSTNAME}',ipaddress='${IPADDRESS}'
+kernel\$ /platform/i86pc/kernel/unix -B hostname='${hostname}',ipaddress='${IPADDRESS}'
 module\$ /platform/i86pc/boot_archive
 EOF
-  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/c0d0s0 >/dev/null 2>&1
+  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}0 >/dev/null 2>&1
 }
 
-umount () {
-  /sbin/sync
-  /usr/bin/sleep 2
-  /sbin/umount /a
-  /usr/bin/rmdir /a
+check_online () {
+  echo "Comprobando conectividad"
+  ping 16.0.96.20 5
+}
+
+update () {
+  if [[ $disk != '' ]]; then
+    echo "Actualizando version imagen en disco"
+    /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O ${destdir}/platform/i86pc/boot_archive
+    echo ${version} > ${destdir}/metadata
+  fi
+  echo "Descargando configuracion"
+  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${destdir}/tce-config.tar.gz
+}
+
+check_cfg () {
+  echo "Comprobando configuracion"
+  test -e ${destdir}/tce-config.tar.gz
+}
+
+extract () {
+  echo "Extrayendo configuracion"
+  /usr/gnu/bin/tar -C / -xzf ${destdir}/tce-config.tar.gz
 }
 
 main () {
-  check_disk
-  if [[ $? -eq 0 ]]; then
-    check_version
-    if [[ $? -ne 0 ]]; then
-      update
-    fi
-  else
-    format
-    update
-    grub
+  create_dir
+  if have_disk; then
+    if ! check_disk; then
+      format
+      grub
+    fi  
   fi
-  umount
+
+  if check_online; then
+    update
+  fi
+
+  if check_cfg; then
+    extract
+  else
+    echo "ERROR: No hay configuracion en el disco y no se puede obtener por red"
+    exit 1
+  fi
 }
 
 main
