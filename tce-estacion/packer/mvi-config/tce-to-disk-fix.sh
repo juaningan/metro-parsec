@@ -10,4 +10,8 @@ MRSIZE=${TSIZE}M
 #Copy livecd installation scripts for test
 cp /root/format-a-disk.sh root/
 
+cat > metadata.json << EOF
+"boot_archive":"$(date +%Y%m%d%H%M%S)"
+EOF
+
 sync

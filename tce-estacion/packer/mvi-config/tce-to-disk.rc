@@ -1,7 +1,6 @@
 #!/bin/sh
 
-version=$(date +%Y%m%d%H%M%S)
-destdir=/.tce-disk
+diskdir=/.disk
 
 detect_hostname () {
   hostname=$(prtconf -v /devices 2>/dev/null | sed -n '/hostname/{;n;p;}' | cut -f 2 -d \')
@@ -66,47 +65,73 @@ config_network () {
 }
 
 create_dir () {
-  mkdir ${destdir}
-  mount -F tmpfs swap ${destdir}
+  mkdir ${diskdir}
+  mkdir -p /home/metro
+}
+
+mount_diskless () {
+  /usr/sbin/mount -F tmpfs swap ${diskdir}
+  /usr/sbin/mount -F tmpfs swap /home/metro
+  cp /metadata.json ${diskdir}/metadata.json
 }
 
 check_disk () {
   echo "INFO: Comprobando el estado del disco"
-  /sbin/umount ${destdir}
-  /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir} 2>/dev/null
-  if [[ $? -eq 0 ]]; then
-    test -e ${destdir}/metadata
+  if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} 2>/dev/null; then
+    if [[ ! -f ${diskdir}/metadata.json ]]; then
+      echo "WARN: No existe fichero de metadatos"
+      /sbin/umount ${diskdir}
+      return 1
+    fi
+    if [[ ! -f ${diskdir}/persistence.ufs ]]; then
+      echo "WARN: No existe fichero de persistencia"
+      /sbin/umount ${diskdir}
+      return 1
+    fi
+    if [[ ! -f ${diskdir}/swap1 ]]; then
+      echo "WARN: No existe fichero de swap"
+      /sbin/umount ${diskdir} 
+      return 1
+    fi
+    /sbin/umount ${diskdir}
   else
+    echo "WARN: No se puede montar el disco"
     return 1
   fi
 }
 
-prepare_disk () {
-  echo "INFO: Preparando disco: Formateando"
-  /sbin/umount ${destdir} 2>/dev/null
-  /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
-  /usr/sbin/mount /dev/dsk/${disk}s0 ${destdir}
-  cp -r /platform ${destdir}/
-  cp -r /boot ${destdir}/
-  echo "INFO: Preparando disco: Creando fichero de persistencia"
-  /usr/sbin/mkfile 4g ${destdir}/persistence.ufs
-  /usr/sbin/lofiadm -a ${destdir}/persistence.ufs
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1 >/dev/null 2>&1
-  /usr/sbin/lofiadm -d ${destdir}/persistence.ufs
-  echo "INFO: Preparando disco: Creando fichero de swap"
-  /usr/sbin/mkfile 1g ${destdir}/swap1
-  /usr/sbin/mkfile 1g ${destdir}/swap2
+mount_disk () {
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
+  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs > /dev/null
+  /usr/sbin/mount /dev/lofi/1 /home/metro
+  /usr/sbin/swap -a ${diskdir}/swap1
+  /usr/sbin/swap -a ${diskdir}/swap2
 }
 
-install_grub () {
+prepare_disk () {
+  echo "INFO: Preparando disco: Formateando"
+  /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
+  cp -r /platform ${diskdir}/
+  cp -r /boot ${diskdir}/
+  echo '"boot_archive":nil' > ${diskdir}/metadata.json
+  echo "INFO: Preparando disco: Creando fichero de persistencia"
+  /usr/sbin/mkfile 4g ${diskdir}/persistence.ufs
+  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1 >/dev/null 2>&1
+  /usr/sbin/lofiadm -d ${diskdir}/persistence.ufs
+  echo "INFO: Preparando disco: Creando fichero de swap"
+  /usr/sbin/mkfile 1g ${diskdir}/swap1
+  /usr/sbin/mkfile 1g ${diskdir}/swap2
   echo "INFO: Preparando disco: Instalando GRUB"
-  cat > ${destdir}/boot/grub/menu.lst << EOF
-title TCE Estacion
+  cat > ${diskdir}/boot/grub/menu.lst << EOF
+title Boot from disk
 kernel\$ /platform/i86pc/kernel/unix -B hostname='${hostname}',ipaddress='${ipaddress}'
 module\$ /platform/i86pc/boot_archive
 EOF
   /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /sbin/umount ${diskdir}
 }
 
 check_online () {
@@ -115,38 +140,29 @@ check_online () {
 }
 
 update_app () {
-  if [[ $disk ]]; then
-    echo "INFO: Actualizando version de la imagen en disco"
-    /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O ${destdir}/platform/i86pc/boot_archive
-    echo ${version} > ${destdir}/metadata
+  if ! diff /metadata.json ${diskdir}/metadata.json >/dev/null ; then
+    echo "INFO: Actualizando version de boot_archive"
+    /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
+    cp /metadata.json ${diskdir}/metadata.json
   fi
   echo "INFO: Descargando aplicacion"
   echo "INFO: Descargando configuracion"
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${destdir}/tce-config.tar.gz
+  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${diskdir}/tce-config.tar.gz
 }
 
 check_app () {
   echo "INFO: Comprobando aplicacion"
   echo "INFO: Comprobando configuracion"
-  if [[ ! -e ${destdir}/tce-config.tar.gz ]]; then
+  if [[ ! -f ${diskdir}/tce-config.tar.gz ]]; then
     echo "ERROR: No hay configuracion en el disco y tampoco se puede obtener por red"
     exit 1
   fi  
 }
 
 deploy_app () {
-  mkdir -p /home/metro/sistema/V
-  if [[ $disk ]]; then
-    /usr/sbin/lofiadm -a ${destdir}/persistence.ufs > /dev/null
-    /usr/sbin/mount /dev/lofi/1 /home/metro/sistema/V
-    /usr/sbin/swap -a ${destdir}/swap1
-    /usr/sbin/swap -a ${destdir}/swap2
-  else
-    /usr/sbin/mount -F tmpfs swap /home/metro/sistema/V
-  fi
   echo "INFO: Extrayendo aplicacion"
   echo "INFO: Extrayendo configuracion"
-  /usr/gnu/bin/tar -C / -xzf ${destdir}/tce-config.tar.gz
+  /usr/gnu/bin/tar -C / -xzf ${diskdir}/tce-config.tar.gz
 }
 
 main () {
@@ -159,10 +175,12 @@ main () {
   config_network
   create_dir
   if detect_disk; then
-    if ! check_disk; then
+    while ! check_disk; do
       prepare_disk
-      install_grub
-    fi  
+    done
+    mount_disk
+  else
+    mount_diskless
   fi
   if check_online; then
     update_app
