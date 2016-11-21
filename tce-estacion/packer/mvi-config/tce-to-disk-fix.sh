@@ -11,7 +11,9 @@ MRSIZE=${TSIZE}M
 cp /root/format-a-disk.sh root/
 
 cat > metadata.json << EOF
-"boot_archive":"$(date +%Y%m%d%H%M%S)"
+"boot_archive":"${timestamp}"
+"app":"nil"
+"config:"nil"
 EOF
 
 sync

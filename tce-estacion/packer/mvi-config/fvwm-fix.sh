@@ -5,7 +5,7 @@ set -x
 
 # Increase base size
 TSIZE=`echo $MRSIZE | sed s:M::`
-TSIZE=$(($TSIZE+50))
+TSIZE=$(($TSIZE+30))
 MRSIZE=${TSIZE}M
 
 mkdir -p root/.fvwm

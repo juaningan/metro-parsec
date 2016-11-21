@@ -1,0 +1,4 @@
+#!/sbin/sh
+#
+
+/usr/sbin/sshd

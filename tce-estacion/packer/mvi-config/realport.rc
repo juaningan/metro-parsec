@@ -13,11 +13,22 @@ txprint_dir_name="dpr"
 cua_dir_name="cua"
 term_dir_name="term"
 
-major_number=145
+get_major() {
+ major_number=0
+ while read name major; do
+   if [[ ${name} = ${DRIVER_NAME} ]]; then
+     major_number=$major
+     break
+   fi
+ done < /etc/name_to_major
+}
+
+get_major
+
 psn=0
 devid="EL"
 ndev=16
-ip_name="16.199.58.225"
+ip_name="18.73.58.226"
 secureopt="never"
 
 $RPMKNODS ${major_number} ${psn} ${devid} ${ndev} ${tty_dir_name} ${txprint_dir_name}

@@ -1,9 +1,0 @@
-#!/sbin/sh
-#
-
-/usr/bin/mkdir -m 755 /var/run/hald
-/usr/bin/mkdir -m 755 /media
-/usr/bin/mkdir -m 755 /var/run/dbus
-
-/usr/lib/dbus-daemon --system
-/usr/lib/hal/hald --daemon=yes

@@ -1,21 +1,35 @@
 @startuml
 start
-:createDir;
-if (haveDisk?) then (true)
-  while (checkDisk?) is (fail)
-    :format;
+if (detect_hostname) then (0)
+else (1)
+  stop
+endif
+if (detect_network) then (0)
+else (1)
+  stop
+endif
+if (detect_ipaddress) then (static)
+else (dhcp)
+endif
+:config_network;
+:create_dir;
+if (detect_disk) then (0)
+  while (check_disk) is (1)
+    :prepare_disk;
   endwhile (ok)
-else (false)
+    :mount_disk;
+else (1)
+  :mount_diskless;
 endif
 
-if (haveNet?) then (true)
-  :update;
-else (false)
+if (check_online) then (0)
+  :update_app;
+else (1)
 endif
 
-if (haveCfg?) then (true)
-  :extract;
-else (false)
+if (check_app) then (0)
+  :deploy_app;
+else (1)
   stop
 endif
 

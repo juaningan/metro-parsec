@@ -2,7 +2,6 @@
 #
 #
 
-/usr/sbin/devfsadm -I -P
 /usr/sbin/rpcbind
 
 ln -s /usr/bin/sh /usr/bin/distsh2 

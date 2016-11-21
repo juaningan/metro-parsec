@@ -142,18 +142,18 @@ check_online () {
 update_app () {
   if ! diff /metadata.json ${diskdir}/metadata.json >/dev/null ; then
     echo "INFO: Actualizando version de boot_archive"
-    /usr/bin/wget -q "http://16.0.96.20/repo/tce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
+    /usr/bin/wget -q "http://16.0.96.20/repo/pctce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
     cp /metadata.json ${diskdir}/metadata.json
   fi
   echo "INFO: Descargando aplicacion"
+  /usr/bin/wget -q "http://16.0.96.20/repo/pctce/pctce-app.tar.gz" -O ${diskdir}/pctce-app.tar.gz
   echo "INFO: Descargando configuracion"
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${diskdir}/tce-config.tar.gz
+  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${diskdir}/pctce-config.tar.gz
 }
 
 check_app () {
-  echo "INFO: Comprobando aplicacion"
-  echo "INFO: Comprobando configuracion"
-  if [[ ! -f ${diskdir}/tce-config.tar.gz ]]; then
+  echo "INFO: Comprobando ficheros aplicacion"
+  if [[ ! -f ${diskdir}/pctce-config.tar.gz ]]; then
     echo "ERROR: No hay configuracion en el disco y tampoco se puede obtener por red"
     exit 1
   fi  
@@ -161,13 +161,15 @@ check_app () {
 
 deploy_app () {
   echo "INFO: Extrayendo aplicacion"
+  /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-app.tar.gz
   echo "INFO: Extrayendo configuracion"
-  /usr/gnu/bin/tar -C / -xzf ${diskdir}/tce-config.tar.gz
+  /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
 }
 
 main () {
 
   /usr/sbin/devfsadm
+  /usr/sbin/devfsadm -I -P
 
   detect_hostname
   detect_network

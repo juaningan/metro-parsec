@@ -58,7 +58,8 @@
         "all_proxy={{ user `proxy` }}",
         "http_proxy={{ user `proxy` }}",
         "https_proxy={{ user `proxy` }}",
-        "no_proxy={{ user `no_proxy` }}"
+        "no_proxy={{ user `no_proxy` }}",
+        "timestamp={{ user `build_timestamp` }}"
       ],
       "scripts": [
         "scripts/mvi.sh",
@@ -67,7 +68,7 @@
       "type": "shell"
     },
     {
-      "destination": "builds/tce-installer.iso",
+      "destination": "builds/tce-estacion.iso",
       "direction": "download",
       "source": "/tmp/mvi.iso",
       "type": "file"
@@ -77,14 +78,24 @@
     [
       {
         "type": "artifice",
-        "files": [
-          "builds/tce-installer.iso"
+        "files": ["builds/tce-estacion.iso"]
+      },
+      {
+        "type": "shell-local",
+        "inline": [
+          "/usr/bin/7z e -y -obuilds $1 platform/i86pc/boot_archive platform/i86pc/kernel/unix",
+          "mv builds/boot_archive builds/boot_archive-{{ user `build_timestamp` }}"
         ]
+      },
+      {
+        "type": "artifice",
+        "files": ["builds/boot_archive-{{ user `build_timestamp` }}", "builds/unix"]
       }
     ]
   ],
   "variables": {
     "cpus": "1",
+    "build_timestamp": "{{isotime \"20060102150405\"}}",
     "disk_size": "10360",
     "headless": "true",
     "memory": "2048",

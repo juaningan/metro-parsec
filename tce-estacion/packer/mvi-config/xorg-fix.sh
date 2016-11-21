@@ -2,7 +2,7 @@
 
 # Increase base size
 TSIZE=`echo $MRSIZE | sed s:M::`
-TSIZE=$(($TSIZE+90))
+TSIZE=$(($TSIZE+70))
 MRSIZE=${TSIZE}M
 
 cat > etc/X11/xorg.conf <<EOF

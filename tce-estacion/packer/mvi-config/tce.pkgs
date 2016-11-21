@@ -1,5 +1,4 @@
 TRIBcompat-ucb
-TRIBlocale-es
 TRIBimage-libjpeg.1.5.1.0
 TRIBimage-libpng.1.4.19.1
 TRIBx11-lib-toolkit-libxt.0.9o
@@ -18,5 +17,3 @@ TRIBx11-libxevie.0.9o
 TRIBx11-libxscrnsaver.0.9o
 TRIBlib-zlib.1.2.8.1
 TRIBsys-data-terminfo
-TRIBterminal-xterm.0.9o
-TRIBsvc-net-network-servers
