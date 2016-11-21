@@ -8,5 +8,5 @@ TSIZE=`echo $MRSIZE | sed s:M::`
 TSIZE=$(($TSIZE+30))
 MRSIZE=${TSIZE}M
 
-mkdir -p root/.fvwm
-echo "DesktopSize 0 0" > root/.fvwm/config
+mkdir -p usr/share/fvwm/
+echo "DesktopSize 0 0" > usr/share/fvwm/config

@@ -115,7 +115,7 @@ prepare_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
   cp -r /platform ${diskdir}/
   cp -r /boot ${diskdir}/
-  echo '"boot_archive":nil' > ${diskdir}/metadata.json
+  touch ${diskdir}/metadata.json
   echo "INFO: Preparando disco: Creando fichero de persistencia"
   /usr/sbin/mkfile 4g ${diskdir}/persistence.ufs
   /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
@@ -166,7 +166,55 @@ deploy_app () {
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
 }
 
+detect_uis () {
+  uis_count=$(/usr/bin/awk '/UIS/ {print $1}' /etc/hosts | wc -l)
+  if [[ $uis_count -ne '1' ]]; then
+    echo "ERROR: No se puede determinar IP de la UIS por haber ${uis_count} coincidencias en /etc/hosts"
+    exit 1
+  else
+    uis_ip=$(/usr/bin/awk '/UIS/ {print $1}' /etc/hosts)
+    echo "INFO: IP de la UIS: ${uis_ip}"
+  fi
+}
+
+detect_cancela () {
+  cancela_port=$(/usr/bin/awk '/CANCELA/ {print $3}' /home/metro/sistema/V/CfgEquipo.CFG | /usr/bin/sed 's/^0*//')
+  if [[ ! $cancela_port ]]; then
+    echo "WARN: Sin cancela definida en CfgEquipo.CFG"
+    cancela="false"
+    rm -f /home/metro/sun/cancela_schneider
+    rm -f /home/metro/sun/cancela_mayser
+    return
+  elif [[ $cancela_port -le 16 ]]; then
+    echo "INFO: Cancela por UIS (binario: cancela_mayser)"
+    cancela="uis"
+    ln -sf cancela_mayser /home/metro/sun/cancela
+    rm -f /home/metro/sun/cancela_schneider
+  else
+    echo "INFO: Cancela por Maestra (binario: cancela_schneider)"
+    cancela="maestra"
+    ln -sf cancela_schneider /home/metro/sun/cancela
+    rm -f /home/metro/sun/cancela_mayser
+  fi
+}
+
+write_env () {
+  cat > /home/metro/environment << EOF
+UIS_IP=${uis_ip}
+CANCELA=${cancela}
+TCTI=
+MAESTRA_IP=
+PLANO=
+MBT=
+EOF
+}
+
 main () {
+
+  if [[ -f /home/metro/sistema/V/Control.Now ]]; then
+    echo "$(date) ERROR: Aplicacion ya ejecutada" >> /home/metro/error.log
+    exit 1
+  fi
 
   /usr/sbin/devfsadm
   /usr/sbin/devfsadm -I -P
@@ -189,6 +237,9 @@ main () {
   fi
   check_app
   deploy_app
+  detect_uis
+  detect_cancela
+  write_env
 }
 
 main

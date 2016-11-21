@@ -1,9 +1,0 @@
-#!/sbin/sh
-#
-#
-
-/usr/sbin/rpcbind
-
-ln -s /usr/bin/sh /usr/bin/distsh2 
-ln -s /home/metro/sun/router.Motif /home/metro/sun/router
-ln -s /usr/ucblib/libucb.so.1 /usr/lib/libucb.so.1

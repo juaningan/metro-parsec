@@ -1,10 +1,7 @@
-Añadir usuario metro
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
 Probar mwm de paco de lucia
 Instalar pppd
 Pensar como parametrizar:
-* ip de la uis
-* tipo de cancela
 * ip de mbt y si leventa pppd o no
 * tipo de router
 * maestra ip o no ip

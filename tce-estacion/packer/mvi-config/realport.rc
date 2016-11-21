@@ -1,6 +1,8 @@
 #!/sbin/sh
 #
 
+source /home/metro/environment
+
 DRIVER_NAME="digi_realport"
 RPDAEMON="/opt/realport/ncxd"
 RPMKNODS="/opt/realport/utils/ncx_mknod"
@@ -28,13 +30,12 @@ get_major
 psn=0
 devid="EL"
 ndev=16
-ip_name="18.73.58.226"
 secureopt="never"
 
 $RPMKNODS ${major_number} ${psn} ${devid} ${ndev} ${tty_dir_name} ${txprint_dir_name}
 $RPMKLINKS "/dev/${tty_dir_name}" ${devid} "s" ${ndev} "/dev/${cua_dir_name}"
 $RPMKLINKS "/dev/${tty_dir_name}" ${devid} "m" ${ndev} "/dev/${term_dir_name}"
-$RPDAEMON -d /dev/${DRIVER_NAME}${psn} -i $ip_name -p $DFT_IP_PORT -e $secureopt
+$RPDAEMON -d /dev/${DRIVER_NAME}${psn} -i ${UIS_IP} -p $DFT_IP_PORT -e $secureopt
 
 ln -sf /dev/dty/${devid}001s /dev/ttys01
 ln -sf /dev/dty/${devid}002s /dev/ttys02
