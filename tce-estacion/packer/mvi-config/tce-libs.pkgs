@@ -18,4 +18,5 @@ TRIBx11-libxscrnsaver.0.9o
 TRIBlib-zlib.1.2.8.1
 TRIBsys-data-terminfo
 TRIBterminal-xterm.0.9o
-TRIBsvc-net-network-servers
+TRIBdrv-audio
+TRIBdrv-audio-audiohd

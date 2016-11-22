@@ -4,6 +4,6 @@ source /home/metro/environment
 
 /usr/sbin/rpcbind
 /usr/bin/chown -R metro:metro /home/metro
-ln -s /home/metro/sun/router.Motif /home/metro/sun/router
+ln -sf /home/metro/sun/router.Motif /home/metro/sun/router
 
 #cd /home/metro; ./login-mvi

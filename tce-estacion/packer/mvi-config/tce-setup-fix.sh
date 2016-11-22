@@ -24,4 +24,6 @@ echo 'metro:$6$1GrmvjyT$rXNSNGEma8eMmlTYBBzNQURNXAxHu8OvyPr9mXtxbhemWJi89hoZDm5y
 echo 'metro::101:' >> etc/group
 sed 's/^root.*$/root:pveboAFZFAX6c:16924::::::/g' etc/shadow > shadowtmp && mv shadowtmp etc/shadow
 
+sed 's/^TZ.*$/TZ\=Europe\/Madrid/g' etc/default/init > inittmp && mv inittmp etc/default/init
+
 sync
