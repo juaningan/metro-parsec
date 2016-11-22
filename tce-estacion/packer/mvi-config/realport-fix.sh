@@ -10,6 +10,11 @@ mv -f tmp/realport/reloc/opt/realport/i386/digi_realport kernel/drv/digi_realpor
 mv -f tmp/realport/reloc/opt ./
 chmod -R +x opt/realport/*
 add_drv -b ./ digi_realport
-rm -rf opt/realport/sparc*
-rm -rf opt/realport/amd64
+#rm -rf opt/realport/sparc*
+#rm -rf opt/realport/amd64
+#rm -rf opt/realport/*.txt
 rm -rf tmp/realport
+mv opt/realport/i386/ncxd usr/bin/
+mv opt/realport/i386/ncx_make_links usr/bin/
+mv opt/realport/i386/ncx_mknod usr/bin/
+rm -rf opt/realport

@@ -14,6 +14,11 @@ detect_hostname () {
 }
 
 detect_disk () {
+  diskless=$(prtconf -v /devices 2>/dev/null | sed -n '/diskless/{;n;p;}' | cut -f 2 -d \')
+  if [[ $diskless ]]; then
+    echo "INFO: Forzado modo sin disco"
+    return 1
+  fi
   disk=$(echo '' | /usr/sbin/format 2>/dev/null | awk '/0\./ {print $2}')
   if [[ $disk ]]; then
     echo "INFO: Dispositivo de disco: ${disk}"
@@ -135,8 +140,8 @@ EOF
 }
 
 check_online () {
-  echo "INFO: Comprobando conectividad"
-  ping 16.0.96.20 5
+  echo "INFO: Comprobando conectividad (10s)"
+  ping 16.0.96.20 10
 }
 
 update_app () {

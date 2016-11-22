@@ -20,3 +20,4 @@ TRIBsys-data-terminfo
 TRIBterminal-xterm.0.9o
 TRIBdrv-audio
 TRIBdrv-audio-audiohd
+TRIBsys-net-ppp

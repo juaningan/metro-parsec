@@ -4,7 +4,7 @@ set -e
 set -x
 # Increase base size
 TSIZE=`echo $MRSIZE | sed s:M::`
-TSIZE=$(($TSIZE+7))
+TSIZE=$(($TSIZE+15))
 MRSIZE=${TSIZE}M
 
 #Copy livecd installation scripts for test
@@ -25,5 +25,10 @@ echo 'metro::101:' >> etc/group
 sed 's/^root.*$/root:pveboAFZFAX6c:16924::::::/g' etc/shadow > shadowtmp && mv shadowtmp etc/shadow
 
 sed 's/^TZ.*$/TZ\=Europe\/Madrid/g' etc/default/init > inittmp && mv inittmp etc/default/init
+
+svccfg -s network/rpc/bind setprop config/local_only=false
+svcadm refresh network/rpc/bind:default
+mkdir -p etc/svc
+cp -p /etc/svc/repository.db etc/svc/
 
 sync

@@ -245,6 +245,7 @@ rm -f usr/sbin/svccfg
 rm -f usr/bin/svcs
 rm -f usr/sbin/svcadm
 rm -f usr/bin/svcprop
+mv lib/svc/bin/svc.configd sbin/
 rm -fr lib/svc/bin
 
 #

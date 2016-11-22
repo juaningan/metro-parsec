@@ -4,9 +4,12 @@
 source /home/metro/environment
 
 DRIVER_NAME="digi_realport"
-RPDAEMON="/opt/realport/ncxd"
-RPMKNODS="/opt/realport/utils/ncx_mknod"
-RPMKLINKS="/opt/realport/utils/ncx_make_links"
+#RPDAEMON="/opt/realport/ncxd"
+#RPMKNODS="/opt/realport/utils/ncx_mknod"
+#RPMKLINKS="/opt/realport/utils/ncx_make_links"
+RPDAEMON="/usr/bin/ncxd"
+RPMKNODS="/usr/bin/ncx_mknod"
+RPMKLINKS="/usr/bin/ncx_make_links"
 
 DFT_IP_PORT=771
 
