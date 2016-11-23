@@ -17,7 +17,7 @@ TRIBx11-libxevie.0.9o
 TRIBx11-libxscrnsaver.0.9o
 TRIBlib-zlib.1.2.8.1
 TRIBsys-data-terminfo
-TRIBterminal-xterm.0.9o
 TRIBdrv-audio
 TRIBdrv-audio-audiohd
 TRIBsys-net-ppp
+TRIBterminal-mrxvt

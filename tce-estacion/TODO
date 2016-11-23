@@ -1,8 +1,12 @@
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
-Probar mwm de paco de lucia
-Instalar pppd
+arranque por ipxe
+Minimizar svc bd con sqlite
+servidor web estado scripts monitorizacion
+revisar crontab
+servidor nfs
 Pensar como parametrizar:
 * ip de mbt y si leventa pppd o no
 * tipo de router
 * maestra ip o no ip
 * con plano o sin plano
+limpiar binaris que no se utilicen basandose en cgequipo y en cfgui

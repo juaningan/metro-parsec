@@ -31,4 +31,8 @@ svcadm refresh network/rpc/bind:default
 mkdir -p etc/svc
 cp -p /etc/svc/repository.db etc/svc/
 
+ln -sf /usr/bin/mrxvt usr/bin/xterm
+
+#echo 'tce:234:respawn:/home/metro/autologin metro console' >> etc/inittab
+
 sync

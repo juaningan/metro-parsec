@@ -3,8 +3,8 @@
 source /home/metro/environment
 
 /sbin/svc.configd
-env SMF_FMRI=svc:/network/rpc/bind:default /usr/sbin/rpcbind
+env SMF_FMRI=svc:/network/rpc/bind:default /lib/svc/method/rpc-bind start
 /usr/bin/chown -R metro:metro /home/metro
 ln -sf /home/metro/sun/router.Motif /home/metro/sun/router
 
-#cd /home/metro; ./login-mvi
+/home/metro/autologin metro console

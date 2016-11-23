@@ -80,6 +80,11 @@ mount_diskless () {
   cp /metadata.json ${diskdir}/metadata.json
 }
 
+mount_tmpfs () {
+  /usr/sbin/mount -F tmpfs swap /tmp
+  /usr/sbin/mount -F tmpfs swap /var/run
+}
+
 check_disk () {
   echo "INFO: Comprobando el estado del disco"
   if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} 2>/dev/null; then
@@ -179,6 +184,7 @@ detect_uis () {
   else
     uis_ip=$(/usr/bin/awk '/UIS/ {print $1}' /etc/hosts)
     echo "INFO: IP de la UIS: ${uis_ip}"
+    /usr/bin/realport.sh ${uis_ip}
   fi
 }
 
@@ -237,6 +243,7 @@ main () {
   else
     mount_diskless
   fi
+  mount_tmpfs
   if check_online; then
     update_app
   fi
