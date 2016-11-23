@@ -1,12 +1,13 @@
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
-arranque por ipxe
 Minimizar svc bd con sqlite
+Pensar como minimizar tamaño fuentes
 servidor web estado scripts monitorizacion
 revisar crontab
 servidor nfs
 Pensar como parametrizar:
-* ip de mbt y si leventa pppd o no
+* ip de mbt y si leventa pppd o no (en hosts)
 * tipo de router
-* maestra ip o no ip
-* con plano o sin plano
+* maestra ip o no ip (en hosts)
+* con plano o sin plano (en CfgUI.CFG)
 limpiar binaris que no se utilicen basandose en cgequipo y en cfgui
+desactivar logs de router.cfg
