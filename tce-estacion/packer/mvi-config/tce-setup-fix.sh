@@ -27,6 +27,4 @@ sed 's/^TZ.*$/TZ\=Europe\/Madrid/g' etc/default/init > inittmp && mv inittmp etc
 
 ln -sf /usr/bin/mrxvt usr/bin/xterm
 
-echo 'tce:34:respawn:/home/metro/autologin metro console' >> etc/inittab
-
 sync

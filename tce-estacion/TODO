@@ -11,7 +11,5 @@ Pensar como parametrizar:
 limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
 desactivar logs de router.cfg
 Borarr /usr/ucb* salvo libreria depndencia
-svccfg de rpcbind en smf
-realport como servicio propio smf
 el /usr en lofi comprimido como en smartos
 probar iprb de nuevo
