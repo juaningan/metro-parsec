@@ -1,0 +1,70 @@
+#!/sbin/sh
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2012, Joyent, Inc. All rights reserved.
+#
+. /lib/svc/share/smf_include.sh
+
+set -x
+
+detect_network () {
+  /usr/sbin/dladm init-phys
+  interface=$(/usr/sbin/dladm show-phys -m | awk '/primary/ {print $1}')
+  if [[ $interface ]]; then
+    echo "INFO: Dispositivo de red: ${interface}" > /dev/msglog
+  else
+    echo "ERROR: Dispositivo de red no detectado o no soportado" > /dev/msglog
+    exit $SMF_EXIT_ERR_FATAL
+  fi
+}
+
+detect_ipaddress () {
+  ipaddress_grub=$(prtconf -v /devices 2>/dev/null | sed -n '/ipaddress/{;n;p;}' | cut -f 2 -d \')
+  if [[ $ipaddress_grub ]]; then
+    dhcp=''
+    ipaddress=${ipaddress_grub}
+    gateway="${ipaddress_grub%.*}.1"
+    echo "INFO: Direccion IP estatica: ${ipaddress}" > /dev/msglog
+    return 0
+  else
+    dhcp=true
+    echo "WARN: Sin direccion estatica. Se intenta por DHCP" > /dev/msglog
+    return 1
+  fi
+}
+
+config_network () {
+  /sbin/ifconfig ${interface} plumb
+
+  if [[ $dhcp ]]; then
+    /sbin/ifconfig ${interface} auto-dhcp primary
+  else
+    /sbin/ifconfig ${interface} ${ipaddress} up
+    /sbin/route add default ${gateway}
+  fi
+}
+
+detect_network
+detect_ipaddress
+config_network
+
+exit $SMF_EXIT_OK

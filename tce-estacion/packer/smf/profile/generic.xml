@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<!DOCTYPE service_bundle SYSTEM '/usr/share/lib/xml/dtd/service_bundle.dtd.1'>
+<!--
+    CDDL HEADER START
+
+    The contents of this file are subject to the terms of the
+    Common Development and Distribution License (the "License").
+    You may not use this file except in compliance with the License.
+
+    You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+    or http://www.opensolaris.org/os/licensing.
+    See the License for the specific language governing permissions
+    and limitations under the License.
+
+    When distributing Covered Code, include this CDDL HEADER in each
+    file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+    If applicable, add the following below this CDDL HEADER, with the
+    fields enclosed by brackets "[]" replaced with your own identifying
+    information: Portions Copyright [yyyy] [name of copyright owner]
+
+    CDDL HEADER END
+
+    Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
+    Use is subject to license terms.
+
+    The purpose of the limited_net profile is to provide a set of
+    active services that allow one to connect to the machine via ssh
+    (requires sshd). The services which are deactivated here are those
+    that are at odds with this goal. Those which are activated are
+    explicit requirements for the goal's satisfaction.
+
+    NOTE:  Service profiles delivered by this package are not editable,
+    and their contents will be overwritten by package or patch
+    operations, including operating system upgrade.  Make customizations
+    in a distinct file.  The paths, /etc/svc/profile/site.xml and
+    /var/svc/profile/site.xml, are distinguished locations for site-specific
+    service profile, treated otherwise equivalently to this file.
+-->
+<service_bundle type='profile' name='pctce'
+	 xmlns:xi='http://www.w3.org/2003/XInclude' >
+  <!--
+      svc.startd(1M) services
+  -->
+  <service name='system/auditset' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/boot-archive-update' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/cryptosvc' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
+  <service name='system/dumpadm' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/early-manifest-import' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/logadm-upgrade' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/metainit' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/pfexec' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/rbac' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/resource-mgmt' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='system/zones-monitoring' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='network/inetd-upgrade' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='network/ipsec/policy' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='network/ipsec/ipsecalgs' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='network/iptun' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+  <service name='network/shares/group' version='1' type='service'>
+    <instance name='default' enabled='false'/>
+  </service>
+</service_bundle>

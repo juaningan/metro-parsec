@@ -156,7 +156,7 @@ rm -f usr/src
 rm -f usr/pub
 rm -f usr/spool
 rm -fr usr/share/lib/pub
-rm -fr usr/share/lib/xml
+#rm -fr usr/share/lib/xml
 rm -fr usr/lib/python2.6
 rm -f usr/bin/edit usr/bin/vedit
 rm -f usr/bin/ed usr/bin/red
@@ -173,9 +173,9 @@ rm -fr usr/lib/raidcfg
 rm -f usr/sbin/raidctl
 # we don't run smf, so don't need manifests
 # although keep the method scripts in case we need to run them
-rm -fr lib/svc/manifest
-rm -fr var/svc/manifest
-rm -fr lib/svc/seed
+#rm -fr lib/svc/manifest
+#rm -fr var/svc/manifest
+#rm -fr lib/svc/seed
 # don't need compat links
 rm -fr usr/ccs
 rm -fr usr/proc
@@ -241,12 +241,12 @@ rm -f usr/sbin/role*
 #
 # don't support smf
 #
-rm -f usr/sbin/svccfg
-rm -f usr/bin/svcs
-rm -f usr/sbin/svcadm
-rm -f usr/bin/svcprop
-mv lib/svc/bin/svc.configd sbin/
-rm -fr lib/svc/bin
+#rm -f usr/sbin/svccfg
+#rm -f usr/bin/svcs
+#rm -f usr/sbin/svcadm
+#rm -f usr/bin/svcprop
+#mv lib/svc/bin/svc.configd sbin/
+#rm -fr lib/svc/bin
 
 #
 # run any requested cleanup scripts
@@ -291,11 +291,11 @@ chmod a+x ${DESTDIR}/etc/mvi.rc
 #
 # init has intimate coupling with smf, there must be an smf entry here
 #
-mv ${DESTDIR}/etc/inittab ${DESTDIR}/etc/inittab.tmp
-cat ${DESTDIR}/etc/inittab.tmp | grep -v startd > ${DESTDIR}/etc/inittab
-rm ${DESTDIR}/etc/inittab.tmp
+#mv ${DESTDIR}/etc/inittab ${DESTDIR}/etc/inittab.tmp
+#cat ${DESTDIR}/etc/inittab.tmp | grep -v startd > ${DESTDIR}/etc/inittab
+#rm ${DESTDIR}/etc/inittab.tmp
 cat >> ${DESTDIR}/etc/inittab << _EOF
-smf::sysinit:/etc/mvi.rc
+#smf::sysinit:/etc/mvi.rc
 _EOF
 
 #

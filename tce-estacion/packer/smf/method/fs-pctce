@@ -1,0 +1,125 @@
+#!/sbin/sh
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2012, Joyent, Inc. All rights reserved.
+#
+. /lib/svc/share/smf_include.sh
+
+diskdir=/.disk
+
+create_dir () {
+  mkdir ${diskdir}
+  mkdir -p /home/metro
+}
+
+detect_disk () {
+  diskless=$(prtconf -v /devices 2>/dev/null | sed -n '/diskless/{;n;p;}' | cut -f 2 -d \')
+  if [[ $diskless ]]; then
+    echo "INFO: Forzado modo sin disco" > /dev/msglog
+    return 1
+  fi
+  disk=$(echo '' | /usr/sbin/format 2>/dev/null | awk '/0\./ {print $2}')
+  if [[ $disk ]]; then
+    echo "INFO: Dispositivo de disco: ${disk}" > /dev/msglog
+    return 0
+  else
+    echo "WARN: Dispositivo de disco no detectado" > /dev/msglog
+    return 1
+  fi
+}
+
+mount_diskless () {
+  /usr/sbin/mount -F tmpfs swap ${diskdir}
+  /usr/sbin/mount -F tmpfs swap /home/metro
+  cp /metadata.json ${diskdir}/metadata.json
+}
+
+check_disk () {
+  echo "INFO: Comprobando el estado del disco" > /dev/msglog
+  if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} 2>/dev/null; then
+    if [[ ! -f ${diskdir}/metadata.json ]]; then
+      echo "WARN: No existe fichero de metadatos" > /dev/msglog
+      /sbin/umount ${diskdir}
+      return 1
+    fi
+    if [[ ! -f ${diskdir}/persistence.ufs ]]; then
+      echo "WARN: No existe fichero de persistencia" > /dev/msglog
+      /sbin/umount ${diskdir}
+      return 1
+    fi
+    if [[ ! -f ${diskdir}/swap1 ]]; then
+      echo "WARN: No existe fichero de swap" > /dev/msglog
+      /sbin/umount ${diskdir}
+      return 1
+    fi
+    /sbin/umount ${diskdir}
+  else
+    echo "WARN: No se puede montar el disco" > /dev/msglog
+    return 1
+  fi
+}
+
+mount_disk () {
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
+  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs > /dev/null
+  /usr/sbin/mount /dev/lofi/1 /home/metro
+  /usr/sbin/swap -a ${diskdir}/swap1
+  /usr/sbin/swap -a ${diskdir}/swap2
+}
+
+prepare_disk () {
+  echo "INFO: Preparando disco: Formateando" > /dev/msglog
+  /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
+  cp -r /platform ${diskdir}/
+  cp -r /boot ${diskdir}/
+  touch ${diskdir}/metadata.json
+  echo "INFO: Preparando disco: Creando fichero de persistencia" > /dev/msglog
+  /usr/sbin/mkfile 4g ${diskdir}/persistence.ufs
+  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1 >/dev/null 2>&1
+  /usr/sbin/lofiadm -d ${diskdir}/persistence.ufs
+  echo "INFO: Preparando disco: Creando fichero de swap" > /dev/msglog
+  /usr/sbin/mkfile 1g ${diskdir}/swap1
+  /usr/sbin/mkfile 1g ${diskdir}/swap2
+  echo "INFO: Preparando disco: Instalando GRUB" > /dev/msglog
+  cat > ${diskdir}/boot/grub/menu.lst << EOF
+title Boot from disk
+kernel\$ /platform/i86pc/kernel/unix -B hostname='$(uname -n)',ipaddress='${ipaddress}'
+module\$ /platform/i86pc/boot_archive
+EOF
+  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /sbin/umount ${diskdir}
+}
+
+create_dir
+if detect_disk; then
+  while ! check_disk; do
+    prepare_disk
+  done
+  mount_disk
+else
+  mount_diskless
+fi
+
+exit $SMF_EXIT_OK

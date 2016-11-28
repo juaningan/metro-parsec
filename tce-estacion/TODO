@@ -1,5 +1,4 @@
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
-Minimizar svc bd con sqlite
 Pensar como minimizar tamaño fuentes
 servidor web estado scripts monitorizacion
 revisar crontab
@@ -9,5 +8,10 @@ Pensar como parametrizar:
 * tipo de router
 * maestra ip o no ip (en hosts)
 * con plano o sin plano (en CfgUI.CFG)
-limpiar binaris que no se utilicen basandose en cgequipo y en cfgui
+limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
 desactivar logs de router.cfg
+Borarr /usr/ucb* salvo libreria depndencia
+svccfg de rpcbind en smf
+realport como servicio propio smf
+el /usr en lofi comprimido como en smartos
+probar iprb de nuevo

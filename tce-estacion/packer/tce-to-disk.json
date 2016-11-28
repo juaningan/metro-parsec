@@ -54,6 +54,11 @@
       "destination": "/tmp"
     },
     {
+      "type": "file",
+      "source": "smf",
+      "destination": "/tmp"
+    },
+    {
       "environment_vars": [
         "all_proxy={{ user `proxy` }}",
         "http_proxy={{ user `proxy` }}",
