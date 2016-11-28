@@ -26,6 +26,19 @@
 
 source /home/metro/environment
 
-cd /home/metro/sistema/V; /home/metro/sun/control
+export PERIODO_URGENTE=50
+export PERIODO_SCHEDULER=50
+export INSTALACION_URGENTE=10
+export PRIORIDAD_URGENTE=PR_MAXIMA
+export RODANDO_CON_METROVISION=TRUE
+export MOSTRAR_BOTONES_VIDEO=TRUE
+export ALARMAS_URGENTES=1
+export HOME=/home/metro
+export PATH=/home/metro/sun:$PATH
+if [[ -z $MAESTRA_IP ]]; then
+  export VERSION_MODBUS=SI
+  export PROTOCOLOMODBUS=UM:502
+fi
 
-exit $SMF_EXIT_OK
+#$HOME/sun/control > /dev/null 2>&1
+$HOME/sun/control

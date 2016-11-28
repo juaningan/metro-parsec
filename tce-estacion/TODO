@@ -10,6 +10,7 @@ Pensar como parametrizar:
 * con plano o sin plano (en CfgUI.CFG)
 limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
 desactivar logs de router.cfg
-Borarr /usr/ucb* salvo libreria depndencia
+Borarr /usr/ucb* salvo libreria dependencia
 el /usr en lofi comprimido como en smartos
 probar iprb de nuevo
+meter cuenta atras en el grub del disco

@@ -107,6 +107,7 @@ RODANDO_CON_METROVISION=TRUE
 MOSTRAR_BOTONES_VIDEO=TRUE
 ALARMAS_URGENTES=1
 PATH=/home/metro/sun:$PATH
+DISPLAY=:0
 EOF
   if [[ -z  $MAESTRA_IP ]]; then
     echo "VERSION_MODBUS=SI" >> /home/metro/environment
