@@ -91,6 +91,51 @@ detect_cancela () {
   fi
 }
 
+detect_mbt () {
+  concen_mbt_ip=$(/usr/bin/awk '/concen-mbt-ppp$/ {print $1}' /etc/hosts)
+  mbt_ip=$(/usr/bin/awk '/mbt$/ {print $1}' /etc/hosts)
+  if [[ -z $mbt_ip ]]; then
+    echo "INFO: Sin MBT" > /dev/msglog
+    mbt=false
+    return 1
+  else
+    echo "INFO: IP de la MBT: ${mbt_ip}" > /dev/msglog
+    mbt=true
+    return 0
+  fi
+}
+
+write_mbt () {
+  cat > /tmp/mbt-ppp << EOF
+noauth
+xonxoff
+local
+lock
+mru 256
+netmask 255.255.255.0
+${concen_mbt_ip}:${mbt_ip}
+nodefaultroute
+-ac
+-pc
+-vj
+debug
+lcp-echo-interval 30
+lcp-echo-failure 2
+lcp-restart 3
+lcp-max-configure 100
+lcp-max-failure 10
+noaccomp
+nobsdcomp
+noccp
+nodeflate
+nopcomp
+nopersist
+novj
+novjccomp
+logfile /tmp/ppp-mbt.log
+EOF
+}
+
 write_env () {
   cat > /home/metro/environment << EOF
 UIS_IP=${uis_ip}
@@ -98,21 +143,8 @@ CANCELA=${cancela}
 TCTI=
 MAESTRA_IP=
 PLANO=
-MBT=
-PERIODO_URGENTE=50
-PERIODO_SCHEDULER=50
-INSTALACION_URGENTE=10
-PRIORIDAD_URGENTE=PR_MAXIMA
-RODANDO_CON_METROVISION=TRUE
-MOSTRAR_BOTONES_VIDEO=TRUE
-ALARMAS_URGENTES=1
-PATH=/home/metro/sun:$PATH
-DISPLAY=:0
+MBT=${mbt}
 EOF
-  if [[ -z  $MAESTRA_IP ]]; then
-    echo "VERSION_MODBUS=SI" >> /home/metro/environment
-    echo "PROTOCOLOMODBUS=UM:502" >> /home/metro/environment
-  fi
 }
 
 main () {
@@ -123,6 +155,9 @@ main () {
   deploy_app
   detect_uis
   detect_cancela
+  if detect_mbt; then
+    write_mbt
+  fi
   write_env
   /usr/bin/chown -R metro:metro /home/metro
   ln -sf /home/metro/sun/router.Motif /home/metro/sun/router
