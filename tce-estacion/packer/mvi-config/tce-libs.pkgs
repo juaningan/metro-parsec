@@ -22,3 +22,4 @@ TRIBdrv-audio-audiohd
 TRIBsys-net-ppp
 TRIBterminal-mrxvt
 TRIBnet-ftp
+TRIBsys-lib-security-gss
