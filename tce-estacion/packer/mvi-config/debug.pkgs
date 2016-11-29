@@ -4,3 +4,11 @@ TRIBx11-info-clients.0.9o
 TRIBterminal-xterm.0.9o
 TRIBx11-lib-toolkit-libxaw7.0.9o
 TRIBx11-libxft.0.9o
+TRIBexpect
+TRIBtcl
+TRIBsvc-file-system-nfs
+TRIBsys-file-system-nfs
+TRIBnet-ipfilter
+TRIBsys-kernel-dtrace
+TRIBdev-dtrace
+TRIBdev-dtrace-toolkit

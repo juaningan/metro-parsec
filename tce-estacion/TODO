@@ -4,7 +4,6 @@ servidor web estado scripts monitorizacion
 revisar crontab
 servidor nfs
 Pensar como parametrizar:
-* ip de mbt y si leventa pppd o no (en hosts)
 * tipo de router
 * maestra ip o no ip (en hosts)
 * con plano o sin plano (en CfgUI.CFG)
@@ -14,3 +13,8 @@ Borarr /usr/ucb* salvo libreria dependencia
 el /usr en lofi comprimido como en smartos
 probar iprb de nuevo
 meter cuenta atras en el grub del disco
+automatizar creacion version debug
+parametro para forzar rehacer
+ipaddress en el grub de tce-setup
+wrapper de xterm
+instalar csh o migrar scripts
