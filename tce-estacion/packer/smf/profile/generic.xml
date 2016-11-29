@@ -89,4 +89,16 @@
   <service name='network/shares/group' version='1' type='service'>
     <instance name='default' enabled='false'/>
   </service>
+  <!--
+      NFS services
+  -->
+  <service name='network/nfs/status' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
+  <service name='network/nfs/nlockmgr' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
+  <service name='network/nfs/server' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
 </service_bundle>
