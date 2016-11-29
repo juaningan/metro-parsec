@@ -45,11 +45,11 @@
 	</dependency>
 
 	<dependency
-                name='pctce-xserver'
+                name='pctce-mwm'
                 grouping='optional_all'
                 restart_on='refresh'
                 type='service'>
-                <service_fmri value='svc:/application/pctce/xserver' />
+                <service_fmri value='svc:/application/pctce/mwm' />
         </dependency>
 
 	<exec_method

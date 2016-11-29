@@ -8,4 +8,4 @@ TSIZE=`echo $MRSIZE | sed s:M::`
 TSIZE=$(($TSIZE+6))
 MRSIZE=${TSIZE}M
 
-echo "/home/metro/ControlId   -       nfs     rw" > etc/dfs/sharetab
+echo "share -F nfs -o rw /home/metro/ControlId" >> etc/dfs/dfstab
