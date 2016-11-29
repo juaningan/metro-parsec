@@ -5,7 +5,7 @@ set -x
 
 # Increase base size
 TSIZE=`echo $MRSIZE | sed s:M::`
-TSIZE=$(($TSIZE+20))
+TSIZE=$(($TSIZE+14))
 MRSIZE=${TSIZE}M
 
 # Clean tcl package
