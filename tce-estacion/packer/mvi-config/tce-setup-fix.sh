@@ -17,14 +17,23 @@ cat > metadata.json << EOF
 EOF
 
 ln -sf /usr/bin/sh usr/bin/distsh2 
+
+# Link and clean UCB
 ln -sf /usr/ucblib/libucb.so.1 usr/lib/libucb.so.1
 
+# Create metro user
 echo 'metro:x:101:101::/home/metro:/bin/sh' >> etc/passwd                                                                                
 echo 'metro:$6$1GrmvjyT$rXNSNGEma8eMmlTYBBzNQURNXAxHu8OvyPr9mXtxbhemWJi89hoZDm5ytSI4Z4NQbn2DDCEzDpZHQ27ikyCHS0:17120::::::' >> etc/shadow
 echo 'metro::101:' >> etc/group
 
+# Set timezone
 sed 's/^TZ.*$/TZ\=Europe\/Madrid/g' etc/default/init > inittmp && mv inittmp etc/default/init
 
-ln -sf /usr/bin/mrxvt usr/bin/xterm
+# Set graphical term
+cat > usr/bin/xterm << EOF
+#!/bin/sh
+/usr/bin/mrxvt
+EOF
+chmod +x usr/bin/xterm
 
 sync
