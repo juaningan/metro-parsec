@@ -7,7 +7,7 @@ TSIZE=`echo $MRSIZE | sed s:M::`
 TSIZE=$(($TSIZE+15))
 MRSIZE=${TSIZE}M
 
-/usr/bin/cp -p  /tmp/smf/straddr.so.2 usr/lib/straddr.so.2
+#/usr/bin/cp -p  /tmp/smf/straddr.so.2 usr/lib/straddr.so.2
 
 sed 's/^root.*$/root:pveboAFZFAX6c:16924::::::/g' etc/shadow > shadowtmp && mv shadowtmp etc/shadow
 sed 's/\/usr\/bin\/bash$/\/bin\/sh/g' etc/passwd > passwdtmp && mv passwdtmp etc/passwd
