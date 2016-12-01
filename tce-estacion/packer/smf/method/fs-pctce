@@ -32,12 +32,12 @@ create_dir () {
 }
 
 detect_disk () {
-  diskless=$(prtconf -v /devices 2>/dev/null | sed -n '/diskless/{;n;p;}' | cut -f 2 -d \')
+  diskless=$(prtconf -v /devices | sed -n '/diskless/{;n;p;}' | cut -f 2 -d \')
   if [[ $diskless ]]; then
     echo "INFO: Forzado modo sin disco" > /dev/msglog
     return 1
   fi
-  disk=$(echo '' | /usr/sbin/format 2>/dev/null | awk '/0\./ {print $2}')
+  disk=$(echo '' | /usr/sbin/format | awk '/0\./ {print $2}')
   if [[ $disk ]]; then
     echo "INFO: Dispositivo de disco: ${disk}" > /dev/msglog
     return 0
@@ -55,7 +55,7 @@ mount_diskless () {
 
 check_disk () {
   echo "INFO: Comprobando el estado del disco" > /dev/msglog
-  if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} 2>/dev/null; then
+  if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} ; then
     if [[ ! -f ${diskdir}/metadata.json ]]; then
       echo "WARN: No existe fichero de metadatos" > /dev/msglog
       /sbin/umount ${diskdir}
@@ -80,7 +80,7 @@ check_disk () {
 
 mount_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
-  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs > /dev/null
+  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
   /usr/sbin/mount /dev/lofi/1 /home/metro
   /usr/sbin/swap -a ${diskdir}/swap1
   /usr/sbin/swap -a ${diskdir}/swap2
@@ -88,8 +88,8 @@ mount_disk () {
 
 prepare_disk () {
   echo "INFO: Preparando disco: Formateando" > /dev/msglog
-  /root/format\-a\-disk.sh -B ${disk} >/dev/null 2>&1
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /root/format\-a\-disk.sh -B ${disk}
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rdsk/${disk}s0
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
   cp -r /platform ${diskdir}/
   cp -r /boot ${diskdir}/
@@ -97,18 +97,20 @@ prepare_disk () {
   echo "INFO: Preparando disco: Creando fichero de persistencia" > /dev/msglog
   /usr/sbin/mkfile 4g ${diskdir}/persistence.ufs
   /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1 >/dev/null 2>&1
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1
   /usr/sbin/lofiadm -d ${diskdir}/persistence.ufs
   echo "INFO: Preparando disco: Creando fichero de swap" > /dev/msglog
   /usr/sbin/mkfile 1g ${diskdir}/swap1
   /usr/sbin/mkfile 1g ${diskdir}/swap2
   echo "INFO: Preparando disco: Instalando GRUB" > /dev/msglog
   cat > ${diskdir}/boot/grub/menu.lst << EOF
+default 0
+timeout 1
 title Boot from disk
 kernel\$ /platform/i86pc/kernel/unix -B hostname='$(uname -n)',ipaddress='${ipaddress}'
 module\$ /platform/i86pc/boot_archive
 EOF
-  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0 >/dev/null 2>&1
+  /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0
   /sbin/umount ${diskdir}
 }
 

@@ -33,7 +33,7 @@ check_online () {
 }
 
 update_app () {
-  if ! diff /metadata.json ${diskdir}/metadata.json >/dev/null ; then
+  if ! diff /metadata.json ${diskdir}/metadata.json; then
     echo "INFO: Actualizando version de boot_archive" > /dev/msglog
     /usr/bin/wget -q "http://16.0.96.20/repo/pctce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
     cp /metadata.json ${diskdir}/metadata.json
@@ -57,6 +57,16 @@ deploy_app () {
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-app.tar.gz
   echo "INFO: Extrayendo configuracion" > /dev/msglog
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
+}
+
+detect_id () {
+  pctce_id=$(awk '/CAN/ {print $1;exit}' /home/metro/sistema/V/CfgEquipo.CFG | sed 's/^CAN//g')
+  if [[ ! $pctce_id ]]; then
+    echo "ERROR: No se puede determinar codigo administrativo del equipo" > /dev/msglog
+    exit $SMF_EXIT_ERR_FATAL
+  else
+    echo "INFO: Codigo administrativo (id): ${pctce_id}" > /dev/msglog
+  fi
 }
 
 detect_uis () {
@@ -96,12 +106,18 @@ detect_mbt () {
   mbt_ip=$(/usr/bin/awk '/mbt$/ {print $1}' /etc/hosts)
   if [[ -z $mbt_ip ]]; then
     echo "INFO: Sin MBT" > /dev/msglog
-    mbt=false
+    mbt_id=false
     return 1
   else
     echo "INFO: IP de la MBT: ${mbt_ip}" > /dev/msglog
-    mbt=true
-    return 0
+    mbt_id=$(find /home/metro/sistema/V/Mbt/ -name MBT* | awk -F"/" '{print $NF; exit}')
+    if [[ -z $mbt_id ]]; then
+      echo "ERROR: No puedo obtener ID de la MBT en /home/metro/sistema/V/Mbt/" > /dev/msglog
+      exit $SMF_EXIT_ERR_FATAL
+    else
+      echo "INFO: ID de la MBT: ${mbt_id}" > /dev/msglog
+      return 0
+    fi
   fi
 }
 
@@ -138,13 +154,28 @@ EOF
 
 write_env () {
   cat > /home/metro/environment << EOF
+ID=${pctce_id}
+PCTCE_ID=${pctce_id}
 UIS_IP=${uis_ip}
 CANCELA=${cancela}
-TCTI=
-MAESTRA_IP=
-PLANO=
-MBT=${mbt}
+TCTI=nuevo
+MAESTRA_IP=true
+PLANO=true
+MBT_ID=${mbt_id}
 EOF
+}
+
+write_cron () {
+  cat > /var/spool/cron/crontabs/metro << EOF
+0,15,30,45 2-5 * * * /home/metro/sun/MandaVolcados.ksh
+0 * * * * /home/metro/sun/MandaEnvio.ksh -l /home/metro/MandaEnvio_diferido.log /home/metro/MandaEnvio_f
+13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
+18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
+0 * * * * /home/metro/sun/MandaAbajo.ksh
+EOF
+  if [[ $mbt_id != 'false' ]]; then
+    echo "50 4 * * * /home/metro/sun/mbt.csh ${mbt_id} mbt >> /home/metro/sistema/V/Mbt/xEventosMbt" >> /var/spool/cron/crontabs/metro
+  fi
 }
 
 main () {
@@ -153,16 +184,22 @@ main () {
   fi
   check_app
   deploy_app
+  detect_id
   detect_uis
   detect_cancela
   if detect_mbt; then
     write_mbt
   fi
   write_env
-  /usr/bin/chown -R metro:metro /home/metro
-  ln -sf /home/metro/sun/router.Motif /home/metro/sun/router
+  write_cron
+
   svccfg -s network/rpc/bind setprop config/local_only=false
   svcadm refresh network/rpc/bind:default
+
+  svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
+  svcadm refresh application/pctce/actualiza-listas:default
+
+  /usr/bin/chown -R metro:metro /home/metro
 }
 
 main

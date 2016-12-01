@@ -28,54 +28,59 @@
 <service_bundle type='manifest' name='application-pctce-xserver'>
 
 <service
-	name='application/pctce/xserver'
-	type='service'
-	version='1'>
+  name='application/pctce/xserver'
+  type='service'
+  version='1'>
 
-	<create_default_instance enabled='true' />
+  <create_default_instance enabled='true' />
 
-	<single_instance/>
+  <single_instance/>
 
-	<dependency
-		name='pctce-setup'
-		grouping='require_all'
-		restart_on='none'
-		type='service'>
-		<service_fmri value='svc:/application/pctce/setup' />
-	</dependency>
+  <!-- Need / & /usr filesystems mounted, /var mounted read/write -->
+  <dependency
+    name='pctce-setup'
+    type='service'
+    grouping='require_all'
+    restart_on='none'>
+    <service_fmri value='svc:/application/pctce/setup' />
+  </dependency>
 
-	<exec_method
-		type='method'
-		name='start'
-		exec='/lib/svc/method/x11-server -d 0 -c %i %m'
-		timeout_seconds='0'>
-		<method_context>
-			<method_credential user='metro' group='metro'/>
-		</method_context>
-        </exec_method>
+  <exec_method
+    type='method'
+    name='start'
+    exec='/lib/svc/method/x11-server -d 0 -c %i %m'
+    timeout_seconds='0'>
+  </exec_method>
 
-	<exec_method
-		type='method'
-		name='stop'
-		exec=':kill -TERM'
-		timeout_seconds='10' />
+  <exec_method
+    type='method'
+    name='stop'
+    exec=':kill -TERM'
+    timeout_seconds='10'>
+  </exec_method>
 
-	<property_group name='general' type='framework'>
-		<stability value='Evolving'/>
-	</property_group>
-	<property_group name='options' type='application'>
-		<stability value='Evolving'/>
-	</property_group>
+  <property_group name='options' type='application'>
+    <stability value='Evolving' />
+    <propval name='server' type='astring' value='/usr/bin/Xorg' />
+    <propval name='server_args' type='astring' value='' />
+    <property name='default_depth' type='integer' />
+    <propval name='tcp_listen' type='boolean' value='false' />
+    <propval name='display_0_on_console' type='boolean' value='true' />
+  </property_group>
 
-	<stability value='Unstable' />
+  <stability value='Evolving' />
 
-	<template>
-		<common_name>
-			<loctext xml:lang='C'>
-				PCTCE X server
-			</loctext>
-		</common_name>
-	</template>
+  <template>
+    <common_name>
+      <loctext xml:lang='C'>
+      PCTCE X Window System server
+      </loctext>
+    </common_name>
+    <documentation>
+      <manpage title='Xserver' section='1' manpath='/usr/share/man' />
+      <manpage title='Xorg' section='1' manpath='/usr/share/man' />
+    </documentation>
+  </template>
 </service>
 
 </service_bundle>

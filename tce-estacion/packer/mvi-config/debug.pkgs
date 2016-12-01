@@ -1,8 +1,6 @@
 TRIBsys-esu
 TRIBdev-linker
 TRIBx11-info-clients.0.9o
-TRIBexpect
-TRIBtcl
 TRIBsys-kernel-dtrace
 TRIBdev-dtrace
 TRIBdev-dtrace-toolkit

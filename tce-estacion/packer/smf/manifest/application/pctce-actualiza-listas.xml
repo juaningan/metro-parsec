@@ -25,10 +25,10 @@
  CDDL HEADER END
 -->
 
-<service_bundle type='manifest' name='application-pctce-control'>
+<service_bundle type='manifest' name='application-pctce-actualiza-listas'>
 
 <service
-	name='application/pctce/control'
+	name='application/pctce/actualiza-listas'
 	type='service'
 	version='1'>
 
@@ -47,13 +47,10 @@
 	<exec_method
 		type='method'
 		name='start'
-		exec='/lib/svc/method/app-pctce-control'
-		timeout_seconds='30'>
-		<method_context working_directory='/home/metro/sistema/V'>
+		exec='/home/metro/ControlId/scripts/ActualizaListas.nuevo ${PCTCE_ID}'
+		timeout_seconds='0'>
+		<method_context>
 			<method_credential user='metro' group='metro'/>
-			<method_environment>
-				<envvar name='DISPLAY' value=':0' />
-			</method_environment>
 		</method_context>
         </exec_method>
 
@@ -65,13 +62,12 @@
 
 	<property_group name='startd' type='framework'>
 		<propval name='duration' type='astring' value='child' />
-		<propval name='ignore_error' type='astring' value='core,signal' />
 	</property_group>
 
 	<template>
 		<common_name>
 			<loctext xml:lang='C'>
-				PCTCE control
+				PCTCE Actualiza Listas
 			</loctext>
 		</common_name>
 	</template>

@@ -50,6 +50,9 @@
   <service name='system/cryptosvc' version='1' type='service'>
     <instance name='default' enabled='true'/>
   </service>
+  <service name='system/cron' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
   <service name='system/dumpadm' version='1' type='service'>
     <instance name='default' enabled='false'/>
   </service>

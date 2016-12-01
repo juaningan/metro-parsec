@@ -25,10 +25,10 @@
  CDDL HEADER END
 -->
 
-<service_bundle type='manifest' name='application-pctce-mwm'>
+<service_bundle type='manifest' name='application-pctce-pupitre-sc'>
 
 <service
-	name='application/pctce/mwm'
+	name='application/pctce/pupitre-sc'
 	type='service'
 	version='1'>
 
@@ -37,23 +37,20 @@
 	<single_instance/>
 
 	<dependency
-		name='pctce-xserver'
+		name='multi-user'
 		grouping='require_all'
-		restart_on='refresh'
+		restart_on='none'
 		type='service'>
-		<service_fmri value='svc:/application/pctce/xserver' />
+		<service_fmri value='svc:/milestone/multi-user' />
 	</dependency>
 
 	<exec_method
 		type='method'
 		name='start'
-		exec='/home/metro/.libs/mwm'
-		timeout_seconds='30'>
+		exec='/home/metro/sun/ActualizaPupitreSC'
+		timeout_seconds='0'>
 		<method_context>
 			<method_credential user='metro' group='metro'/>
-			<method_environment>
-				<envvar name='DISPLAY' value=':0' />
-			</method_environment>
 		</method_context>
         </exec_method>
 
@@ -70,7 +67,7 @@
 	<template>
 		<common_name>
 			<loctext xml:lang='C'>
-				PCTCE mwm
+				PCTCE Actualiza Pupitre SC
 			</loctext>
 		</common_name>
 	</template>

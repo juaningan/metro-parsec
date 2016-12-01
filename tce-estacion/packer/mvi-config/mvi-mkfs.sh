@@ -303,7 +303,7 @@ _EOF
 #
 cat >> ${DESTDIR}/boot/grub/menu.lst << _EOF
 title minimal viable illumos
-kernel\$ /platform/i86pc/kernel/\$ISADIR/unix
+kernel\$ /platform/i86pc/kernel/\$ISADIR/unix -B hostname=cruzrayo
 module\$ /platform/i86pc/boot_archive
 title minimal viable illumos (ttya)
 kernel\$ /platform/i86pc/kernel/\$ISADIR/unix -B console=ttya,input-device=ttya,output-device=ttya
