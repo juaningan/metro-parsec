@@ -57,6 +57,8 @@ deploy_app () {
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-app.tar.gz
   echo "INFO: Extrayendo configuracion" > /dev/msglog
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
+  ln -sf /home/metro/hosts /etc/inet/hosts
+  ln -sf /home/metro/services /etc/inet/services
 }
 
 detect_id () {
@@ -169,6 +171,7 @@ write_cron () {
   cat > /var/spool/cron/crontabs/metro << EOF
 0,15,30,45 2-5 * * * /home/metro/sun/MandaVolcados.ksh
 0 * * * * /home/metro/sun/MandaEnvio.ksh -l /home/metro/MandaEnvio_diferido.log /home/metro/MandaEnvio_f
+10 2 * * * /home/metro/sun/CapturarFicherosRepositorio2.sh
 13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
 18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
 0 * * * * /home/metro/sun/MandaAbajo.ksh
@@ -198,6 +201,8 @@ main () {
 
   svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
   svcadm refresh application/pctce/actualiza-listas:default
+
+  wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/PCL${pctce_id}/Programaciones/Ventilacion/ProgVentilacion
 
   /usr/bin/chown -R metro:metro /home/metro
 }

@@ -47,5 +47,5 @@ if [[ $PLANO != 'false' ]]; then
   $HOME/.libs/mwm &
 fi
 
-#$HOME/sun/control > /dev/null 2>&1
-$HOME/sun/control
+$HOME/sun/control > /dev/null 2>&1
+#$HOME/sun/control
