@@ -1,14 +1,11 @@
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
 Pensar como minimizar tamaño fuentes
 servidor web estado scripts monitorizacion
-revisar crontab:
-* /home/metro/sun/CapturarFicherosRepositorio.sh -OK
 Pensar como parametrizar:
 * tipo de router
 * maestra ip o no ip (en hosts)
 * con plano o sin plano (en CfgUI.CFG)
 limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
-desactivar logs de router.cfg
 el /usr en lofi comprimido como en smartos
 probar iprb de nuevo
 automatizar creacion version debug

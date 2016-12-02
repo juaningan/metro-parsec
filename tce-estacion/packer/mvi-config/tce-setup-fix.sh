@@ -52,7 +52,9 @@ rm -rf usr/lib/itcl*
 
 # usr/local
 mkdir usr/local
-ln -s /usr/bin usr/local/bin
+ln -sf /home/metro/sun usr/local/bin
+mkdir usr/local/tce
+ln -sf /home/metro/control.key usr/local/tce/tce
 
 # Link csh to tcsh and bash to ksh
 ln -sf /usr/bin/tcsh usr/bin/csh
@@ -62,11 +64,5 @@ ln -sf /usr/bin/sh usr/bin/bash
 ln -sf /usr/bin/ssh usr/bin/rsh
 ln -sf /usr/bin/ssh usr/ucb/rsh
 ln -sf /usr/bin/scp usr/bin/rcp
-
-# Link for some binaries
-ln -sf /home/metro/sun/check_host usr/bin/check_host
-ln -sf /home/metro/sun/cmd_tout usr/bin/cmd_tout
-ln -sf /home/metro/sun/MandaEnvio.ksh usr/bin/MandaEnvio.ksh
-ln -sf /home/metro/sun/PreparaEnvio.ksh usr/bin/PreparaEnvio.ksh
 
 sync
