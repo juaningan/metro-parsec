@@ -1,8 +1,6 @@
 Comparar versiones de boot_archive, app y cfgs antes de descargar y actualizar el metadata.json
 Pensar como minimizar tamaño fuentes
 servidor web estado scripts monitorizacion
-revisar crontab:
-* /home/metro/sun/CapturarFicherosRepositorio.sh -OK
 Pensar como parametrizar:
 * tipo de router
 * maestra ip o no ip (en hosts)
@@ -17,3 +15,8 @@ ipaddress en el grub de tce-setup
 rotado de logs- logadm
 separar el setup en dos, deploy y detect+write
 mostar toda la config unos segundos antes de lanzar las X dando la opción de pulsar ESC para cortar el arranque.
+quitar nodename de los scripts
+cambiar el /home/metro/sun/CapturarFicherosRepositorio.sh para que no lo lanze root
+revisar error en nfs dfstab
+quitar la licencia de /usr/local/tce/tce
+mejor usr/local/bin a metro/sun
