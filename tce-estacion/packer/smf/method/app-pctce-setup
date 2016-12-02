@@ -57,6 +57,8 @@ deploy_app () {
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-app.tar.gz
   echo "INFO: Extrayendo configuracion" > /dev/msglog
   /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
+  ln -sf /home/metro/hosts /etc/inet/hosts
+  ln -sf /home/metro/services /etc/inet/services
 }
 
 detect_id () {
