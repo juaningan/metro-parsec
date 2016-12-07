@@ -25,6 +25,7 @@
 . /lib/svc/share/smf_include.sh
 
 diskdir=/.disk
+ipaddress=$(prtconf -v /devices | sed -n '/ipaddress/{;n;p;}' | cut -f 2 -d \')
 
 create_dir () {
   mkdir ${diskdir}

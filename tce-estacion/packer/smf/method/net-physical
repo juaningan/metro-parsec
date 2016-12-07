@@ -58,7 +58,7 @@ config_network () {
   if [[ $dhcp ]]; then
     /sbin/ifconfig ${interface} auto-dhcp primary
   else
-    /sbin/ifconfig ${interface} ${ipaddress} up
+    /sbin/ifconfig ${interface} ${ipaddress}/24 up
     /sbin/route add default ${gateway}
   fi
 }

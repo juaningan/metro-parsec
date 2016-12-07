@@ -170,8 +170,7 @@ EOF
 write_cron () {
   cat > /var/spool/cron/crontabs/metro << EOF
 0,15,30,45 2-5 * * * /home/metro/sun/MandaVolcados.ksh
-0 * * * * /home/metro/sun/MandaEnvio.ksh -l /home/metro/MandaEnvio_diferido.log /home/metro/MandaEnvio_f
-10 2 * * * /home/metro/sun/CapturarFicherosRepositorio2.sh
+10 2 * * * /home/metro/sun/CapturarFicherosRepositorio.sh
 13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
 18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
 0 * * * * /home/metro/sun/MandaAbajo.ksh
@@ -179,6 +178,9 @@ EOF
   if [[ $mbt_id != 'false' ]]; then
     echo "50 4 * * * /home/metro/sun/mbt.csh ${mbt_id} mbt >> /home/metro/sistema/V/Mbt/xEventosMbt" >> /var/spool/cron/crontabs/metro
   fi
+  /usr/bin/chown root:sys /var/spool/cron/crontabs/metro
+  /usr/bin/chmod 0600 /var/spool/cron/crontabs/metro
+  svcadm restart system/cron
 }
 
 main () {

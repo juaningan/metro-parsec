@@ -7,12 +7,8 @@ Pensar como parametrizar:
 * con plano o sin plano (en CfgUI.CFG)
 limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
 el /usr en lofi comprimido como en smartos
-probar iprb de nuevo
 automatizar creacion version debug
 parametro para forzar rehacer
-ipaddress en el grub de tce-setup
-rotado de logs- logadm
 separar el setup en dos, deploy y detect+write
 mostar toda la config unos segundos antes de lanzar las X dando la opción de pulsar ESC para cortar el arranque.
-cambiar el /home/metro/sun/CapturarFicherosRepositorio.sh para que funcione con usuario metro
-revisar error en nfs dfstab
+driver cerrado iprb, descargarlo en lugar de meterlo a capon

@@ -65,4 +65,15 @@ ln -sf /usr/bin/ssh usr/bin/rsh
 ln -sf /usr/bin/ssh usr/ucb/rsh
 ln -sf /usr/bin/scp usr/bin/rcp
 
+# Link vi to vim
+ln -sf /usr/bin/vim usr/bin/vi
+
+# Copy closed source iprb driver
+/usr/bin/cp -p  /tmp/smf/iprb kernel/drv/iprb
+chmod 0644 kernel/drv/iprb
+chown root:sys kernel/drv/iprb
+
+# Put logadm rules in etc/logadm.conf
+cat /tmp/smf/logadm-metro.conf >> etc/logadm.conf
+
 sync
