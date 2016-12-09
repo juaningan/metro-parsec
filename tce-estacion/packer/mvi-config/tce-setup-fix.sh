@@ -76,4 +76,16 @@ chown root:sys kernel/drv/iprb
 # Put logadm rules in etc/logadm.conf
 cat /tmp/smf/logadm-metro.conf >> etc/logadm.conf
 
+# Link libs
+ln -sf /home/metro/lib/libcmx.so usr/lib/libcmx.so
+ln -sf /home/metro/lib/libglib.so.1 usr/lib/libglib.so.1
+ln -sf /home/metro/lib/libMrm.so.4 usr/lib/libMrm.so.4
+ln -sf /home/metro/lib/libnds.so usr/lib/libnds.so
+ln -sf /home/metro/lib/libolgx.so.3 usr/lib/libolgx.so.3
+ln -sf /home/metro/lib/libs7h1.so usr/lib/libs7h1.so
+ln -sf /home/metro/lib/libsci_cmx.so usr/lib/libsci_cmx.so
+ln -sf /home/metro/lib/libXm.so.4 usr/lib/libXm.so.4
+ln -sf /home/metro/lib/libXtsol.so.1 usr/lib/libXtsol.so.1
+ln -sf /home/metro/lib/libxview.so.3 usr/lib/libxview.so.3
+
 sync
