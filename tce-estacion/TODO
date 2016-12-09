@@ -6,7 +6,6 @@ Pensar como parametrizar:
 * maestra ip o no ip (en hosts)
 * con plano o sin plano (en CfgUI.CFG)
 limpiar binarios que no se utilicen basandose en cgequipo y en cfgui
-el /usr en lofi comprimido como en smartos
 automatizar creacion version debug
 parametro para forzar rehacer
 separar el setup en dos, deploy y detect+write

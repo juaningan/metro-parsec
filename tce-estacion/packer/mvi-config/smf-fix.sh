@@ -22,6 +22,7 @@ chmod +x lib/svc/method/*
 /usr/bin/rm -f etc/rctladm.conf
 
 /usr/bin/rm -rf /lib/svc/manifest/*
+/usr/bin/rm -f lib/svc/manifest/system/rbac.xml \
+  lib/svc/manifest/system/zonestat.xml
 /usr/bin/cp -pr lib/svc/manifest/* /lib/svc/manifest/
 /lib/svc/method/manifest-import -f etc/svc/repository.db -d /lib/svc/manifest/
-
