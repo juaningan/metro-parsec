@@ -54,9 +54,9 @@ check_app () {
 
 deploy_app () {
   echo "INFO: Extrayendo aplicacion" > /dev/msglog
-  /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-app.tar.gz
+  (cd /; gunzip < ${diskdir}/pctce-app.tar.gz | tar -xvf -)
   echo "INFO: Extrayendo configuracion" > /dev/msglog
-  /usr/gnu/bin/tar -C / -xzf ${diskdir}/pctce-config.tar.gz
+  (cd /; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xvf -)
   ln -sf /home/metro/hosts /etc/inet/hosts
   ln -sf /home/metro/services /etc/inet/services
 }

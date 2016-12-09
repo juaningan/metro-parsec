@@ -81,8 +81,8 @@ check_disk () {
 
 mount_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
-  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
-  /usr/sbin/mount /dev/lofi/1 /home/metro
+  lofidevmetro=$(/usr/sbin/lofiadm -a ${diskdir}/persistence.ufs)
+  /usr/sbin/mount ${lofidevmetro} /home/metro
   /usr/sbin/swap -a ${diskdir}/swap1
   /usr/sbin/swap -a ${diskdir}/swap2
 }

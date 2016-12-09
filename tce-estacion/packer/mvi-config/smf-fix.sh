@@ -60,6 +60,7 @@ chmod +x lib/svc/method/*
   network/nfs/status.xml \
   network/nfs/nlockmgr.xml \
   network/nfs/server.xml \
+  network/nfs/client.xml \
   network/nfs/mapid.xml \
   network/rpc/bind.xml) | \
   (cd /lib/svc/manifest/; tar xbf 512 -)
