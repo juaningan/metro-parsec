@@ -44,8 +44,7 @@ if [[ $PLANO != 'false' ]]; then
   while [[ ! -p /tmp/.X11-pipe/X0 ]]; do
     sleep 1
   done
-  $HOME/.libs/mwm &
+  $HOME/sun/mwm &
 fi
 
 $HOME/sun/control > /dev/null 2>&1
-#$HOME/sun/control
