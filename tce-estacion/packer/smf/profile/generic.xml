@@ -41,56 +41,11 @@
   <!--
       svc.startd(1M) services
   -->
-  <service name='system/auditset' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/boot-archive-update' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
   <service name='system/cryptosvc' version='1' type='service'>
     <instance name='default' enabled='true'/>
   </service>
   <service name='system/cron' version='1' type='service'>
     <instance name='default' enabled='true'/>
-  </service>
-  <service name='system/dumpadm' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/early-manifest-import' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/logadm-upgrade' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/metainit' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/pfexec' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/rbac' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/resource-mgmt' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='system/zones-monitoring' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='network/inetd-upgrade' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='network/ipsec/policy' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='network/ipsec/ipsecalgs' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='network/iptun' version='1' type='service'>
-    <instance name='default' enabled='false'/>
-  </service>
-  <service name='network/shares/group' version='1' type='service'>
-    <instance name='default' enabled='false'/>
   </service>
   <!--
       NFS services

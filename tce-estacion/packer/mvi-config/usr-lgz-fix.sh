@@ -3,8 +3,11 @@
 set -e
 set -x
 
+# Increase base size
+MRSIZE=100M
+
 USRSIZE=$(du -ks ./usr | awk '{print $1}')
-USIZE=$(echo "(${USRSIZE} * 1.1) / 1" | bc)
+USIZE=$(echo "(${USRSIZE} * 1.02) / 1" | bc)
 
 rddir=$(pwd)
 usrfile="${rddir}/usr.file"
@@ -19,9 +22,8 @@ mount -F ufs -o nologging ${lofidevusr} "${rddir}/usr.dir"
 mv ${rddir}/usr/* ${rddir}/usr.dir
 
 (cd ${rddir}/usr.dir && tar cbf 512 - \
-        bin/[ bin/cat bin/head bin/i86/ksh93 bin/ls kernel/sched/FSS \
-        lib/fm/libfmevent.so lib/fm/libfmevent.so.1 lib/fm/libtopo.so \
-        lib/fm/libtopo.so.1 lib/libast.so lib/libast.so.1 lib/libcmd.so \
+        bin/[ bin/cat bin/head bin/i86/ksh93 bin/ls \
+        lib/libast.so lib/libast.so.1 lib/libcmd.so \
         lib/libcmd.so.1 lib/libdll.so lib/libdll.so.1 lib/libexacct.so \
         lib/libexacct.so.1 lib/libfstyp.so lib/libfstyp.so.1 lib/libidmap.so \
         lib/libidmap.so.1 lib/libipmi.so lib/libipmi.so.1 lib/libpkcs11.so \
@@ -36,5 +38,5 @@ umount -f "${rddir}/usr.dir"
 rmdir ${rddir}/usr.dir
 
 lofiadm -d "${lofidevusr}" 2>/dev/null
-lofiadm -C ${usrfile}
+lofiadm -C gzip-9 ${usrfile}
 mv ${usrfile} ${rddir}/usr.lgz

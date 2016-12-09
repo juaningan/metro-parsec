@@ -62,11 +62,11 @@ chmod +x lib/svc/method/*
   network/nfs/server.xml \
   network/nfs/client.xml \
   network/nfs/mapid.xml \
+  network/shares/group.xml \
   network/rpc/bind.xml) | \
   (cd /lib/svc/manifest/; tar xbf 512 -)
 
 #  network/shares/reparsed.xml \
-#  network/shares/group.xml \
 
 rm -rf lib/svc/manifest/*
 cp -rp /lib/svc/manifest/* lib/svc/manifest/
