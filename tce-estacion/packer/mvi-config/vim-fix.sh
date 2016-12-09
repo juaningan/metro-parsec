@@ -9,3 +9,6 @@ TSIZE=$(($TSIZE+2))
 MRSIZE=${TSIZE}M
 
 rm -rf usr/share/vim
+
+# Link vi to vim
+ln -sf /usr/bin/vim usr/bin/vi
