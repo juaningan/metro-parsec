@@ -44,6 +44,13 @@
 		<service_fmri value='svc:/application/pctce/setup' />
 	</dependency>
 	<dependency
+		name='pctce-realport'
+		grouping='require_all'
+		restart_on='none'
+		type='service'>
+		<service_fmri value='svc:/application/pctce/realport' />
+	</dependency>
+	<dependency
 		name='mbt-config'
 		grouping='require_all'
 		restart_on='none'

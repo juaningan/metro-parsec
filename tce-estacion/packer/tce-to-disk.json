@@ -89,7 +89,8 @@
         "type": "shell-local",
         "inline": [
           "/usr/bin/7z e -y -obuilds $1 platform/i86pc/boot_archive platform/i86pc/kernel/unix",
-          "mv builds/boot_archive builds/boot_archive-{{ user `build_timestamp` }}"
+          "mv builds/boot_archive builds/boot_archive.gz",
+          "gunzip builds/boot_archive.gz; mv builds/boot_archive builds/boot_archive-{{ user `build_timestamp` }}"
         ]
       },
       {

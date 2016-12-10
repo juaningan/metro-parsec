@@ -25,7 +25,7 @@
  CDDL HEADER END
 -->
 
-<service_bundle type='manifest' name='application-pctce-setup'>
+<service_bundle type='manifest' name='application-pctce-realport'>
 
 <service
 	name='application/pctce/realport'
