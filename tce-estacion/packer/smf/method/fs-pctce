@@ -97,8 +97,8 @@ prepare_disk () {
   touch ${diskdir}/metadata.json
   echo "INFO: Preparando disco: Creando fichero de persistencia" > /dev/msglog
   /usr/sbin/mkfile 4g ${diskdir}/persistence.ufs
-  /usr/sbin/lofiadm -a ${diskdir}/persistence.ufs
-  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs /dev/rlofi/1
+  lofirdevmetro=$(/usr/sbin/lofiadm -a ${diskdir}/persistence.ufs | sed 's/lofi/rlofi/g')
+  echo "y" | env NOINUSE_CHECK=1 /usr/sbin/newfs ${lofirdevmetro}
   /usr/sbin/lofiadm -d ${diskdir}/persistence.ufs
   echo "INFO: Preparando disco: Creando fichero de swap" > /dev/msglog
   /usr/sbin/mkfile 1g ${diskdir}/swap1

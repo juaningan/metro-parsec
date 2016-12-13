@@ -123,6 +123,27 @@ detect_mbt () {
   fi
 }
 
+detect_tcti () {
+  tcti_hostname=$(/usr/bin/awk '/tcti/ {print $4}' /home/metro/sistema/V/CfgConfig.CFG)
+  if [[ -z $tcti_hostname ]]; then
+    echo "INFO: Sin TCTI" > /dev/msglog
+    mv /home/metro/sun/router-tcti_nuevo /home/metro/sun/router
+    return 1
+  elif $(/home/metro/sun/socat -T 1 - TCP4:${tcti_hostname}:23); then
+    echo "INFO: TCTI antiguo"
+    tcti="antiguo"
+    ln -sf router-tcti_antiguo /home/metro/sun/router
+    rm -f /home/metro/sun/router-tcti_nuevo
+    return 0
+  else
+    echo "INFO: TCTI nuevo"
+    tcti="nuevo"
+    ln -sf router-tcti_nuevo /home/metro/sun/router
+    rm -f /home/metro/sun/router-tcti_antiguo
+    return 0
+  fi
+}
+
 write_mbt () {
   cat > /tmp/mbt-ppp << EOF
 noauth
@@ -160,7 +181,7 @@ ID=${pctce_id}
 PCTCE_ID=${pctce_id}
 UIS_IP=${uis_ip}
 CANCELA=${cancela}
-TCTI=nuevo
+TCTI=${tcti}
 MAESTRA_IP=true
 PLANO=true
 MBT_ID=${mbt_id}
@@ -192,6 +213,7 @@ main () {
   detect_id
   detect_uis
   detect_cancela
+  detect_tcti
   if detect_mbt; then
     write_mbt
   fi
