@@ -62,7 +62,7 @@ deploy_app () {
 }
 
 detect_id () {
-  pctce_id=$(awk '/CAN/ {print $1;exit}' /home/metro/sistema/V/CfgEquipo.CFG | sed 's/^CAN//g')
+  pctce_id=$(sed -n '3p' /home/metro/sistema/V/CfgConfig.CFG | awk '{ printf("%02d", $1)} { printf("%02d", $2)} { printf("%01d", $3)}')
   if [[ ! $pctce_id ]]; then
     echo "ERROR: No se puede determinar codigo administrativo del equipo" > /dev/msglog
     exit $SMF_EXIT_ERR_FATAL
@@ -127,6 +127,7 @@ detect_tcti () {
   tcti_hostname=$(/usr/bin/awk '/tcti/ {print $4}' /home/metro/sistema/V/CfgConfig.CFG)
   if [[ -z $tcti_hostname ]]; then
     echo "INFO: Sin TCTI" > /dev/msglog
+    tcti="false"
     mv /home/metro/sun/router-tcti_nuevo /home/metro/sun/router
     return 1
   elif $(/home/metro/sun/socat -T 1 - TCP4:${tcti_hostname}:23); then
