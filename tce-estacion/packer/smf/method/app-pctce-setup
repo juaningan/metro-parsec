@@ -123,6 +123,18 @@ detect_mbt () {
   fi
 }
 
+detect_plano () {
+  plano=$(grep -v FIN /home/metro/sistema/V/CfgUI.CFG)
+  if grep UI /home/metro/sistema/V/CfgUI.CFG; then
+    echo "INFO: Con plano" > /dev/msglog
+    plano=true
+  else
+    echo "INFO: Sin plano" > /dev/msglog
+    plano=false
+    return 1
+  fi
+}
+
 detect_tcti () {
   tcti_hostname=$(/usr/bin/awk '/tcti/ {print $4}' /home/metro/sistema/V/CfgConfig.CFG)
   if [[ -z $tcti_hostname ]]; then
@@ -184,7 +196,7 @@ UIS_IP=${uis_ip}
 CANCELA=${cancela}
 TCTI=${tcti}
 MAESTRA_IP=true
-PLANO=true
+PLANO=${plano}
 MBT_ID=${mbt_id}
 EOF
 }
