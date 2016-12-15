@@ -38,10 +38,8 @@ update_app () {
     /usr/bin/wget -q "http://16.0.96.20/repo/pctce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
     cp /metadata.json ${diskdir}/metadata.json
   fi
-  echo "INFO: Descargando aplicacion" > /dev/msglog
-  /usr/bin/wget -q "http://16.0.96.20/repo/pctce/pctce-app.tar.gz" -O ${diskdir}/pctce-app.tar.gz
   echo "INFO: Descargando configuracion" > /dev/msglog
-  /usr/bin/wget -q "http://16.0.96.20/repo/tce-estacion/${hostname}/${hostname}.tar.gz" -O ${diskdir}/pctce-config.tar.gz
+  /usr/bin/wget -q "http://16.0.96.20/repo/pctce-git.tar.gz" -O ${diskdir}/pctce-config.tar.gz
 }
 
 check_app () {
@@ -53,10 +51,9 @@ check_app () {
 }
 
 deploy_app () {
-  echo "INFO: Extrayendo aplicacion" > /dev/msglog
-  (cd /; gunzip < ${diskdir}/pctce-app.tar.gz | tar -xvf -)
   echo "INFO: Extrayendo configuracion" > /dev/msglog
-  (cd /; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xvf -)
+  (cd /home/metro; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xf - ./common ; tar -cf - -C ./common . | tar -xvf - ; rm -rf common)
+  (cd /home/metro; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xf - ./nodes/${hostname} ; tar -cf - -C ./nodes/${hostname} . | tar -xvf - ; rm -rf nodes)
   ln -sf /home/metro/hosts /etc/inet/hosts
   ln -sf /home/metro/services /etc/inet/services
 }
@@ -87,19 +84,15 @@ detect_cancela () {
   if [[ ! $cancela_port ]]; then
     echo "WARN: Sin cancela definida en CfgEquipo.CFG" > /dev/msglog
     cancela="false"
-    rm -f /home/metro/sun/cancela_schneider
-    rm -f /home/metro/sun/cancela_mayser
     return
   elif [[ $cancela_port -le 16 ]]; then
     echo "INFO: Cancela por UIS (binario: cancela_mayser)" > /dev/msglog
     cancela="uis"
-    ln -sf cancela_mayser /home/metro/sun/cancela
-    rm -f /home/metro/sun/cancela_schneider
+    ln -sf /home/metro/sun/cancela_mayser /home/metro/scripts/cancela
   else
     echo "INFO: Cancela por Maestra (binario: cancela_schneider)" > /dev/msglog
     cancela="maestra"
-    ln -sf cancela_schneider /home/metro/sun/cancela
-    rm -f /home/metro/sun/cancela_mayser
+    ln -sf /home/metro/sun/cancela_schneider /home/metro/scripts/cancela
   fi
 }
 
@@ -140,19 +133,17 @@ detect_tcti () {
   if [[ -z $tcti_hostname ]]; then
     echo "INFO: Sin TCTI" > /dev/msglog
     tcti="false"
-    mv /home/metro/sun/router-tcti_nuevo /home/metro/sun/router
+    ln -sf /home/metro/sun/router-tcti_antiguo /home/metro/scripts/router
     return 1
   elif $(/home/metro/sun/socat -T 1 - TCP4:${tcti_hostname}:23); then
     echo "INFO: TCTI antiguo"
     tcti="antiguo"
-    ln -sf router-tcti_antiguo /home/metro/sun/router
-    rm -f /home/metro/sun/router-tcti_nuevo
+    ln -sf /home/metro/sun/router-tcti_antiguo /home/metro/scripts/router
     return 0
   else
     echo "INFO: TCTI nuevo"
     tcti="nuevo"
-    ln -sf router-tcti_nuevo /home/metro/sun/router
-    rm -f /home/metro/sun/router-tcti_antiguo
+    ln -sf /home/metro/sun/router-tcti_nuevo /home/metro/scripts/router
     return 0
   fi
 }
@@ -226,6 +217,9 @@ main () {
   detect_id
   detect_uis
   detect_cancela
+  if ! detect_plano; then
+    svcadm disable application/pctce/xserver
+  fi
   detect_tcti
   if detect_mbt; then
     write_mbt
