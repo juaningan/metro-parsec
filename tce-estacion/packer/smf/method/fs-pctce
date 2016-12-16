@@ -24,6 +24,8 @@
 #
 . /lib/svc/share/smf_include.sh
 
+set -x
+
 diskdir=/.disk
 ipaddress=$(prtconf -v /devices | sed -n '/ipaddress/{;n;p;}' | cut -f 2 -d \')
 
@@ -81,6 +83,7 @@ check_disk () {
 
 mount_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
+  sleep 2
   lofidevmetro=$(/usr/sbin/lofiadm -a ${diskdir}/persistence.ufs)
   /usr/sbin/mount ${lofidevmetro} /home/metro
   /usr/sbin/swap -a ${diskdir}/swap1

@@ -24,6 +24,8 @@
 #
 . /lib/svc/share/smf_include.sh
 
+set -x
+
 source /home/metro/environment
 
 export PERIODO_URGENTE=50

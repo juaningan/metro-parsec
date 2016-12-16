@@ -24,6 +24,8 @@
 #
 . /lib/svc/share/smf_include.sh
 
+set -x
+
 diskdir=/.disk
 hostname=$(uname -n)
 
@@ -135,7 +137,7 @@ detect_tcti () {
     tcti="false"
     ln -sf /home/metro/sun/router-tcti_antiguo /home/metro/scripts/router
     return 1
-  elif $(/home/metro/sun/socat -T 1 - TCP4:${tcti_hostname}:23); then
+  elif /home/metro/sun/socat -T 1 - TCP4:${tcti_hostname}:23; then
     echo "INFO: TCTI antiguo"
     tcti="antiguo"
     ln -sf /home/metro/sun/router-tcti_antiguo /home/metro/scripts/router
