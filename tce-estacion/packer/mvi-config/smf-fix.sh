@@ -10,6 +10,9 @@ MRSIZE=${TSIZE}M
 sed 's/^root.*$/root:pveboAFZFAX6c:16924::::::/g' etc/shadow > shadowtmp && mv shadowtmp etc/shadow
 sed 's/\/usr\/bin\/bash$/\/bin\/sh/g' etc/passwd > passwdtmp && mv passwdtmp etc/passwd
 
+# Clean fma
+/usr/bin/rm -rf usr/platform/i86pc/lib/fm
+
 /usr/bin/rm -rf etc/svc/profile/*
 /usr/bin/cp -p /tmp/smf/method/* lib/svc/method/
 /usr/bin/cp -p /tmp/smf/profile/generic.xml etc/svc/profile/generic.xml

@@ -27,3 +27,4 @@ TRIBsys-lib-security-gss
 TRIBshell-tcsh
 TRIBexpect
 TRIBtcl
+TRIBsocat
