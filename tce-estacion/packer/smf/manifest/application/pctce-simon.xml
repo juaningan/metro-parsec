@@ -47,7 +47,7 @@
 	<exec_method
 		type='method'
 		name='start'
-		exec='/usr/local/bin/socat TCP-LISTEN:5558,fork,reuseaddr,crlf SYSTEM:/usr/local/bin/check_mon.sh'
+		exec='/usr/bin/socat TCP-LISTEN:5558,fork,reuseaddr,crlf SYSTEM:/usr/local/bin/check_mon.sh'
 		timeout_seconds='0'>
         </exec_method>
 
