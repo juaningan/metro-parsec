@@ -68,4 +68,7 @@
   <service name='network/login' version='1' type='service'>
     <instance name='rlogin' enabled='true'/>
   </service>
+  <service name='network/rexec' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
 </service_bundle>

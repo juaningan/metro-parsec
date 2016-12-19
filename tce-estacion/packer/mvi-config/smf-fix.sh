@@ -51,6 +51,7 @@ chmod +x lib/svc/method/*
   system/filesystem/minimal-fs.xml \
   network/inetd.xml \
   network/login.xml \
+  network/rexec.xml \
   network/dlmgmt.xml \
   network/network-netcfg.xml \
   network/network-ipmgmt.xml \
