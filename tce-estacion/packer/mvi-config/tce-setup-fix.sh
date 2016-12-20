@@ -63,9 +63,9 @@ ln -sf /usr/bin/tcsh usr/bin/csh
 ln -sf /usr/bin/sh usr/bin/bash
 
 # Link rlogin to ssh
-ln -sf /usr/bin/ssh usr/bin/rsh
-ln -sf /usr/bin/ssh usr/ucb/rsh
-ln -sf /usr/bin/scp usr/bin/rcp
+#ln -sf /usr/bin/ssh usr/bin/rsh
+#ln -sf /usr/bin/ssh usr/ucb/rsh
+#ln -sf /usr/bin/scp usr/bin/rcp
 
 # Copy closed source iprb driver
 /usr/bin/cp -p  /tmp/smf/iprb kernel/drv/iprb

@@ -5,3 +5,5 @@ parametro para forzar rehacer disco
 separar el setup en dos, deploy y detect+write
 mostrar toda la config unos segundos antes de lanzar las X dando la opción de pulsar ESC para cortar el arranque.
 driver cerrado iprb, descargarlo en lugar de meterlo a capon
+probar demonio ntpd con usuario propio
+limpiar zoneinfo 

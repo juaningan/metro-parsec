@@ -58,6 +58,14 @@ deploy_app () {
   (cd /home/metro; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xf - ./nodes/${hostname} ; tar -cf - -C ./nodes/${hostname} . | tar -xvf - ; rm -rf nodes)
   ln -sf /home/metro/hosts /etc/inet/hosts
   ln -sf /home/metro/services /etc/inet/services
+
+  cem_id=$(awk '/CONTROL_EMERGENCIA/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
+  if [[ -n $cem_id ]]; then
+    mkdir -p /home/metro/sistema/V/CtrlEmergencia/${cem_id}
+  fi
+
+  echo "+" > /home/metro/.rhosts
+  chmod 0600 /home/metro/.rhosts
 }
 
 detect_id () {
@@ -235,7 +243,10 @@ main () {
   svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
   svcadm refresh application/pctce/actualiza-listas:default
 
-  wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/PCL${pctce_id}/Programaciones/Ventilacion/ProgVentilacion
+  pcl_id=$(awk '/PCL/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
+  if [[ -n $pcl_id ]]; then
+    wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/${pcl_id}/Programaciones/Ventilacion/ProgVentilacion
+  fi
 
   /usr/bin/chown -R metro:metro /home/metro
 }

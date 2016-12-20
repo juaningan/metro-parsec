@@ -68,7 +68,16 @@
   <service name='network/login' version='1' type='service'>
     <instance name='rlogin' enabled='true'/>
   </service>
-  <service name='network/rexec' version='1' type='service'>
+  <service name='network/shell' version='1' type='service'>
     <instance name='default' enabled='true'/>
+  </service>
+  <!--
+      time services
+  -->
+  <service name='network/time' version='1' type='service'>
+    <instance name='dgram' enabled='true'/>
+  </service>
+  <service name='network/time' version='1' type='service'>
+    <instance name='stream' enabled='true'/>
   </service>
 </service_bundle>
