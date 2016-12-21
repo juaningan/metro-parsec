@@ -21,6 +21,7 @@ ln -sf /usr/bin/sh usr/bin/distsh2
 # Clean UCB and copy lib
 mv usr/ucblib/libucb.so.1 usr/lib/libucb.so.1
 rm -rf usr/ucb/*
+ln -sf /usr/bin/rsh usr/ucb/rsh
 
 # Create metro user
 echo 'metro:x:101:101::/home/metro:/bin/sh' >> etc/passwd
@@ -64,7 +65,6 @@ ln -sf /usr/bin/sh usr/bin/bash
 
 # Link rlogin to ssh
 #ln -sf /usr/bin/ssh usr/bin/rsh
-#ln -sf /usr/bin/ssh usr/ucb/rsh
 #ln -sf /usr/bin/scp usr/bin/rcp
 
 # Copy closed source iprb driver
