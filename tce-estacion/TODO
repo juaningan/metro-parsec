@@ -7,3 +7,4 @@ mostrar toda la config unos segundos antes de lanzar las X dando la opción de p
 driver cerrado iprb, descargarlo en lugar de meterlo a capon
 probar demonio ntpd con usuario propio
 limpiar zoneinfo 
+comprobar si hace falta time por udp y tcp o llega con uno de los dos
