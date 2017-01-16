@@ -76,8 +76,6 @@
   -->
   <service name='network/time' version='1' type='service'>
     <instance name='dgram' enabled='true'/>
-  </service>
-  <service name='network/time' version='1' type='service'>
     <instance name='stream' enabled='true'/>
   </service>
 </service_bundle>
