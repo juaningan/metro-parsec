@@ -76,6 +76,7 @@ chown root:sys kernel/drv/iprb
 cat /tmp/files/logadm-metro.conf >> etc/logadm.conf
 
 # Copy manual ftp binary while not tribblix package exists
-cp /tmp/files/in.ftpd usr/sbin/in.ftpd
+cp /tmp/files/ftpd/in.ftpd usr/sbin/in.ftpd
+cp /tmp/files/ftpd/ftp* etc/ftpd/
 
 sync

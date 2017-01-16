@@ -78,4 +78,10 @@
     <instance name='dgram' enabled='true'/>
     <instance name='stream' enabled='true'/>
   </service>
+  <!--
+      ftp services
+  -->
+  <service name='network/ftp' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
 </service_bundle>
