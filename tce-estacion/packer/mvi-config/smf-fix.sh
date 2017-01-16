@@ -14,15 +14,15 @@ sed 's/\/usr\/bin\/bash$/\/bin\/sh/g' etc/passwd > passwdtmp && mv passwdtmp etc
 /usr/bin/rm -rf usr/platform/i86pc/lib/fm
 
 /usr/bin/rm -rf etc/svc/profile/*
-/usr/bin/cp -p /tmp/smf/method/* lib/svc/method/
-/usr/bin/cp -p /tmp/smf/profile/generic.xml etc/svc/profile/generic.xml
+/usr/bin/cp -p /tmp/files/smf/method/* lib/svc/method/
+/usr/bin/cp -p /tmp/files/smf/profile/generic.xml etc/svc/profile/generic.xml
 /usr/bin/ln -s generic.xml etc/svc/profile/platform.xml
 chmod +x lib/svc/method/*
 
 /usr/bin/rm -f etc/rctladm.conf
 
 /usr/bin/rm -rf /lib/svc/manifest/*
-/usr/bin/cp -rp /tmp/smf/manifest/* /lib/svc/manifest/
+/usr/bin/cp -rp /tmp/files/smf/manifest/* /lib/svc/manifest/
 
 (cd lib/svc/manifest/ && tar cbf 512 - \
   milestone/name-services.xml \

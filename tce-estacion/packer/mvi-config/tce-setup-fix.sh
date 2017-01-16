@@ -68,11 +68,14 @@ ln -sf /usr/bin/sh usr/bin/bash
 #ln -sf /usr/bin/scp usr/bin/rcp
 
 # Copy closed source iprb driver
-/usr/bin/cp -p  /tmp/smf/iprb kernel/drv/iprb
+/usr/bin/cp -p  /tmp/files/iprb kernel/drv/iprb
 chmod 0644 kernel/drv/iprb
 chown root:sys kernel/drv/iprb
 
 # Put logadm rules in etc/logadm.conf
-cat /tmp/smf/logadm-metro.conf >> etc/logadm.conf
+cat /tmp/files/logadm-metro.conf >> etc/logadm.conf
+
+# Copy manual ftp binary while not tribblix package exists
+cp /tmp/files/in.ftpd usr/sbin/in.ftpd
 
 sync
