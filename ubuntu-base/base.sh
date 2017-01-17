@@ -20,7 +20,7 @@ apt-get install -y debootstrap squashfs-tools xz-utils wget systemd-container
 
 cd ${ROOT_DIR}
 export no_proxy="16.0.96.20"
-debootstrap --arch=${ARCH} --variant=minbase --components=main,universe --include=usrmerge,dbus,wget,netbase,iproute2,iputils-ping,vim-nox --exclude=sysv-rc,initscripts,startpar,insserv ${RELEASE} ${ROOT_DIR} http://16.0.96.20:3142/archive.ubuntu.com/ubuntu
+debootstrap --arch=${ARCH} --variant=minbase --components=main,universe --include=systemd,usrmerge,dbus,wget,netbase,iproute2,iputils-ping,vim-nox --exclude=sysv-rc,initscripts,startpar,insserv ${RELEASE} ${ROOT_DIR} http://16.0.96.20:3142/archive.ubuntu.com/ubuntu
 
 # Install setup-network-environment
 wget -N -P usr/local/bin https://github.com/kelseyhightower/setup-network-environment/releases/download/1.0.1/setup-network-environment
