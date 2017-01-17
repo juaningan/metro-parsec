@@ -1,0 +1,18 @@
+[Unit]
+Description=Gitea (Go Git Service)
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/srv/gitea
+ExecStartPre=/usr/local/bin/gitea-setup.sh
+ExecStart=/usr/local/bin/gitea web
+Restart=always
+Environment=GITEA_CUSTOM=/srv/gitea
+Environment=USER=git HOME=/home/git
+
+[Install]
+WantedBy=multi-user.target
