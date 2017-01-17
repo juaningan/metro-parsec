@@ -10,7 +10,7 @@ fi
 
 SCRIPT_DIR=$PWD
 ROOT_DIR=$(mktemp -d)
-RELEASE=xenial
+RELEASE=yakkety
 ARCH=amd64
 
 # OS stage
@@ -39,7 +39,8 @@ Type=oneshot
 NETWORK_ENV
 
 # Install Consul
-wget "https://releases.hashicorp.com/consul/0.7.0/consul_0.7.0_linux_${ARCH}.zip" -O consul.zip
+CONSUL_VERSION='0.7.2'
+wget "https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_${ARCH}.zip" -O consul.zip
 unzip consul.zip -d usr/local/bin
 rm -f consul.zip
 chmod 0755 usr/local/bin/consul
@@ -53,7 +54,8 @@ cp -v ${SCRIPT_DIR}/consul/consul.service usr/lib/systemd/system/.
 systemd-nspawn -D ${ROOT_DIR} systemctl enable consul.service
 
 # Install consul-template
-wget "https://releases.hashicorp.com/consul-template/0.15.0/consul-template_0.15.0_linux_${ARCH}.zip" -O consul-template.zip
+CONSULTEMPLATE_VERSION='0.18.0-rc2'
+wget "https://releases.hashicorp.com/consul-template/${CONSULTEMPLATE_VERSION}/consul-template_${CONSULTEMPLATE_VERSION}_linux_${ARCH}.zip" -O consul-template.zip
 unzip consul-template.zip -d usr/local/bin
 rm -f consul-template.zip
 chmod 0755 usr/local/bin/consul-template
