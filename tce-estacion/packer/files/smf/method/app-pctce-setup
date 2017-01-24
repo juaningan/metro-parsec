@@ -41,7 +41,7 @@ update_app () {
     cp /metadata.json ${diskdir}/metadata.json
   fi
   echo "INFO: Descargando configuracion" > /dev/msglog
-  /usr/bin/wget -q "http://16.0.96.20/repo/pctce-git.tar.gz" -O ${diskdir}/pctce-config.tar.gz
+  /usr/bin/wget -q "http://16.0.96.20:3000/metro/pctce-configs/archive/master.tar.gz" -O ${diskdir}/pctce-config.tar.gz
 }
 
 check_app () {
@@ -54,8 +54,8 @@ check_app () {
 
 deploy_app () {
   echo "INFO: Extrayendo configuracion" > /dev/msglog
-  (cd /home/metro; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xf - ./common ; tar -cf - -C ./common . | tar -xvf - ; rm -rf common)
-  (cd /home/metro; gunzip < ${diskdir}/pctce-config.tar.gz | tar -xf - ./nodes/${hostname} ; tar -cf - -C ./nodes/${hostname} . | tar -xvf - ; rm -rf nodes)
+  (cd /home/metro; tar -xzf ${diskdir}/pctce-config.tar.gz pctce-configs/common ; tar -cf - -C ./pctce-configs/common . | tar -xvf - ; rm -rf pctce-configs)
+  (cd /home/metro; tar -xzf ${diskdir}/pctce-config.tar.gz pctce-configs/nodes/${hostname} ; tar -cf - -C ./pctce-configs/nodes/${hostname} . | tar -xvf - ; rm -rf pctce-configs)
   ln -sf /home/metro/hosts /etc/inet/hosts
   ln -sf /home/metro/services /etc/inet/services
 
@@ -79,12 +79,11 @@ detect_id () {
 }
 
 detect_uis () {
-  uis_count=$(/usr/bin/awk '/UIS/ {print $1}' /etc/hosts | wc -l)
-  if [[ $uis_count -ne '1' ]]; then
-    echo "ERROR: No se puede determinar IP de la UIS por haber ${uis_count} coincidencias en /etc/hosts" > /dev/msglog
+  uis_ip=$(/usr/bin/awk "/UIS_${hostname}/ {print \$1}" /etc/hosts)
+  if [[ ! $uis_ip ]]; then
+    echo "ERROR: No se puede determinar IP de la UIS. UIS_${hostname} no encontrado en /etc/hosts" > /dev/msglog
     exit $SMF_EXIT_ERR_FATAL
   else
-    uis_ip=$(/usr/bin/awk '/UIS/ {print $1}' /etc/hosts)
     echo "INFO: IP de la UIS: ${uis_ip}" > /dev/msglog
   fi
 }
@@ -209,6 +208,7 @@ write_cron () {
 13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
 18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
 0 * * * * /home/metro/sun/MandaAbajo.ksh
+30 4 * * * /usr/bin/pkill control
 EOF
   if [[ $mbt_id != 'false' ]]; then
     echo "50 4 * * * /home/metro/sun/mbt.csh ${mbt_id} mbt >> /home/metro/sistema/V/Mbt/xEventosMbt" >> /var/spool/cron/crontabs/metro
@@ -243,10 +243,10 @@ main () {
   svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
   svcadm refresh application/pctce/actualiza-listas:default
 
-  pcl_id=$(awk '/PCL/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
-  if [[ -n $pcl_id ]]; then
-    wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/${pcl_id}/Programaciones/Ventilacion/ProgVentilacion
-  fi
+#  pcl_id=$(awk '/PCL/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
+#  if [[ -n $pcl_id ]]; then
+#    wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/${pcl_id}/Programaciones/Ventilacion/ProgVentilacion
+#  fi
 
   /usr/bin/chown -R metro:metro /home/metro
 }
