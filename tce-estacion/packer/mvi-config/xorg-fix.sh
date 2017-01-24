@@ -40,17 +40,17 @@ Section "Monitor"
 EndSection
 
 Section "Device"
-    Identifier  "intel"
+    Identifier  "vga"
     Driver      "vesa"
 EndSection
 
 Section "Screen"
     Identifier  "Screen 1"
-    Device      "intel"
+    Device      "vga"
     Monitor     "Monitor1"
-    DefaultDepth 24 
+    DefaultDepth 16
     Subsection "Display"
-        Depth       24
+        Depth       16
         Modes       "1024x768"
         ViewPort    0 0
     EndSubsection
