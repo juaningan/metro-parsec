@@ -42,7 +42,7 @@ export DEBIAN_FRONTEND=noninteractive
 systemctl disable consul.service
 
 # Install gitea
-apt-get install -y --no-install-recommends git
+apt-get install -y --no-install-recommends git openssh-client
 adduser --system --group --disabled-login git
 
 wget "https://dl.gitea.io/gitea/1.0.1/gitea-1.0.1-linux-amd64" -O /usr/local/bin/gitea
