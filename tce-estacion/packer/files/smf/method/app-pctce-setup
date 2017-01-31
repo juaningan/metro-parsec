@@ -237,16 +237,13 @@ main () {
   write_env
   write_cron
 
+  ifconfig lo0 inet6 unplumb
+
   svccfg -s network/rpc/bind setprop config/local_only=false
   svcadm refresh network/rpc/bind:default
 
   svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
   svcadm refresh application/pctce/actualiza-listas:default
-
-#  pcl_id=$(awk '/PCL/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
-#  if [[ -n $pcl_id ]]; then
-#    wget "http://16.0.96.20/repo/pctce/ventilacion/salida/${hostname}" -O /home/metro/sistema/V/CtrlPcl/${pcl_id}/Programaciones/Ventilacion/ProgVentilacion
-#  fi
 
   /usr/bin/chown -R metro:metro /home/metro
   /usr/bin/chmod 0700 /home/metro/.ssh
