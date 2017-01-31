@@ -249,6 +249,8 @@ main () {
 #  fi
 
   /usr/bin/chown -R metro:metro /home/metro
+  /usr/bin/chmod 0700 /home/metro/.ssh
+  /usr/bin/chmod 0600 /home/metro/.ssh/*
 }
 
 main
