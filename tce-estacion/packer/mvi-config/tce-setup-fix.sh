@@ -38,9 +38,6 @@ cat > usr/bin/xterm << EOF
 EOF
 chmod +x usr/bin/xterm
 
-# Add NFS share
-echo "share -F nfs -o rw /home/metro/ControlId" >> etc/dfs/dfstab
-
 # Clean locales
 rm -rf usr/share/locale
 rm -rf usr/share/X11/locale
@@ -63,10 +60,6 @@ ln -sf /home/metro/control.key usr/local/tce/tce
 ln -sf /usr/bin/tcsh usr/bin/csh
 ln -sf /usr/bin/sh usr/bin/bash
 
-# Link rlogin to ssh
-#ln -sf /usr/bin/ssh usr/bin/rsh
-#ln -sf /usr/bin/scp usr/bin/rcp
-
 # Copy closed source iprb driver
 /usr/bin/cp -p  /tmp/files/iprb kernel/drv/iprb
 chmod 0644 kernel/drv/iprb
@@ -78,8 +71,5 @@ cat /tmp/files/logadm-metro.conf >> etc/logadm.conf
 # Copy manual ftp binary while not tribblix package exists
 cp /tmp/files/ftpd/in.ftpd usr/sbin/in.ftpd
 cp /tmp/files/ftpd/ftp* etc/ftpd/
-
-# Copy straddr where rpc get hostname and not localhost
-#cp /tmp/files/straddr.so usr/lib/straddr.so.2
 
 sync
