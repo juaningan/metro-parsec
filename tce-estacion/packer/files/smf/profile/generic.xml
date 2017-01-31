@@ -47,6 +47,9 @@
   <service name='system/cron' version='1' type='service'>
     <instance name='default' enabled='true'/>
   </service>
+  <service name='system/name-service-cache' version='1' type='service'>
+    <instance name='default' enabled='true'/>
+  </service>
   <!--
       NFS services
   -->

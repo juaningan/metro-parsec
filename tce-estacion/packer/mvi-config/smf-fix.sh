@@ -43,6 +43,7 @@ chmod +x lib/svc/method/*
   system/cron.xml \
   system/boot-config.xml \
   system/identity.xml \
+  system/name-service-cache.xml \
   system/svc/restarter.xml \
   system/device/devices-local.xml \
   system/device/devices-audio.xml \
