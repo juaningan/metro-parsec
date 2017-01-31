@@ -19,6 +19,7 @@ TRIBlib-zlib.1.2.8.1
 TRIBsys-data-terminfo
 TRIBdrv-audio
 TRIBdrv-audio-audiohd
+TRIBaudio-audio-utilities
 TRIBdrv-net-iprb
 TRIBsys-net-ppp
 TRIBterminal-mrxvt
@@ -28,3 +29,11 @@ TRIBshell-tcsh
 TRIBexpect
 TRIBtcl
 TRIBsocat
+TRIBsvc-net-network-servers
+TRIBsvc-net-network-clients
+TRIBsvc-security-kerberos-5
+TRIBlib-security-trousers
+TRIBopenntpd
+TRIBsys-data-zoneinfo
+TRIBsvc-net-legacy
+TRIBnet-telnet

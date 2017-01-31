@@ -4,11 +4,3 @@ TRIBx11-info-clients.0.9o
 TRIBsys-kernel-dtrace
 TRIBdev-dtrace
 TRIBdev-dtrace-toolkit
-TRIBsvc-net-network-servers
-TRIBsvc-net-network-clients
-TRIBsvc-security-kerberos-5
-TRIBlib-security-trousers
-TRIBopenntpd
-TRIBsys-data-zoneinfo
-TRIBsvc-net-legacy
-TRIBnet-telnet
