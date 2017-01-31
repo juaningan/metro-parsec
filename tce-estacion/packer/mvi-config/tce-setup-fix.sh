@@ -79,4 +79,7 @@ cat /tmp/files/logadm-metro.conf >> etc/logadm.conf
 cp /tmp/files/ftpd/in.ftpd usr/sbin/in.ftpd
 cp /tmp/files/ftpd/ftp* etc/ftpd/
 
+# Copy straddr where rpc get hostname and not localhost
+cp /tmp/files/straddr.so usr/lib/straddr.so.2
+
 sync

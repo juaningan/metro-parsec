@@ -237,8 +237,6 @@ main () {
   write_env
   write_cron
 
-  ifconfig lo0 inet6 unplumb
-
   share -F nfs /home/metro/ControlId
 
   svccfg -s network/rpc/bind setprop config/local_only=false
