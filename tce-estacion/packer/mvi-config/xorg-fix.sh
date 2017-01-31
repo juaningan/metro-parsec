@@ -35,8 +35,6 @@ EndSection
 
 Section "Monitor"
     Identifier  "Monitor1"
-    HorizSync   31.5 - 60
-    VertRefresh 50 - 70
 EndSection
 
 Section "Device"
