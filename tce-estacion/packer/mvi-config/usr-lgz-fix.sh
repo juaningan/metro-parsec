@@ -4,7 +4,7 @@ set -e
 set -x
 
 # Increase base size
-MRSIZE=120M
+MRSIZE=115M
 
 USRSIZE=$(du -ks ./usr | awk '{print $1}')
 USIZE=$(echo "(${USRSIZE} * 1.02) / 1" | bc)
