@@ -19,6 +19,8 @@ TRIBlib-zlib.1.2.8.1
 TRIBsys-data-terminfo
 TRIBdrv-audio
 TRIBdrv-audio-audiohd
+TRIBdrv-audio-audiols
+TRIBdrv-audio-audiocmi
 TRIBaudio-audio-utilities
 TRIBdrv-net-iprb
 TRIBsys-net-ppp
