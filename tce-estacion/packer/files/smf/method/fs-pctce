@@ -68,7 +68,8 @@ check_disk () {
       echo "WARN: No existe fichero de GRUB" > /dev/msglog
       /sbin/umount ${diskdir}
       return 1
-    if [[ ! grep $(uname -n) ${diskdir}/boot/grub/menu.lst > /dev/null ]]; then
+    fi
+    if ! grep $(uname -n) ${diskdir}/boot/grub/menu.lst > /dev/null; then
       echo "WARN: Disco reutilizado de otro PCTCE" > /dev/msglog
       /sbin/umount ${diskdir}
       return 1
