@@ -64,6 +64,15 @@ check_disk () {
       /sbin/umount ${diskdir}
       return 1
     fi
+    if [[ ! -f ${diskdir}/boot/grub/menu.lst ]]; then
+      echo "WARN: No existe fichero de GRUB" > /dev/msglog
+      /sbin/umount ${diskdir}
+      return 1
+    if [[ ! grep $(uname -n) ${diskdir}/boot/grub/menu.lst > /dev/null ]]; then
+      echo "WARN: Disco reutilizado de otro PCTCE" > /dev/msglog
+      /sbin/umount ${diskdir}
+      return 1
+    fi
     if [[ ! -f ${diskdir}/persistence.ufs ]]; then
       echo "WARN: No existe fichero de persistencia" > /dev/msglog
       /sbin/umount ${diskdir}
