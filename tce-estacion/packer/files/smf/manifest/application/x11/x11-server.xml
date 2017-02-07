@@ -25,10 +25,10 @@
  CDDL HEADER END
 -->
 
-<service_bundle type='manifest' name='application-pctce-xserver'>
+<service_bundle type='manifest' name='application-x11-server'>
 
 <service
-  name='application/pctce/xserver'
+  name='application/x11/x11-server'
   type='service'
   version='1'>
 
@@ -50,6 +50,9 @@
     name='start'
     exec='/lib/svc/method/x11-server -d 0 -c %i %m'
     timeout_seconds='0'>
+    <method_context>
+      <method_credential user='metro' group='metro' privileges='all' />
+    </method_context>
   </exec_method>
 
   <exec_method
@@ -64,8 +67,8 @@
     <propval name='server' type='astring' value='/usr/bin/Xorg' />
     <propval name='server_args' type='astring' value='' />
     <property name='default_depth' type='integer' />
-    <propval name='tcp_listen' type='boolean' value='false' />
-    <propval name='display_0_on_console' type='boolean' value='true' />
+    <propval name='tcp_listen' type='boolean' value='true' />
+    <propval name='display_0_on_console' type='boolean' value='false' />
   </property_group>
 
   <stability value='Evolving' />

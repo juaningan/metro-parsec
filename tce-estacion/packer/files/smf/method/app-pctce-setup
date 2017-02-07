@@ -218,6 +218,25 @@ EOF
   svcadm restart system/cron
 }
 
+fix_audio () {
+  if [[ -f /dev/sound ]]; then
+    /usr/bin/chown metro:metro /dev/sound/*
+  fi
+  if [[ -f /dev/sound/0 ]]; then
+    /usr/bin/audioctl set-control -d /dev/sound/0 volume 100
+  fi
+  if [[ -f /dev/sound/1 ]]; then
+    ln -sf /dev/sound/1 /dev/audio2
+    /usr/bin/audioctl set-control -d /dev/sound/1 volume 100
+  fi
+}
+
+fix_permissions () {
+  /usr/bin/chown -R metro:metro /home/metro
+  /usr/bin/chmod 0700 /home/metro/.ssh
+  /usr/bin/chmod 0600 /home/metro/.ssh/*
+}
+
 main () {
   if check_online; then
     update_app
@@ -228,7 +247,7 @@ main () {
   detect_uis
   detect_cancela
   if ! detect_plano; then
-    svcadm disable application/pctce/xserver
+    svcadm disable application/x11/x11-server
   fi
   detect_tcti
   if detect_mbt; then
@@ -236,6 +255,8 @@ main () {
   fi
   write_env
   write_cron
+  fix_permissions
+  fix_audio
 
   share -F nfs /home/metro/ControlId
 
@@ -245,9 +266,6 @@ main () {
   svccfg -s application/pctce/actualiza-listas setenv PCTCE_ID ${pctce_id}
   svcadm refresh application/pctce/actualiza-listas:default
 
-  /usr/bin/chown -R metro:metro /home/metro
-  /usr/bin/chmod 0700 /home/metro/.ssh
-  /usr/bin/chmod 0600 /home/metro/.ssh/*
 }
 
 main
