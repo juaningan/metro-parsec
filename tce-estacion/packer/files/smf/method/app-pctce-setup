@@ -219,13 +219,13 @@ EOF
 }
 
 fix_audio () {
-  if [[ -f /dev/sound ]]; then
+  if [[ -e /dev/sound ]]; then
     /usr/bin/chown metro:metro /dev/sound/*
   fi
-  if [[ -f /dev/sound/0 ]]; then
+  if [[ -e /dev/sound/0 ]]; then
     /usr/bin/audioctl set-control -d /dev/sound/0 volume 100
   fi
-  if [[ -f /dev/sound/1 ]]; then
+  if [[ -e /dev/sound/1 ]]; then
     ln -sf /dev/sound/1 /dev/audio2
     /usr/bin/audioctl set-control -d /dev/sound/1 volume 100
   fi
@@ -235,6 +235,7 @@ fix_permissions () {
   /usr/bin/chown -R metro:metro /home/metro
   /usr/bin/chmod 0700 /home/metro/.ssh
   /usr/bin/chmod 0600 /home/metro/.ssh/*
+  /usr/bin/chmod 0777 /home/metro/ControlId/Eventos
 }
 
 main () {
