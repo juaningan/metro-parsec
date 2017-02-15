@@ -1,0 +1,22 @@
+resources:
+- name: git-metro-parsec
+  type: git
+  source:
+    uri: https://github.com/juaningan/metro-parsec
+    branch: master
+
+
+jobs:
+- name: hello-world
+  plan:
+  - get: git-metro-parsec
+    trigger: true
+  - task: say-hello
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: hashicorp/packer}
+      run:
+        path: find
+        args: ["/", "-name", "TODO"]
