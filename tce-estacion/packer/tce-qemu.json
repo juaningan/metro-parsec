@@ -1,0 +1,97 @@
+{
+  "builders": [
+    {
+      "type": "qemu",
+      "accelerator": "kvm",
+      "boot_command": [
+        "<down><down><enter>",
+        "<wait10><wait10><wait10>",
+        "<wait10><wait10><wait10>",
+        "root<enter>",
+        "tribblix<enter>",
+        "ifconfig vioif0 plumb<enter>",
+        "ifconfig vioif0 auto-dhcp primary<enter>",
+        "echo 'nameserver 8.8.8.8' > /etc/resolv.conf<enter>",
+        "sed -i 's/PermitRootLogin\\ no/PermitRootLogin\\ yes/g' /etc/ssh/sshd_config<enter>",
+        "svcadm restart ssh<enter>"
+      ],
+      "boot_wait": "5s",
+      "headless": "{{ user `headless` }}",
+      "iso_checksum": "081e8fa775a48c6fec1f0a062d14ae36",
+      "iso_checksum_type": "md5",
+      "iso_url": "http://pkgs.tribblix.org/iso/tribblix-0m18.iso",
+      "output_directory": "packer-{{ user `template` }}-virtualbox",
+      "qemuargs": [
+        [ "-machine", "type=pc,accel=kvm,usb=off" ],
+        [ "-cpu", "Penryn"],
+        [ "-m", "{{ user `memory` }}"]
+      ],
+      "ssh_password": "tribblix",
+      "ssh_port": 22,
+      "ssh_username": "root",
+      "ssh_wait_timeout": "10000s",
+      "vm_name": "{{ user `template` }}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "mvi-config",
+      "destination": "/tmp"
+    },
+    {
+      "type": "file",
+      "source": "files",
+      "destination": "/tmp"
+    },
+    {
+      "environment_vars": [
+        "all_proxy={{ user `proxy` }}",
+        "http_proxy={{ user `proxy` }}",
+        "https_proxy={{ user `proxy` }}",
+        "no_proxy={{ user `no_proxy` }}",
+        "timestamp={{ user `build_timestamp` }}"
+      ],
+      "scripts": [
+        "scripts/mvi.sh",
+        "scripts/tce-to-disk.sh"
+      ],
+      "type": "shell"
+    },
+    {
+      "destination": "builds/tce-estacion.iso",
+      "direction": "download",
+      "source": "/tmp/mvi.iso",
+      "type": "file"
+    }
+  ],
+  "post-processors": [
+    [
+      {
+        "type": "artifice",
+        "files": ["builds/tce-estacion.iso"]
+      },
+      {
+        "type": "shell-local",
+        "inline": [
+          "/usr/bin/7z e -y -obuilds $1 platform/i86pc/boot_archive platform/i86pc/kernel/unix",
+          "mv builds/boot_archive builds/boot_archive.gz",
+          "gunzip builds/boot_archive.gz; mv builds/boot_archive builds/boot_archive-{{ user `build_timestamp` }}"
+        ]
+      },
+      {
+        "type": "artifice",
+        "files": ["builds/boot_archive-{{ user `build_timestamp` }}", "builds/unix"]
+      }
+    ]
+  ],
+  "variables": {
+    "cpus": "1",
+    "build_timestamp": "{{isotime \"20060102150405\"}}",
+    "headless": "true",
+    "memory": "2048",
+    "template": "tce-builder",
+    "proxy": "{{ env `all_proxy` }}",
+    "no_proxy": "{{ env `no_proxy` }}"
+  }
+}
