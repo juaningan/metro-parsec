@@ -39,7 +39,7 @@ Type=oneshot
 NETWORK_ENV
 
 # Install Consul
-CONSUL_VERSION='0.7.2'
+CONSUL_VERSION='0.7.5'
 wget "https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_${ARCH}.zip" -O consul.zip
 unzip consul.zip -d usr/local/bin
 rm -f consul.zip
@@ -54,7 +54,7 @@ cp -v ${SCRIPT_DIR}/consul/consul.service usr/lib/systemd/system/.
 systemd-nspawn -D ${ROOT_DIR} systemctl enable consul.service
 
 # Install consul-template
-CONSULTEMPLATE_VERSION='0.18.0-rc2'
+CONSULTEMPLATE_VERSION='0.18.1'
 wget "https://releases.hashicorp.com/consul-template/${CONSULTEMPLATE_VERSION}/consul-template_${CONSULTEMPLATE_VERSION}_linux_${ARCH}.zip" -O consul-template.zip
 unzip consul-template.zip -d usr/local/bin
 rm -f consul-template.zip
@@ -80,7 +80,6 @@ rm -rf usr/share/info
 rm -rf usr/share/doc
 rm -rf etc/hostname
 
-#tar -cJf "/tmp/tce-ubuntu-${ARCH}-16.04.tar.xz" -C ${ROOT_DIR} .
 tar -czf "/tmp/ubuntu-${ARCH}-${RELEASE}.tar.gz" -C ${ROOT_DIR} .
 
 rm -rf ${ROOT_DIR}
