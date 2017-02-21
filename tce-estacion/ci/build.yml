@@ -17,6 +17,8 @@ jobs:
       image_resource:
         type: docker-image
         source: {repository: hashicorp/packer}
+      inputs:
+        - name: git-metro-parsec
       run:
         path: find
-        args: ["/", "-name", "TODO"]
+        args: ["/tmp", "-name", "TODO"]
