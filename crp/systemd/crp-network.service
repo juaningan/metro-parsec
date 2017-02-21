@@ -1,0 +1,11 @@
+[Unit]
+Description=CRP Network
+Before=network-pre.target
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ln -sf /srv/crp/systemd/network/ipvlan-%H.network /etc/systemd/network/ipvlan.network
+
+[Install]
+WantedBy=network.target

@@ -1,0 +1,18 @@
+[Unit]
+Description=CRP (SICO CRP service)
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=crp
+Group=crp
+WorkingDirectory=/srv/crp
+ExecStartPre=/usr/bin/wget http://16.0.96.20:3000/metro/crp-configs/archive/master.tar.gz --output-document=/srv/crp/crp-configs.tar.gz
+ExecStartPre=/usr/bin/tar -xzvf /srv/crp/crp-configs.tar.gz --strip=1
+ExecStartPre=/usr/bin/ln -sf /srv/crp/ConfigCRP-%H /srv/crp/ConfigCRP
+ExecStart=/usr/local/bin/crp_main
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
