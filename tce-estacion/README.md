@@ -26,7 +26,7 @@ Como el fabricante tiene un procedimiento propio donde manipula ficheros directa
 ## Entorno
 Durante el arranque, una vez que ha extraído las configuraciones en el lugar adecuado, se realizan una serie de pasos que autodetectan y definen variables de entorno. Se escriben en el fichero: `/home/metro/environment`
 
-Al tratarse de una detección basado en ficheros dados por terceros es posible que no estén cubiertos todos los casos. Es un proceso propenso a errores. Por lo que es importante saber que se hace en cada paso y como se puede remediar un error. Las variables que se detectan son las siguientes:
+Al tratarse de una detección basada en ficheros dados por terceros es posible que no estén cubiertos todos los casos. Es un proceso propenso a errores. Por lo que es importante saber que se hace en cada paso y como se puede remediar un error. Las variables que se detectan son las siguientes:
 * **Codigo administrativo (id)**
  Se busca en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Debe devolver un valor único de 5 cifras.
 * **Tipo de cancela**
