@@ -13,7 +13,7 @@ Por lo tanto, es necesario que el equipo cumpla uno de los dos requisitos:
 Si el sistema cumple uno de los dos requisitos: arranca y comprueba si existe disco físico en la máquina. Si existe, lo prepara o actualiza.
 
 ## Configuración
-Todos los equipos, en el momento del arranque, son iguales y deben cargar su configuración. Esta carga se puede realizar, igual que la instalación, desde red o desde disco físico. Será requisito necesario que uno de los dos modos esté disponible.
+Todos los equipos, en el momento del arranque, son genéricos, por lo que  deben cargar su propia configuración. Esta carga se puede realizar desde red o desde disco físico. Será requisito necesario que uno de los dos modos esté disponible.
 
 ### Repositorio git
 Todas las configuraciones se centralizan en un repositorio git:
