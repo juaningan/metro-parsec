@@ -3,9 +3,9 @@
 Aplicación gráfica que concentra las diferentes acciones que se pueden realizar en cada estación. Se ejecuta sobre un sistema basado en el kernel Illumos.
 
 ## Instalación
-El sistema no se instala si no que en cada reinicio se carga como si fuese una nueva instalación. Para ello carga, o bien por red, o bien desde el disco físico, un fichero boot_archive donde se encuentra todo lo necesario para funcionar.
+El sistema no se instala si no que en cada reinicio se carga como si fuese una nueva instalación. Para ello carga, o bien por red, o bien desde el disco físico, un fichero `boot_archive` donde se encuentra todo lo necesario para funcionar.
 
-Por lo tanto, es necesario que el equipo cumpla uno de los dos requisitos: 
+Por lo tanto, es necesario que el equipo cumpla uno estos dos requisitos: 
 * Tener conectividad de red y acceso al servidor adecuado
 * Tener un disco previamente preparado
 
