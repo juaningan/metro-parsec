@@ -33,3 +33,5 @@ Al tratarse de una detección basada en ficheros dados por terceros es posible q
 * **TCTI y tipo:** Primero mira si tiene TCTI configurado buscando la cadena `tcti` en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Si la tiene comprueba que exista la entrada adecuada en el `/etc/hosts`: *tcti+hostname*. Y por último comprueba si en *tcti+hostname* hay un servicio escuchando en el puerto 23. Si no lo hay es TCTI nuevo y si lo hay es antiguo.
 * **MBT:** Busca la cadena `concen-mbt-ppp` en el `/etc/hosts` y de ahí extrae la IP. Además necesitamos saber el ID único de la MBT y este lo busca en el directorio `/home/metro/sistema/V/Mbt/MBT*`. Si no existiese el directorio daría error.
 
+Todo este proceso se lanza como un servicio SMF de Solaris, se puede ver el script de ejecución en `/lib/svc/method/app-pctce-setup` y deja un registro de salida en el fichero: `/var/svc/log/application-pctce-setup:default.log`.
+
