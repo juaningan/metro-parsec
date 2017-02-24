@@ -24,7 +24,7 @@ Los cambios en las configuraciones deberían de hacerse directamente sobre el gi
 Como el fabricante tiene un procedimiento propio donde manipula ficheros directamente en el sistema se ha creado un script que carga las últimas modificaciones realizadas. Se realiza una vez al día, por la noche. Estas modificaciones se identifican en el repositorio git con el usuario "repomirror"
 
 ## Entorno
-Durante el arranque, una vez que ha extraído las configuraciones en el lugar adecuado, se realizan una serie de pasos que autodetectan y definirán variables de entorno. Se escriben en el fichero: `/home/metro/environment`
+Durante el arranque, una vez que ha extraído las configuraciones en el lugar adecuado, se realizan una serie de pasos que autodetectan y definen variables de entorno. Se escriben en el fichero: `/home/metro/environment`
 
 Al tratarse de una detección basado en ficheros dados por terceros es posible que no estén cubiertos todos los casos. Es un proceso propenso a errores. Por lo que es importante saber que se hace en cada paso y como se puede remediar un error. Las variables que se detectan son las siguientes:
 * **Codigo administrativo (id)**
