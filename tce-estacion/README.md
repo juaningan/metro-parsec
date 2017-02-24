@@ -21,7 +21,7 @@ http://16.0.96.20:3000/metro/pctce-configs
 Los cambios en las configuraciones deberían de hacerse directamente sobre el git, con el usuario adecuado. 
 
 #### tce2git
-Como el fabricante tiene un procedimiento propio donde manipula ficheros directamente en el sistema se ha creado un script que carga las últimas modificaciones realizadas. Se realiza una vez al día, por la noche. Estas modificaciones se identifican por realizarse en el repositorio git con el usuario "repomirror"
+Como el fabricante tiene un procedimiento propio donde manipula ficheros directamente en el sistema se ha creado un script que carga las últimas modificaciones realizadas. Se realiza una vez al día, por la noche. Estas modificaciones se identifican en el repositorio git con el usuario "repomirror"
 
 ## Entorno
 Durante el arranque, una vez que ha extraído las configuraciones en el lugar adecuado, se realizan una serie de pasos que autodetectan y definirán variables de entorno. Se escriben en el fichero: `/home/metro/environment`
