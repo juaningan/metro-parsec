@@ -27,14 +27,9 @@ Como el fabricante tiene un procedimiento propio donde manipula ficheros directa
 Durante el arranque, una vez que ha extraído las configuraciones en el lugar adecuado, se realizan una serie de pasos que autodetectan y definen variables de entorno. Se escriben en el fichero: `/home/metro/environment`
 
 Al tratarse de una detección basada en ficheros dados por terceros es posible que no estén cubiertos todos los casos. Es un proceso propenso a errores. Por lo que es importante saber que se hace en cada paso y como se puede remediar un error. Las variables que se detectan son las siguientes:
-* **Codigo administrativo (id)**
- Se busca en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Debe devolver un valor único de 5 cifras.
-* **Tipo de cancela**
- Busca el puerto configurado para la `CANCELA` en el fichero `/home/metro/sistema/V/CfgConfig.CFG` y compara si es menor o mayor que 16. Si es menor es por UIS, si es mayor es por Maestra.
-* **Plano**
- Busca la cadena `UI` dentro del fichero `/home/metro/sistema/V/CfgUI.CFG`. En los equipos sin plano no existe.
-* **TCTI y tipo**
- Primero mira si tiene TCTI configurado buscando la cadena `tcti` en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Si la tiene comprueba que exista la entrada adecuada en el `/etc/hosts`: *tcti+hostname*. Y por último comprueba si en *tcti+hostname* hay un servicio escuchando en el puerto 23. Si no lo hay es TCTI nuevo y si lo hay es antiguo.
-* **MBT**
- Busca la cadena `concen-mbt-ppp` en el `/etc/hosts` y de ahí extrae la IP. Además necesitamos saber el ID único de la MBT y este lo busca en el directorio `/home/metro/sistema/V/Mbt/MBT*`. Si no existiese el directorio daría error.
+* **Codigo administrativo (id):** Se busca en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Debe devolver un valor único de 5 cifras.
+* **Tipo de cancela:** Busca el puerto configurado para la `CANCELA` en el fichero `/home/metro/sistema/V/CfgConfig.CFG` y compara si es menor o mayor que 16. Si es menor es por UIS, si es mayor es por Maestra.
+* **Plano:** Busca la cadena `UI` dentro del fichero `/home/metro/sistema/V/CfgUI.CFG`. En los equipos sin plano no existe.
+* **TCTI y tipo:** Primero mira si tiene TCTI configurado buscando la cadena `tcti` en el fichero `/home/metro/sistema/V/CfgConfig.CFG`. Si la tiene comprueba que exista la entrada adecuada en el `/etc/hosts`: *tcti+hostname*. Y por último comprueba si en *tcti+hostname* hay un servicio escuchando en el puerto 23. Si no lo hay es TCTI nuevo y si lo hay es antiguo.
+* **MBT:** Busca la cadena `concen-mbt-ppp` en el `/etc/hosts` y de ahí extrae la IP. Además necesitamos saber el ID único de la MBT y este lo busca en el directorio `/home/metro/sistema/V/Mbt/MBT*`. Si no existiese el directorio daría error.
 
