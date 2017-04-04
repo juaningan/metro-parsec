@@ -36,6 +36,7 @@ create_dir () {
 
 detect_disk () {
   diskless=$(prtconf -v /devices | sed -n '/diskless/{;n;p;}' | cut -f 2 -d \')
+  rebuild=$(prtconf -v /devices | sed -n '/rebuild/{;n;p;}' | cut -f 2 -d \')
   if [[ $diskless ]]; then
     echo "INFO: Forzado modo sin disco" > /dev/msglog
     return 1
@@ -59,6 +60,12 @@ mount_diskless () {
 check_disk () {
   echo "INFO: Comprobando el estado del disco" > /dev/msglog
   if /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir} ; then
+    if [[ $rebuild ]]; then
+      echo "INFO: Forzada reconstruccion del disco" > /dev/msglog
+      rebuild=""
+      /sbin/umount ${diskdir}
+      return 1
+    fi
     if [[ ! -f ${diskdir}/metadata.json ]]; then
       echo "WARN: No existe fichero de metadatos" > /dev/msglog
       /sbin/umount ${diskdir}

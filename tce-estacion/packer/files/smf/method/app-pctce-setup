@@ -66,6 +66,9 @@ deploy_app () {
 
   echo "+" > /home/metro/.rhosts
   chmod 0600 /home/metro/.rhosts
+
+  rm -rf /home/metro/sun
+  ln -sf /usr/local/bin /home/metro/sun
 }
 
 detect_id () {

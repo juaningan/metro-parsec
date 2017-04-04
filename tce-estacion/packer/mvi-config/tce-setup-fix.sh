@@ -66,6 +66,7 @@ chmod 0644 kernel/drv/iprb
 chown root:sys kernel/drv/iprb
 
 # Put logadm rules in etc/logadm.conf
+sed 's/^smf_logs.*/smf_logs \/var\/svc\/log\/*.log -C 3 -s 100k -c/g' etc/logadm.conf > logadmtmp && mv logadmtmp etc/logadm.conf
 cat /tmp/files/logadm-metro.conf >> etc/logadm.conf
 
 # Copy manual ftp binary while not tribblix package exists
