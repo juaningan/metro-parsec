@@ -21,6 +21,7 @@ TRIBdrv-audio
 TRIBdrv-audio-audiohd
 TRIBdrv-audio-audiols
 TRIBdrv-audio-audiocmi
+TRIBdrv-audio-audio810
 TRIBaudio-audio-utilities
 TRIBdrv-net-iprb
 TRIBsys-net-ppp
