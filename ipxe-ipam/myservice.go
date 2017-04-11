@@ -15,8 +15,8 @@ import (
 var _ time.Time
 var _ xml.Name
 
-type Ipaddresslist struct {
-  XMLName xml.Name `xml:"urn:IPM_SOAP ip_address_list"`
+type GetIpaddresslist struct {
+  XMLName xml.Name `xml:"ip_address_list"`
 
   Input []Ipaddresslistin
 }
@@ -33,9 +33,15 @@ type Ipaddresslistin struct {
 	Limit        string `xml:"limit,omitempty"`
 }
 
-type Ipaddresslistout struct {
-	XMLName xml.Name `xml:"urn:IPM_SOAP ip_address_listResponse"`
+type GetIpaddresslistResponse struct {
+  GetIpaddresslistResult *ArrayOfIpaddresslistResponse `xml:"output,omitempty"`
+}
 
+type ArrayOfIpaddresslistResponse struct {
+  IpaddresslistResponse []*IpaddresslistResponse `xml:"item,omitempty"`
+}
+
+type IpaddresslistResponse struct {
 	Ipfreeipid          string `xml:"ip_free_ip_id,omitempty"`
 	Type_               string `xml:"type,omitempty"`
 	Freestartipaddr     string `xml:"free_start_ip_addr,omitempty"`
@@ -101,10 +107,6 @@ type Ipaddresslistout struct {
 	Errno               string `xml:"errno,omitempty"`
 }
 
-type Ipaddresslistoutarray struct {
-	XMLName xml.Name `xml:"urn:IPM_SOAP ip_address_listResponse"`
-}
-
 type IPMPort struct {
 	client *SOAPClient
 }
@@ -120,9 +122,9 @@ func NewIPMPort(url string, tls bool) *IPMPort {
 	}
 }
 
-func (service *IPMPort) Ipaddresslist(request Ipaddresslist) (*Ipaddresslistoutarray, error) {
-	response := new(Ipaddresslistoutarray)
-	err := service.client.Call("urn:ip_address_list", request, response)
+func (service *IPMPort) GetIpaddresslist(request *GetIpaddresslist) (*GetIpaddresslistResponse, error) {
+	response := &GetIpaddresslistResponse{}
+	err := service.client.Call("", request, response)
 	if err != nil {
 		return nil, err
 	}
