@@ -1,0 +1,11 @@
+[Unit]
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/bin/ipxe-ipam
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

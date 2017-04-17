@@ -11,10 +11,10 @@ import (
 )
 
 const ipxeBootScript = `#!ipxe
-set coreos-version {{.Version}}
-set base-url http://{{.BaseUrl}}/images/amd64-usr/${coreos-version}
-kernel ${base-url}/coreos_production_pxe.vmlinuz -B hostname={{.Hostname}},ipaddress={{.IP}},diskless={{.Diskless}},rebuild={{.Rebuild}}
-initrd ${base-url}/coreos_production_pxe_image.cpio.gz
+set channel {{.Channel}}
+set base-url http://{{.BaseUrl}}/repo/pctce/${channel}
+kernel ${base-url}/platform/i86pc/kernel/unix -B hostname='{{.Hostname}}',ipaddress='{{.IP}}'
+module ${base-url}/platform/i86pc/boot_archive
 boot
 `
 
@@ -58,7 +58,7 @@ func ipxeBootScriptServer(w http.ResponseWriter, r *http.Request) {
   }
   data := map[string]string{
     "BaseUrl": "16.0.96.20",
-    "Version": "stable",
+    "Channel": "latest",
     "Hostname": hostname,
     "IP": remote_ip,
     "Diskless": "false",
