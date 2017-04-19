@@ -18,7 +18,7 @@ TRIBsvc-hal
 TRIBsvc-resource-pools
 TRIBsys-lib-freetype-2.0.9o
 TRIBsys-libdbus.0.9o
-TRIBcompress-bzip2.1.0.6.0
-TRIBlib-graphics-pixman.0.32.6.0
+TRIBcompress-bzip2
+TRIBlib-graphics-pixman
 TRIBx11-libxrender.0.9o
 TRIBdiagnostic-scanpci.0.9o

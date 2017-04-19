@@ -1,6 +1,6 @@
 TRIBcompat-ucb
-TRIBimage-libjpeg.1.5.1.0
-TRIBimage-libpng.1.4.19.1
+TRIBimage-libjpeg
+TRIBimage-libpng
 TRIBx11-lib-toolkit-libxt.0.9o
 TRIBx11-libx11.0.9o
 TRIBx11-libxext.0.9o
@@ -12,10 +12,10 @@ TRIBx11-libxau.0.9o
 TRIBx11-libice.0.9o
 TRIBx11-libsm.0.9o
 TRIBx11-libxdmcp.0.9o
-TRIBgcc4runtime.4.8.5.0
+TRIBgcc4runtime
 TRIBx11-libxevie.0.9o
 TRIBx11-libxscrnsaver.0.9o
-TRIBlib-zlib.1.2.8.1
+TRIBlib-zlib
 TRIBsys-data-terminfo
 TRIBdrv-audio
 TRIBdrv-audio-audiohd
