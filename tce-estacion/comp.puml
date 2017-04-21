@@ -1,0 +1,31 @@
+@startuml
+title TCE\n Components Diagram
+skinparam componentStyle uml2
+
+actor usuario
+
+component packer
+component gitrepo
+component webserver
+component ipxe
+component tftp
+component ipam
+component tce
+component gitea
+component tce2git
+component fronts
+
+interface dhcp
+interface UI
+interface soap
+interface udp69
+
+[ipam] - dhcp
+[ipam] - soap
+[ipam] - UI
+usuario -> UI
+[tce] -> dhcp
+[tce] -> udp69
+[ipxe] -> soap
+[tftp] - udp69
+@enduml
