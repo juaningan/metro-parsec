@@ -11,8 +11,8 @@ Por lo tanto, es necesario que el equipo cumpla uno estos dos requisitos:
 
 ## Preparación del disco
 Al arrancar comprueba si existe disco físico en la máquina. Si existe, lo prepara o actualiza.  
-Es posible forzar el funcionamiento sin discosi se el pasa el parámetro `diskless=true` al kernel durante el arranque. 
-Es posible forzar la preparación del disco si se le pasa el parámetro `rebuild=true` al kerel durante el arranque.
+Es posible forzar el funcionamiento sin disco si se le pasa el parámetro `diskless=true` al kernel durante el arranque.  
+Es posible forzar la preparación del disco si se le pasa el parámetro `rebuild=true` al kernel durante el arranque.
 
 ## Configuración
 Todos los equipos, en el momento del arranque, son genéricos, por lo que  deben cargar su propia configuración. Esta carga se puede realizar desde red o desde disco físico. Será requisito necesario que uno de los dos modos esté disponible.
