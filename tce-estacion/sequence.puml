@@ -1,0 +1,30 @@
+@startuml
+participant TCE
+participant IPAM
+participant tftp
+participant ipxeipam as "ipxe-ipam" 
+participant web
+participant gitea
+
+TCE->IPAM : DHCP request
+IPAM->TCE : DHCP response
+note right : [ip, next-server, filename]
+TCE->tftp : iPXE chainload (filename) request
+tftp->TCE
+TCE->IPAM : DHCP request
+IPAM->TCE : DHCP response
+note right : [ip]
+TCE->ipxeipam : iPXE script request
+ipxeipam->IPAM : hostname request
+IPAM->ipxeipam
+ipxeipam->TCE : iPXE script response
+TCE->web : kernel + boot_archive request
+web->TCE
+TCE->TCE : boot/prepare_disk
+TCE->web : update boot_archive in disk
+web->TCE
+TCE->gitea : configurations download
+gitea->TCE
+TCE->TCE : detect environment
+TCE->TCE: launch TCE
+@enduml
