@@ -8,6 +8,7 @@ import (
   "log"
   "text/template"
   "strings"
+  "github.com/hashicorp/consul/api"
 )
 
 const ipxeBootScript = `#!ipxe
@@ -26,6 +27,33 @@ func main() {
 
   log.Fatal(http.ListenAndServe("0.0.0.0:4777", nil))
 
+}
+
+func consul(hostname, key, fallback string) string {
+  // Query consul KV
+  config := api.DefaultConfig()
+  config.Address = "16.0.96.20:8500"
+  client, err := api.NewClient(config)
+  if err != nil {
+    panic(err)
+  }
+
+  // Get a handle to the KV API
+  kv := client.KV()
+  
+  // Lookup the pair
+  host_path := fmt.Sprintf("pctce/%s/%s", hostname, key)
+  log.Printf("Query consul for value of %s", host_path)
+  pair, _, err := kv.Get(host_path, nil)
+  if err != nil {
+    panic(err)
+  }
+  if pair == nil {
+    log.Printf("%s not found, fallback to %s", host_path, fallback)
+    return fallback
+  }
+  log.Printf("%s is %s", host_path, pair.Value)
+  return string(pair.Value)
 }
 
 func ipxeBootScriptServer(w http.ResponseWriter, r *http.Request) {
@@ -61,8 +89,8 @@ func ipxeBootScriptServer(w http.ResponseWriter, r *http.Request) {
     "Channel": "latest",
     "Hostname": hostname,
     "IP": remote_ip,
-    "Diskless": "false",
-    "Rebuild": "false",
+    "Diskless": consul(hostname, "diskless", "false"),
+    "Rebuild": consul(hostname, "rebuild", "false"),
   }
   err = t.Execute(w, data)
   if err != nil {
