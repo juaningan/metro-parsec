@@ -39,14 +39,19 @@ node "parsec" {
   [tftp\nUDP:69] as TFTP69
 }
 
+cloud "internet" {
+  [github.com]
+  [tribblix.org]
+}
+
 node "CI" {
+  [concourse.ci]
   [packer]
-  [github]
 }
 
 Operador -> IPAM80
 Operador -> WEBMIN80
-Desarrollador -> [packer]
+Desarrollador -> github.com : cambios
 [tce] -> DHCP
 [tce] -> TFTP69
 [tce] -> WEB80
@@ -58,4 +63,7 @@ WEBMIN80 -> CONSUL8500
 [tce2git] -> FRONTS22
 [tce2git] -> GITEA22
 [packer] -> WEB22
+[concourse.ci] -> [github.com] : observa
+[concourse.ci] -> [packer] : ejecuta
+[packer] -> [tribblix.org]
 @enduml
