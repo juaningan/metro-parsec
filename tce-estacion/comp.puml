@@ -2,30 +2,60 @@
 title TCE\n Components Diagram
 skinparam componentStyle uml2
 
-actor usuario
+actor Operador
+actor Desarrollador
 
-component packer
-component gitrepo
-component webserver
-component ipxe
-component tftp
-component ipam
-component tce
-component gitea
-component tce2git
-component fronts
+cloud "Efficient" {
+  [DHCP]
+  [ipam\nTCP:80] as IPAM80
+}
 
-interface dhcp
-interface UI
-interface soap
-interface udp69
+node "repomirror" {
+  [tce2git]
+  [webserver\nHTTP:80] as WEB80
+  [webserver\nSSH:22] as WEB22
+  [gitea\nHTTP:3000] as GITEA3000
+  [gitea\nGIT:22] as GITEA22
+  [ipxe-ipam\nHTTP:4777] as IPXE4777
+}
 
-[ipam] - dhcp
-[ipam] - soap
-[ipam] - UI
-usuario -> UI
-[tce] -> dhcp
-[tce] -> udp69
-[ipxe] -> soap
-[tftp] - udp69
+node "consul" {
+  [consul\nHTTP:8500] as CONSUL8500
+}
+
+cloud "fronts" {
+  [fronts\nSSH:22] as FRONTS22
+}
+
+cloud "TCEs" {
+  [tce]
+}
+
+cloud "webmin" {
+  [webmin\nHTTP:80] as WEBMIN80
+}
+
+node "parsec" {
+  [tftp\nUDP:69] as TFTP69
+}
+
+node "CI" {
+  [packer]
+  [github]
+}
+
+Operador -> IPAM80
+Operador -> WEBMIN80
+Desarrollador -> [packer]
+[tce] -> DHCP
+[tce] -> TFTP69
+[tce] -> WEB80
+[tce] -> IPXE4777
+[tce] -> GITEA3000
+IPXE4777 -> IPAM80
+IPXE4777 -> CONSUL8500
+WEBMIN80 -> CONSUL8500
+[tce2git] -> FRONTS22
+[tce2git] -> GITEA22
+[packer] -> WEB22
 @enduml
