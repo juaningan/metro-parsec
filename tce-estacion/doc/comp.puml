@@ -4,6 +4,7 @@ skinparam componentStyle uml2
 
 actor Operador
 actor Desarrollador
+actor tce2git
 
 cloud "Efficient" {
   [DHCP]
@@ -11,11 +12,8 @@ cloud "Efficient" {
 }
 
 node "repomirror" {
-  [tce2git]
-  [webserver\nHTTP:80] as WEB80
-  [webserver\nSSH:22] as WEB22
-  [gitea\nHTTP:3000] as GITEA3000
-  [gitea\nGIT:22] as GITEA22
+  [webserver\nHTTP:80\nSCP:22] as WEB80
+  [gitea\nHTTP:3000\nGIT:22] as GITEA
   [ipxe-ipam\nHTTP:4777] as IPXE4777
 }
 
@@ -24,7 +22,7 @@ node "consul" {
 }
 
 cloud "fronts" {
-  [fronts\nSSH:22] as FRONTS22
+  [fronts\nSCP:22] as FRONTS22
 }
 
 cloud "TCEs" {
@@ -40,8 +38,11 @@ node "parsec" {
 }
 
 cloud "internet" {
-  [github.com]
   [tribblix.org]
+}
+
+cloud "LDAP" {
+  [LDAP\nTCP:389] as LDAP389
 }
 
 node "CI" {
@@ -51,19 +52,19 @@ node "CI" {
 
 Operador -> IPAM80
 Operador -> WEBMIN80
-Desarrollador -> github.com : cambios
+Desarrollador -> GITEA : cambios
 [tce] -> DHCP
 [tce] -> TFTP69
 [tce] -> WEB80
 [tce] -> IPXE4777
-[tce] -> GITEA3000
 IPXE4777 -> IPAM80
 IPXE4777 -> CONSUL8500
 WEBMIN80 -> CONSUL8500
-[tce2git] -> FRONTS22
-[tce2git] -> GITEA22
-[packer] -> WEB22
-[concourse.ci] -> [github.com] : observa
+tce2git -> FRONTS22
+tce2git -> GITEA
+GITEA -> LDAP389
+[packer] -> WEB80
+[concourse.ci] -> GITEA : observa
 [concourse.ci] -> [packer] : ejecuta
-[packer] -> [tribblix.org]
+[packer] -u-> [tribblix.org]
 @enduml
