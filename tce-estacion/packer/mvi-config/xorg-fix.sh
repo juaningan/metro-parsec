@@ -28,13 +28,15 @@ EndSection
 Section "InputDevice"
     Identifier  "Mouse1"
     Driver      "mouse"
-    #Option "Protocol"    "ImPS/2"
     Option "Protocol"    "VUID"
     Option "Device"      "/dev/mouse"
 EndSection
 
 Section "Monitor"
     Identifier  "Monitor1"
+    HorizSync   30-82
+    VertRefresh 56-76
+    Option "PreferredMode" "1024x768"
 EndSection
 
 Section "Device"

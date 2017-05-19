@@ -59,9 +59,16 @@ deploy_app () {
   ln -sf /home/metro/hosts /etc/inet/hosts
   ln -sf /home/metro/services /etc/inet/services
 
+  # Crea directorio de control de emergencia por si no esta en el backup
   cem_id=$(awk '/CONTROL_EMERGENCIA/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
   if [[ -n $cem_id ]]; then
     mkdir -p /home/metro/sistema/V/CtrlEmergencia/${cem_id}
+  fi
+
+  # Crea directorio de displaypcl por si no esta en el backup
+  dis_id=$(awk '/DISPLAYPCL/ {print $1}' /home/metro/sistema/V/CfgEquipo.CFG)
+  if [[ -n $dis_id ]]; then
+    mkdir -p /home/metro/sistema/V/DisplayPCL/${dis_id}
   fi
 
   echo "+" > /home/metro/.rhosts
