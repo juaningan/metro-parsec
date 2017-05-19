@@ -99,7 +99,7 @@ detect_uis () {
 }
 
 detect_cancela () {
-  cancela_port=$(/usr/bin/awk '/CANCELA/ {print $3}' /home/metro/sistema/V/CfgEquipo.CFG | /usr/bin/sed 's/^0*//')
+  cancela_port=$(/usr/bin/awk '/CAN[0-9]+/ {print $3}' /home/metro/sistema/V/CfgEquipo.CFG | /usr/bin/sed 's/^0*//')
   if [[ ! $cancela_port ]]; then
     echo "WARN: Sin cancela definida en CfgEquipo.CFG" > /dev/msglog
     cancela="false"
