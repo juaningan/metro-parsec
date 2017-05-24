@@ -54,7 +54,6 @@ detect_disk () {
 mount_diskless () {
   /usr/sbin/mount -F tmpfs swap ${diskdir}
   /usr/sbin/mount -F tmpfs swap /home/metro
-  cp /metadata.json ${diskdir}/metadata.json
 }
 
 check_disk () {
@@ -63,11 +62,6 @@ check_disk () {
     if [[ $rebuild == 'true' ]]; then
       echo "INFO: Forzada reconstruccion del disco" > /dev/msglog
       rebuild=""
-      /sbin/umount ${diskdir}
-      return 1
-    fi
-    if [[ ! -f ${diskdir}/metadata.json ]]; then
-      echo "WARN: No existe fichero de metadatos" > /dev/msglog
       /sbin/umount ${diskdir}
       return 1
     fi
@@ -114,7 +108,6 @@ prepare_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
   cp -r /platform ${diskdir}/
   cp -r /boot ${diskdir}/
-  touch ${diskdir}/metadata.json
   echo "INFO: Preparando disco: Instalando GRUB" > /dev/msglog
   cat > ${diskdir}/boot/grub/menu.lst << EOF
 default 0
