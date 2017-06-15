@@ -224,7 +224,7 @@ write_cron () {
 13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
 18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
 0 * * * * /home/metro/sun/MandaAbajo.ksh
-30 4 * * * /usr/bin/pkill control
+30 4 * * * /usr/bin/pkill 'router|control'
 EOF
   if [[ $mbt_id != 'false' ]]; then
     echo "50 4 * * * /home/metro/sun/mbt.csh ${mbt_id} mbt >> /home/metro/sistema/V/Mbt/xEventosMbt" >> /var/spool/cron/crontabs/metro
