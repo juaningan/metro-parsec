@@ -234,6 +234,10 @@ EOF
   svcadm restart system/cron
 }
 
+write_cron_root () {
+  echo "30 04 * * * /bin/bash -c 'rebuild="'$(wget -q --method=GET http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild?raw -O -)'" ; if [[ "'$rebuild == "true"'" ]]; then /usr/sbin/reboot ; fi'" >> /var/spool/cron/crontabs/root
+}
+
 fix_audio () {
   if [[ -e /dev/sound ]]; then
     /usr/bin/chown metro:metro /dev/sound/*
@@ -272,6 +276,7 @@ main () {
   fi
   write_env
   write_cron
+  write_cron_root
   fix_permissions
   fix_audio
 

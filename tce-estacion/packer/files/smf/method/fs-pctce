@@ -39,14 +39,17 @@ detect_disk () {
   rebuild=$(prtconf -v /devices | sed -n '/rebuild/{;n;p;}' | cut -f 2 -d \')
   if [[ $diskless == 'true' ]]; then
     echo "INFO: Forzado modo sin disco" > /dev/msglog
+    echo "forced" > /tmp/diskless
     return 1
   fi
   disk=$(echo '' | /usr/sbin/format | awk '/0\./ {print $2}')
   if [[ $disk ]]; then
     echo "INFO: Dispositivo de disco: ${disk}" > /dev/msglog
     return 0
+    echo "false" > /tmp/diskless
   else
     echo "WARN: Dispositivo de disco no detectado" > /dev/msglog
+    echo "true" > /tmp/diskless
     return 1
   fi
 }
@@ -127,7 +130,10 @@ EOF
   /usr/sbin/mkfile 1g ${diskdir}/swap1
   /usr/sbin/mkfile 1g ${diskdir}/swap2
   /sbin/umount ${diskdir}
+  wget -q --method=PUT --body-data="$(date +%s)" http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/fechaderebuild -O /dev/null
+  wget -q --method=PUT --body-data=false http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild -O /dev/null
 }
+
 
 create_dir
 if detect_disk; then
