@@ -45,8 +45,8 @@ detect_disk () {
   disk=$(echo '' | /usr/sbin/format | awk '/0\./ {print $2}')
   if [[ $disk ]]; then
     echo "INFO: Dispositivo de disco: ${disk}" > /dev/msglog
-    return 0
     echo "false" > /tmp/diskless
+    return 0
   else
     echo "WARN: Dispositivo de disco no detectado" > /dev/msglog
     echo "true" > /tmp/diskless
