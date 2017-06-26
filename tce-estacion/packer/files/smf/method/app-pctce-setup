@@ -236,6 +236,7 @@ EOF
 
 write_cron_root () {
   echo "30 04 * * * /bin/bash -c 'rebuild="'$(wget -q --method=GET http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild?raw -O -)'" ; if [[ "'$rebuild == "true"'" ]]; then /usr/sbin/reboot ; fi'" >> /var/spool/cron/crontabs/root
+  svcadm restart system/cron
 }
 
 fix_audio () {
