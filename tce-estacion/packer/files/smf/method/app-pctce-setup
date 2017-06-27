@@ -233,7 +233,9 @@ EOF
 }
 
 write_cron_root () {
+  UPDATE_DAY=$(echo "$(printf "%d\n" 0x$(/usr/bin/hostid))" % 5 + 1 | bc)
   echo "30 04 * * * /bin/bash -c 'rebuild="'$(wget -q --method=GET http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild?raw -O -)'" ; if [[ "'$rebuild == "true"'" ]]; then /usr/sbin/reboot ; fi'" >> /var/spool/cron/crontabs/root
+  echo "00 04 * * ${UPDATE_DAY} /usr/bin/touch /tmp/actualiza" >> /var/spool/cron/crontabs/root
   svcadm restart system/cron
 }
 
