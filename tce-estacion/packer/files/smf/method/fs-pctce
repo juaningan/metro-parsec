@@ -88,6 +88,11 @@ check_disk () {
       /sbin/umount ${diskdir}
       return 1
     fi
+    if ! diff /metadata.json ${diskdir}/metadata.json; then		
+      echo "INFO: Detectada nueva version de TCE. Se reconstruye el disco" > /dev/msglog		
+      /sbin/umount ${diskdir}		
+      return 1		
+    fi
     /sbin/umount ${diskdir}
   else
     echo "WARN: No se puede montar el disco" > /dev/msglog
@@ -112,12 +117,13 @@ prepare_disk () {
   /usr/sbin/mount /dev/dsk/${disk}s0 ${diskdir}
   cp -r /platform ${diskdir}/
   cp -r /boot ${diskdir}/
+  cp /metadata.json ${diskdir}/metadata.json
   echo "INFO: Preparando disco: Instalando GRUB" > /dev/msglog
   cat > ${diskdir}/boot/grub/menu.lst << EOF
 default 0
 timeout 1
 title Boot from disk
-kernel\$ /platform/i86pc/kernel/unix -B hostname='$(uname -n)',ipaddress='${ipaddress}'
+kernel\$ /platform/i86pc/kernel/unix -B boot-ncpus=1,hostname='$(uname -n)',ipaddress='${ipaddress}'
 module\$ /platform/i86pc/boot_archive
 EOF
   /sbin/installgrub -fm /boot/grub/stage1 /boot/grub/stage2 /dev/rdsk/${disk}s0
@@ -130,7 +136,7 @@ EOF
   /usr/sbin/mkfile 1g ${diskdir}/swap1
   /usr/sbin/mkfile 1g ${diskdir}/swap2
   /sbin/umount ${diskdir}
-  wget -q --method=PUT --body-data="$(date +%s)" http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/fechaderebuild -O /dev/null
+  wget -q --method=PUT --body-data="$(date +%s)" http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/fecha_rebuild -O /dev/null
   wget -q --method=PUT --body-data=false http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild -O /dev/null
 }
 
