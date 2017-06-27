@@ -14,7 +14,7 @@ import (
 const ipxeBootScript = `#!ipxe
 set channel {{.Channel}}
 set base-url http://{{.BaseUrl}}/repo/pctce/${channel}
-kernel ${base-url}/platform/i86pc/kernel/unix -B hostname='{{.Hostname}}',ipaddress='{{.IP}}',diskless='{{.Diskless}}',rebuild='{{.Rebuild}}'
+kernel ${base-url}/platform/i86pc/kernel/unix -B boot-ncpus=1,hostname='{{.Hostname}}',ipaddress='{{.IP}}',diskless='{{.Diskless}}',rebuild='{{.Rebuild}}'
 module ${base-url}/platform/i86pc/boot_archive
 boot
 `
