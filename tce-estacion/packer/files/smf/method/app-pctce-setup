@@ -270,6 +270,7 @@ main () {
   detect_cancela
   if ! detect_plano; then
     svcadm disable application/x11/x11-server
+    svcadm disable application/pctce-mwm
   fi
   detect_tcti
   if detect_mbt; then

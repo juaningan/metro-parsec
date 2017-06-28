@@ -26,20 +26,7 @@
 
 set -x
 
-source /home/metro/environment
-
-export PERIODO_URGENTE=50
-export PERIODO_SCHEDULER=50
-export INSTALACION_URGENTE=10
-export PRIORIDAD_URGENTE=PR_MAXIMA
-export RODANDO_CON_METROVISION=TRUE
-export MOSTRAR_BOTONES_VIDEO=TRUE
-export ALARMAS_URGENTES=1
-export HOME=/home/metro
-export PATH=/home/metro/sun:$PATH
-if [[ $MAESTRA_IP != 'false' ]]; then
-  export VERSION_MODBUS=SI
-  export PROTOCOLOMODBUS=UM:502
-fi
-
-$HOME/sun/control > /dev/null 2>&1
+while [[ ! -p /tmp/.X11-pipe/X0 ]]; do
+  sleep 1
+done
+$HOME/sun/mwm
