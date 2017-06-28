@@ -222,7 +222,6 @@ write_cron () {
 13,28,43,58 2-5 * * * /home/metro/sun/SubirDatosRepositorio.csh
 18,33 2 * * * /home/metro/sun/SubirDatosRepositorioPupitre.csh
 0 * * * * /home/metro/sun/MandaAbajo.ksh
-30 4 * * * /usr/bin/pkill 'router|control'
 EOF
   if [[ $mbt_id != 'false' ]]; then
     echo "50 4 * * * /home/metro/sun/mbt.csh ${mbt_id} mbt >> /home/metro/sistema/V/Mbt/xEventosMbt" >> /var/spool/cron/crontabs/metro
@@ -234,8 +233,9 @@ EOF
 
 write_cron_root () {
   UPDATE_DAY=$(echo "$(printf "%d\n" 0x$(/usr/bin/hostid))" % 5 + 1 | bc)
-  echo "30 04 * * * /bin/bash -c 'rebuild="'$(wget -q --method=GET http://16.0.96.20:8500/v1/kv/pctce/"$(uname -n)"/rebuild?raw -O -)'" ; if [[ "'$rebuild == "true"'" ]]; then /usr/sbin/reboot ; fi'" >> /var/spool/cron/crontabs/root
-  echo "00 04 * * ${UPDATE_DAY} /usr/bin/touch /tmp/actualiza" >> /var/spool/cron/crontabs/root
+  echo "30 4 * * * /home/metro/script/reboot_tce.sh" >> /var/spool/cron/crontabs/root
+  echo "0 4 * * ${UPDATE_DAY} /home/metro/script/update_tce.sh" >> /var/spool/cron/crontabs/root
+  echo "30 4 * * * svcadm restart control" >> /var/spool/cron/crontabs/root
   svcadm restart system/cron
 }
 

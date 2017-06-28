@@ -29,4 +29,4 @@ set -x
 while [[ ! -p /tmp/.X11-pipe/X0 ]]; do
   sleep 1
 done
-$HOME/sun/mwm
+/home/metro/sun/mwm
