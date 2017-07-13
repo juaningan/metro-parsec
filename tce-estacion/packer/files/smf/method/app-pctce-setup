@@ -43,6 +43,8 @@ update_app () {
     echo "INFO: Actualizando version de TCE en consul" > /dev/msglog
     wget -q --method=PUT --body-data=${version} ${consul_addr}/${hostname}/version -O /dev/null
     wget -q --method=PUT --body-data=${date} ${consul_addr}/${hostname}/fecha_version -O /dev/null
+    echo "INFO: Descargando nueva version de TCE en disco" > /dev/msglog
+    /usr/bin/wget -q "http://16.0.96.20/repo/pctce/boot_archive" -O ${diskdir}/platform/i86pc/boot_archive
   fi
   echo "INFO: Descargando configuracion" > /dev/msglog
   /usr/bin/wget -q "http://16.0.96.20:3000/metro/pctce-configs/archive/master.tar.gz" -O ${diskdir}/pctce-config.tar.gz
