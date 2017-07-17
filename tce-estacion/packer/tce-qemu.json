@@ -59,22 +59,23 @@
       "type": "shell"
     },
     {
-      "destination": "builds/tce-estacion.iso",
+      "destination": "builds/boot_archive",
       "direction": "download",
-      "source": "/tmp/mvi.iso",
+      "source": "/tmp/boot_archive",
+      "type": "file"
+    },
+    {
+      "destination": "builds/unix",
+      "direction": "download",
+      "source": "/tmp/unix",
       "type": "file"
     }
   ],
   "post-processors": [
     [
       {
-        "type": "artifice",
-        "files": ["builds/tce-estacion.iso"]
-      },
-      {
         "type": "shell-local",
         "inline": [
-          "/usr/bin/7z e -y -obuilds $1 platform/i86pc/boot_archive platform/i86pc/kernel/unix",
           "mv builds/boot_archive builds/boot_archive.gz",
           "gunzip builds/boot_archive.gz; mv builds/boot_archive builds/boot_archive-{{ user `build_timestamp` }}"
         ]

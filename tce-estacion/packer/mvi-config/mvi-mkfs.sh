@@ -373,24 +373,8 @@ rmdir $BFS
 # and tell the user how big it is
 #
 ls -lsh ${DESTDIR}/platform/i86pc/boot_archive
-
-#
-# all we need on the ISO is the platform and boot directories
-#
-cd ${DESTDIR}
-rm bin
-rm -fr dev devices etc export home kernel lib licenses mnt opt proc root sbin system tmp usr var
-
-#
-# now make the iso
-#
-/usr/bin/mkisofs -o ${ISO_NAME} -b boot/grub/stage2_eltorito \
-	-c .catalog \
-	-no-emul-boot -boot-load-size 4 -boot-info-table -N -l -R -U \
-        -allow-multidot -no-iso-translate -cache-inodes -d -D \
-	-V "illumos" ${DESTDIR}
-sync
-ls -lsh $ISO_NAME
+cp ${DESTDIR}/platform/i86pc/boot_archive /tmp/
+cp ${DESTDIR}/platform/i86pc/kernel/unix /tmp/
 
 #
 # and clean up
