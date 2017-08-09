@@ -1,0 +1,72 @@
+{
+  "builders":
+  [
+    {
+      "type": "qemu",
+      "iso_url": "https://cloud-images.ubuntu.com/zesty/current/zesty-server-cloudimg-amd64.img",
+      "iso_checksum_url": "https://cloud-images.ubuntu.com/zesty/current/SHA256SUMS",
+      "iso_checksum_type": "sha256",
+      "disk_image": true,
+      "disk_size": "10000",
+      "disk_compression": true,
+      "format": "{{ user `format` }}",
+      "ssh_username": "packer",
+      "ssh_private_key_file": "keys/id_rsa",
+      "qemuargs" : [
+        [ "-drive", "file=output-qemu/packer-qemu,if=virtio,cache=writeback,discard=ignore,format={{ user `format` }}" ],
+        [ "-drive", "file=seed/seed.iso,if=virtio" ]
+      ],
+      "headless": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "./config",
+      "destination": "/tmp/"
+    },
+    {
+      "type": "shell",
+      "environment_vars": [
+        "all_proxy={{ user `proxy` }}",
+        "http_proxy={{ user `proxy` }}",
+        "https_proxy={{ user `proxy` }}",
+        "no_proxy={{ user `no_proxy` }}"
+      ],
+      "scripts": [
+        "scripts/consul.sh"
+      ],
+      "execute_command": "sudo -S sh -c 'chmod +x {{ .Path }}; {{ .Vars }} {{ .Path }}'"
+    },
+    {
+      "type": "shell-local",
+      "command": "genisoimage  -output output-qemu/consul-aar.iso -volid cidata -joliet -rock seed-consul/consul-aar/meta-data seed-consul/consul-aar/network-config seed-consul/consul-aar/user-data"
+    },
+    {
+      "type": "shell-local",
+      "command": "genisoimage  -output output-qemu/consul-psu.iso -volid cidata -joliet -rock seed-consul/consul-psu/meta-data seed-consul/consul-psu/network-config seed-consul/consul-psu/user-data"
+    },
+    {
+      "type": "shell-local",
+      "command": "genisoimage  -output output-qemu/consul-cri.iso -volid cidata -joliet -rock seed-consul/consul-cri/meta-data seed-consul/consul-cri/network-config seed-consul/consul-cri/user-data"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "shell-local",
+      "inline": [
+        "ovf/diskimg2ova --prefix consul --disk $PWD/output-qemu/packer-qemu --out $PWD/output-qemu/",
+        "rm -rf output-qemu/packer-qemu"
+      ]
+    },
+    {
+      "type": "artifice",
+      "files": [ "output-qemu/consul.ova", "output-qemu/consul-aar.iso", "output-qemu/consul-psu.iso", "output-qemu/consul-cri.iso" ]
+    }
+  ],
+  "variables": {
+    "proxy": "{{ env `all_proxy` }}",
+    "no_proxy": "{{ env `no_proxy` }}",
+    "format": "raw"
+  }
+}

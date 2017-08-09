@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - default
+  - name: packer
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVaSLvaOm+2X7EQBggHdvJvpnqG4T1IyDqURgUY3HD81LZYgXubLgl65N/3wtAYnuLoRkWSOmIIHifQOKZYP/ajHtrdPjTGMsRLLJOFddeLq4VDvbkFglxdXuD7YoE+o2lRNGp32ENVCTslq/5GCq9WNqA8tw2u7dykvvYa+i9b87rtlXvKeKnTpqqdxzKuuCwW+a43ltJmUYjTuFjnppPNRGqwbMhXMiK+NDolo3TCAKFGXW78H+K/JaM/8d+xNllyYOdmsCDlL77rkcNErxCSOe1NJPtHMDFofMTRPU5XkTzPmy9oIOw6nioNICLbcy0Z306ToSKwnLjJ7F0XEzJ
+    sudo: ALL=(ALL) NOPASSWD:ALL
+
+chpasswd:
+  list:
+    - root:$6$rUNeEs5b$mLLP965CDVOVJqRt5zkCB9JYJ.ME4vuB2seRoAlA4nG9DU.RNE4jje0Tlo4FvkEOZQq/ns0Ziv3hk5Mopc9yL/
+  expire: False
+
+timezone: Europe/Madrid
+
+resize_rootfs: true
