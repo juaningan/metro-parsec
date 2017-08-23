@@ -4,11 +4,6 @@
 #
 
 #
-# where the iso should end up
-#
-ISO_NAME=/tmp/mvi.iso
-
-#
 # Tribblix version for illumos pkgs
 #
 DISTVER=20
@@ -373,6 +368,7 @@ rmdir $BFS
 # and tell the user how big it is
 #
 ls -lsh ${DESTDIR}/platform/i86pc/boot_archive
+
 cp ${DESTDIR}/platform/i86pc/boot_archive /tmp/
 cp ${DESTDIR}/platform/i86pc/kernel/unix /tmp/
 
