@@ -6,7 +6,7 @@
 #
 # Tribblix version for illumos pkgs
 #
-DISTVER=20
+DISTVER=18
 ILVER=0.${DISTVER}
 
 #
