@@ -45,7 +45,7 @@ systemctl disable consul.service
 apt-get install -y --no-install-recommends git openssh-client
 adduser --system --group --disabled-login git
 
-wget "https://dl.gitea.io/gitea/1.0.1/gitea-1.0.1-linux-amd64" -O /usr/local/bin/gitea
+wget "https://dl.gitea.io/gitea/1.2/gitea-1.2-linux-amd64" -O /usr/local/bin/gitea
 chmod +x /usr/local/bin/gitea
 
 mkdir /srv/gitea
