@@ -1,6 +1,7 @@
 #!/bin/bash
 # If possible, create the /dev/kvm device node.
 
+set -x
 set -e
 
 lsmod | grep '\<kvm\>' > /dev/null || {
