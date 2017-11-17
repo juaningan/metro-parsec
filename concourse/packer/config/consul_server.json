@@ -1,0 +1,7 @@
+{
+  "server": true,
+  "retry_join": [ "16.0.96.22", "16.2.96.22", "16.3.96.22" ],
+  "bootstrap_expect": 3,
+  "data_dir": "/consul/data",
+  "bind_addr": "{{ GetInterfaceIP \"ens192\" }}"
+}

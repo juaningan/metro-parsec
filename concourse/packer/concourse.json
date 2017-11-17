@@ -1,0 +1,64 @@
+{
+  "builders":
+  [
+    {
+      "type": "qemu",
+      "iso_url": "https://cloud-images.ubuntu.com/artful/current/artful-server-cloudimg-amd64.img",
+      "iso_checksum_url": "https://cloud-images.ubuntu.com/artful/current/SHA256SUMS",
+      "iso_checksum_type": "sha256",
+      "disk_image": true,
+      "disk_size": "10000",
+      "disk_compression": true,
+      "format": "{{ user `format` }}",
+      "ssh_username": "packer",
+      "ssh_private_key_file": "keys/id_rsa",
+      "qemuargs" : [
+        [ "-drive", "file=output-qemu/packer-qemu,if=virtio,cache=writeback,discard=ignore,format={{ user `format` }}" ],
+        [ "-drive", "file=seed-packer/seed.iso,if=virtio" ]
+      ],
+      "headless": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "./config",
+      "destination": "/tmp/"
+    },
+    {
+      "type": "shell",
+      "environment_vars": [
+        "all_proxy={{ user `proxy` }}",
+        "http_proxy={{ user `proxy` }}",
+        "https_proxy={{ user `proxy` }}",
+        "no_proxy={{ user `no_proxy` }}"
+      ],
+      "scripts": [
+        "scripts/concourse.sh"
+      ],
+      "execute_command": "sudo -S sh -c 'chmod +x {{ .Path }}; {{ .Vars }} {{ .Path }}'"
+    },
+    {
+      "type": "shell-local",
+      "command": "genisoimage  -output output-qemu/concourse.iso -volid cidata -joliet -rock seed-concourse/meta-data seed-concourse/network-config seed-concourse/user-data"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "shell-local",
+      "inline": [
+        "ovf/diskimg2ova --prefix concourse --disk $PWD/output-qemu/packer-qemu --out $PWD/output-qemu/",
+        "rm -rf output-qemu/packer-qemu"
+      ]
+    },
+    {
+      "type": "artifice",
+      "files": [ "output-qemu/concourse.ova", "output-qemu/concourse.iso" ]
+    }
+  ],
+  "variables": {
+    "proxy": "{{ env `all_proxy` }}",
+    "no_proxy": "{{ env `no_proxy` }}",
+    "format": "raw"
+  }
+}

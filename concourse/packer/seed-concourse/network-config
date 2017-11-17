@@ -1,0 +1,9 @@
+---
+version: 1
+config:
+  - type: physical
+    name: ens192
+    subnets:
+      - type: static
+        address: 16.0.61.50/24
+        gateway: 16.0.61.1

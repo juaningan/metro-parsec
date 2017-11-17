@@ -1,0 +1,6 @@
+# Cache objects
+packer_cache/
+output-qemu/
+
+# For built boxes
+*.box
