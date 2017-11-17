@@ -19,7 +19,7 @@
       "headless": "{{ user `headless` }}",
       "iso_checksum": "081e8fa775a48c6fec1f0a062d14ae36",
       "iso_checksum_type": "md5",
-      "iso_url": "http://pkgs.tribblix.org/iso/tribblix-0m18.iso",
+      "iso_url": "http://16.0.96.20/tribblix-0m18.iso",
       "output_directory": "packer-{{ user `template` }}-qemu",
       "qemuargs": [
         [ "-machine", "type=pc,accel=kvm,usb=off" ],
