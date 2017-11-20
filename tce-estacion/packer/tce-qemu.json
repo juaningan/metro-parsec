@@ -6,6 +6,7 @@
         "<down><down><enter>",
         "<wait10><wait10><wait10>",
         "<wait10><wait10><wait10>",
+        "<wait10><wait10><wait10>",
         "root<enter>",
         "tribblix<enter>",
         "ifconfig vioif0 plumb<enter>",
