@@ -15,9 +15,12 @@ mknod /dev/kvm c 10 $(grep '\<kvm\>' /proc/misc | cut -f 1 -d' ') || {
   exit 1
 }
 
+kvm-ok
+which dd
+
 dd if=/dev/kvm count=0 2>/dev/null || {
   echo >&2 "Unable to open /dev/kvm; qemu will use software emulation"
   echo >&2 "(This can happen if the container is run without -privileged)"
 }
 
-packer build tce-qemu.json
+#packer build tce-qemu.json
