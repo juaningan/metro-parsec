@@ -2,7 +2,6 @@
   "builders": [
     {
       "type": "qemu",
-      "accelerator": "kvm",
       "boot_command": [
         "<down><down><enter>",
         "<wait10><wait10><wait10>",
@@ -22,7 +21,7 @@
       "iso_url": "http://16.0.96.20/repo/tribblix-0m18.iso",
       "output_directory": "packer-{{ user `template` }}-qemu",
       "qemuargs": [
-        [ "-machine", "type=pc,accel=kvm,usb=off" ],
+        [ "-machine", "type=pc,usb=off" ],
         [ "-cpu", "Penryn"],
         [ "-m", "{{ user `memory` }}"]
       ],
