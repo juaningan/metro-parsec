@@ -30,7 +30,8 @@
       "ssh_port": 22,
       "ssh_username": "root",
       "ssh_wait_timeout": "10000s",
-      "vm_name": "{{ user `template` }}"
+      "vm_name": "{{ user `template` }}",
+      "vnc_bind_address": "0.0.0.0"
     }
   ],
   "provisioners": [
