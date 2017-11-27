@@ -2,7 +2,7 @@
 
 set -o -x -e
 
-CONSUL_VERSION=0.9.1
+CONSUL_VERSION=1.0.1
 HASHICORP_RELEASES=https://releases.hashicorp.com
 
 adduser --system --group consul
