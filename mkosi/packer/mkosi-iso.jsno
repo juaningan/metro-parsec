@@ -1,0 +1,69 @@
+{
+  "builders": [
+    {
+      "boot_wait": "10s",
+      "disk_image": true,
+      "disk_size": "{{user `disk_size`}}",
+      "headless": "{{ user `headless` }}",
+      "http_directory": "cloud-init",
+      "iso_checksum_url": "{{user `iso_checksum_url`}}",
+      "iso_checksum_type": "{{user `iso_checksum_type`}}",
+      "iso_url": "{{user `mirror`}}/{{user `mirror_directory`}}/{{user `iso_name`}}",
+      "output_directory": "../builds/packer-{{user `template`}}-qemu",
+      "qemuargs" : [                                                                                  
+	[ "-drive", "file=../builds/packer-fedora-27-x86_64-qemu/fedora-27-x86_64,if=virtio,cache=writeback,discard=ignore,format=qcow2"],
+	[ "-drive", "file=seed.iso,if=virtio" ]
+      ],
+      "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
+      "ssh_password": "packer",
+      "ssh_port": 22,
+      "ssh_username": "root",
+      "type": "qemu",
+      "vm_name": "{{ user `template` }}"
+    }
+  ],
+  "post-processors": [
+    {
+      "output": "../builds/{{user `box_basename`}}.{{.Provider}}.box",
+      "type": "vagrant"
+    }
+  ],
+  "provisioners": [
+    {
+      "environment_vars": [
+        "HOME_DIR=/home/vagrant",
+        "http_proxy={{user `http_proxy`}}",
+        "https_proxy={{user `https_proxy`}}",
+        "no_proxy={{user `no_proxy`}}"
+      ],
+      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
+      "expect_disconnect": true,
+      "scripts": [
+        "scripts/mkosi.sh",
+        "scripts/cleanup.sh"
+      ],
+      "type": "shell"
+    }
+  ],
+  "variables": {
+    "box_basename": "fedora-27",
+    "build_timestamp": "{{isotime \"20060102150405\"}}",
+    "cpus": "1",
+    "disk_size": "40960",
+    "git_revision": "__unknown_git_revision__",
+    "headless": "",
+    "http_proxy": "{{env `http_proxy`}}",
+    "https_proxy": "{{env `https_proxy`}}",
+    "iso_checksum_url": "https://alt.fedoraproject.org/es/static/checksums/Fedora-CloudImages-27-1.6-x86_64-CHECKSUM",
+    "iso_checksum_type": "sha256",
+    "iso_name": "Fedora-Cloud-Base-27-1.6.x86_64.qcow2",
+    "memory": "1024",
+    "mirror": "http://download.fedoraproject.org/pub/fedora/linux",
+    "mirror_directory": "releases/27/CloudImages/x86_64/images",
+    "name": "fedora-27",
+    "no_proxy": "{{env `no_proxy`}}",
+    "template": "fedora-27-x86_64",
+    "version": "TIMESTAMP"
+  }
+}
+
