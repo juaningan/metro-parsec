@@ -1,4 +1,15 @@
 #cloud-config
-password: packer
-chpasswd: { expire: False }
-ssh_pwauth: True
+users:
+  - default
+  - name: packer
+    sudo: ALL=(ALL) NOPASSWD:ALL
+
+chpasswd:
+  list: |
+    root:metrom
+    packer:packer
+  expire: False
+
+timezone: Europe/Madrid
+
+resize_rootfs: true
