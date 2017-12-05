@@ -1,0 +1,62 @@
+{
+  "builders":
+  [
+    {
+      "type": "qemu",
+      "iso_url": "http://16.0.96.20/repo/mkosi-f27-x86_64.qcow2",
+      "iso_checksum": "bcdd5c93b789b423bd7f6dade8d61a65713388205a61b50f032e4117a6029367",
+      "iso_checksum_type": "sha256",
+      "disk_image": "true",
+      "disk_size": "42950",
+      "disk_compression": true,
+      "format": "{{ user `format` }}",
+      "ssh_username": "root",
+      "ssh_password": "metrom",
+      "ssh_wait_timeout": "10000s",
+      "headless": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "./files",
+      "destination": "/tmp/files"
+    },
+    {
+      "type": "shell",
+      "environment_vars": [
+        "all_proxy={{ user `proxy` }}",
+        "http_proxy={{ user `proxy` }}",
+        "https_proxy={{ user `proxy` }}",
+        "no_proxy={{ user `no_proxy` }}"
+      ],
+      "scripts": [
+        "scripts/mkosi.sh"
+      ],
+      "execute_command": "sudo -S sh -c 'chmod +x {{ .Path }}; {{ .Vars }} {{ .Path }}'"
+    },
+    {
+      "destination": "output-qemu/",
+      "direction": "download",
+      "source": "/tmp/output/",
+      "type":"file" 
+    }
+  ],
+  "post-processors": [
+    {
+       "type": "shell-local",
+       "inline": [
+         "rm -rf output-qemu/packer-qemu"
+       ]
+    },
+    {
+      "type": "artifice",
+      "files": [ "output-qemu/*"]
+    }
+  ],
+  "variables": {
+    "proxy": "{{ env `all_proxy` }}",
+    "no_proxy": "{{ env `no_proxy` }}",
+    "format": "qcow2"
+  }
+}
