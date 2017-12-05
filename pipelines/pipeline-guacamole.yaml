@@ -1,0 +1,25 @@
+resources:
+- name: resource-metro-parsec
+  type: git
+  source:
+    uri: https://github.com/juaningan/metro-parsec
+    branch: master
+
+jobs:
+- name: job-mkosi-guacamole
+  plan:
+  - get: resource-metro-parsec
+  - task: task-mkosi-guacamole
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: juaningan/metro-ci}
+      params:
+        PACKER_LOG: 1
+      inputs:
+        - name: resource-metro-parsec
+      run:
+        path: packer
+        dir: resource-metro-parsec/mkosi-wrapper
+        args: [ "build", "mkosi.json" ]
