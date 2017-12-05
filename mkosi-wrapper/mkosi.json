@@ -12,8 +12,8 @@
       "format": "{{ user `format` }}",
       "shutdown_command": "sudo poweroff",
       "skip_compaction": true,
-      "ssh_username": "packer",
-      "ssh_password": "packer",
+      "ssh_username": "root",
+      "ssh_password": "metrom",
       "headless": true
     }
   ],
