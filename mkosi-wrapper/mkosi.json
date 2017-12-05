@@ -6,7 +6,7 @@
       "iso_url": "http://16.0.96.20/repo/mkosi-f27-x86_64.qcow2",
       "iso_checksum": "bcdd5c93b789b423bd7f6dade8d61a65713388205a61b50f032e4117a6029367",
       "iso_checksum_type": "sha256",
-      "iso_skip_cache": true,
+      "iso_skip_cache": false,
       "disk_image": "true",
       "disk_size": "42950",
       "format": "{{ user `format` }}",
