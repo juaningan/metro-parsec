@@ -32,7 +32,7 @@
       "execute_command": "{{.Vars}} sudo -S -E bash '{{.Path}}'"
     },
     {
-      "destination": "output-qemu/",
+      "destination": "output-qemu",
       "direction": "download",
       "source": "/tmp/output/",
       "type":"file" 
