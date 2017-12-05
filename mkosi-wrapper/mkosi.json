@@ -18,11 +18,6 @@
   ],
   "provisioners": [
     {
-      "type": "file",
-      "source": "./files",
-      "destination": "/tmp/files"
-    },
-    {
       "type": "shell",
       "environment_vars": [
         "all_proxy={{ user `proxy` }}",
