@@ -9,7 +9,7 @@ service postgresql start
 su postgres --command '\createuser -s -w concourse' 
 su postgres --command '\createdb --owner=concourse concourse'
 
-wget -q https://github.com/concourse/concourse/releases/download/v3.6.0/concourse_linux_amd64 -O /usr/local/bin/concourse
+wget -q https://github.com/concourse/concourse/releases/download/v3.8.0/concourse_linux_amd64 -O /usr/local/bin/concourse
 chmod +x /usr/local/bin/concourse
 mkdir -p /etc/concourse
 ssh-keygen -t rsa -f /etc/concourse/host_key -N ''
