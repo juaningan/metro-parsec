@@ -13,7 +13,7 @@
       "output_directory": "../builds/packer-{{user `template`}}-qemu",
       "qemuargs" : [                                                                                  
 	[ "-drive", "file=../builds/packer-{{user `template`}}-qemu/{{user `template`}}.{{user `format`}},if=virtio,cache=writeback,discard=ignore,format=qcow2"],
-	[ "-drive", "file=cloud-init/seed.iso,if=virtio" ]
+	[ "-drive", "file=../_common/cloud-init/seed.iso,if=virtio" ]
       ],
       "shutdown_command": "sudo poweroff",
       "ssh_password": "packer",
