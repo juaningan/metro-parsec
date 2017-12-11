@@ -21,11 +21,6 @@
   ],
   "provisioners": [
     {
-      "type": "file",
-      "source": "./config",
-      "destination": "/tmp/"
-    },
-    {
       "type": "shell",
       "environment_vars": [
         "all_proxy={{ user `proxy` }}",

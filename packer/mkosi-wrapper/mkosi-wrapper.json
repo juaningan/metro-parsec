@@ -27,7 +27,7 @@
         "no_proxy={{ user `no_proxy` }}"
       ],
       "scripts": [
-        "scripts/mkosi.sh"
+        "scripts/mkosi-wrapper.sh"
       ],
       "execute_command": "{{.Vars}} sudo -S -E bash '{{.Path}}'"
     },
