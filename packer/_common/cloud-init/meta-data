@@ -1,2 +1,2 @@
-instance-id: iid-local01
-local-hostname: mkosi
+instance-id: iid-packer01
+local-hostname: packer

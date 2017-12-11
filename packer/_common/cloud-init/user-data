@@ -4,6 +4,8 @@ users:
   - name: packer
     sudo: ALL=(ALL) NOPASSWD:ALL
 
+ssh_pwauth: yes
+
 chpasswd:
   list: |
     root:metrom
@@ -12,4 +14,4 @@ chpasswd:
 
 timezone: Europe/Madrid
 
-resize_rootfs: true
+resize_rootfs: false
