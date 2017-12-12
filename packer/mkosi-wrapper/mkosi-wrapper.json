@@ -20,7 +20,7 @@
   "provisioners": [
     {
       "destination": "/tmp/workdir",
-      "source": "{{ user `workdir` }}",
+      "source": "../../../{{ user `workdir` }}",
       "type": "file"
     },
     {
