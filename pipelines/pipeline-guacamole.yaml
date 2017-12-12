@@ -1,14 +1,34 @@
 resources:
-- name: resource-metro-parsec
+- name: resource-mkosi-wrapper
   type: git
   source:
     uri: https://github.com/juaningan/metro-parsec
-    branch: master
+    paths: [ packer/mkosi-wrapper ]
+
+- name: resource-mkosi-guacamole
+  type: git
+  source:
+    uri: https://github.com/juaningan/metro-parsec
+    paths: [ mkosi/guacamole ]
+
+- name: resource-guacamole-server
+  type: git
+  source:
+    uri: https://github.com/apache/guacamole-server
+
+- name: resource-guacamole-client
+  type: git
+  source:
+    uri: https://github.com/apache/guacamole-client
 
 jobs:
 - name: job-mkosi-guacamole
   plan:
-  - get: resource-metro-parsec
+  - aggregate:
+    - get: resource-mkosi-wrapper
+    - get: resource-mkosi-guacamole
+    - get: resource-guacamole-server
+    - get: resource-guacamole-client
   - task: task-mkosi-guacamole
     config:
       platform: linux
@@ -16,10 +36,15 @@ jobs:
         type: docker-image
         source: {repository: juaningan/metro-ci}
       params:
-        PACKER_LOG: 1
+        PACKER_LOG: 0
       inputs:
-        - name: resource-metro-parsec
+        - name: resource-mkosi-wrapper
+        - name: resource-mkosi-guacamole
+        - name: resource-guacamole-server
+        - name: resource-guacamole-client
       run:
-        path: packer
+              #path: packer
+        path: "ls"
         dir: resource-metro-parsec/mkosi-wrapper
-        args: [ "build", "mkosi.json" ]
+        #args: [ "build", "mkosi.json" ]
+        args: [ "-lR", "../../" ]
