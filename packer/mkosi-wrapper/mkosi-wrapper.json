@@ -20,7 +20,7 @@
   "provisioners": [
     {
       "destination": "/tmp/workdir",
-      "source": "{{ env `WORKDIR` }}",
+      "source": "{{ user `workdir` }}",
       "type": "file"
     },
     {
@@ -58,6 +58,7 @@
   "variables": {
     "proxy": "{{ env `all_proxy` }}",
     "no_proxy": "{{ env `no_proxy` }}",
-    "format": "qcow2"
+    "format": "qcow2",
+    "workdir": "{{ env `WORKDIR` }}"
   }
 }
