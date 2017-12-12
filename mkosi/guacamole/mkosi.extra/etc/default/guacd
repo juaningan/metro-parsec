@@ -1,0 +1,8 @@
+# Environment for guacd
+
+# Address and port to listen on for network connections
+LISTEN_ADDRESS=127.0.0.1
+LISTEN_PORT=4822
+
+# Other arguments to guacd
+DAEMON_ARGS=

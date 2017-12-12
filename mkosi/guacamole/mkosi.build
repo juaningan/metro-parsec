@@ -1,0 +1,107 @@
+#!/bin/bash
+
+set -x
+set -e
+
+# Version numbers of Guacamole and MySQL Connector/J to download
+VERSION="master"
+MCJVERSION="5.1.43"
+
+# Configure proxies
+declare -x all_proxy="http://16.0.96.20:3128"
+declare -x http_proxy="http://16.0.96.20:3128"
+declare -x https_proxy="http://16.0.96.20:3128"
+
+mkdir -p $HOME/.m2/
+cat > $HOME/.m2/settings.xml  <<EOF
+<settings>
+  <proxies>
+   <proxy>
+      <id>proxy-metro</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>16.0.96.20</host>
+      <port>3128</port>
+    </proxy>
+  </proxies>
+</settings>
+EOF
+
+# Set gcc 6
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-6
+
+# Download Guacamole Files
+wget https://api.github.com/repos/apache/incubator-guacamole-server/tarball/${VERSION} -O guacamole-server-${VERSION}.tar.gz
+wget https://api.github.com/repos/apache/incubator-guacamole-client/tarball/${VERSION} -O guacamole-${VERSION}.tar.gz
+wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${MCJVERSION}.tar.gz
+
+# Extract Guacamole files
+tar -xzf guacamole-server-${VERSION}.tar.gz
+tar -xzf guacamole-${VERSION}.tar.gz
+tar -xzf mysql-connector-java-${MCJVERSION}.tar.gz
+
+# Copy custom spanish translation
+ls -l apache-incubator-guacamole-client*/guacamole/src/main/webapp/translations/
+mv /etc/guacamole/es.json apache-incubator-guacamole-client*/guacamole/src/main/webapp/translations/
+
+# Make directories
+mkdir -p ${DESTDIR}/etc/guacamole/lib
+mkdir -p ${DESTDIR}/etc/guacamole/extensions
+
+# Install GUACD
+cd apache-incubator-guacamole-server*
+autoreconf -fi
+./configure --prefix=/usr
+make
+make install
+systemctl enable guacd
+cd ..
+
+# Install Client
+cd apache-incubator-guacamole-client*
+mvn package
+cd ..
+
+# Move files to correct locations
+mv apache-incubator-guacamole-client*/guacamole/target/guacamole-*.war ${DESTDIR}/etc/guacamole/guacamole.war
+cp mysql-connector-java-${MCJVERSION}/mysql-connector-java-${MCJVERSION}-bin.jar ${DESTDIR}/etc/guacamole/lib/
+cp apache-incubator-guacamole-client*/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-mysql/target/guacamole-auth-jdbc-mysql-*.jar ${DESTDIR}/etc/guacamole/extensions/
+cp apache-incubator-guacamole-client*/extensions/guacamole-auth-ldap/target/guacamole-auth-ldap-*.jar ${DESTDIR}/etc/guacamole/extensions/
+cp -r apache-incubator-guacamole-client*/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-mysql/schema ${DESTDIR}/etc/guacamole/
+
+# Configure guacamole.properties
+cat > ${DESTDIR}/etc/guacamole/guacamole.properties << EOF
+mysql-hostname: localhost
+mysql-port: 3306
+mysql-database: guacamole_db
+mysql-username: guacamole_user
+mysql-password: changeme
+ldap-hostname: 16.0.96.11
+ldap-port: 636
+ldap-encryption-method: ssl
+ldap-user-base-dn: ou=Usuarios,dc=set,dc=umi,dc=net
+ldap-username-attribute: uid
+EOF
+
+# Create guacamole_db and grant guacamole_user permissions to it
+cat > ${DESTDIR}/etc/guacamole/init-db.sh << 'EOF'
+#!/bin/bash
+set -e
+set -x
+
+# SQL code
+SQLCODE="
+create database guacamole_db;
+create user 'guacamole_user'@'localhost' identified by \"changeme\";
+GRANT SELECT,INSERT,UPDATE,DELETE ON guacamole_db.* TO 'guacamole_user'@'localhost';
+flush privileges;"
+
+# Execute SQL code
+echo $SQLCODE | mysql -u root 
+
+# Add Guacamole schema to newly created database
+cat /etc/guacamole/schema/*.sql | mysql -u root guacamole_db
+EOF
+
+chmod +x ${DESTDIR}/etc/guacamole/init-db.sh
+

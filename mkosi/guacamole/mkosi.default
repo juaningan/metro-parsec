@@ -1,0 +1,22 @@
+[Distribution]
+Distribution=ubuntu
+Release=artful
+Repositories=main universe
+
+[Output]
+Format=raw_gpt
+Bootable=no
+Hostname=guacamole
+XZ=no
+
+[Packages]
+WithNetwork=yes
+BuildPackages=autoconf automake ca-certificates libtool make gcc-6 g++-6
+	libcairo2-dev libjpeg-turbo8-dev libpng-dev libossp-uuid-dev
+	libfreerdp-dev libpango1.0-dev libvncserver-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev libavcodec-dev libavutil-dev libswscale-dev libssh2-1-dev libtelnet-dev 
+	maven default-jdk-headless
+Packages=libjpeg-turbo8 libcairo2 libssl1.0.0 libossp-uuid16 libwebp6 libavutil55 libavcodec57 libswscale4 libvncclient1 libtelnet2 libssh2-1 libpulse0 libfreerdp-client1.1 libfreerdp-cache1.1 libpango-1.0 libpangocairo-1.0
+	mysql-server mysql-client mysql-common mysql-utilities tomcat8 freerdp-x11 ghostscript wget nginx
+
+[Partitions]
+RootSize=2G
