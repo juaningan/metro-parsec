@@ -37,14 +37,10 @@ jobs:
         source: {repository: juaningan/metro-ci}
       params:
         PACKER_LOG: 0
+        WORKDIR: resource-mkosi-guacamole/mkosi/guacamole
       inputs:
-        - name: resource-mkosi-wrapper
         - name: resource-mkosi-guacamole
-        - name: resource-guacamole-server
-        - name: resource-guacamole-client
       run:
-              #path: packer
-        path: "ls"
-        dir: resource-metro-parsec/mkosi-wrapper
-        #args: [ "build", "mkosi.json" ]
-        args: [ "-lR", "../../" ]
+        path: packer
+        dir: resource-mkosi-guacamole/packer/mkosi-wrapper
+        args: [ "build", "mkosi-wrapper.json" ]

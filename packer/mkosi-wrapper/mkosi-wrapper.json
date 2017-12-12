@@ -19,6 +19,11 @@
   ],
   "provisioners": [
     {
+      "destination": "/tmp/workdir",
+      "source": "{{ env `WORKDIR` }}",
+      "type": "file"
+    },
+    {
       "type": "shell",
       "environment_vars": [
         "all_proxy={{ user `proxy` }}",
